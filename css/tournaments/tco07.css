@@ -21,12 +21,30 @@ background: #FFFFFF;
 img { border: none; }
 
 H1, H2, H3{
+font-family: Arial, Verdana, Helvetica, sans-serif;
 font-weight: bold;
 padding: 0px;
-margin: 0px;
+margin: 0px 0px 10px 0px;
 }
 
-H2 { font-size: 200%; }
+H1 { 
+position: relative;
+left: -6px;
+top: 0px;
+font-size: 175%; 
+color: #FFFFFF;
+background: transparent url(/i/tournament/tco07/h1.png) top center no-repeat;
+padding: 0px;
+margin: 0px;
+width: 737px;
+border-top: 1px solid white;
+border-bottom: 1px solid white;
+}
+
+H1 div {
+margin: 10px 10px 10px 15px;
+}
+
 H2 { font-size: 150%; }
 H3 { font-size: 125%; }
 
@@ -58,13 +76,42 @@ span.bigGreen{ color: #009900; font-weight: bold; text-decoration: none; }
 A.bigGreen:link, A.bigGreen:visited, A.bigGreen:active { color: #009900; text-decoration: underline; }
 A.bigGreen:hover { color: #000000; text-decoration: underline;}
 
+/* HEADER */
+#tourneyLogo{
+position: absolute; 
+left: 25px; 
+top: 18px;
+}
+
+#redBar{
+position: absolute; 
+left: 10px; 
+top: 150px;
+width: 960px;
+background: #8B0A50; 
+color: #FFFFFF;
+font-weight: bold;
+}
+
+#pageBodyN{
+width: 765px;
+height: 15px; 
+position: absolute;
+left: 0px;
+top: -15px;
+background: transparent;
+margin: 0px 0px 0px 183px; 
+padding: 0px; 
+background: transparent url(/i/tournament/tco07/pageBodyN.png) top left no-repeat;
+}
+
 /* NAV */
 /* <li>'s are styled to have the bottom background */
 /* <a>'s are styled to have the top background */
 /* <div>'s are styled to have the menu arrow */
 #nav{
 width: 180px;
-margin: 0px 0px 140px 0px;
+margin: 0px 0px 40px 0px;
 padding: 0px;
 background: #FAEFDA;
 }
@@ -84,15 +131,13 @@ padding: 0px;
 margin: 0px;
 }
 
-#nav ul{
-}
-
 /* PRIMARY */
 #nav li{
 list-style-type: none;
 padding: 0px;
 margin: 0px;
 font-weight: bold;
+font-size: 12px;
 }
 
 #nav a{
@@ -107,9 +152,6 @@ padding: 4px 6px 4px 10px;
 background: transparent;
 }
 
-#nav li.link { background: #F4DFB6 url(/i/tournament/tco07/nav1S.png) bottom center no-repeat; }
-#nav li.link a { background: transparent url(/i/tournament/tco07/nav1N.png) top center no-repeat; }
-#nav li.link div{  background: transparent; }
 #nav li.closed { background: #F4DFB6 url(/i/tournament/tco07/nav1S.png) bottom center no-repeat; }
 #nav li.closed a { background: transparent url(/i/tournament/tco07/nav1N.png) top center no-repeat; }
 #nav li.closed div { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
@@ -128,19 +170,16 @@ background: #FAEFDA;
 #nav li li a {
 margin: 0px 0px 0px 10px;
 width: 170px;
-background: transparent;
 font-weight: normal;
+font-size: 11px;
 }
 
-#nav li li.link { background: transparent; }
-#nav li li.link a { background: transparent; }
-#nav li li.link div { background: transparent; }
+#nav li li.stop { background: transparent; }
+#nav li li.stop div { background: transparent; }
 #nav li li.closed { background: transparent; }
-#nav li li.closed a { background: transparent; }
 #nav li li.closed div { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
 #nav li li.closed ul { display: none; }
 #nav li li.open { background: transparent; }
-#nav li li.open a {background: transparent; }
 #nav li li.open div { background: transparent url(/i/tournament/tco07/open.png) 1px 50% no-repeat; }
 #nav li li.open ul { display: block; }
 
@@ -153,49 +192,71 @@ background: #FAEFDA;
 #nav li li li a {
 margin: 0px 0px 0px 20px;
 width: 160px;
+}
+
+#nav li li li.stop { background: transparent; }
+#nav li li li.stop div { background: transparent; }
+#nav li li li.closed { background: transparent; }
+#nav li li li.closed div { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
+#nav li li li.open { background: transparent; }
+#nav li li li.open div { background: transparent url(/i/tournament/tco07/open.png) 1px 50% no-repeat; }
+
+#nav a.navHighlight,
+#nav li a.navHighlight,
+#nav li li a.navHighlight,
+#nav li li li a.navHighlight{
+background: transparent url(/i/tournament/tco07/navHighlight.png) center left no-repeat;
+}
+
+#navSponsors{
+width: 180px;
+margin: 0px 0px 140px 0px;
+padding: 0px;
 background: transparent;
 }
 
-#nav li li li.link { background: transparent; }
-#nav li li li.link a { background: transparent; }
-#nav li li li.link div { background: transparent; }
-#nav li li li.closed { background: transparent; }
-#nav li li li.closed a { background: transparent; }
-#nav li li li.closed div { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
-#nav li li li.open { background: transparent; }
-#nav li li li.open a {background: transparent; }
-#nav li li li.open div { background: transparent url(/i/tournament/tco07/open.png) 1px 50% no-repeat; }
-
 /* CONTENT */
-
 #content{
 position: relative;
 width: 980px;
 background: #F4DFB6 url(/i/tournament/tco07/content.png) top center repeat-y;
-}
-
-#tourneyLogo{
-position: absolute; 
-left: 25px; 
-top: 18px;
-}
-
-#pageInfo{
-position: absolute; 
-left: 10px; 
-top: 140px;
-width: 960px;
-background: #8B0A50;
+text-align: left;
 }
 
 #pageBody{
+width: 725px;
 background: #F4DFB6 url(/i/tournament/tco07/pageBody.png) top right repeat-y;
 text-align: left;
-padding: 20px 0px 100px 0px;
-margin: 0px 20px 0px 20px;
+padding: 20px 0px 140px 0px;
+margin: 0px 0px 0px 20px;
+}
+
+#spacer{
+margin: 90px 20px 0px 13px;
+width: 945px;
+}
+
+#navSpacer{
+background: #F4DFB6; 
+padding: 0px; 
+vertical-align: top;
+}
+
+#bodySpacer{
+background: #FFFFFF;
+vertical-align: top;
+padding: 0px;
 }
 
 /* FOOTER */
+
+#topcoderLogo{
+position: absolute; 
+left: 190px;
+top: -114px;
+width: 770px;
+z-index: 2;
+}
 
 #footer{
 position: absolute;
@@ -204,12 +265,14 @@ top: -118px;
 width: 980px;
 height: 118px;
 background: transparent url(/i/tournament/tco07/footer.png) top center no-repeat;
+z-index: 1;
 }
 
 #footer div.links{
 font-weight: bold;
 color: #FFFFFF;
 margin-top: 55px;
+text-align: center;
 }
 
 #footer div.links A:link, #footer div.links A:visited{
@@ -225,6 +288,7 @@ text-decoration: underline;
 #footer div.copyright{
 margin-top: 12px;
 color: #FFFFFF;
+text-align: center;
 }
 
 /* STAT TABLE */
