@@ -79,8 +79,8 @@ A.bigGreen:hover { color: #000000; text-decoration: underline;}
 /* HEADER */
 #tourneyLogo{
 position: absolute; 
-left: 25px; 
-top: 18px;
+left: 24px; 
+top: 16px;
 }
 
 #redBar{
