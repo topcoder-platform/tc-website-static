@@ -1,20 +1,21 @@
 html{ 
 margin:0px;
 padding:0px;
+font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 
 body, body.textarea{ 
 font-family: Arial, Verdana, Helvetica, sans-serif;
 line-height: normal;
 font-size: 11px;
-color: #333333;
+color: #666666;
 background: #FFA500;
 margin:0px;
 padding:0px;
 }
 
 body.textarea{
-color: #333333;
+color: #666666;
 background: #FFFFFF;
 }
 
@@ -31,7 +32,7 @@ H1 {
 position: relative;
 left: -6px;
 top: 0px;
-font-size: 175%; 
+font-size: 150%; 
 color: #FFFFFF;
 background: transparent url(/i/tournament/tco07/h1.png) top center no-repeat;
 padding: 0px;
@@ -59,7 +60,7 @@ font-size: 11px;
 }
 
 A:link, A:visited{
-color: #0000FF;
+color: #8B0A50;
 text-decoration: underline;
 }
 
@@ -75,6 +76,8 @@ A.bigRed:hover { color: #000000; text-decoration: underline;}
 span.bigGreen{ color: #009900; font-weight: bold; text-decoration: none; }
 A.bigGreen:link, A.bigGreen:visited, A.bigGreen:active { color: #009900; text-decoration: underline; }
 A.bigGreen:hover { color: #000000; text-decoration: underline;}
+
+.small{ font-size: 10px; }
 
 /* HEADER */
 #tourneyLogo{
@@ -148,7 +151,7 @@ width: 180px;
 }
 
 #nav div{
-padding: 4px 6px 4px 10px;
+padding: 5px 6px 5px 10px;
 background: transparent;
 }
 
@@ -227,8 +230,9 @@ text-align: left;
 width: 725px;
 background: #F4DFB6 url(/i/tournament/tco07/pageBody.png) top right repeat-y;
 text-align: left;
-padding: 20px 0px 140px 0px;
+padding: 20px 0px 165px 0px;
 margin: 0px 0px 0px 20px;
+line-height: 1.4;
 }
 
 #spacer{
@@ -253,7 +257,7 @@ padding: 0px;
 #topcoderLogo{
 position: absolute; 
 left: 190px;
-top: -114px;
+top: -120px;
 width: 770px;
 z-index: 2;
 }
