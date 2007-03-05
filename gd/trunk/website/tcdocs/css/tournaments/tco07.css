@@ -7,7 +7,7 @@ font-family: Arial, Verdana, Helvetica, sans-serif;
 body, body.textarea{ 
 font-family: Arial, Verdana, Helvetica, sans-serif;
 line-height: normal;
-font-size: 11px;
+font-size: 12px;
 color: #666666;
 background: #FFA500;
 margin:0px;
@@ -32,7 +32,7 @@ H1 {
 position: relative;
 left: -6px;
 top: 0px;
-font-size: 150%; 
+font-size: 125%; 
 color: #FFFFFF;
 background: transparent url(/i/tournament/tco07/h1.png) top center no-repeat;
 padding: 0px;
@@ -46,8 +46,8 @@ H1 div {
 margin: 10px 10px 20px 15px;
 }
 
-H2 { font-size: 150%; }
-H3 { font-size: 125%; }
+H2 { font-size: 125%; }
+H3 { font-size: 110%; }
 
 p{
 padding: 0px;
@@ -56,17 +56,17 @@ margin: 0px 0px 10px 0px;
 
 td, th{ 
 line-height: normal;
-font-size: 11px;
+font-size: 12px;
 }
 
 A:link, A:visited{
 color: #8B0A50;
-text-decoration: underline;
+text-decoration: none;
 }
 
 A:hover, A:active{
 color: #FF0000;
-text-decoration: none;
+text-decoration: underline;
 }
 
 span.bigRed{ color: #FF0000; font-weight: bold; text-decoration: none; }
@@ -78,6 +78,42 @@ A.bigGreen:link, A.bigGreen:visited, A.bigGreen:active { color: #009900; text-de
 A.bigGreen:hover { color: #000000; text-decoration: underline;}
 
 .small{ font-size: 10px; }
+
+p.grayedOut{
+color: #CCCCCC;
+}
+
+a.button, div.button{
+display:block;
+padding: 3px 6px 3px 6px;
+margin: 0px;
+font-size:11px;
+font-weight: bold;
+text-decoration: none;
+text-align: center;
+line-height: normal;
+white-space: nowrap;
+}
+
+a.button:link, a.button:visited{
+background: #d2d2d2 url(/i/interface/buttonBg.png) top center repeat;
+color: #333333;
+border: 1px solid #999999;
+text-decoration: none;
+}
+
+a.button:hover, a.button:active{
+background: #6a6a6a url(/i/interface/buttonBg_on.png) top center repeat;
+color: #FFFFFF;
+border: 1px solid #999999;
+text-decoration: none;
+}
+
+div.button{
+background: #EEEEEE url(/i/interface/buttonBg_off.png) top center repeat;
+color: #BBBBBB;
+border: 1px solid #CCCCCC;
+}
 
 /* HEADER */
 #tourneyLogo{
@@ -334,7 +370,7 @@ table.stat tr.light td { background-color: #f7f1e4; }
 table.stat tr.dark td { background-color: #efdfbd; }
 
 table.stat td.value, table.stat td.valueC, table.stat td.valueR{
-font-size: 11px;
+font-size: 12px;
 vertical-align: top;
 }
 
@@ -345,7 +381,7 @@ table.stat td.valueR { text-align: right; }
 table.stat td.field {
 color: #000000;
 font-weight: bold;
-font-size: 11px;
+font-size: 12px;
 vertical-align: top;
 }
 
