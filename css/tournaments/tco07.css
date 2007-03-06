@@ -32,6 +32,7 @@ H1 {
 position: relative;
 left: -6px;
 top: 0px;
+clear: both;
 font-size: 125%; 
 color: #FFFFFF;
 background: transparent url(/i/tournament/tco07/h1.png) top center no-repeat;
