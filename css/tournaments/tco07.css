@@ -192,6 +192,7 @@ padding: 5px 6px 5px 10px;
 background: transparent;
 }
 
+#nav li.stop { background: #F4DFB6 url(/i/tournament/tco07/nav1S.png) bottom center no-repeat; }
 #nav li.closed { background: #F4DFB6 url(/i/tournament/tco07/nav1S.png) bottom center no-repeat; }
 #nav li.closed a { background: transparent url(/i/tournament/tco07/nav1N.png) top center no-repeat; }
 #nav li.closed div { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
@@ -341,6 +342,7 @@ padding: 0px;
 table.stat td, table.stat th {
 padding: 4px 4px 4px 4px;
 line-height: normal;
+vertical-align: middle;
 }
 
 table.stat th.title, table.stat td.title {
@@ -372,7 +374,6 @@ table.stat tr.dark td { background-color: #efdfbd; }
 
 table.stat td.value, table.stat td.valueC, table.stat td.valueR{
 font-size: 12px;
-vertical-align: top;
 }
 
 table.stat td.valueC { text-align: center; }
@@ -383,7 +384,6 @@ table.stat td.field {
 color: #000000;
 font-weight: bold;
 font-size: 12px;
-vertical-align: top;
 }
 
 table.stat a:link, table.stat a:visited { text-decoration: none; }
