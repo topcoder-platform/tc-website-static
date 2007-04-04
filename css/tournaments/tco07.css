@@ -47,6 +47,11 @@ H1 div {
 margin: 10px 10px 20px 15px;
 }
 
+H1 span {
+display: block;
+margin: 10px 10px 20px 15px;
+}
+
 H2 { font-size: 125%; }
 H3 { font-size: 110%; }
 
@@ -148,7 +153,7 @@ background: transparent url(/i/tournament/tco07/pageBodyN.png) top left no-repea
 /* NAV */
 /* <li>'s are styled to have the bottom background */
 /* <a>'s are styled to have the top background */
-/* <div>'s are styled to have the menu arrow */
+/* <span>'s are styled to have the menu arrow */
 #nav{
 width: 180px;
 margin: 0px 0px 40px 0px;
@@ -192,14 +197,20 @@ padding: 5px 6px 5px 10px;
 background: transparent;
 }
 
+#nav span{
+display: block;
+padding: 5px 6px 5px 10px;
+background: transparent;
+}
+
 #nav li.stop { background: #F4DFB6 url(/i/tournament/tco07/nav1S.png) bottom center no-repeat; }
 #nav li.closed { background: #F4DFB6 url(/i/tournament/tco07/nav1S.png) bottom center no-repeat; }
 #nav li.closed a { background: transparent url(/i/tournament/tco07/nav1N.png) top center no-repeat; }
-#nav li.closed div { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
+#nav li.closed span { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
 #nav li.closed ul { display: none; }
 #nav li.open { background: transparent; }
 #nav li.open a {background: transparent; }
-#nav li.open div { background: transparent url(/i/tournament/tco07/open.png) 1px 50% no-repeat; }
+#nav li.open span { background: transparent url(/i/tournament/tco07/open.png) 1px 50% no-repeat; }
 #nav li.open ul { display: block; }
 
 /* SECONDARY */
@@ -216,12 +227,12 @@ font-size: 11px;
 }
 
 #nav li li.stop { background: transparent; }
-#nav li li.stop div { background: transparent; }
+#nav li li.stop span { background: transparent; }
 #nav li li.closed { background: transparent; }
-#nav li li.closed div { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
+#nav li li.closed span { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
 #nav li li.closed ul { display: none; }
 #nav li li.open { background: transparent; }
-#nav li li.open div { background: transparent url(/i/tournament/tco07/open.png) 1px 50% no-repeat; }
+#nav li li.open span { background: transparent url(/i/tournament/tco07/open.png) 1px 50% no-repeat; }
 #nav li li.open ul { display: block; }
 
 /* TERTIARY */
@@ -236,11 +247,11 @@ width: 160px;
 }
 
 #nav li li li.stop { background: transparent; }
-#nav li li li.stop div { background: transparent; }
+#nav li li li.stop span { background: transparent; }
 #nav li li li.closed { background: transparent; }
-#nav li li li.closed div { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
+#nav li li li.closed span { background: transparent url(/i/tournament/tco07/closed.png) 1px 50% no-repeat; }
 #nav li li li.open { background: transparent; }
-#nav li li li.open div { background: transparent url(/i/tournament/tco07/open.png) 1px 50% no-repeat; }
+#nav li li li.open span { background: transparent url(/i/tournament/tco07/open.png) 1px 50% no-repeat; }
 
 #nav a.navHighlight,
 #nav li a.navHighlight,
