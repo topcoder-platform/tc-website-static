@@ -405,4 +405,4 @@ font-size: 12px;
 
 table.stat a:link, table.stat a:visited { text-decoration: none; }
 
-table.stat a:hover table.stat a:active { text-decoration: underline; }
+table.stat a:hover, table.stat a:active { text-decoration: underline; }
