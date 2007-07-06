@@ -162,7 +162,15 @@ height:60px;
 padding-top:10px;
 }
 
+#navText p.secondaryLinksOn{
+padding-top:10px;
+}
+
 #navText p.tertiaryLinks{
+font-size:11px;
+}
+
+#navText p.tertiaryLinksOn{
 font-size:11px;
 }
 
