@@ -66,17 +66,17 @@ color:#ffffff;
 text-decoration:none;
 }
 
-A:link{
+a:link{
 color: #ffffff;
 text-decoration:none;
 }
 
-A:visited{
+a:visited{
 color: #858aa7;
 text-decoration: none;
 }
 
-A:hover, A:active{
+a:hover, a:active{
 color: #8da0ec;
 text-decoration: underline;
 }
@@ -160,34 +160,27 @@ height:60px;
 
 #secondaryNav a.secondaryLinks{
 padding-top:10px;
+color:#ffffff;
+text-decoration:none;
 }
 
 #secondaryNav a.secondaryLinksOn{
 padding-top:10px;
+color: #4b4fa1;
+text-decoration:none;
 }
 
 #secondaryNav a.tertiaryLinks{
 font-size:11px;
+color:#ffffff;
+text-decoration:none;
 }
 
 #secondaryNav a.tertiaryLinksOn{
 font-size:11px;
-}
-
-#secondaryNav a{
-color:#ffffff;
+color: #4b4fa1;
 text-decoration:none;
 }
-
-#secondaryNav a:link{
-color:#ffffff;
-text-decoration:none;
-}
-
-#secondaryNav a:visited{
-color: #858aa7;
-text-decoration:none;
-} 
 
 #secondaryNav a:hover, #secondaryNav a:active{
 color: #8da0ec;
@@ -369,7 +362,7 @@ z-index: 1;
 margin-top:-33px;
 }
 
-#footer A:link{
+#footer a:link{
 color:#ffffff;
 }
 
@@ -380,12 +373,12 @@ margin-top: 35px;
 text-align: center;
 }
 
-#footer div.links, #footer div.links A:visited{
+#footer div.links, #footer div.links a:visited{
 color: #858aa7;
 text-decoration: none;
 }
 
-#footer div.links A:hover, #footer div.links A:active{
+#footer div.links a:hover, #footer div.links a:active{
 color: #8da0ec;
 text-decoration: underline;
 }
