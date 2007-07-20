@@ -243,15 +243,6 @@ width:625px;
 height:122px;
 }
 
-#sponsors{
-/*position:absolute;
-top:700px; right:30px;*/
-width: 172px;
-height:77px;
-padding: 10px 0px 20px 0px;
-background: transparent;
-}
-
 /* CONTENT */
 #content{
 width: 980px;
@@ -264,7 +255,7 @@ width: 670px;
 text-align: left;
 padding: 0px 0px 60px 0px;
 margin: 15px 0px 0px 50px;
-line-height: 140%;
+line-height: 1.4;
 border: 1px solid black;
 }
 
