@@ -16,7 +16,7 @@ padding:0px;
 
 img { border: none; }
 
-H1, H2, H3{
+h1, H2, H3{
 font-family: Arial, Verdana, Helvetica, sans-serif;
 font-weight: bold;
 color: #8fa1eb;
@@ -24,7 +24,8 @@ padding: 0px;
 margin: 0px 0px 10px 0px;
 }
 
-H1 { 
+/* BOLA'S VERSION
+h1 { 
 position: relative;
 left: -6px;
 top: 0px;
@@ -36,6 +37,28 @@ margin: 0px;
 width: 630px;
 height:51px;
 }
+h1 span {
+display: block;
+padding: 10px 10px 20px 5px;
+}
+*/
+
+h1 { 
+display: block;
+position: relative;
+clear: both;
+font-size:20px;
+background: transparent url(/i/tournament/tccc07/h1Bg.png) center left no-repeat;
+border: 1px solid black;
+padding: 0px;
+width: 630px;
+height:51px;
+}
+
+h1 span {
+display: block;
+margin-top: 15px;
+}
 
 #h1Border{
 background: url(/i/tournament/tccc07/h1Border.png) no-repeat transparent;
@@ -43,16 +66,6 @@ width:630px;
 height:3px;
 margin:0px;
 padding:0px;
-}
-
-H1 div {
-margin: 10px 10px 20px 15px;
-}
-
-H1 span {
-display: block;
-/* margin: 10px 10px 20px 5px; */
-padding: 10px 10px 20px 5px;
 }
 
 H2 { font-size: 125%; }
@@ -173,9 +186,7 @@ float:right;
 /* <span>'s are styled to have the menu arrow */
 #navText{
 background: #101012 url(/i/tournament/tccc07/navH.png) top center repeat-y;
-/*margin-top:-5px;*/
 width:675px;
-height:60px;
 text-align:center;
 }
 
@@ -195,7 +206,7 @@ font-size:14px;
 }
 
 #secondaryNav a.on{
-color: #4b4fa1;
+color: #696fe9;
 text-decoration:none;
 font-weight:bold;
 font-size:14px;
@@ -210,7 +221,7 @@ font-weight:bold;
 
 #tertiaryNav a.on{
 font-size:12px;
-color: #4b4fa1;
+color: #696fe9;
 text-decoration:none;
 font-weight:bold;
 }
@@ -243,47 +254,18 @@ background: transparent;
 
 /* CONTENT */
 #content{
-position: relative;
 width: 980px;
 background: #000000 url(/i/tournament/tccc07/content.png) repeat-y;
-/*margin-bottom:60px;*/
 text-align: left;
 }
-
-#pageBodyOutside{
-width:925px;
-margin:60px 0px 0px 25px;
-background: #010101 url(/i/tournament/tccc07/pageBody.png) repeat-x;
-}
-
 
 #pageBody{
-width: 625px;
+width: 670px;
 text-align: left;
-padding: 20px 0px 165px 30px;
-margin: 10px 0px 0px 20px;
-line-height: 1.4;
-
-}
-
-
-/*
-#spacer{
-margin: 90px 30px 0px 25px;
-width: 925px;
-/*background: transparent url(/i/tournament/tccc07/content.png) repeat-y;
-}
-
-#navSpacer{
-background-color: transparent; 
-padding: 0px; 
-vertical-align: top;
-}
-
-#bodySpacer{
-background: transparent url(/i/tournament/tccc07/pageBody.png) repeat-x;
-vertical-align: top;
-padding: 0px;
+padding: 0px 0px 60px 0px;
+margin: 15px 0px 0px 50px;
+line-height: 140%;
+border: 1px solid black;
 }
 
 /* FOOTER */
