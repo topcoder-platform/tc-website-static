@@ -186,7 +186,7 @@ float:right;
 /* <span>'s are styled to have the menu arrow */
 #navText{
 background: #101012 url(/i/tournament/tccc07/navH.png) top center repeat-y;
-width:675px;
+width:750px;
 text-align:center;
 }
 
@@ -252,6 +252,15 @@ text-align: left;
 
 #pageBody{
 width: 670px;
+text-align: left;
+padding: 0px 0px 60px 0px;
+margin: 15px 0px 0px 50px;
+line-height: 1.4;
+border: 1px solid black;
+}
+
+#pageBodyST{
+width: 880px;
 text-align: left;
 padding: 0px 0px 60px 0px;
 margin: 15px 0px 0px 50px;
