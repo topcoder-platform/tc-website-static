@@ -29,3 +29,6 @@ function findPos(obj) {
     }
     return [curLeft,curTop];
 }
+function postPopUpText(myText) {
+    document.getElementById("popUpText").innerHTML = myText;
+}
