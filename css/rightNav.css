@@ -1,6 +1,7 @@
 div.rightNav {
 width: 180px; 
-background: transparent url(/i/interface/rightNav.png) top left repeat-y;
+background: #353E44 url(/i/interface/rightNav.png) top left repeat-y;
+color: #ffffff;
 }
 
 div.rightNav div.setWidth {
@@ -11,6 +12,17 @@ div.rightNav div.contain {
 margin: 0px;
 position: relative;
 width: 100%;
+}
+
+div.rightNav div.section {
+font-weight: bold;
+background: #ff0000;
+padding-left: 4px;
+}
+
+#defaultLinkBox{
+margin-top: 6px;
+color: #ffffff;
 }
 
 /* RIGHT NAV TABLE */
@@ -53,3 +65,9 @@ font-weight: bold;
 }
 table.rightNav a:link, table.rightNav a:visited { text-decoration: none; }
 table.rightNav a:hover, table.rightNav a:active { text-decoration: underline; }
+table.rightNav  tbody.show{
+display: table-row-group;
+}
+table.rightNav tbody.hide{
+display: none;
+}
