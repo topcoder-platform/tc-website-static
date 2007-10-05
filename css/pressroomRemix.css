@@ -402,7 +402,7 @@ TD.pr_video_space {
     margin-left: 200px;
     margin-bottom: 0.7em;
     padding-left: 15px;
-    background: url(../i/pressroom/raquo.png) no-repeat 0 6px;
+    /*background: url(../i/pressroom/raquo.png) no-repeat 0 6px;*/
 }
 
 #pr_requestform DD.pr_submit {
