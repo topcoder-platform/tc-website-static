@@ -112,7 +112,7 @@ A.bigGreen:hover { color: #000000; text-decoration: underline;}
 .small{ font-size: 10px; }
 
 p.grayedOut{
-color: #CCCCCC;
+color: #999999;
 }
 
 a.button, div.button{
