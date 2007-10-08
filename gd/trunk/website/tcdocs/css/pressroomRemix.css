@@ -355,11 +355,11 @@ TD.pr_video_space {
 .pr_video_desc A {
     text-decoration: none;
 }
-
+/*
 .pr_video_desc A:hover {
     color: #FF0000;
 }
-
+*/
 .pr_video_desc H3 A {
     font-size: 12px;
     color: #353e45;
