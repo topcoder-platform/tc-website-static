@@ -42,6 +42,10 @@ h1 span.spacer{
  font-weight: bold;
 }
 
+h2 {
+ font-size: 150%;
+}
+
 a:link{
  color: #a00000;
  text-decoration: underline;
@@ -211,9 +215,9 @@ div.popUp div {
  background: transparent url(/i/ep/topNavOnW.png) no-repeat;
 }
 
-/*\*/
-* html #navigation ul li a {
- padding: 0;
+/* IE Hack: only happens in IE*/
+#navigation ul li a {
+ *padding:0;
 }
 /**/
 
