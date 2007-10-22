@@ -70,6 +70,10 @@ A.bigGreen:hover { color: #000000; text-decoration: underline;}
 .grayedOut{ color: #999999; }
 .small{ font-size: 10px; }
 
+div.popper {
+ cursor: default;
+}
+
 div.popUp {
  display: none;
  position: absolute;
@@ -263,6 +267,7 @@ div.window{
 div.classroomListing{
  float: left;
  margin: 10px 20px 40px 0px;
+ height: 100px;
 }
 
 div.classroomListing div.name{
