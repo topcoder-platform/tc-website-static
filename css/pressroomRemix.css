@@ -166,7 +166,9 @@
     float: right;
     width: 223px;
     height: 136px;
+    /* hidding subscription image
     background: url(../i/pressroom/bg_subscribeform.png) no-repeat;
+    */
 }
 
 .pr_subscribe_form {
