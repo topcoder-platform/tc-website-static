@@ -72,6 +72,7 @@ A.bigGreen:hover { color: #000000; text-decoration: underline;}
 
 div.popper {
  cursor: default;
+ float: left;
 }
 
 div.popUp {
@@ -322,29 +323,24 @@ table.stat td.header a:active,table.stat td.headerC a:active,table.stat td.heade
  text-decoration: underline;
 }
 
-table.stat tr.light td { background-color: #ffffff }
-table.stat tr.dark td { background-color: #eeeeee }
-table.stat td.value, table.stat td.valueC, table.stat td.valueR, table.stat td.field
+table.stat tr.light td.value { background: #ffffff }
+table.stat tr.dark td.value { background: #eeeeee }
+table.stat tr.light td.highlight { background: #ffffcc }
+table.stat tr.dark td.highlight { background: #eeeebb }
+table.stat td.value, table.stat td.valueC, table.stat td.valueR, table.stat td.field, table.stat td.highlight
 {
  font-size: 11px;
  vertical-align: top;
  border: 1px solid #959595;
 }
-table.stat td.header, table.stat td.value { text-align: left; }
-table.stat td.headerC, table.stat td.valueC { text-align: center; }
-table.stat td.headerR, table.stat td.valueR { text-align: right; }
+table.stat td.C { text-align: center; }
+table.stat td.R { text-align: right; }
 table.stat td.field {
  color: #000000;
  font-weight: bold;
 }
 table.stat a:link, table.stat a:visited { text-decoration: none; }
 table.stat a:hover, table.stat a:active { text-decoration: underline; }
-table.stat tr.highlight td{ 
- font-weight: bold;
- border-top: 1px solid #0000FF; 
- border-bottom: 1px solid #0000FF; 
- background-color: #EEEEFF;
-}
 table.stat td.B {
  border-right: 1px solid #999999;
 }
