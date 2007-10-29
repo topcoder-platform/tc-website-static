@@ -96,7 +96,7 @@ if ((navigator.userAgent.indexOf('MSIE') != -1) && (navigator.userAgent.indexOf(
    function arena() {
        if (canDetectPlugins()) {
            if (detectJavaWebStart()) {
-               location='http://www.topcoder.com/contest/arena/ContestAppletProd.jnlp';
+               location='http://www.topcoder.com/contest/arena/ContestAppletEdu.jnlp';
                return;
            }
            else {
