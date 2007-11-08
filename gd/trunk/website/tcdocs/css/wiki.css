@@ -670,7 +670,7 @@ blockquote {
 
 table.confluenceTable, table.admin
 {
- margin: 5px;
+ margin: 0 0 10px 0;
  padding: 0px;
  border-collapse: collapse;
  border: 2px solid #999999;
@@ -795,9 +795,10 @@ a.createlink {
 }
 
 .greybox {
-  border: 1px solid #ddd;
+ border: 1px solid #ddd;
  padding: 3px;
  margin: 1px 1px 10px 1px;
+ line-height: 200%;
 }
 
 .borderedGreyBox {
