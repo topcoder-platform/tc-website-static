@@ -291,34 +291,62 @@ MAIN
     color: #7d7d7d;
 }
 
-/* -- TABLE -- */
+/* -- STAT TABLE -- */
 
-#content TABLE { 
+#content TABLE.stat { 
     border-collapse: collapse;
     margin-bottom: 1em;
     font-size: 12px;        /* font size redeclaring for IE6 compatibility */
     border: 1px solid #232323;
 }
 
-#content TABLE TH, #content TABLE TD {  
+#content TABLE.stat TH, #content TABLE.stat TD {  
     padding: 5px 10px;
     color: #FFF;
 }
 
-#content TABLE TH {
+#content TABLE.stat TH {
     background: #030303 url(/i/tournament/tchs08/bg_th.gif) repeat-x;
     text-align: left;
 }
 
-#content TABLE TR.light TD {
+#content TABLE.stat TR.light TD {
     background: #242424;
     border: 1px solid #242424;
 }
 
-#content TABLE TR.dark TD {
+#content TABLE.stat TR.dark TD {
     background: #1b1b1b;
     border: 1px solid #1b1b1b;
 }
+
+TABLE.stat TD.headerC { text-align: center; }
+
+TABLE.stat TD.headerR { text-align: right; }
+
+TABLE.stat TD.valueC, TABLE.stat TD.valueCE, TABLE.stat TD.valueCA { text-align: center; }
+
+TABLE.stat TD.valueR, TABLE.stat TD.valueRE, TABLE.stat TD.valueRA { text-align: right; }
+
+TABLE.stat TD.valueE, TABLE.stat TD.valueCE, TABLE.stat TD.valueRE {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+TABLE.stat TD.valueA, TABLE.stat TD.valueCA, TABLE.stat TD.valueRA{
+    color: #009900;
+    font-weight: bold;
+}
+
+TABLE.stat TD.field {
+    color: #000000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+TABLE.stat a:link, TABLE.stat a:visited { text-decoration: none; }
+
+TABLE.stat a:hover, TABLE.stat a:active { text-decoration: underline; }
 
 /* -- HANDLE -- 
 Because I don't have a knowledge about the meaning of every handles color
