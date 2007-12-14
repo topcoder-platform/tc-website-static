@@ -94,6 +94,25 @@ H1 {
     top: 11px;
 }
 
+#header div.message {
+ position: absolute;
+ top: 60px;
+ left: 400px;
+ font-weight: bold;
+ font-size: 24px;
+}
+
+#header div.message a:link, #header div.message a:visited {
+ color: #ffffff;
+ text-decoration: none;
+}
+
+#header div.message a:hover, #header div.message a:active {
+ color: #f8dc72;
+ text-decoration: none;
+}
+
+
 /* -- MENU -- */
 
 UL#nav {
