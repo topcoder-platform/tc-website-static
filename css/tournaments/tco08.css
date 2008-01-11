@@ -354,12 +354,21 @@ A.bigGreen:hover { color: #000000; text-decoration: underline;}
     text-align: left; 
 }
 
+#content table.stat th a:link, #content table.stat th a:visited {
+ color: #ffffff;
+ text-decoration: underline;
+}
+#content table.stat th a:hover, #content table.stat th a:active { 
+ color: #ff9900;
+ text-decoration: none;
+}
+
 #content TABLE.stat TR.dark TD { 
-    background: #333333; 
+    background: #0d0d0d; 
     color: #FFF; 
 }
 
-#content TABLE.stat TR.light TD { background: #939598; }
+#content TABLE.stat TR.light TD { background: #2b292a; }
 
 TABLE.stat TD.headerC { text-align: center; }
 
