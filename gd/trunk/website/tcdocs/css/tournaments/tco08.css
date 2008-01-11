@@ -1,0 +1,433 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+2008 TopCoder Open Stylesheet
+
+Author : oton (Arif Widianto)
+Description : CSS file for 2008 TopCoder Open Website
+
+Created : 2007-10-27 00:52 AM
+Modified : 2007-11-15 19:22 PM
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/* ------------------
+GENERAL RULES
+------------------- */
+
+/* General elements reset to reduce cross-browser bugs */
+BODY, H1, H2, H3, H4, H5, H6, FORM, UL, OL, LI, P, DL, DT, DD, IMG  { 
+    margin:0; 
+    padding:0; 
+    border:none; 
+}
+
+BODY { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 12px; 
+    background: #000000; 
+    color: #FFF; 
+}
+
+/* ------------------
+LAYOUT
+------------------- */
+#wrapper { width: 1000px; }
+
+/* ------------------
+HEADER
+------------------- */
+
+#header { 
+    background: url(/i/tournament/tco08/bg_header.png) no-repeat; 
+    height: 178px; 
+}
+
+#header H1 { 
+    position: absolute; 
+    top: 16px; 
+    left: 755px; 
+}
+
+/* -- SWITCHER -- */
+
+#switcher { list-style-type: none; }
+#switcher LI { position: absolute; }
+#switcher A { 
+    text-decoration: none; 
+    display:block; 
+    font-weight: bold; 
+    font-size: 12px; 
+    color: #FFF; 
+}
+
+#switcher_tournament { 
+    top: 21px; 
+    left: 314px; 
+}
+
+#switcher_symposium { 
+    top: 21px; 
+    left: 477px; 
+}
+
+#switcher_tournament A { 
+    width: 160px; 
+    height: 37px; 
+    background: url(/i/tournament/tco08/switch_tournament.png) no-repeat; 
+}
+
+#switcher_symposium A { 
+    width: 210px; 
+    height: 37px; 
+    background: url(/i/tournament/tco08/switch_symposium.png) no-repeat; 
+}
+
+#switcher A.active, #switcher A:hover { background-position: 0 -37px; }
+
+#switcher SPAN { 
+    display: block; 
+    padding: 8px 0 0 45px; 
+}
+
+/* -- POWERED -- */
+
+#powered { 
+    position: absolute; 
+    top: 23px; 
+    left: 30px; 
+}
+
+/* -- NAV -- */
+
+#nav { list-style-type: none; }
+#nav A { 
+    position: absolute; 
+    text-decoration: none; 
+    color: #a6999a; 
+    padding-top: 54px; 
+    font-size:11px; 
+    font-weight: bold; 
+    text-align: center; 
+    display: block; 
+    width: 86px; 
+    height: 32px; 
+}
+
+#nav A:hover { 
+    color: #FFF; 
+    background-position: 0 -86px; 
+}
+
+#nav A.on { 
+    color: #FFF; 
+    background-position: 0 -172px; 
+}
+
+#nav_overview A { 
+    top: 63px; 
+    left: 106px; 
+    background: url(/i/tournament/tco08/menu_tournament.png) no-repeat; 
+}
+
+#nav_algo A { 
+    top: 63px; 
+    left: 237px; 
+    background: url(/i/tournament/tco08/menu_algo.png) no-repeat; 
+}
+
+#nav_comp A { 
+    top: 63px; 
+    left: 370px; 
+    background: url(/i/tournament/tco08/menu_component.png) no-repeat; 
+}
+
+#nav_mm A { 
+    top: 63px; 
+    left: 500px; 
+    background: url(/i/tournament/tco08/menu_mm.png) no-repeat; 
+}
+
+#nav_studio A { 
+    top: 63px; 
+    left: 631px; 
+    background: url(/i/tournament/tco08/menu_studio.png) no-repeat; 
+}
+
+/* ------------------
+MAIN CONTENT
+------------------- */
+
+/* -- SIDEBAR -- */
+
+#sidebar { 
+    float: right; 
+    margin-right: 35px; 
+}
+
+/* IE bugs fix */
+HTML > BODY #sidebar { 
+    float: right; 
+    margin-right: 65px; 
+}
+
+#sponsors { 
+    list-style-type: none; 
+    margin: 0; 
+    padding:0; 
+}
+
+#sponsors LI { 
+    display: block; 
+    margin: 0 0 8px 0; 
+    padding:0; 
+}
+
+#sponsors IMG { border: 1px solid #b7b3b3; }
+
+#date { margin-bottom: 20px; }
+
+#date H3 { 
+    text-align: center; 
+    font-size: 12px; 
+}
+
+#date H3 SPAN { color: #ed1c24; }
+
+/* -- SECONDARY & TERTIARY NAV MENU -- */
+
+#menuwrap { 
+    margin: 0 auto; 
+    text-align: center; 
+    height: 43px; 
+    background: url(/i/tournament/tco08/bg_menu.png) no-repeat top left; 
+    padding: 3px;
+    width: 619px; 
+}
+
+#menunav2 {
+    position: relative;
+    float: left;
+    margin-bottom: 3px;
+    width: 619px; 
+}
+
+#menunav3 {
+    position: relative;
+    float: left;
+    width: 619px; 
+}
+
+#menu { position: relative; }
+
+#menu UL { 
+    list-style-type:none; 
+    margin:0; 
+    padding:0; 
+}
+
+#menu UL LI { 
+    float:left; 
+    position:relative; 
+    display: inline; 
+    margin:0; 
+    padding:0; 
+}
+
+#menu UL LI UL { 
+    display: none; 
+    position:absolute; 
+    top: 21px; 
+    left: 0; 
+}
+
+#menu A { 
+    float: left; 
+    display: block; 
+    padding: 3px 10px; 
+    margin: 0 1px 1px 0; 
+    text-decoration: none; 
+    background: #333; 
+    color: #FFF; 
+}
+
+#menu LI UL A { 
+    display: block; 
+    width: 101px; 
+    margin: 0 0 1px 0; 
+}
+
+#menu LI A.on, #menu LI UL LI A.on, #menu A:hover, #menu LI UL LI A:hover { 
+    background: #ed1c24; 
+}
+
+#menu LI UL A.on { background: #333; }
+
+#menu LI:hover UL, LI.over UL { display: block !important; } 
+
+/* ------------------
+MAIN CONTENT
+------------------- */
+
+#mainmiddle { background: url(/i/tournament/tco08/bg_content_middle.png) repeat-y; }
+
+#page_home #main { background: url(/i/tournament/tco08/bg_content_upper_front_home.png) no-repeat top left; }
+
+#main { background: url(/i/tournament/tco08/bg_content_upper_front.png) no-repeat top left; }
+
+#mainwrapper { background: url(/i/tournament/tco08/bg_content_lower.png) no-repeat bottom left; }
+
+/* special case for main width */
+#content { min-height: 900px; }
+
+#front_pic { margin-left: 91px; }
+
+#content { 
+    padding: 0 0 0 100px; 
+    width: 615px; 
+}
+
+#content H2 { 
+    color: #ed1c24; 
+    font-size: 22px; 
+    height: 40px; 
+    margin-top: 18px; 
+    background: url(/i/tournament/tco08/bg_title.png) no-repeat 0 28px; 
+}
+
+#content H3 { 
+    padding-left: 10px; 
+    color: #ed1c24; 
+    font-size: 16px; 
+    background: url(/i/tournament/tco08/bg_subtitle.png) no-repeat 0 50%; 
+}
+
+#content H4 {
+    font-size: 14px;
+}
+
+#content P { padding: 0 0 1em; }
+
+.sub_content { margin-left: 13px; }
+
+.sub_content UL, .sub_content OL { margin: 0px 0px 10px 27px; }
+
+A {
+    text-decoration: none;
+    color: #806666;
+}
+
+A:visited {
+    text-decoration: none;
+    color: #ac1414;
+}
+
+A:hover, A:active {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+span.bigRed{ color: #FF0000; font-weight: bold; text-decoration: none; }
+A.bigRed:link, A.bigRed:visited, A.bigRed:active { color: #FF0000; text-decoration: underline; }
+A.bigRed:hover { color: #000000; text-decoration: underline;}
+
+span.bigGreen{ color: #009900; font-weight: bold; text-decoration: none; }
+A.bigGreen:link, A.bigGreen:visited, A.bigGreen:active { color: #009900; text-decoration: underline; }
+A.bigGreen:hover { color: #000000; text-decoration: underline;}
+
+#sample_table { width: 400px; }
+
+#sample_handles { 
+    width: 160px; 
+    float: right; 
+}
+
+/* -- TABLE -- */
+
+#content { border-collapse: collapse; }
+
+#content TABLE.stat TH, #content TABLE.stat TD {  
+    padding: 5px 10px; 
+    border-bottom: 1px solid #000; 
+}
+
+#content TABLE.stat TH { 
+    background: #ed1c24; 
+    text-align: left; 
+}
+
+#content TABLE.stat TR.dark TD { 
+    background: #333333; 
+    color: #FFF; 
+}
+
+#content TABLE.stat TR.light TD { background: #939598; }
+
+TABLE.stat TD.headerC { text-align: center; }
+
+TABLE.stat TD.headerR { text-align: right; }
+
+TABLE.stat TD.valueC, TABLE.stat TD.valueCE, TABLE.stat TD.valueCA { text-align: center; }
+
+TABLE.stat TD.valueR, TABLE.stat TD.valueRE, TABLE.stat TD.valueRA { text-align: right; }
+
+TABLE.stat TD.valueE, TABLE.stat TD.valueCE, TABLE.stat TD.valueRE {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+TABLE.stat TD.valueA, TABLE.stat TD.valueCA, TABLE.stat TD.valueRA{
+    color: #009900;
+    font-weight: bold;
+}
+
+TABLE.stat TD.field {
+    color: #000000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+TABLE.stat a:link, TABLE.stat a:visited { text-decoration: none; }
+
+TABLE.stat a:hover, TABLE.stat a:active { text-decoration: underline; }
+
+/* -- HANDLE -- */
+
+.handle_01 { font-weight: bold; color: #FF9900; }
+.handle_02 { font-weight: bold; color: #EE0000; }
+.handle_03 { font-weight: bold; color: #DDCC00; }
+.handle_04 { font-weight: bold; color: #6666FF; }
+.handle_05 { font-weight: bold; color: #00A900; }
+.handle_06 { font-weight: bold; color: #999999; }
+.handle_07 { font-weight: bold; color: #FFFFFF; }
+
+/* ------------------
+FOOTER
+------------------- */
+
+#footer { 
+    height: 80px; 
+    padding: 120px 0 0 0; 
+    background: url(/i/tournament/tco08/bg_footer.png) no-repeat top left; 
+    text-align: center; 
+    font-size: 12px; 
+}
+
+#footer A { 
+    text-decoration: none; 
+    color: #FFF; 
+    font-weight: bold; 
+}
+
+#footer A:hover { color: #ff0000; }
+
+#copyright { 
+    margin-top: 1em; 
+    font-size: 11px;
+    color: #ccc;
+}
+
+/* ------------------
+MISC
+------------------- */
+
+.clear { clear: both; }
+.clearleft { clear: left; }
