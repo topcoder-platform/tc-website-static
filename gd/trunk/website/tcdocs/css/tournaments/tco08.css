@@ -14,17 +14,17 @@ GENERAL RULES
 ------------------- */
 
 /* General elements reset to reduce cross-browser bugs */
-BODY, H1, H2, H3, H4, H5, H6, FORM, UL, OL, LI, P, DL, DT, DD, IMG  { 
+body, h1, h2, h3, h4, h5, h6, form, ul, ol, li, p, dl, dt, dd, img  { 
     margin:0; 
     padding:0; 
     border:none; 
 }
 
-BODY { 
-    font-family: Arial, Helvetica, sans-serif; 
+body { 
+    font-family: arial, helvetica, sans-serif; 
     font-size: 12px; 
     background: #000000; 
-    color: #FFF; 
+    color: #fff; 
 }
 
 /* ------------------
@@ -41,7 +41,7 @@ HEADER
     height: 178px; 
 }
 
-#header H1 { 
+#header h1 { 
     position: absolute; 
     top: 16px; 
     left: 755px; 
@@ -50,13 +50,13 @@ HEADER
 /* -- SWITCHER -- */
 
 #switcher { list-style-type: none; }
-#switcher LI { position: absolute; }
-#switcher A { 
+#switcher li { position: absolute; }
+#switcher a { 
     text-decoration: none; 
     display:block; 
     font-weight: bold; 
     font-size: 12px; 
-    color: #FFF; 
+    color: #fff; 
 }
 
 #switcher_tournament { 
@@ -69,21 +69,21 @@ HEADER
     left: 477px; 
 }
 
-#switcher_tournament A { 
+#switcher_tournament a { 
     width: 160px; 
     height: 37px; 
     background: url(/i/tournament/tco08/switch_tournament.png) no-repeat; 
 }
 
-#switcher_symposium A { 
+#switcher_symposium a { 
     width: 210px; 
     height: 37px; 
     background: url(/i/tournament/tco08/switch_symposium.png) no-repeat; 
 }
 
-#switcher A.active, #switcher A:hover { background-position: 0 -37px; }
+#switcher a.active, #switcher a:hover { background-position: 0 -37px; }
 
-#switcher SPAN { 
+#switcher span { 
     display: block; 
     padding: 8px 0 0 45px; 
 }
@@ -99,7 +99,7 @@ HEADER
 /* -- NAV -- */
 
 #nav { list-style-type: none; }
-#nav A { 
+#nav a { 
     position: absolute; 
     text-decoration: none; 
     color: #a6999a; 
@@ -112,41 +112,41 @@ HEADER
     height: 32px; 
 }
 
-#nav A:hover { 
-    color: #FFF; 
+#nav a:hover { 
+    color: #fff; 
     background-position: 0 -86px; 
 }
 
-#nav A.on { 
+#nav a.on { 
     color: #FFF; 
     background-position: 0 -172px; 
 }
 
-#nav_overview A { 
+#nav_overview a { 
     top: 63px; 
     left: 106px; 
     background: url(/i/tournament/tco08/menu_tournament.png) no-repeat; 
 }
 
-#nav_algo A { 
+#nav_algo a { 
     top: 63px; 
     left: 237px; 
     background: url(/i/tournament/tco08/menu_algo.png) no-repeat; 
 }
 
-#nav_comp A { 
+#nav_comp a { 
     top: 63px; 
     left: 370px; 
     background: url(/i/tournament/tco08/menu_component.png) no-repeat; 
 }
 
-#nav_mm A { 
+#nav_mm a { 
     top: 63px; 
     left: 500px; 
     background: url(/i/tournament/tco08/menu_mm.png) no-repeat; 
 }
 
-#nav_studio A { 
+#nav_studio a { 
     top: 63px; 
     left: 631px; 
     background: url(/i/tournament/tco08/menu_studio.png) no-repeat; 
@@ -164,7 +164,7 @@ MAIN CONTENT
 }
 
 /* IE bugs fix */
-HTML > BODY #sidebar { 
+html > body #sidebar { 
     float: right; 
     margin-right: 65px; 
 }
@@ -175,22 +175,22 @@ HTML > BODY #sidebar {
     padding:0; 
 }
 
-#sponsors LI { 
+#sponsors li { 
     display: block; 
     margin: 0 0 8px 0; 
     padding:0; 
 }
 
-#sponsors IMG { border: 1px solid #b7b3b3; }
+#sponsors img { border: 1px solid #b7b3b3; }
 
 #date { margin-bottom: 20px; }
 
-#date H3 { 
+#date h3 { 
     text-align: center; 
     font-size: 12px; 
 }
 
-#date H3 SPAN { color: #ed1c24; }
+#date h3 span { color: #ed1c24; }
 
 /* -- SECONDARY & TERTIARY NAV MENU -- */
 
@@ -218,13 +218,13 @@ HTML > BODY #sidebar {
 
 #menu { position: relative; }
 
-#menu UL { 
+#menu ul { 
     list-style-type:none; 
     margin:0; 
     padding:0; 
 }
 
-#menu UL LI { 
+#menu ul li { 
     float:left; 
     position:relative; 
     display: inline; 
@@ -232,14 +232,14 @@ HTML > BODY #sidebar {
     padding:0; 
 }
 
-#menu UL LI UL { 
+#menu ul li ul { 
     display: none; 
     position:absolute; 
     top: 21px; 
     left: 0; 
 }
 
-#menu A { 
+#menu a { 
     float: left; 
     display: block; 
     padding: 3px 10px; 
@@ -249,19 +249,19 @@ HTML > BODY #sidebar {
     color: #FFF; 
 }
 
-#menu LI UL A { 
+#menu li ul a { 
     display: block; 
     width: 101px; 
     margin: 0 0 1px 0; 
 }
 
-#menu LI A.on, #menu LI UL LI A.on, #menu A:hover, #menu LI UL LI A:hover { 
+#menu li a.on, #menu li ul li a.on, #menu a:hover, #menu li ul li a:hover { 
     background: #ed1c24; 
 }
 
-#menu LI UL A.on { background: #333; }
+#menu li ul a.on { background: #333; }
 
-#menu LI:hover UL, LI.over UL { display: block !important; } 
+#menu li:hover ul, li.over ul { display: block !important; } 
 
 /* ------------------
 MAIN CONTENT
@@ -285,7 +285,7 @@ MAIN CONTENT
     width: 615px; 
 }
 
-#content H2 { 
+#content h2 { 
     color: #ed1c24; 
     font-size: 22px; 
     height: 40px; 
@@ -293,45 +293,45 @@ MAIN CONTENT
     background: url(/i/tournament/tco08/bg_title.png) no-repeat 0 28px; 
 }
 
-#content H3 { 
+#content h3 { 
     padding-left: 10px; 
     color: #ed1c24; 
     font-size: 16px; 
     background: url(/i/tournament/tco08/bg_subtitle.png) no-repeat 0 50%; 
 }
 
-#content H4 {
+#content h4 {
     font-size: 14px;
 }
 
-#content P { padding: 0 0 1em; }
+#content p { padding: 0 0 1em; }
 
 .sub_content { margin-left: 13px; }
 
-.sub_content UL, .sub_content OL { margin: 0px 0px 10px 27px; }
+.sub_content ul, .sub_content ol { margin: 0px 0px 10px 27px; }
 
-A {
+a {
     text-decoration: none;
     color: #806666;
 }
 
-A:visited {
+a:visited {
     text-decoration: none;
     color: #ac1414;
 }
 
-A:hover, A:active {
+a:hover, a:active {
     text-decoration: underline;
     color: #FFF;
 }
 
 span.bigRed{ color: #FF0000; font-weight: bold; text-decoration: none; }
-A.bigRed:link, A.bigRed:visited, A.bigRed:active { color: #FF0000; text-decoration: underline; }
-A.bigRed:hover { color: #000000; text-decoration: underline;}
+a.bigRed:link, a.bigRed:visited, a.bigRed:active { color: #FF0000; text-decoration: underline; }
+a.bigRed:hover { color: #000000; text-decoration: underline;}
 
 span.bigGreen{ color: #009900; font-weight: bold; text-decoration: none; }
-A.bigGreen:link, A.bigGreen:visited, A.bigGreen:active { color: #009900; text-decoration: underline; }
-A.bigGreen:hover { color: #000000; text-decoration: underline;}
+a.bigGreen:link, a.bigGreen:visited, a.bigGreen:active { color: #009900; text-decoration: underline; }
+a.bigGreen:hover { color: #000000; text-decoration: underline;}
 
 #sample_table { width: 400px; }
 
@@ -344,12 +344,12 @@ A.bigGreen:hover { color: #000000; text-decoration: underline;}
 
 #content { border-collapse: collapse; }
 
-#content TABLE.stat TH, #content TABLE.stat TD {  
+#content table.stat th, #content table.stat td {  
     padding: 5px 10px; 
     border-bottom: 1px solid #000; 
 }
 
-#content TABLE.stat TH { 
+#content table.stat th { 
     background: #ed1c24; 
     text-align: left; 
 }
@@ -363,40 +363,40 @@ A.bigGreen:hover { color: #000000; text-decoration: underline;}
  text-decoration: none;
 }
 
-#content TABLE.stat TR.dark TD { 
+#content table.stat tr.dark td { 
     background: #0d0d0d; 
     color: #FFF; 
 }
 
-#content TABLE.stat TR.light TD { background: #2b292a; }
+#content table.stat tr.light td { background: #2b292a; }
 
-TABLE.stat TD.headerC { text-align: center; }
+table.stat td.headerC { text-align: center; }
 
-TABLE.stat TD.headerR { text-align: right; }
+table.stat td.headerR { text-align: right; }
 
-TABLE.stat TD.valueC, TABLE.stat TD.valueCE, TABLE.stat TD.valueCA { text-align: center; }
+table.stat td.valueC, table.stat td.valueCE, table.stat td.valueCA { text-align: center; }
 
-TABLE.stat TD.valueR, TABLE.stat TD.valueRE, TABLE.stat TD.valueRA { text-align: right; }
+table.stat td.valueR, table.stat td.valueRE, table.stat td.valueRA { text-align: right; }
 
-TABLE.stat TD.valueE, TABLE.stat TD.valueCE, TABLE.stat TD.valueRE {
+table.stat td.valueE, table.stat td.valueCE, table.stat td.valueRE {
     color: #FF0000;
     font-weight: bold;
 }
 
-TABLE.stat TD.valueA, TABLE.stat TD.valueCA, TABLE.stat TD.valueRA{
+table.stat td.valueA, table.stat td.valueCA, table.stat td.valueRA{
     color: #009900;
     font-weight: bold;
 }
 
-TABLE.stat TD.field {
+table.stat td.field {
     color: #000000;
     font-weight: bold;
     font-size: 12px;
 }
 
-TABLE.stat a:link, TABLE.stat a:visited { text-decoration: none; }
+table.stat a:link, table.stat a:visited { text-decoration: none; }
 
-TABLE.stat a:hover, TABLE.stat a:active { text-decoration: underline; }
+table.stat a:hover, table.stat a:active { text-decoration: underline; }
 
 /* -- HANDLE -- */
 
@@ -420,13 +420,13 @@ FOOTER
     font-size: 12px; 
 }
 
-#footer A { 
+#footer a { 
     text-decoration: none; 
     color: #FFF; 
     font-weight: bold; 
 }
 
-#footer A:hover { color: #ff0000; }
+#footer a:hover { color: #ff0000; }
 
 #copyright { 
     margin-top: 1em; 
