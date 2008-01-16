@@ -215,9 +215,9 @@ html > body #sidebar {
     float: left;
     width: 619px; 
 }
-
+/* Kills the 2nd/3rd menu in IE6
 #menu { position: relative; }
-
+*/
 #menu ul { 
     list-style-type:none; 
     margin:0; 
