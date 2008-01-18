@@ -140,58 +140,59 @@ UL#nav {
 
 /* -- nav items -- */
 #nav_overview A {
-    width: 64px;
+    width: 70px;
     left: 100px;
     background: url(/i/tournament/tchs08/nav/overview.png) no-repeat left top;
 }
 
 #nav_program A {
-    width: 135px;
-    left: 164px;
+    width: 141px;
+    left: 170px; 
     background: url(/i/tournament/tchs08/nav/program.png) no-repeat left top;
 }
 
 #nav_online A {
-    width: 104px;
-    left: 299px;
+    width: 109px;
+    left: 311px;
     background: url(/i/tournament/tchs08/nav/online.png) no-repeat left top;
 }
 
-#nav_onsite A {
-    width: 103px;
-    left: 403px;
+#nav_onsite A { 
+    width: 111px;
+    left: 420px;
     background: url(/i/tournament/tchs08/nav/onsite.png) no-repeat left top;
 }
 
 #nav_rules A {
-    width: 49px;
-    left: 506px;
-    background: url(/i/tournament/tchs08/nav/rules.png) no-repeat left top;
+    width: 58px;
+    left: 531px;
+    background: url(/i/tournament/tchs08/nav/rules.png) no-repeat left top; 
 }
 
 #nav_visa A {
-    width: 93px;
-    left: 555px;
+    width: 100px;
+    left: 589px;
     background: url(/i/tournament/tchs08/nav/visa.png) no-repeat left top;
 }
 
 #nav_individual A {
-    width: 117px;
-    left: 648px;
-    background: url(/i/tournament/tchs08/nav/individual.png) no-repeat left top;
+    width: 67px;
+    left: 689px;
+    background: url(/i/tournament/tchs08/nav/individual.png) no-repeat left top; 
 }
 
 #nav_registrants A {
-    width: 82px;
-    left: 765px;
+    width: 90px;
+    left: 756px;
     background: url(/i/tournament/tchs08/nav/registrants.png) no-repeat left top;
 }
 
 #nav_purdue A {
-    width: 53px;
-    left: 847px;
-    background: url(/i/tournament/tchs08/nav/purdue.png) no-repeat left top;
+    width: 65px;
+    left: 846px;
+    background: url(/i/tournament/tchs08/nav/purdue.png) no-repeat left top; 
 }
+
 
 /* ------------------
 MAIN
