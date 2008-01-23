@@ -345,6 +345,8 @@ a.bigGreen:hover { color: #000000; text-decoration: underline;}
 
 /* -- TABLE -- */
 
+table { font-size: 12px; }
+
 #content { border-collapse: collapse; }
 
 #content table.stat th, #content table.stat td {  
