@@ -360,12 +360,12 @@ table { font-size: 12px; }
 }
 
 #content table.stat th a:link, #content table.stat th a:visited {
- color: #ffffff;
- text-decoration: underline;
+    color: #ffffff;
+    text-decoration: underline;
 }
 #content table.stat th a:hover, #content table.stat th a:active { 
- color: #ff9900;
- text-decoration: none;
+    color: #ff9900;
+    text-decoration: none;
 }
 
 #content table.stat tr.dark td { 
