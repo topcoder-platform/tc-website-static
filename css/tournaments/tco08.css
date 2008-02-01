@@ -328,13 +328,39 @@ a:hover, a:active {
     color: #FFF;
 }
 
-span.bigRed{ color: #FF0000; font-weight: bold; text-decoration: none; }
+span.bigRed { color: #FF0000; font-weight: bold; text-decoration: none; }
 a.bigRed:link, a.bigRed:visited, a.bigRed:active { color: #FF0000; text-decoration: underline; }
 a.bigRed:hover { color: #000000; text-decoration: underline;}
 
-span.bigGreen{ color: #009900; font-weight: bold; text-decoration: none; }
+span.bigGreen { color: #009900; font-weight: bold; text-decoration: none; }
 a.bigGreen:link, a.bigGreen:visited, a.bigGreen:active { color: #009900; text-decoration: underline; }
 a.bigGreen:hover { color: #000000; text-decoration: underline;}
+
+.small { font-size: 10px; }
+
+p.grayedOut {
+    color: #999999;
+}
+
+a.button:link, a.button:visited {
+    background: #d2d2d2 url(/i/interface/buttonBg.png) top center repeat;
+    color: #333333;
+    border: 1px solid #999999;
+    text-decoration: none;
+}
+
+a.button:hover, a.button:active {
+    background: #6a6a6a url(/i/interface/buttonBg_on.png) top center repeat;
+    color: #8da0ec;
+    border: 1px solid #999999;
+    text-decoration: none;
+}
+
+div.button {
+    background: #EEEEEE url(/i/interface/buttonBg_off.png) top center repeat;
+    color: #BBBBBB;
+    border: 1px solid #CCCCCC;
+}
 
 #sample_table { width: 400px; }
 
@@ -402,6 +428,18 @@ table.stat td.field {
 table.stat a:link, table.stat a:visited { text-decoration: none; }
 
 table.stat a:hover, table.stat a:active { text-decoration: underline; }
+
+a.button, div.button {
+    display:block;
+    padding: 3px 6px 3px 6px;
+    margin: 0px;
+    font-size:11px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+    white-space: nowrap;
+}
 
 /* -- HANDLE -- */
 
