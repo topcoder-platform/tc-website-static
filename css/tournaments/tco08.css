@@ -396,7 +396,6 @@ table { font-size: 12px; }
 
 #content table.stat tr.dark td { 
     background: #0d0d0d; 
-    color: #FFF; 
 }
 
 #content table.stat tr.light td { background: #2b292a; }
