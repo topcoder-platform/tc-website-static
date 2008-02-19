@@ -20,6 +20,11 @@
  border-right: 1px solid #888888;
 }
 
+h1, h2, h3, h4, h5, h6, p, pre, table {
+ margin: 0 0 10px 0;
+ padding: 0px;
+}
+
 ul, ol {
  margin-top: 2px;
  margin-bottom: 2px;
@@ -28,11 +33,6 @@ ul, ol {
 }
 
 pre {
- padding: 0px;
- margin-top: 5px;
- margin-left: 15px;
- margin-bottom: 5px;
- margin-right: 5px;
  text-align: left;
  overflow: auto;
 }
@@ -54,7 +54,7 @@ pre {
  border: 1px dashed #888888;
  font-size: 11px;
  font-family: Courier, Courier New, sans-serif;
- margin: 10px;
+ margin: 0px;
  line-height: 13px;
  overflow: auto;
 }
@@ -105,8 +105,7 @@ pre {
 
 .panel {
   border: 1px dashed #888888;
- margin: 10px;
- margin-top: 0px;
+ margin: 0px;
 }
 
 .panelHeader {
