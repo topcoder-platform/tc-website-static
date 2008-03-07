@@ -313,29 +313,29 @@ MAIN
 
 /* -- STAT TABLE -- */
 
-#content TABLE.stat { 
+TABLE.stat { 
     border-collapse: collapse;
     margin-bottom: 1em;
     font-size: 12px;        /* font size redeclaring for IE6 compatibility */
     border: 1px solid #232323;
 }
 
-#content TABLE.stat TH, #content TABLE.stat TD {  
+TABLE.stat TH, TABLE.stat TD {  
     padding: 5px 10px;
     color: #FFF;
 }
 
-#content TABLE.stat TH {
+TABLE.stat TH {
     background: #030303 url(/i/tournament/tchs08/bg_th.gif) repeat-x;
     text-align: left;
 }
 
-#content TABLE.stat TR.light TD {
+TABLE.stat TR.light TD {
     background: #242424;
     border: 1px solid #242424;
 }
 
-#content TABLE.stat TR.dark TD {
+TABLE.stat TR.dark TD {
     background: #1b1b1b;
     border: 1px solid #1b1b1b;
 }
