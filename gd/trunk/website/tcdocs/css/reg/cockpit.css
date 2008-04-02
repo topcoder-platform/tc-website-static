@@ -1,14 +1,30 @@
 /* GENERAL SITE STYLES */
 div{ }
 td{ }
+body{
+ background: #ffffff url(/i/registration/cockpitPageBG.png) top center no-repeat;
+ border-top: 1px solid #ffffff;
+}
+iframe{
+ width: 520px;
+ height: 200px;
+}
+input{
+ margin: 0;
+ padding: 0;
+}
 #pageAligner{
 }
 #pageSpacer{
- margin: 0px 10px 10px 10px;
- width: 600px;
+ margin: 70px 10px 10px 10px;
+ padding: 0 0 10px 0;
+ width: 530px;
  text-align: left;
+ border: 1px solid #cccccc;
+ background: #ffffff;
 }
 #pageBranding{
+ display: none;
  padding:6px 0px 6px; 0px;
 }
 #pageBranding a{
@@ -21,17 +37,20 @@ td{ }
  text-decoration: none;
 }
 #pageTitle{
- height: 26px;
- background: transparent url(/i/header_registration_w.gif) left center no-repeat;
- border-bottom: 1px solid #999999;
- margin-bottom: 10px;
+ height: 28px;
+ background: #595959 url(/i/registration/cockpitPageTitleBG.png) left bottom repeat-x;
+ margin: 1px 1px 0 1px;
+ padding: 0 0 0 11px;
 }
 #pageTitle div{
+ height: 28px;
+ width: 56px;
  margin: 0px;
  padding: 0px;
+ background: transparent url(/i/registration/cockpitPageTitle.png) left center no-repeat;
 }
 div.topMessage{
- padding-bottom: 6px;
+ display: none;
 }
 div.popUp {
  display: none;
@@ -50,71 +69,55 @@ div.popUp div {
  padding: 4px 6px 4px 6px;
  white-space: nowrap;
 }
-#regBcContainer
-{
- float:right;
- position:relative;
+div.regSection{
+ text-align: center;
+ padding: 10px 0 6px 0;
+ font-weight: bold;
+ text-transform: uppercase;
+ color: #000000;
 }
-div.regBc
+.justUS{ }
+.global{ display: none; }
+#regBcContainer, #handleWarning, #secretWarning
 {
- position:absolute;
- left:-155px;
- width:155px;
+ display: none;
 }
-div.regBc div.title
-{
- padding:3px;
- background:#FFFFFF;
- color:#666666;
- font-weight:normal;
- text-align:right;
-}
-div.regBc div.off
-{
- padding:3px;
- background:#FFFFFF;
- color:#666666;
- font-weight:bold;
-}
-div.regBc div.on
-{
- padding: 3px 3px 3px 10px;
- background:#999999;
- color:#FFFFFF;
- font-weight:bold;
+table.regFields{
+ margin: 0 1px 1px 1px;
+ width: 528px;
 }
 table.regFields tr.odd td{
- background: #ffeeee;
+ background: #f2f2f2;
 }
 table.regFields tr.even td{
  background: #ffffff;
 }
 table.regFields tr.error td{
  color: #ff0000;
+ padding-left: 185px;
  font-size: 12px;
  font-weight: bold;
  text-decoration: none;
- background: transparent;
+ text-align: left;
 }
-table.regFields td.field, table.regFields td.value
-{
- color: #333333;
+table.regFields td.field, table.regFields td.value{
+ color: #3c3c3c;
  font-size: 12px;
- font-weight: normal;
  font-style: normal;
 }
 table.regFields tr.odd td.field, table.regFields tr.even td.field
 {
  padding: 4px;
  text-align: right;
- /*white-space: nowrap;*/
  width: 120px;
  vertical-align: top;
- background-color: #eeeeee;
- border-top: 1px solid #FFFFFF;
+ font-weight: bold;
+ white-space: nowrap;
+ width: 175px;
 }
 table.regFields tr.odd td.value, table.regFields tr.even td.value {
- padding: 4px 0px 4px 4px;
+ padding: 4px;
+ font-weight: bold;
 }
 table.whatToDo td
 {
@@ -135,4 +138,10 @@ div.regHead
  color: #FFFFFF;
  font-weight: bold;
  padding: 6px 10px 6px 10px;
+}
+#legend{
+ padding: 10px;
+}
+#submitcontainer{
+ padding: 10px;
 }
