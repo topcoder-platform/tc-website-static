@@ -168,6 +168,7 @@ position: absolute;
 top: 0px;
 left: 0px;
 z-index: 100;
+margin: 0;
 }
 div.popUp div {
 float: left;
@@ -177,6 +178,7 @@ font-size: 11px;
 background: #FFFFCC;
 border: 1px solid #999999;
 padding: 4px 6px 4px 6px;
+margin: 0;
 white-space: nowrap;
 }
 
@@ -205,6 +207,8 @@ A.bigRed:hover { color: #000000; text-decoration: underline;}
 A.bigGreen:link, A.bigGreen:visited, A.bigGreen:active { color: #009900; text-decoration: underline; }
 A.bigGreen:hover { color: #000000; text-decoration: underline;}
 .grayedOut{ color: #999999; }
+A.grayedOut:link, A.grayedOut:visited, A.grayedOut:active { color: #999999; text-decoration: underline; }
+A.grayedOut:hover { color: #ff0000; text-decoration: underline;}
 
 td.bodyColumn{ padding: 0px 15px 40px 15px; vertical-align: top; }
 
