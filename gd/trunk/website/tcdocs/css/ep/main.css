@@ -283,6 +283,11 @@ div.classroomListing div.button, div.classroomListing div.message{
  margin-bottom: 4px;
 }
 
+div.submissionContainer{
+ margin: 10px;
+ padding: 10px;
+ background: #ffffff;
+}
 /* STAT TABLE */
 table.stat {
  vertical-align: top;
@@ -327,6 +332,7 @@ table.stat tr.light td.value { background: #ffffff }
 table.stat tr.dark td.value { background: #eeeeee }
 table.stat tr.light td.highlight { background: #ffffcc }
 table.stat tr.dark td.highlight { background: #eeeebb }
+
 table.stat td.value, table.stat td.valueC, table.stat td.valueR, table.stat td.field, table.stat td.highlight
 {
  font-size: 11px;
