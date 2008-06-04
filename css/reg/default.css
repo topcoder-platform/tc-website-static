@@ -1,11 +1,22 @@
 /* GENERAL SITE STYLES */
 div{ }
 td{ }
+iframe{
+ width: 100%;
+ height: 200px;
+}
 #pageAligner{
 }
 #pageSpacer{
- margin: 0px 10px 10px 10px;
+ margin: 0 10px 40px 10px;
  width: 600px;
+ text-align: left;
+}
+#schoolPageAligner{
+}
+#schoolPageSpacer{
+ margin: 15px;
+ width: 500px;
  text-align: left;
 }
 #pageBranding{
@@ -30,30 +41,22 @@ td{ }
  margin: 0px;
  padding: 0px;
 }
-div.topMessage{
+#topMessage{
  padding-bottom: 6px;
 }
-div.popUp {
- display: none;
- position: absolute;
- top: 0px;
- left: 0px;
- z-index: 100;
+div.regSection{
+ text-align: left;
+ padding: 10px 0;
+ font-weight: bold;
 }
-div.popUp div {
- float: left;
- line-height: normal;
- font-weight: normal;
- font-size: 11px;
- background: #FFFFCC;
- border: 1px solid #999999;
- padding: 4px 6px 4px 6px;
- white-space: nowrap;
-}
-#regBcContainer
-{
- float:right;
+.justUS{ display: none; }
+.global{ }
+#regBcContainer {
+ float: right;
+ clear: right;
  position:relative;
+}
+#handleWarning, #secretWarning{
 }
 div.regBc
 {
@@ -92,7 +95,6 @@ table.regFields tr.error td{
  font-size: 12px;
  font-weight: bold;
  text-decoration: none;
- background: transparent;
 }
 table.regFields td.field, table.regFields td.value
 {
@@ -105,14 +107,16 @@ table.regFields tr.odd td.field, table.regFields tr.even td.field
 {
  padding: 4px;
  text-align: right;
- /*white-space: nowrap;*/
- width: 120px;
+ width: 160px;
  vertical-align: top;
  background-color: #eeeeee;
  border-top: 1px solid #FFFFFF;
 }
 table.regFields tr.odd td.value, table.regFields tr.even td.value {
  padding: 4px 0px 4px 4px;
+}
+table.whatToDo{
+ width: 400px; 
 }
 table.whatToDo td
 {
@@ -133,4 +137,36 @@ div.regHead
  color: #FFFFFF;
  font-weight: bold;
  padding: 6px 10px 6px 10px;
+}
+#regSelection div.regOption {
+ margin: 40px 20px;
+}
+#logoutLink{
+ float: right;
+}
+table.loginFields {
+ margin: 10px 0;
+}
+table.loginFields td{
+ padding: 2px 4px;
+}
+table.loginFields td.field{
+ text-align: right;
+}
+div.error{
+ color: #ff0000;
+ font-size: 12px;
+ font-weight: bold;
+ text-decoration: none;
+ padding: 4px;
+}
+#legend{
+ text-align: left;
+}
+#submitContainer{
+ padding: 10px 0;
+}
+#successMessage{
+ width:400px;
+ margin-right: 200px;
 }
