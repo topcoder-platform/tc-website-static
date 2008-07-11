@@ -60,7 +60,7 @@ h2 {
  background: transparent url(/i/digital_run/navBoxBG.png) top center no-repeat;
  margin: 0px;
  /* (height - #tabs x 32) / 2 */
- padding: 58px 0;
+ padding: 26px 0;
 }
 #navBox li {
  display: block;
@@ -71,7 +71,7 @@ h2 {
  display: block;
  line-height: 24px;
  background: transparent url(/i/digital_run/navBoxLinkBG.png) top center no-repeat;
- color: #ffffff;
+ color: #000000;
  font-weight: bold;
  text-decoration: none;
 }
