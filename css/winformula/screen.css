@@ -371,11 +371,13 @@ a:hover { text-decoration:none; }
     }
     .stat tr.normalTH TH {
         background:none;
+        background-color: #8592a0;
         border-bottom: 1px dotted #CCC;
         border-top: none !important;
     }
     .stat tr.resultTH TH {
         background:none;
+        background-color: #8592a0;
         border-bottom: 1px dotted #CCC;
         border-top: none !important;
     }
@@ -495,6 +497,7 @@ input, textarea, select {
 
 /*----- Utility Classes -----*/
 .alignRight { text-align:right; }
+th.alignRight { text-align:right; }
 .alignCenter { text-align:center; }
 .floatLeft{    float:left;}
 .floatLeftSubmit{    float:left; width:170px;}
