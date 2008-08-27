@@ -356,6 +356,7 @@ a:hover { text-decoration:none; }
         color: #000;
         padding: 5px;
         font-weight: bold;
+		font-size: 110%;
         text-align:left;
         border-bottom: 1px dotted #CCC;
         border-top: 1px solid #bfbfbf;
@@ -371,13 +372,13 @@ a:hover { text-decoration:none; }
     }
     .stat tr.normalTH TH {
         background:none;
-        background-color: #8592a0;
+        background-color: #FFF;
         border-bottom: 1px dotted #CCC;
         border-top: none !important;
     }
     .stat tr.resultTH TH {
         background:none;
-        background-color: #8592a0;
+        background-color: #FFF;
         border-bottom: 1px dotted #CCC;
         border-top: none !important;
     }
