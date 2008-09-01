@@ -194,6 +194,12 @@ H2.titleLeader    {
     background: url(/i/events/winformula/titleLeader.png) no-repeat left top;
 }
 
+H2.titleResults    {
+    height:30px;
+    width:295px;
+    background: url(/i/events/winformula/titleResults.png) no-repeat left top;
+}
+
 H2.titleWisdom    {
     width:295px;
     height:19px;
@@ -337,6 +343,17 @@ a.viewLink{ display:block; color:#ef3e36 !important; margin:10px; }
     margin: 15px 10px 0 10px;
     float: left;
 }
+
+.results-box {
+    width: 295px;
+    float: left;
+    margin-bottom:10px;
+}
+
+.results-box table {
+    border: 1px solid #999;
+}
+
 h2 {
     font-size: 16px;
     clear:both;
@@ -356,7 +373,18 @@ a:hover { text-decoration:none; }
         color: #000;
         padding: 5px;
         font-weight: bold;
-		font-size: 110%;
+        font-size: 110%;
+        text-align:left;
+        border-bottom: 1px dotted #CCC;
+        border-top: 1px solid #bfbfbf;
+    }
+    .stat th.resultsAndLeaders {
+        background-color: #999;
+        color: #fff;
+        text-align:center !important;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 110%;
         text-align:left;
         border-bottom: 1px dotted #CCC;
         border-top: 1px solid #bfbfbf;
