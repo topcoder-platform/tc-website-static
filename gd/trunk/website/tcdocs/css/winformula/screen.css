@@ -406,6 +406,20 @@ a:hover { text-decoration:none; }
         text-decoration:none;        
     }
     
+    .stat TD a.green {
+        color:#8cc63f !important;
+        text-decoration:none;        
+    }
+    
+    .stat TD a.black {
+        color:#000000 !important;
+        text-decoration:none;        
+    }
+    
+    .stat TD a:hover.green, .stat TD a:hover.black {
+        text-decoration:underline;
+    }
+    
     .stat tr.resultTH TH a:hover {    text-decoration:underline;    }
     .stat .center {        text-align:center !important;    }    
     .stat th a { color:#fff; }
@@ -520,7 +534,7 @@ th.alignRight { text-align:right; }
 .alignCenter { text-align:center; }
 .floatLeft{    float:left;}
 .floatLeftSubmit{    float:left; width:170px;}
-.green{ color:#8cc63f;}
+.green{ color:#8cc63f;}}
 .floatRight{    float:right;}
 .imgLeft{
     float:left;
