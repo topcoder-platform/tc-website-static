@@ -599,6 +599,13 @@ ol.howCompete a {    color:#ef3e36;}
     border-bottom:1px dotted #333333;
     padding: 0 0 5px 0;
 }
+.dataArea_Standings {
+    height:40px;
+    margin-bottom:6px;
+    overflow:hidden;
+    border-bottom:1px dotted #333333;
+    padding: 0 0 5px 0;
+}
 .dataArea_Below {
     margin-top:6px;
     overflow:hidden;
