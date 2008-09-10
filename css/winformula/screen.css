@@ -411,12 +411,17 @@ a:hover { text-decoration:none; }
         text-decoration:none;        
     }
     
-    .stat TD a.black {
+    .stat TD a.black, TD a.black {
         color:#000000 !important;
         text-decoration:none;        
     }
     
-    .stat TD a:hover.green, .stat TD a:hover.black {
+    TD a.red {
+        color:#ed1c24 !important;
+        text-decoration:none;
+    }
+    
+    .stat TD a:hover.green, .stat TD a:hover.black, TD a:hover.black, TD a:hover.red {
         text-decoration:underline;
     }
     
