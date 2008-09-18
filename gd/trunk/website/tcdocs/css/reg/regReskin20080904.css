@@ -1,0 +1,629 @@
+/***********************************************************************
+ *    CSS File
+ *    Project: TopCoder Member Registration and Profile
+ *    Author: James Marquez (quesks)
+ *
+ *    :COLOR REFERENCE GUIDE
+ *    FONT: #000
+ *    SECONDARY FONT: #212121
+ *    LINK: #5F8AAB
+ *    HIGHLIGHT: #FF0
+ *    HEADING: #343D44
+ *    SECONDARY HEADING: #25384A
+ *    BACKGROUND: #FFF
+ **/
+ 
+/***********************************************************************
+ * RESET
+ ***********************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;    
+}
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+
+
+/***********************************************************************
+ * HTML ELEMENTS
+ ***********************************************************************/
+h4 {
+    font-size: 14pt;
+}
+p {
+    margin-bottom: 15px;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+a:link, a:active, a:visited {
+    color: #5F8AAB;
+    text-decoration: none;
+}
+a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+
+
+/***********************************************************************
+ * LAYOUT
+ ***********************************************************************/
+body {
+    height: 100%;
+    color: #000;
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+#wrapper {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;    
+}
+#box-head, #box-foot {
+    float: left;
+    width: 1000px;
+}
+#box-body, #box-body-alltext {
+    float: left;
+    width: 980px;
+    padding: 0 8px 0 10px;
+}
+
+
+
+
+/***********************************************************************
+ * HEADER
+ ***********************************************************************/
+#box-head {
+    background: url(/i/registration/body_top.jpg) bottom left no-repeat;
+    padding-bottom: 20px;
+}
+#branding-wrap {
+    padding: 10px 0 10px 0;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+#branding {
+    padding: 10px 0 10px 0;
+    clear: both;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#branding h1 {
+    width: 270px;
+    float: left;
+}
+#branding h1 a {
+    display: block;
+    height: 100px;
+    background: url(/i/registration/topcoder_logo.jpg) center no-repeat;
+    margin: 0 0 20px 0;
+}
+#branding h2 {
+    width: 160px;
+    float: left;
+}
+#branding h2 a {
+    display: block;
+    height: 100px;
+    background: url(/i/registration/studioLogo.jpg) center no-repeat;
+    margin: 0 0 20px 0;
+}
+#branding h3 {
+    width: 170px;
+    float: left;
+}
+#branding h3 a {
+    display: block;
+    height: 100px;
+    background: url(/i/registration/tcdirectLogo.jpg) center no-repeat;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+#branding span {
+    display: none;
+}
+
+#page-head {    
+    float: left;
+    width: 100%;
+    padding: 5px 0 6px 0;
+    height: 31px;
+    background: url(/i/registration/page_head_pencil.jpg) bottom no-repeat;        
+}
+#page-head h3 {
+    height: 25px;
+    width: 800px;
+    margin-left: 36px;    
+    float: left;
+}
+#page-head h3 span {
+    display: none;
+}
+#step {    
+    font-weight: bold;
+    font-size: 11pt;
+    font-style: italic;
+    float: right;
+    margin-right: 30px;
+    padding-top: 4px;
+    color: #343D44;        
+}
+
+
+/**
+ * HEADING TITLES
+ */
+#registration-signup     {    background: url(/i/registration/title_registration_step_1.jpg) no-repeat;    }
+#privacy_policy         {    background: url(/i/registration/title_privacy_policy.jpg)         no-repeat;    }
+#terms_of_use             {    background: url(/i/registration/title_terms_of_use.jpg)         no-repeat;    }
+#registration_areas     {    background: url(/i/registration/title_registration_areas.jpg)     no-repeat;    }
+#your_profile             {    background: url(/i/registration/title_your_profile.jpg)         no-repeat;    }
+#suggestions             {    background: url(/i/registration/title_suggestions.jpg)         no-repeat;    }
+
+#your_profile_link {
+    display: block;
+    float: left;
+    width: 112px;
+    height: 30px;
+    background: url(/i/registration/title_your_profile_link.jpg) no-repeat;
+}
+#registration_areas_edit {    
+    display: block !important;
+    float: left;
+    width: 200px;
+    height: 30px;
+    background: url(/i/registration/title_registration_areas_edit.jpg) no-repeat;    
+}
+#personal_information_edit {
+    display: block !important;
+    float: left;
+    width: 215px;
+    height: 30px;
+    background: url(/i/registration/title_personal_information_edit.jpg) no-repeat;    
+}
+#skills_edit {
+    display: block !important;
+    float: left;
+    width: 255px;
+    height: 30px;
+    background: url(/i/registration/title_skills_edit.jpg) no-repeat;    
+}
+#demographics {
+    display: block !important;
+    float: left;
+    width: 155px;
+    height: 30px;
+    background: url(/i/registration/title_demographics.jpg) no-repeat;    
+}
+
+
+
+/***********************************************************************
+ * BODY
+ ***********************************************************************/
+#box-body, #box-body-alltext {
+    border-left: 1px solid #D1D3D5;
+    border-right: 1px solid #D1D3D5;        
+}
+.block {        
+    width: 100%;
+    float: left;    
+    margin-bottom: 10px;
+}
+.sidebar {    
+    float: left;
+    width: 178px;
+    padding: 10px;
+    color: #212121;
+    margin-right: 2px;
+    background: url(/i/registration/sidebar.jpg) no-repeat;        
+}
+.sidebox {
+    float: left;
+    width: 168px;
+    padding: 0 10px;
+    color: #212121;
+    margin-right: 2px;    
+}
+.sidebox h4 {
+    padding: 15px 0 15px 5px;    
+    background: url(/i/registration/sidebar_heading_bg.jpg) no-repeat;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #25384A;
+    width: 171px;
+}
+.sidebox hr {
+    border: none;
+    height: 1px;
+    background :#eee;    
+}
+.sidebox li {
+    padding: 2px 0 0 20px;
+    height: 18px;
+}
+.sidebox li.profile-completed {
+    background: url(/i/registration/bullet_check.jpg) no-repeat;
+}
+.sidebox-bottom {
+    margin-bottom: 15px;
+}
+.quote {
+    padding: 0 5px 0 5px;
+    font-size: 10pt;
+}
+
+.content {    
+    float: left;
+    width: 780px;
+    background: url(/i/registration/content_body_bottom.jpg) bottom no-repeat;
+    padding-bottom: 10px;
+    margin-bottom:10px;
+}
+.content h4 {
+    padding: 20px 0 15px 30px;    
+    background: url(/i/registration/content_heading_bg.jpg) bottom no-repeat;    
+}
+.content h4 span {
+    background: #fff url(/i/registration/heading_h4_bg.jpg) repeat-x; 
+    padding: 0 5px 3px 5px;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #25384A;        
+}
+.content h4 span.end {
+    background: url(/i/registration/heading_end_bg.jpg) no-repeat; 
+}
+.content h4.floated, .sidebox h4.floated {
+    position: relative;
+}
+a.edit {        
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 10pt;
+    background: none;
+}
+.sidebox a.edit {
+    top: 15px;
+}
+.content-body {    
+    float: left;
+    width: 778px;    
+    border-left: 1px solid #D1D3D5;
+    border-right: 1px solid #D1D3D5;    
+}
+#tab-content {    
+    border-left: 1px solid #D1D3D5;
+    border-right: 1px solid #D1D3D5;    
+    float: left;
+    width: 978px;    
+}
+#tab-content-bottom {
+    background: url(/i/registration/tab_content_bottom.jpg) top no-repeat;
+    height: 10px;
+    width: 980px;
+    float: left;
+}
+
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.padded {
+    padding: 30px;
+}
+.padded-sides {
+    padding: 0 30px 0 30px;
+}
+.confirmation {
+    text-align: center;
+    color: #239745;
+}
+.placeholder {
+    text-align: center;
+    padding: 30px 0 30px 0;    
+    border: 1px solid #ccc;
+    margin: 10px 8px 0 10px;
+    width: 758px;
+}
+.other-placeholder {
+    text-align: center;
+    padding: 100px 0 100px 0;    
+    border: 1px solid #ccc;
+    margin: 10px 8px 0 75px;
+    width: 300px;
+}
+.more-info-holder {
+    position: relative;
+}
+.more-info {
+    position: absolute;
+    display: none;
+    border: 2px solid #cc6;
+    padding: 10px;
+    width: 600px;
+    height: auto;
+    background: #ffc;
+    z-index: 99;
+    left: 100px;
+    top: 0;
+}
+
+ul.bulleted {
+    list-style: square;
+    margin-left: 10px;    
+}
+ul.bulleted li {
+    margin: 10px;
+}
+.required-form {
+    color: #990000;
+}
+
+/**
+ * TABS
+ **/
+#tab {
+    background: url(/i/registration/tab_bg.jpg) bottom no-repeat;
+    padding-bottom: 9px;
+    float: left;
+    width: 100%;
+}
+#tab li {
+    display: inline;    
+    float: left;
+    display: block;        
+    margin-right: 2px;
+}
+#tab li a:link, #tab li a:visited {    
+    background: url(/i/registration/tab_left.jpg) left top no-repeat;    
+    float: left;
+    padding: 0 0 0 10px;
+    height: 30px;        
+}
+#tab li a:link span, #tab li a:visited span {
+    background: url(/i/registration/tab_right.jpg) right top no-repeat;
+    padding: 10px 10px 8px 0;
+    float: left;
+    font-size: 9pt;        
+    font-weight: bold;
+    text-decoration: none;
+    color: #25384A;
+}
+#tab li a:hover {    
+    background-position: 0 50%;    
+    text-decoration: none;        
+}
+#tab li a:hover span {
+    background-position: 100% 50%;    
+}
+#tab li a.active:link, #tab li a.active:visited {    
+    background-position: left bottom;    
+}
+#tab li a.active:link span, #tab li a.active:visited span {
+    background-position: right bottom;
+    text-decoration: none;
+    color: #f00;
+}
+#box-body-alltext p, #box-body-alltext h4, #box-body-alltext ol, #box-body-alltext ul {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#box-body-alltext h4 {
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding-top: 20px;
+}
+#box-body-alltext ol {
+    margin-bottom: 1em;
+    list-style: outside;
+    padding-left: 50px;
+}
+
+/**
+ * FORMS
+ **/
+.form-row {
+    padding-bottom: 10px;
+    float: left;
+    width: 100%;
+}
+.form-row label {
+    text-align: right;
+    width: 210px;
+    float: left;
+    margin-right: 5px;
+    font-size: 11pt;
+    font-weight: bold;
+    padding-top: 6px;
+}
+.label-description {
+    font-size: 8pt;
+    color: #999;
+    margin: 0 0 0 218px;    
+}
+.form-row span {
+    color: #239745;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    background: url(/i/registration/bullet_check.jpg) no-repeat;
+}
+.form-bottom {
+    padding: 30px 0 10px 230px;
+    float: left;
+    width: 530px;
+}
+div.form-bottom {
+    float: right;
+}
+.field-error span {
+    color: #D0452C;
+    background: url(/i/registration/bullet_cross.jpg) no-repeat;
+}
+.field-error input, .field-error select, .field-error text-area {
+    border: 1px solid #D0452C;
+}
+.field-error label {
+    color: #D0452C;
+}
+ul.inline-fields {
+    clear: both;
+    width: 770px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+ul.inline-fields li {
+    display: inline;    
+    width: 380px;
+    float: left;
+    margin-left: 5px;    
+}
+.static-field {
+    padding-top: 5px;
+    margin: 0;
+}
+
+ul.inline-fields-large {
+    clear: both;
+    width: 750px;
+    padding-bottom: 10px;
+    float: left;    
+}
+ul.inline-fields-large li {
+    display: inline;    
+    width: 325px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;    
+}
+ul.inline-fields-large h5 {
+    font-size: 12pt;
+    font-weight: bold;
+}
+ul.inline-fields-large li ul li {
+    margin-bottom: 1px;
+}
+ul.inline-fields-large li ul li label {
+    text-align: right;
+    width: 100px;
+    float: left;
+    margin: 5px;
+    font-size: 9pt;
+    font-weight: bold;
+    padding-top: 6px;
+}
+.inline_box {
+margin: 10px;
+}
+
+#skills_subset, #tools_subset, #affiliations {
+    width: 225px;
+    margin-top: 3px;
+}
+button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.lonebuttons {
+    text-align: center;
+    width: 770px;
+}
+
+/**
+ * TABLES
+ **/
+table.plain td, table.zebra td, table.plain th, table.zebra th {
+    padding: 5px;
+}
+table.plain td.field-name {
+    width: 190px;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: right;
+}
+table.plain td span {
+    font-size: 8pt;
+    color: #999;
+}
+
+table.zebra {    
+    margin-left: 20px;    
+    background: #ddd;
+    border-right: 1px solid #ddd;    
+}
+table.zebra th {
+    text-align: center;
+    color: #25384A;
+    font-weight: bold;
+    font-size: 10pt;
+    background: url(/i/registration/th.jpg) repeat-x;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+table.zebra td {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+table.zebra tr.odd {
+    background: #fff;    
+}
+table.zebra tr.even {
+    background: #eee;    
+}
+
+
+/***********************************************************************
+ * FOOTER
+ ***********************************************************************/
+#box-foot {
+    padding: 30px 0 30px 0;
+    text-align: center;
+    font-size: 9pt;
+    background: url(/i/registration/body_bottom.jpg) top no-repeat;
+}
