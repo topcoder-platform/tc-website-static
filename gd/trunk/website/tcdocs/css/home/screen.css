@@ -27,6 +27,7 @@ A:hover {
 A img{
 	border: 0;
 }
+* :focus { outline: 0; }
 
 /* ------------------------------------
 LAYOUT
