@@ -58,14 +58,10 @@ HEADER
 	#header H1 A {
 		display: block;
 		position: absolute;
-		width: 222px;
+		width: 262px;
 		height: 83px;
 		top: 38px;
-		background: url(/images/home/tc_direct.png) no-repeat;
-	}
-	#header H1.tc-header A {
-		background: url(/images/home/tc_header.png) no-repeat;
-		width: 269px;
+		background: url(/images/home/topcoder.png) no-repeat;
 	}
 	
 	#header H1 A SPAN {
