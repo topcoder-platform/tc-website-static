@@ -417,6 +417,14 @@ MISC
 		font-size: 20px;
 		padding-top: 5px;
 	}
+	#enterprise-solutions h3 a {
+		color: #313131;
+		text-decoration: none;
+	}
+	#enterprise-solutions h3 a:hover {
+		color: #d50000;
+		text-decoration: underline;
+	}
 	#tc-direct h3 a {
 		background-image: url(/images/home/direct-header.png);
 		background-position: left top;
