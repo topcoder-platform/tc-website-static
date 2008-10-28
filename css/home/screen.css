@@ -113,7 +113,10 @@ HEADER
 		background: url(/images/home/ico_sprites.png) no-repeat;
 		background-position: 0 -21px;
 		padding: 0 8px 0 8px;
-	}
+		font-size: 80%;
+		font-weight: bold;
+		text-decoration: none;
+		color: #888;	}
 	
 	#nav_support UL LI.left {
 		background: none;
@@ -125,8 +128,6 @@ HEADER
 	}
 	
 	#nav_support A {
-		font-size: 80%;
-		font-weight: bold;
 		text-decoration: none;
 		color: #888;
 		background: url(/images/home/ico_sprites.png) no-repeat;
@@ -288,7 +289,7 @@ MISC
 
 
 .jcarousel-container-horizontal {
-    width: 820px;
+    width: 819px;
     padding: 20px 40px;
 	height:145px;
 	background-image:url(/images/home/carousel-container.png);
@@ -298,7 +299,7 @@ MISC
 
 
 .jcarousel-clip-horizontal {
-    width:  820px;
+    width:  819px;
     height: 180px;
 }
 
@@ -395,7 +396,8 @@ MISC
 		height: 40px;
 	}
 #enterprise-solutions,
-#tc-direct {
+#tc-direct,
+#contact-tc {
 	width: 440px;
 	float: left;
 	clear: left;
@@ -410,7 +412,8 @@ MISC
 	border-bottom: 1px solid #e6e6e6;
 	padding-top: 30px;
 }
-	#enterprise-solutions h3 {
+	#enterprise-solutions h3,
+	#contact-tc h3 {
 		font-size: 20px;
 		padding-top: 5px;
 	}
@@ -424,7 +427,8 @@ MISC
 		text-indent: -3000px;
 	}
 	#enterprise-solutions h4,
-	#tc-direct h4 {
+	#tc-direct h4,
+	#contact-tc h4 {
 		font-size: 14px;
 		font-weight: normal;
 		color: #666;
@@ -646,3 +650,43 @@ MISC
 		background-position: left top;
 		cursor: pointer;
 	}
+	
+/*------------------------------------
+Login Colors
+-------------------------------------*/
+.coderTextRed, .coderTextYellow, .coderTextBlue, .coderTextGreen, .coderTextGray, .coderTextOrange { 
+font-weight: bold; 
+background-color: transparent;
+background-image:none !important;
+padding-left:0 !important;
+}
+.coderTextRed:link, .coderTextYellow:link, .coderTextBlue:link, .coderTextGreen:link, .coderTextGray:link, .coderTextOrange:link, .coderTextWhite:link, .coderTextBlack:link { 
+text-decoration: none;
+}
+.coderTextRed:visited, .coderTextYellow:visited, .coderTextBlue:visited, .coderTextGreen:visited, .coderTextGray:visited, .coderTextOrange:visited, .coderTextWhite:visited, .coderTextBlack:visited { 
+text-decoration: none;
+}
+.coderTextRed:hover, .coderTextYellow:hover, .coderTextBlue:hover, .coderTextGreen:hover, .coderTextGray:hover, .coderTextOrange:hover, .coderTextWhite:hover, .coderTextBlack:hover { 
+text-decoration: underline;
+}
+.coderTextRed:active, .coderTextYellow:active, .coderTextBlue:active, .coderTextGreen:active, .coderTextGray:active, .coderTextOrange:active, .coderTextWhite:active, .coderTextBlack:active { 
+text-decoration: underline;
+}
+
+/* Orange */
+.coderTextOrange, .coderTextOrange:link, .coderTextOrange:visited, .coderTextOrange:hover, .coderTextOrange:active { color: #FF9900 !important; }
+/* Red */
+.coderTextRed, .coderTextRed:link, .coderTextRed:visited, .coderTextRed:hover, .coderTextRed:active { color: #EE0000 !important; }
+/* Yellow */
+.coderTextYellow, .coderTextYellow:link, .coderTextYellow:visited, .coderTextYellow:hover, .coderTextYellow:active { color: #DDCC00 !important; }
+/* Blue */
+.coderTextBlue, .coderTextBlue:link, .coderTextBlue:visited, .coderTextBlue:hover, .coderTextBlue:active { color: #6666FF !important; }
+/* Green */
+.coderTextGreen, .coderTextGreen:link, .coderTextGreen:visited, .coderTextGreen:hover, .coderTextGreen:active { color: #00A900 !important; }
+/* Gray */
+.coderTextGray, .coderTextGray:link, .coderTextGray:visited, .coderTextGray:hover, .coderTextGray:active { color: #999999 !important; }
+/* White */
+.coderTextWhite, .coderTextWhite:link, .coderTextWhite:visited, .coderTextWhite:hover, .coderTextWhite:active { color: #FFFFFF !important; }
+/* Black */
+.coderTextBlack, .coderTextBlack:link, .coderTextBlack:visited, .coderTextBlack:hover, .coderTextBlack:active { color: #000000 !important; }
+
