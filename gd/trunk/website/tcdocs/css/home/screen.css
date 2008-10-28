@@ -63,7 +63,7 @@ HEADER
 		top: 38px;
 		background: url(/images/home/topcoder.png) no-repeat;
 	}
-	
+
 	#header H1 A SPAN {
 		display: none;
 	}
@@ -355,7 +355,7 @@ MISC
 	width: 930px;
 	margin: 0px auto;
 }
-	#welcome-banner h2 {
+	#welcome-banner h2 a {
 		text-indent: -3000px;
 		background-image:url(/images/home/welcome-banner.png);
 		background-position: center top;
