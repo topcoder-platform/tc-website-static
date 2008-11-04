@@ -22,3 +22,5 @@
 #compete p {
 	float: left;
 }
+#welcome-banner {display:inline;}
+#contact-button h2 a {display:inline;}

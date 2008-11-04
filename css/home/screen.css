@@ -354,17 +354,28 @@ MISC
 
 /* Homepage Specific */
 #welcome-banner {
-	width: 930px;
-	margin: 0px auto;
+	width: 667px;
+	float: left;
 }
 	#welcome-banner h2 a {
 		text-indent: -3000px;
-		background-image:url(/images/home/welcome-banner.png);
+		background-image:url(/images/home/welcome-banner-sm.png);
 		background-position: center top;
 		background-repeat: no-repeat;
-		width: 930px;
+		width: 667px;
 		height: 131px;
-		float: left;
+		display:block;
+	}
+	#contact-button h2 a {
+		text-indent:-3000px;
+		background-image:url(/images/home/contact.png);
+		background-position:center top;
+		background-repeat:no-repeat;
+		width:210px;
+		height:79px;
+		padding-left:40px;
+		float:left;
+		margin-top:15px;
 	}
 #news h2 {
 	text-indent: -3000px;
