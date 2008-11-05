@@ -377,6 +377,11 @@ MISC
 		float:left;
 		margin-top:15px;
 	}
+	#contact-button h2 a:hover {
+		background-image:url(/images/home/contact-over.png);
+		background-position:center top;
+		background-repeat:no-repeat;
+	}
 #news h2 {
 	text-indent: -3000px;
 	background-image:url(/images/home/news-announcements.png);
