@@ -114,10 +114,8 @@ HEADER
 		background: url(/images/home/ico_sprites.png) no-repeat;
 		background-position: 0 -21px;
 		padding: 0 8px 0 8px;
-		font-size: 80%;
-		font-weight: bold;
-		text-decoration: none;
-		color: #888;	}
+		list-style:none;
+	}
 	
 	#nav_support UL LI.left {
 		background: none;
@@ -129,6 +127,8 @@ HEADER
 	}
 	
 	#nav_support A {
+		font-size: 80%;
+		font-weight: bold;
 		text-decoration: none;
 		color: #888;
 		background: url(/images/home/ico_sprites.png) no-repeat;
@@ -144,11 +144,7 @@ HEADER
 	#nav_support .on A {
 		color: #d50000;
 	}
-	#nav UL LI.on UL A {
-		background-position:top;
-		line-height:16px;
-		padding:13px 0 13px 12px;
-	}
+
 
 /* ------------------------------------
 CONTENT
