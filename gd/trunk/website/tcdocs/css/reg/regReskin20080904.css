@@ -312,6 +312,10 @@ body {
     font-weight: bold;
     color: #25384A;        
 }
+.content h4 span.hint {
+	font-size: 12px;
+	font-weight: normal;
+}
 .content h4 span.end {
     background: url(/i/registration/heading_end_bg.jpg) no-repeat; 
 }
