@@ -255,7 +255,9 @@ body {
     padding: 10px;
     color: #212121;
     margin-right: 2px;
-    background: url(/i/registration/sidebar.jpg) no-repeat;        
+    background: url(/i/registration/sidebar.jpg) no-repeat;      
+    font-size: 12px;
+    line-height: 15px;
 }
 .sidebox {
     float: left;
