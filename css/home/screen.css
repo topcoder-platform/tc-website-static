@@ -711,3 +711,80 @@ text-decoration: underline;
 /* Black */
 .coderTextBlack, .coderTextBlack:link, .coderTextBlack:visited, .coderTextBlack:hover, .coderTextBlack:active { color: #000000 !important; }
 
+/* ------------------------------------
+MISC 
+------------------------------------ */
+.tabs_content IMG {
+	border: none;
+}
+.center { text-align: center; }
+#accessibility, .hide { display: none; }
+.clear { clear: both; height:1%; }
+.sub-active, .sub-active:visited {background-color:#666666;color:#FFFFFF !important;}
+
+.rss_links {margin-top:8px;}
+.rss_links li {background-image:url(../images/feed-icon-14x14.png);background-repeat:no-repeat;padding-left:18px;line-height:14px;padding-bottom:8px;}
+
+
+/* About TC Page CSS */
+#about-tc-wrapper {background-color:#fff;width:100%;}
+#slide-container {width:100%;height:213px;background:url(/images/slider/about-nav-background.png) bottom repeat-x;z-index:10;position:relative;}
+#about-nav-container {position:relative;width:901px;margin:0 auto;height:200px;background-color:#fff;background:url(/images/slider/about-nav-container-background.png) top no-repeat;background-color:#fff;text-align:left;}
+#about-nav-container h2 {text-indent:-9999px;background:url(/images/slider/about-tc-header.png) no-repeat; height:36px;width:186px;margin-left:10px;	}
+#about-nav-container a {display:block;position:absolute;text-indent:-9999px;}
+#community {background:url(/images/slider/community.png) no-repeat;height:103px;width:270px;left:12px;top:34px;}
+#battling {background:url(/images/slider/battling.png) no-repeat;height:70px;width:253px;left:197px;top:102px;}
+#results {background:url(/images/slider/result.png) no-repeat;height:92px;width:344px;left:412px;top:27px;}
+#plugin {background:url(/images/slider/plugin.png) no-repeat;height:56px;width:291px;left:601px;top:103px;}
+
+#drawer-container {min-height:445px;background-color:#fff;width:100%;position:relative;top:-5px;text-align:left;}
+.drawer {width:900px;margin:0 auto;background:url(/images/slider/drawer-background.png) repeat-y;}
+.drawer-inner-wrapper {padding:6px  5px}
+.drawer p {font-size:11px;text-align:left;font-family:Arial, Helvetica, sans-serif;line-height:15px;}
+#drawer-footer {margin:0 auto;width:900px;height:24px;background-image:url(/images/slider/drawer-footer-background.png);}
+.left-column {float:left;display:inline;width:415px;padding-left:5px;}
+.right-column {float:left;display:inline;width:450px;margin-left:16px;}
+.clear {clear:both;}
+#drawer-content1 {width:900px;height:350px;}
+#drawer-content2, #drawer-content3, #drawer-content4 {display:none;width:900px;height:250px;}
+#drawer-content2 {height:415px;}
+#drawer-content3 {height:300px;}
+#community-drawer h2 {height:51px;width:290px;text-indent:-9999px;background-image:url(/images/slider/community-header.png); margin-bottom:6px;}
+#community-drawer .links {list-style-type:none; margin-top:12px;}
+#community-drawer .links li {font-size:11px;line-height:15px;margin-bottom:2px;}
+#competitions-drawer h2 {height:51px;width:334px;text-indent:-9999px;background-image:url(/images/slider/competitions-header.png);margin-bottom:6px;}
+#competitions-drawer h4 {margin-bottom:8px;margin-top:12px;background-image:url(/images/slider/compete-now-header.png);text-indent:-9999px;height:66px;width:230px;}
+#competitions-drawer .left-list {float:left; width:165px;margin-left:15px;margin-top:5px;}
+#competitions-drawer .right-list {float:right;width:165px;margin-left:5px;margin-top:5px;}
+#competitions-drawer ul li {margin-bottom:1px;}
+#competitions-drawer ul li a, #competitions-drawer ul li a:visited {color:#1e9950;font-size:11px;}
+#competitions-drawer ul li a:hover {text-decoration:none;}
+#competitions-drawer .right-column {margin-top:95px;}
+
+#methodology-drawer h2 {height:51px;width:323px;text-indent:-9999px;background-image:url(/images/slider/methodology-header.png);margin-bottom:6px;}
+#methodology-drawer #components-graphic {background-image:url(/images/slider/components-graphic.png);height:144px;width:474px;position:relative;}
+#methodology-drawer h3 {margin:10px 0;}
+#components-graphic a {position:absolute;right:0;bottom:-35px;}
+#methodology-drawer .left-column {width:380px;}
+#methodology-drawer .right-column {margin-top:45px;}
+
+#engaged-drawer h2 {height:51px;width:225px;text-indent:-9999px;background-image:url(/images/slider/engaged-header.png);margin-bottom:6px;} 
+.engage-text {padding-right:185px;background:url(/images/slider/planet-graphic.png) right top no-repeat;}
+#contact-us-button {position:relative;top:-70px;left:-15px;}
+#engaged-drawer .right-column p {margin-left:55px;}
+#engaged-drawer .right-column {position:relative;}
+#learn-more-button {position:absolute;left:275px;top:20px;}
+#about-contact-button {position:absolute;right:0px;bottom:0px;text-indent:0px !important;}
+
+#member-map {height:233px;width;448px;background-image:url(/images/slider/map-graphic.png);background-repeat:no-repeat;;position:relative;}
+#member-map h3 {font-family:Arial, Helvetica, sans-serif;font-size:20px;position:absolute;top:10px;left:85px;}
+.red {color:#da1d24;}
+.blue {color:#2d99d2;}
+.green {color:#1e9950;}
+.join-today {position:absolute;bottom:0;left:165px;}
+.subhead1 {font-weight:bold;font-style:italic;font-size:14px;color:#2d99d2;}
+
+#digital-run {background-image:url(/images/slider/digitalrun-logo.png); background-repeat:no-repeat; padding-left:88px;min-height:78px;margin-top:5px; }
+#topcoder-open {background-image:url(/images/slider/tco-logo.png);background-repeat:no-repeat;padding-left:88px;min-height:78px;margin-top:5px; }
+#topcoder-studio {background-image:url(/images/slider/studio-logo.png);background-repeat:no-repeat;height:68px;width:199px;text-indent:-9999px;display:block;margin:10px 0;}
+#tcdirect {background-image:url(/images/slider/direct-logo.png);width:190px;height:71px;margin-bottom:10px;text-indent:-9999px;}
