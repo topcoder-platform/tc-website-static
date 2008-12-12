@@ -45,10 +45,12 @@ HEADER
 #header {
 	height: 185px;
 	background: url(/images/home/bg_header.png) repeat-x;
+	z-index:100;
 }
 
 #header .wrapper {
 	position: relative;
+	z-index:100;
 }
 
 	/* TC Direct Logo */
