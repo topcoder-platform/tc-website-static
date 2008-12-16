@@ -749,7 +749,7 @@ MISC
 .clear {clear:both;}
 #drawer-content1 {width:900px;height:350px;}
 #drawer-content2, #drawer-content3, #drawer-content4 {display:none;width:900px;height:250px;}
-#drawer-content2 {height:415px;}
+#drawer-content2 {height:425px;}
 #drawer-content3 {height:300px;}
 #community-drawer h2 {height:51px;width:290px;text-indent:-9999px;background-image:url(/images/slider/community-header.png); margin-bottom:6px;}
 #community-drawer .links {list-style-type:none; margin-top:12px;}
