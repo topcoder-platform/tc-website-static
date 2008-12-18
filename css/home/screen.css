@@ -440,6 +440,8 @@ MISC
 		color: #d50000;
 		text-decoration: underline;
 	}
+	#featured-client {border-bottom:1px solid #e6e6e6;}
+	
 	#tc-direct h3 a {
 		background-image: url(/images/home/direct-header.png);
 		background-position: left top;
