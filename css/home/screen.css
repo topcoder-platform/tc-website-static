@@ -412,7 +412,7 @@ MISC
 	}
 #enterprise-solutions,
 #tc-direct,
-#contact-tc {
+#contact-tc, #featured-client {
 	width: 440px;
 	float: left;
 	clear: left;
@@ -428,7 +428,7 @@ MISC
 	padding-top: 30px;
 }
 	#enterprise-solutions h3,
-	#contact-tc h3 {
+	#contact-tc h3, #featured-client h3 {
 		font-size: 20px;
 		padding-top: 5px;
 	}
@@ -449,6 +449,9 @@ MISC
 		float: left;
 		text-indent: -3000px;
 	}
+	
+	#featured-client a {text-decoration:none;color:#000;}
+	
 	#enterprise-solutions h4,
 	#tc-direct h4,
 	#contact-tc h4 {
