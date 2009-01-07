@@ -1,0 +1,784 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+CSS Template - Preferred Naming Conventions
+
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+
+/* ----- CSS ----- */
+* { }
+html { }
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #006894; 
+}
+
+A{
+	color: #0e6493;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+A.hover{
+	text-decoration: none;
+}
+
+ol {
+		width: 696px;
+		margin: 0 auto;
+		padding: 0 0 0 0;
+		color: #707070;
+}
+
+li.ol {
+		padding: 0 0 8px; 0;
+		color: #707070;
+}
+
+
+/*-------------------
+	WRAPPER
+-------------------*/
+#wrapper{
+	background: #004361 url(/i/tco09//bg.png) repeat-x top;
+	padding-bottom: 20px;
+}
+
+#wrapperInner{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#wrapperPopup{
+	width: 600px;
+	margin: 0 auto;
+}
+
+#wrapperContent{
+	background: url(/i/tco09//wrapper_top_bg.png) no-repeat top;
+}
+
+#wrapperContentInner{
+	width: 911px;
+	margin: 0 auto;
+}
+
+#wrapperContentPopup{
+	width: 600px;
+	margin: 0 auto;
+	line-height:1.7;
+}
+
+/*-----------------
+	HEADER
+------------------*/
+
+#header{
+	position: relative;
+	text-align: center;
+	padding: 22px 0 9px 0;
+}
+
+	#header A.topCoderLogo{
+		position: absolute;
+		background: url(/i/tco09//topCoderLogo.png) no-repeat;
+		width: 139px;
+		height: 21px;
+		top: 17px;
+		right: 0;
+	}
+	
+#mainNav{
+}
+
+	#mainNav UL.nav{
+		list-style: none;
+		overflow: hidden;
+		width: 696px;
+		margin: 0 auto;
+		padding: 0 0 0 0;
+	}
+	
+		#mainNav UL.nav LI{
+			float: left;
+			position: relative;
+			height: 116px;
+			width: 102px;
+			padding: 0 7px;
+			background: url(/i/tco09//main_nav_bg.png) no-repeat right;
+		}
+		
+		#mainNav UL.nav LI.centerBg{
+			background: url(/i/tco09//main_nav_bg2.png) no-repeat right;
+		}
+		
+		#mainNav UL.nav LI.last{
+			background: none;
+		}
+		
+			#mainNav UL.nav LI A.tournamentActive{
+				display: block;
+				background: url(/i/tco09//tournament_nav_active.png) no-repeat;
+				width: 102px;
+				height: 116px;
+			}
+			
+			#mainNav UL.nav LI A.algorithmActive{
+				display: block;
+				background: url(/i/tco09//algorithm_nav_active.png) no-repeat;
+				width: 102px;
+				height: 116px;
+			}
+			
+			#mainNav UL.nav LI A.componentActive{
+				display: block;
+				background: url(/i/tco09//component_competition_active.png) no-repeat;
+				width: 102px;
+				height: 116px;
+			}
+			
+			#mainNav UL.nav LI A.marathonActive{
+				display: block;
+				background: url(/i/tco09//marathon_competition_active.png) no-repeat;
+				width: 102px;
+				height: 116px;
+			}
+			
+			#mainNav UL.nav LI A.studioActive{
+				display: block;
+				background: url(/i/tco09//studio_competition_active.png) no-repeat;
+				width: 102px;
+				height: 116px;
+			}
+			
+			#mainNav UL.nav LI A.arenaActive{
+				display: block;
+				background: url(/i/tco09//launch_arena_active.png) no-repeat;
+				width: 102px;
+				height: 116px;
+			}
+		
+			#mainNav UL.nav LI A{
+				display: block;
+				width: 102px;
+				height: 106px;
+			}
+				
+				#mainNav UL.nav LI A IMG{
+					position: absolute;
+					top: 2px;
+					left: 24px;
+				}
+				
+				#mainNav UL.nav LI A SPAN{
+					position: absolute;
+					display: block;
+					width: 68px;
+					height: 67px;
+					top: 2px;
+					left: 24px;
+					cursor: pointer;
+				}
+				
+			
+				#mainNav UL.nav LI A.tournament{
+					background: url(/i/tco09//tournament_overview.png) no-repeat center 70px;
+				}
+				
+					#mainNav UL.nav LI A.tournament:hover{
+						background: url(/i/tco09//tournament_overview_hover.png) no-repeat center 70px;
+					}
+				
+				#mainNav UL.nav LI A.algorithm{
+					background: url(/i/tco09//algorithm_competition.png) no-repeat center 70px;
+				}
+				
+					#mainNav UL.nav LI A.algorithm:hover{
+						background: url(/i/tco09//algorithm_competition_hover.png) no-repeat center 70px;
+					}
+				
+				#mainNav UL.nav LI A.component{
+					background: url(/i/tco09//component_competition.png) no-repeat center 70px;
+				}
+				
+					#mainNav UL.nav LI A.component:hover{
+						background: url(/i/tco09//component_competition_hover.png) no-repeat center 70px;
+					}
+				
+				#mainNav UL.nav LI A.marathon{
+					background: url(/i/tco09//marathon_competition.png) no-repeat center 70px;
+				}
+				
+					#mainNav UL.nav LI A.marathon:hover{
+						background: url(/i/tco09//marathon_competition_hover.png) no-repeat center 70px;
+					}
+				
+				#mainNav UL.nav LI A.studio{
+					background: url(/i/tco09//studio_competition.png) no-repeat center 70px;
+				}
+				
+					#mainNav UL.nav LI A.studio:hover{
+						background: url(/i/tco09//studio_competition_hover.png) no-repeat center 70px;
+					}
+				
+				#mainNav UL.nav LI A.arena{
+					background: url(/i/tco09//launch_arena.png) no-repeat center 70px;
+				}
+				
+					#mainNav UL.nav LI A.arena:hover{
+						background: url(/i/tco09//launch_arena_hover.png) no-repeat center 70px;
+					}
+				
+				#mainNav UL.nav LI A SPAN.tournament{
+					background: url(/i/tco09//tournament_nav.png) no-repeat 0px 0px;
+				}
+				
+				#mainNav UL.nav LI A SPAN.algorithm{
+					background: url(/i/tco09//algorithm_nav.png) no-repeat 0px -134px;
+				}
+				
+				#mainNav UL.nav LI A SPAN.component{
+					background: url(/i/tco09//component_nav.png) no-repeat 0px -1072px;
+				}
+				
+				#mainNav UL.nav LI A SPAN.marathon{
+					background: url(/i/tco09//marathon_nav.png) no-repeat 0px -335px;
+				}
+				
+				#mainNav UL.nav LI A SPAN.studio{
+					background: url(/i/tco09//studio_nav.png) no-repeat 0px -871px;
+				}
+				
+				#mainNav UL.nav LI A SPAN.launchArena{
+					background: url(/i/tco09//launch_arena_nav.png) no-repeat 0px -603px;
+				}
+
+/*------------------
+	CONTENT
+------------------*/
+
+#content{
+	margin: 6px 0 0 0;
+}
+
+#contentPopup {
+	margin: 10px;
+	padding: 10px;
+	color: #707070;
+	background-color: #ffffff;
+}
+
+#contentPopop p { padding: 5px; }
+
+#contentPopop h2 {
+	color: #006894;
+	font-size: 16px;
+	margin: 0;
+	padding: 0 0 0 23px;
+	background: url(/i/tco09//page_title_bg.png) no-repeat left;
+}
+
+
+
+	#content .contentTopLeft{
+		background: url(/i/tco09//content_topLeft_bg.png) no-repeat top left;
+		padding-left: 19px;
+	}
+	
+	#content .contentBottomLeft{
+		background: url(/i/tco09//content_bottomLeft_bg.png) no-repeat bottom left;
+		padding-left: 19px;
+	}
+	
+	#content .contentTopRight{
+		background: url(/i/tco09//content_topRight_bg.png) no-repeat top right;
+		padding-right: 19px;
+	}
+	
+	#content .contentBottomRight{
+		background: url(/i/tco09//content_bottomRight_bg.png) no-repeat bottom right;
+		padding-right: 19px;
+	}
+	
+	
+	#content .contentTopInner{
+		background: url(/i/tco09//content_bg.png) repeat;
+		height: 18px;
+	}
+	
+	#content .contentInner{
+		background: url(/i/tco09//content_bg.png) repeat;
+		height: 100%;
+		padding: 0 20px;
+	}
+
+/*-- Top Area --*/
+
+.topArea{
+	height:165px;
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+
+	.topArea .description{
+		float: left;
+		width: 620px;
+	}
+	
+	#teaser .topArea .description{
+		float: left;
+		width: 880px;
+	}
+	
+		.topArea .description H2{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.topArea .description P{
+			color: #004a69;
+			line-height: 20px;
+		}
+		
+		.topArea .description A.registerNowBtn{
+			display: block;
+			width: 140px;
+			height: 32px;
+			background: url(/i/tco09//register_now_btn.png) no-repeat;
+			margin: 0 auto;
+		}
+	
+	.topArea .spotlight{
+		float: right;
+		width: 222px;
+		height: 193px;
+	}
+	
+		UL#spotLightTabs{
+			margin: 0;
+			padding: 0;
+			height: 23px;
+			overflow: hidden;
+			list-style: none;
+		} 
+		
+			UL#spotLightTabs LI{
+				float: left;
+				margin: 0 1px;
+				padding: 0;
+				height: 23px;
+			}  
+			
+			UL#spotLightTabs LI.first{
+				margin-left: 0;;
+			}
+			
+			UL#spotLightTabs LI.last{
+				margin-right: 0;
+			}
+				
+				UL#spotLightTabs LI A{
+					display: block;
+					width: 54px;
+					height: 23px;
+				}
+				
+				UL#spotLightTabs LI A.program{
+					background: url(/i/tco09//program_tab.png) no-repeat 0 6px;
+				}
+				
+				UL#spotLightTabs LI A.photos{
+					background: url(/i/tco09//photos_tab.png) no-repeat 0 6px;
+				}
+				
+				UL#spotLightTabs LI A.movies{
+					background: url(/i/tco09//movies_tab.png) no-repeat 0 6px;
+				}
+				
+				UL#spotLightTabs LI A.blog{
+					background: url(/i/tco09//blog_tab.png) no-repeat 0 6px;
+				}
+				
+				UL#spotLightTabs LI A:hover{
+					background-position: top;
+				}
+				
+				UL#spotLightTabs LI.on A{
+					background-position: bottom;
+				}
+				
+				UL#spotLightTabs LI.on A:hover{
+					background-position: bottom;
+				}
+		
+		.spotLightContent .spotLightTop{
+			background: #FFF url(/i/tco09//spotLightTop.png) no-repeat top right;
+		}
+		
+		.spotLightContent .spotLightBottom{
+			background: url(/i/tco09//spotLightBottom.png) no-repeat bottom;
+			padding-bottom: 6px;
+		}
+		
+		.spotLightContent #spotLightContentInner{
+			height: 160px;
+			padding: 5px 0;
+		}
+		
+
+/*-- Bottom Area --*/
+
+.bottomArea{
+	background-color: #FFF;
+}
+
+	.bottomArea .bottomLeft{
+		background: url(/i/tco09//bottomArea_bottomLeft.png) no-repeat bottom left;
+	}
+	
+	.bottomArea .bottomRight{
+		background: url(/i/tco09//bottomArea_bottomRight.png) no-repeat bottom right;
+	}
+	
+	.bottomArea .secNav{
+		background: url(/i/tco09//secondary_nav_bg.png) repeat-x;
+	}
+	
+	.bottomArea .secNav .secNavLeft{
+		background: url(/i/tco09//secondary_nav_left_bg.png) no-repeat left;
+	}
+	
+	.bottomArea .secNav UL#secNavRight{
+		margin: 0;
+		padding: 3px 10px 0	80px;
+		height: 33px;
+		background: url(/i/tco09//secondary_nav_right_bg.png) no-repeat right;
+		overflow: hidden;
+		list-style: none;
+	}
+	
+		UL#secNavRight LI{
+			float: left;
+			margin: 0 15px;
+			padding: 0;
+		}
+		
+		UL#secNavRight LI.first{
+			margin-left: 0;
+		}
+		
+		UL#secNavRight LI.last{
+			margin-right: 0;
+		}
+		
+			UL#secNavRight LI A{
+				float: left;
+				color: #006894;
+				font-size: 12px;
+				text-decoration: none;
+				font-weight: bold;
+				padding-left: 26px;
+			}
+			
+				UL#secNavRight LI A.on{
+					background: url(/i/tco09//secNav_onLeft.png) no-repeat left;
+				}
+			
+			UL#secNavRight LI A:hover{
+				color: #26bcd6;
+			}
+			
+			UL#secNavRight LI A SPAN{
+				float: left;
+				height: 24px;
+				padding-top: 9px;
+				padding-right: 26px;
+				cursor: pointer;
+			}
+			
+				UL#secNavRight LI A.on SPAN{
+					color: #FFF;
+					background: url(/i/tco09//secNav_onRight.png) no-repeat right;
+					cursor: pointer;
+				}
+	
+	#tertiaryNav{
+		padding: 0 1px;
+		height: 31px;
+	}
+	
+		#tertiaryNav UL.tertNav{
+			background-color: #006894;
+			width: 719px;
+			overflow: hidden;
+			list-style: none;
+			margin: 0;
+			padding: 0 0 0 150px;
+		} 	
+		
+			#tertiaryNav UL.tertNav LI{
+				float: left;
+				padding: 8px 0;
+				margin: 0 25px;
+			}
+			
+			#tertiaryNav UL.tertNav LI.first{
+				margin-left: 0;
+			}
+			
+			#tertiaryNav UL.tertNav LI.last{
+				margin-right: 0;
+			}
+		
+				#tertiaryNav UL.tertNav LI A{
+					color: #FFF;
+					font-size: 11px;
+					font-weight: bold;
+					text-decoration: none;
+				}
+				
+				#tertiaryNav UL.tertNav LI A:hover{
+					color: #26bcd6;
+				}
+
+	.bottomAreaContent{
+		height: 100%;
+		overflow: hidden;
+		padding: 14px 18px;
+	}
+	 
+	 #teaser .bottomAreaContent .mainContent {
+		width: 830px;
+	 }
+		.bottomAreaContent .mainContent{
+			float: left;
+			width: 640px;
+		}
+		
+			.bottomAreaContent .mainContent #currentPage{
+				color: #006894;
+				font-size: 11px;
+				padding-bottom: 10px;
+			}
+			
+				#currentPage A{	
+					color: #006894;
+					text-decoration: none;
+				}
+				
+				#currentPage A:hover{
+					text-decoration: underline;
+				}	
+
+			#mainContentInner .pageContent{
+				background: url(/i/tco09//pageContent_bg.png) repeat-x top;
+				padding: 15px;
+			}
+			
+				#mainContentInner .pageContent A{
+					color: #26bcd6;
+					font-weight: bold;
+					text-decoration: underline;
+				}
+				
+				#mainContentInner .pageContent A:hover{
+					text-decoration: none;
+				}
+			
+				#mainContentInner .pageContent H2.title{
+					color: #006894;
+					font-size: 16px;
+					margin: 0;
+					padding: 0 0 0 23px;
+					background: url(/i/tco09//page_title_bg.png) no-repeat left;
+				} 
+				
+				#mainContentInner .pageContent P{
+					color: #707070;
+					line-height: 20px;
+				}
+				
+				#mainContentInner .pageContent DIV.subtitle{
+					padding-left: 20px;
+				}
+				
+					#mainContentInner .pageContent DIV.subtitle H3.subtitle{
+						color: #006894;
+						font-size: 13px;
+						background: url(/i/tco09//subtitle_bg.png) no-repeat left;
+						padding: 0 0 0 13px;
+						margin: 0;
+					}
+					
+					#mainContentInner .pageContent DIV.subtitle P{
+						padding: 5px 0;
+						margin: 0;
+					}
+
+		.bottomAreaContent .sponsors{
+			float: right;
+			width: 180px;
+		}
+		
+			.bottomAreaContent .sponsors H2.title{
+				display: block;
+				color: #006894;
+				font-size: 11px;
+				background: url(/i/tco09//sponsors_title.png) no-repeat;
+				width: 175px;
+				height: 21px;
+				padding: 5px 0 0 13px;
+				margin: 0 0 5px 0;
+			}
+			
+			.bottomAreaContent .sponsors DIV.logo{
+				margin: 7px 0;
+			}
+			
+				.bottomAreaContent .sponsors DIV.logo IMG.logo2{
+					margin-left: 10px;
+				}
+		
+#footer{
+	color: #26bcd6;
+	background: url(/i/tco09//footer_bg.png) repeat-x top;
+	font-size: 11px;
+}
+
+#footerInner{
+	text-align: center;
+	width: 911px;
+	margin: 0 auto;
+	padding-top: 14px;
+	padding-bottom: 6px;
+}
+
+	#footerInner A{
+		color: #FFF;
+		text-decoration: none;
+		margin: 0 3px;
+	} 
+	
+	#footerInner A:hover{
+		text-decoration: underline;
+	}
+	
+	#footerInner P{
+		margin: 0;
+		padding: 4px 0;
+	}
+
+/* ----- IMAGES ----- */
+img { border: 0; }
+
+/* ----- LINKS ----- */
+A.admin{
+	color: #ff9900 !important;
+	text-decoration: none !important;
+}
+
+A.red{
+	color: #ee0000 !important;
+	text-decoration: none !important;
+}
+
+A.yellow{
+	color: #ddcc00 !important;
+	text-decoration: none !important;
+}
+
+A.blue{
+	color: #6666ff !important;
+	text-decoration: none !important;
+}
+
+A.green{
+	color: #00a900 !important;
+	text-decoration: none !important;
+}
+
+A.gray{
+	color: #999999 !important;
+	text-decoration: none !important;
+}
+
+A.black{
+	color: #000 !important;
+	text-decoration: none !important;
+}
+
+/* TABLES */
+
+TABLE.data{
+	border-collapse: collapse;
+}
+
+	TABLE.data TH{
+		font-size: 13px;
+		color: #FFF;
+		text-align: left;
+		background: url(/i/tco09//table_th.png) repeat-x;
+		height: 27px;
+		padding-left: 8px;
+	}
+
+	TABLE.data TH.first{
+		background: url(/i/tco09//table_th_left.png) no-repeat left;
+		border: none;
+		width: 5px;
+		padding: 0;
+	}
+
+	TABLE.data TH.last{
+		background: url(/i/tco09//table_th_right.png) no-repeat right;
+		border: none;
+		width: 5px;
+		padding: 0;
+	}
+	
+	TABLE.data TD{
+		color: #707070;
+		border: 1px solid #d7d7d7;
+		font-size: 12px;
+		padding: 8px 0;
+		background: #e6e6e6 url(/i/tco09//table_td_bg.png) repeat-x top;
+	}
+	
+	TABLE.data TR.even TD{
+		background: #c8eeff url(/i/tco09//table_td_even.png) repeat-x top;
+	}
+	
+	TABLE.data TR.hover TD{
+		background-color: #b6d5e2;
+		background-image: none;
+	}
+	
+	TABLE.data TD.first{
+		border-right: none;
+	}
+	
+	TABLE.data TD.last{
+		border-left: 0;
+	}
+	
+	TABLE.data TD.alignText{
+		padding-left: 8px;
+	}
+
+
+/* ----- FORMS ----- */
+form { padding: 0; }
+fieldset { }
+legend { }
+label { }
+input { }
+.input { }
+textarea { }
+.textarea { }
+select { }
+.select { }
+
