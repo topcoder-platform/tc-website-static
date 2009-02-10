@@ -713,6 +713,11 @@ TABLE.data{
 		width: 5px;
 		padding: 0;
 	}
+
+        TABLE.data TH A{
+        color: #ffffff;
+        text-decoration: underline;
+        }
 	
 	TABLE.data TD{
 		color: #707070;
