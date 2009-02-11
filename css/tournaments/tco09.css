@@ -737,10 +737,12 @@ TABLE.data{
 	
 	TABLE.data TD.subfirst{
 		border-right: none;
+		background: #89bbd0;
 	}
 	
 	TABLE.data TD.sublast{
 		border-left: 0;
+		background: #89bbd0;
 	}
 
 	TABLE.data TR.even TD{
