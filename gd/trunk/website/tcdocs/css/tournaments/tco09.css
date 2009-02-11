@@ -731,10 +731,18 @@ TABLE.data{
 		color: #707070;
 		border: 1px solid #d7d7d7;
 		font-size: 12px;
-		padding: 8px 0;
+		padding: 8px;
 		background: #89bbd0;
 	}
 	
+	TABLE.data TD.subfirst{
+		border-right: none;
+	}
+	
+	TABLE.data TD.sublast{
+		border-left: 0;
+	}
+
 	TABLE.data TR.even TD{
 		background: #c8eeff url(/i/tournament/tco09/table_td_even.png) repeat-x top;
 	}
