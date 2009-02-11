@@ -714,17 +714,25 @@ TABLE.data{
 		padding: 0;
 	}
 
-        TABLE.data TH A{
-                color: #ffffff;
-                text-decoration: underline;
+	TABLE.data TH A{
+			color: #ffffff;
+			text-decoration: underline;
         }
 	
 	TABLE.data TD{
-		color: #707070;
+		color: #333333;
 		border: 1px solid #d7d7d7;
 		font-size: 12px;
 		padding: 8px 0;
 		background: #e6e6e6 url(/i/tournament/tco09/table_td_bg.png) repeat-x top;
+	}
+	
+	TABLE.data TD.sub {
+		color: #707070;
+		border: 1px solid #d7d7d7;
+		font-size: 12px;
+		padding: 8px 0;
+		background: #89bbd0;
 	}
 	
 	TABLE.data TR.even TD{
@@ -742,13 +750,6 @@ TABLE.data{
 	
 	TABLE.data TD.last{
 		border-left: 0;
-	}
-	
-	TABLE.data TD.sub{
-		color: #8bbcd1;
-		border: 1px solid #d7d7d7;
-		font-size: 12px;
-		color: #333333;
 	}
 	
 	TABLE.data TD.alignText{
