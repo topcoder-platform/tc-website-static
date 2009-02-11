@@ -715,8 +715,8 @@ TABLE.data{
 	}
 
         TABLE.data TH A{
-        color: #ffffff;
-        text-decoration: underline;
+                color: #ffffff;
+                text-decoration: underline;
         }
 	
 	TABLE.data TD{
