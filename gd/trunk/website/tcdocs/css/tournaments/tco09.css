@@ -727,21 +727,21 @@ TABLE.data{
 		background: #e6e6e6 url(/i/tournament/tco09/table_td_bg.png) repeat-x top;
 	}
 	
-	TABLE.data TD.sub {
+	TABLE.data TD.subfirst{
 		color: #333333;
 		border: 1px solid #d7d7d7;
+		border-right: none;
 		font-size: 12px;
 		padding: 8px;
 		background: #89bbd0;
 	}
 	
-	TABLE.data TD.subfirst{
-		border-right: none;
-		background: #89bbd0;
-	}
-	
 	TABLE.data TD.sublast{
+		color: #333333;
+		border: 1px solid #d7d7d7;
 		border-left: 0;
+		font-size: 12px;
+		padding: 8px;
 		background: #89bbd0;
 	}
 
