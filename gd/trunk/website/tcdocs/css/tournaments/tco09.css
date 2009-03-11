@@ -695,67 +695,36 @@ TABLE.data{
 		font-size: 13px;
 		color: #FFF;
 		text-align: left;
-		background: url(/i/tournament/tco09/table_th.png) repeat-x;
+		background: url(/i/tournament/tco09/table_th.png) top repeat-x;
 		height: 27px;
 		padding-left: 8px;
+		background-color: #006995;
 	}
 
 	TABLE.data TH.first{
-		background: url(/i/tournament/tco09/table_th_left.png) no-repeat left;
+		background: url(/i/tournament/tco09/table_th_left.png) no-repeat top left;
 		border: none;
 		width: 5px;
 		padding: 0;
+		background-color: #006995;
 	}
 
 	TABLE.data TH.last{
-		background: url(/i/tournament/tco09/table_th_right.png) no-repeat right;
+		background: url(/i/tournament/tco09/table_th_right.png) no-repeat top right;
 		border: none;
 		width: 5px;
 		padding: 0;
+		background-color: #006995;
 	}
-
-	TABLE.data TH A{
-			color: #ffffff;
-			text-decoration: underline;
-        }
 	
 	TABLE.data TD{
-		color: #333333;
+		color: #707070;
 		border: 1px solid #d7d7d7;
 		font-size: 12px;
 		padding: 8px 0;
 		background: #e6e6e6 url(/i/tournament/tco09/table_td_bg.png) repeat-x top;
 	}
 	
-	TABLE.data TD.subfirstleft{
-		color: #333333;
-		border: 1px solid #d7d7d7;
-		border-right: none;
-		font-size: 12px;
-		padding: 8px 0;
-		background: #89bbd0;
-	}
-	
-	TABLE.data TD.subfirst{
-		color: #333333;
-		border: 1px solid #d7d7d7;
-		border-right: none;
-		border-left: none;
-		font-size: 12px;
-		padding: 8px;
-		background: #89bbd0;
-	}
-	
-	TABLE.data TD.sublastright{
-		color: #333333;
-		border: 1px solid #d7d7d7;
-		border-left: none;
-		border-right: none;
-		font-size: 12px;
-		padding: 8px 0;
-		background: #89bbd0;
-	}
-
 	TABLE.data TR.even TD{
 		background: #c8eeff url(/i/tournament/tco09/table_td_even.png) repeat-x top;
 	}

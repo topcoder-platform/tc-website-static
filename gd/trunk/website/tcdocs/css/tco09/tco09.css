@@ -2,6 +2,7 @@
 
 CSS Template - Preferred Naming Conventions
 
+Users may add or remove items - this is just to be used as a guide.
 
 - - - - - - - - - - - - - - - - - - - - - */
 
@@ -15,36 +16,17 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	background-color: #006894; 
+	color: #707070;
+	line-height: 20px;
 }
 
-A{
-	color: #0e6493;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-A.hover{
-	text-decoration: none;
-}
-
-ol {
-		width: 696px;
-		margin: 0 auto;
-		padding: 0 0 0 0;
-		color: #707070;
-}
-
-li.ol {
-		padding: 0 0 8px; 0;
-		color: #707070;
-}
-
+strong { color: #006894; }
 
 /*-------------------
 	WRAPPER
 -------------------*/
 #wrapper{
-	background: #004361 url(/i/tco09//bg.png) repeat-x top;
+	background: #004361 url(/i/tournament/tco09/bg.png) repeat-x top;
 	padding-bottom: 20px;
 }
 
@@ -53,24 +35,13 @@ li.ol {
 	margin: 0 auto;
 }
 
-#wrapperPopup{
-	width: 600px;
-	margin: 0 auto;
-}
-
 #wrapperContent{
-	background: url(/i/tco09//wrapper_top_bg.png) no-repeat top;
+	background: url(/i/tournament/tco09/wrapper_top_bg.png) no-repeat top;
 }
 
 #wrapperContentInner{
 	width: 911px;
 	margin: 0 auto;
-}
-
-#wrapperContentPopup{
-	width: 600px;
-	margin: 0 auto;
-	line-height:1.7;
 }
 
 /*-----------------
@@ -85,7 +56,7 @@ li.ol {
 
 	#header A.topCoderLogo{
 		position: absolute;
-		background: url(/i/tco09//topCoderLogo.png) no-repeat;
+		background: url(/i/tournament/tco09/topCoderLogo.png) no-repeat;
 		width: 139px;
 		height: 21px;
 		top: 17px;
@@ -98,7 +69,7 @@ li.ol {
 	#mainNav UL.nav{
 		list-style: none;
 		overflow: hidden;
-		width: 696px;
+		width: 820px;
 		margin: 0 auto;
 		padding: 0 0 0 0;
 	}
@@ -109,11 +80,11 @@ li.ol {
 			height: 116px;
 			width: 102px;
 			padding: 0 7px;
-			background: url(/i/tco09//main_nav_bg.png) no-repeat right;
+			background: url(/i/tournament/tco09/main_nav_bg.png) no-repeat right;
 		}
 		
 		#mainNav UL.nav LI.centerBg{
-			background: url(/i/tco09//main_nav_bg2.png) no-repeat right;
+			background: url(/i/tournament/tco09/main_nav_bg2.png) no-repeat right;
 		}
 		
 		#mainNav UL.nav LI.last{
@@ -122,42 +93,56 @@ li.ol {
 		
 			#mainNav UL.nav LI A.tournamentActive{
 				display: block;
-				background: url(/i/tco09//tournament_nav_active.png) no-repeat;
+				background: url(/i/tournament/tco09/tournament_nav_active.png) no-repeat;
+				width: 102px;
+				height: 116px;
+			}
+
+			#mainNav UL.nav LI A.onlineActive{
+				display: block;
+				background: url(/i/tournament/tco09/online_competition_active.png) no-repeat;
 				width: 102px;
 				height: 116px;
 			}
 			
 			#mainNav UL.nav LI A.algorithmActive{
 				display: block;
-				background: url(/i/tco09//algorithm_nav_active.png) no-repeat;
+				background: url(/i/tournament/tco09/algorithm_nav_active.png) no-repeat;
 				width: 102px;
 				height: 116px;
 			}
 			
 			#mainNav UL.nav LI A.componentActive{
 				display: block;
-				background: url(/i/tco09//component_competition_active.png) no-repeat;
+				background: url(/i/tournament/tco09/component_competition_active.png) no-repeat;
 				width: 102px;
 				height: 116px;
 			}
 			
 			#mainNav UL.nav LI A.marathonActive{
 				display: block;
-				background: url(/i/tco09//marathon_competition_active.png) no-repeat;
+				background: url(/i/tournament/tco09/marathon_competition_active.png) no-repeat;
+				width: 102px;
+				height: 116px;
+			}
+
+			#mainNav UL.nav LI A.moddashActive{
+				display: block;
+				background: url(/i/tournament/tco09/mod_dash_active.png) no-repeat;
 				width: 102px;
 				height: 116px;
 			}
 			
 			#mainNav UL.nav LI A.studioActive{
 				display: block;
-				background: url(/i/tco09//studio_competition_active.png) no-repeat;
+				background: url(/i/tournament/tco09/studio_competition_active.png) no-repeat;
 				width: 102px;
 				height: 116px;
 			}
 			
 			#mainNav UL.nav LI A.arenaActive{
 				display: block;
-				background: url(/i/tco09//launch_arena_active.png) no-repeat;
+				background: url(/i/tournament/tco09/launch_arena_active.png) no-repeat;
 				width: 102px;
 				height: 116px;
 			}
@@ -186,75 +171,99 @@ li.ol {
 				
 			
 				#mainNav UL.nav LI A.tournament{
-					background: url(/i/tco09//tournament_overview.png) no-repeat center 70px;
+					background: url(/i/tournament/tco09/tournament_overview.png) no-repeat center 70px;
 				}
 				
 					#mainNav UL.nav LI A.tournament:hover{
-						background: url(/i/tco09//tournament_overview_hover.png) no-repeat center 70px;
+						background: url(/i/tournament/tco09/tournament_overview_hover.png) no-repeat center 70px;
+					}
+
+				#mainNav UL.nav LI A.online{
+					background: url(/i/tournament/tco09/online_competition.png) no-repeat center 70px;
+				}
+				
+					#mainNav UL.nav LI A.online:hover{
+						background: url(/i/tournament/tco09/online_competition_hover.png) no-repeat center 70px;
 					}
 				
 				#mainNav UL.nav LI A.algorithm{
-					background: url(/i/tco09//algorithm_competition.png) no-repeat center 70px;
+					background: url(/i/tournament/tco09/algorithm_competition.png) no-repeat center 70px;
 				}
 				
 					#mainNav UL.nav LI A.algorithm:hover{
-						background: url(/i/tco09//algorithm_competition_hover.png) no-repeat center 70px;
+						background: url(/i/tournament/tco09/algorithm_competition_hover.png) no-repeat center 70px;
 					}
 				
 				#mainNav UL.nav LI A.component{
-					background: url(/i/tco09//component_competition.png) no-repeat center 70px;
+					background: url(/i/tournament/tco09/component_competition.png) no-repeat center 70px;
 				}
 				
 					#mainNav UL.nav LI A.component:hover{
-						background: url(/i/tco09//component_competition_hover.png) no-repeat center 70px;
+						background: url(/i/tournament/tco09/component_competition_hover.png) no-repeat center 70px;
 					}
 				
 				#mainNav UL.nav LI A.marathon{
-					background: url(/i/tco09//marathon_competition.png) no-repeat center 70px;
+					background: url(/i/tournament/tco09/marathon_competition.png) no-repeat center 70px;
 				}
 				
 					#mainNav UL.nav LI A.marathon:hover{
-						background: url(/i/tco09//marathon_competition_hover.png) no-repeat center 70px;
+						background: url(/i/tournament/tco09/marathon_competition_hover.png) no-repeat center 70px;
+					}
+
+				#mainNav UL.nav LI A.moddash{
+					background: url(/i/tournament/tco09/mod_dash.png) no-repeat center 70px;
+				}
+				
+					#mainNav UL.nav LI A.moddash:hover{
+						background: url(/i/tournament/tco09/mod_dash_hover.png) no-repeat center 70px;
 					}
 				
 				#mainNav UL.nav LI A.studio{
-					background: url(/i/tco09//studio_competition.png) no-repeat center 70px;
+					background: url(/i/tournament/tco09/studio_competition.png) no-repeat center 70px;
 				}
 				
 					#mainNav UL.nav LI A.studio:hover{
-						background: url(/i/tco09//studio_competition_hover.png) no-repeat center 70px;
+						background: url(/i/tournament/tco09/studio_competition_hover.png) no-repeat center 70px;
 					}
 				
 				#mainNav UL.nav LI A.arena{
-					background: url(/i/tco09//launch_arena.png) no-repeat center 70px;
+					background: url(/i/tournament/tco09/launch_arena.png) no-repeat center 70px;
 				}
 				
 					#mainNav UL.nav LI A.arena:hover{
-						background: url(/i/tco09//launch_arena_hover.png) no-repeat center 70px;
+						background: url(/i/tournament/tco09/launch_arena_hover.png) no-repeat center 70px;
 					}
 				
 				#mainNav UL.nav LI A SPAN.tournament{
-					background: url(/i/tco09//tournament_nav.png) no-repeat 0px 0px;
+					background: url(/i/tournament/tco09/tournament_nav.png) no-repeat 0px 0px;
+				}
+
+				#mainNav UL.nav LI A SPAN.online{
+					background: url(/i/tournament/tco09/online_nav.png) no-repeat 0px -1139px;
 				}
 				
 				#mainNav UL.nav LI A SPAN.algorithm{
-					background: url(/i/tco09//algorithm_nav.png) no-repeat 0px -134px;
+					background: url(/i/tournament/tco09/algorithm_nav.png) no-repeat 0px -134px;
 				}
 				
 				#mainNav UL.nav LI A SPAN.component{
-					background: url(/i/tco09//component_nav.png) no-repeat 0px -1072px;
+					background: url(/i/tournament/tco09/component_nav.png) no-repeat 0px -1072px;
 				}
 				
 				#mainNav UL.nav LI A SPAN.marathon{
-					background: url(/i/tco09//marathon_nav.png) no-repeat 0px -335px;
+					background: url(/i/tournament/tco09/marathon_nav.png) no-repeat 0px -335px;
+				}
+
+				#mainNav UL.nav LI A SPAN.moddash{
+					background: url(/i/tournament/tco09/moddash_nav.png) no-repeat 0px -1005px;
 				}
 				
 				#mainNav UL.nav LI A SPAN.studio{
-					background: url(/i/tco09//studio_nav.png) no-repeat 0px -871px;
+					background: url(/i/tournament/tco09/studio_nav.png) no-repeat 0px -871px;
 				}
 				
 				#mainNav UL.nav LI A SPAN.launchArena{
-					background: url(/i/tco09//launch_arena_nav.png) no-repeat 0px -603px;
+					background: url(/i/tournament/tco09/launch_arena_nav.png) no-repeat 0px -603px;
 				}
 
 /*------------------
@@ -265,53 +274,34 @@ li.ol {
 	margin: 6px 0 0 0;
 }
 
-#contentPopup {
-	margin: 10px;
-	padding: 10px;
-	color: #707070;
-	background-color: #ffffff;
-}
-
-#contentPopop p { padding: 5px; }
-
-#contentPopop h2 {
-	color: #006894;
-	font-size: 16px;
-	margin: 0;
-	padding: 0 0 0 23px;
-	background: url(/i/tco09//page_title_bg.png) no-repeat left;
-}
-
-
-
 	#content .contentTopLeft{
-		background: url(/i/tco09//content_topLeft_bg.png) no-repeat top left;
+		background: url(/i/tournament/tco09/content_topLeft_bg.png) no-repeat top left;
 		padding-left: 19px;
 	}
 	
 	#content .contentBottomLeft{
-		background: url(/i/tco09//content_bottomLeft_bg.png) no-repeat bottom left;
+		background: url(/i/tournament/tco09/content_bottomLeft_bg.png) no-repeat bottom left;
 		padding-left: 19px;
 	}
 	
 	#content .contentTopRight{
-		background: url(/i/tco09//content_topRight_bg.png) no-repeat top right;
+		background: url(/i/tournament/tco09/content_topRight_bg.png) no-repeat top right;
 		padding-right: 19px;
 	}
 	
 	#content .contentBottomRight{
-		background: url(/i/tco09//content_bottomRight_bg.png) no-repeat bottom right;
+		background: url(/i/tournament/tco09/content_bottomRight_bg.png) no-repeat bottom right;
 		padding-right: 19px;
 	}
 	
 	
 	#content .contentTopInner{
-		background: url(/i/tco09//content_bg.png) repeat;
+		background: url(/i/tournament/tco09/content_bg.png) repeat;
 		height: 18px;
 	}
 	
 	#content .contentInner{
-		background: url(/i/tco09//content_bg.png) repeat;
+		background: url(/i/tournament/tco09/content_bg.png) repeat;
 		height: 100%;
 		padding: 0 20px;
 	}
@@ -319,19 +309,14 @@ li.ol {
 /*-- Top Area --*/
 
 .topArea{
-	height:165px;
-	overflow: hidden;
+	/*height: 100%;
+	overflow: hidden;*/
 	padding-bottom: 15px;
 }
 
 	.topArea .description{
-		float: left;
-		width: 620px;
-	}
-	
-	#teaser .topArea .description{
-		float: left;
-		width: 880px;
+		/*float: left;*/
+		/*width: 620px;*/
 	}
 	
 		.topArea .description H2{
@@ -348,85 +333,72 @@ li.ol {
 			display: block;
 			width: 140px;
 			height: 32px;
-			background: url(/i/tco09//register_now_btn.png) no-repeat;
+			background: url(/i/tournament/tco09/register_now_btn.png) no-repeat;
 			margin: 0 auto;
 		}
 	
 	.topArea .spotlight{
 		float: right;
-		width: 222px;
-		height: 193px;
+		width: 165px;
+		height: 160px;
+		margin-left: 20px;		
+		padding: 6px 0;
+		background: url(/i/tournament/tco09/spotLightTop.png) no-repeat top left;
 	}
-	
-		UL#spotLightTabs{
-			margin: 0;
-			padding: 0;
-			height: 23px;
-			overflow: hidden;
-			list-style: none;
-		} 
-		
-			UL#spotLightTabs LI{
-				float: left;
-				margin: 0 1px;
-				padding: 0;
-				height: 23px;
-			}  
-			
-			UL#spotLightTabs LI.first{
-				margin-left: 0;;
-			}
-			
-			UL#spotLightTabs LI.last{
-				margin-right: 0;
-			}
-				
-				UL#spotLightTabs LI A{
-					display: block;
-					width: 54px;
-					height: 23px;
-				}
-				
-				UL#spotLightTabs LI A.program{
-					background: url(/i/tco09//program_tab.png) no-repeat 0 6px;
-				}
-				
-				UL#spotLightTabs LI A.photos{
-					background: url(/i/tco09//photos_tab.png) no-repeat 0 6px;
-				}
-				
-				UL#spotLightTabs LI A.movies{
-					background: url(/i/tco09//movies_tab.png) no-repeat 0 6px;
-				}
-				
-				UL#spotLightTabs LI A.blog{
-					background: url(/i/tco09//blog_tab.png) no-repeat 0 6px;
-				}
-				
-				UL#spotLightTabs LI A:hover{
-					background-position: top;
-				}
-				
-				UL#spotLightTabs LI.on A{
-					background-position: bottom;
-				}
-				
-				UL#spotLightTabs LI.on A:hover{
-					background-position: bottom;
-				}
-		
 		.spotLightContent .spotLightTop{
-			background: #FFF url(/i/tco09//spotLightTop.png) no-repeat top right;
+			padding-left: 20px;
+			border-left: 1px solid #b2e1ec;
+			border-right: 1px solid #b2e1ec;
 		}
 		
 		.spotLightContent .spotLightBottom{
-			background: url(/i/tco09//spotLightBottom.png) no-repeat bottom;
+			background: url(/i/tournament/tco09/spotLightBottom.png) no-repeat bottom;
 			padding-bottom: 6px;
 		}
 		
 		.spotLightContent #spotLightContentInner{
-			height: 160px;
+			height: 170px;
 			padding: 5px 0;
+		}
+		
+		#spotLightContentInner .spotlightButton
+		{
+			display: block;
+			width: 123px;
+			height: 28px;
+		}
+		
+			#spotLightContentInner #programButton
+			{				
+				background: url(/i/tournament/tco09/button_program.png) no-repeat;
+			}
+							
+			#spotLightContentInner #photosButton
+			{
+				background: url(/i/tournament/tco09/button_photos.png) no-repeat;
+			}
+			
+			#spotLightContentInner #moviesButton
+			{
+				background: url(/i/tournament/tco09/button_movies.png) no-repeat;
+			}
+			
+			#spotLightContentInner #blogButton
+			{
+				background: url(/i/tournament/tco09/button_blog.png) no-repeat;
+			}
+			
+			#spotLightContentInner #programButton:hover,
+			#spotLightContentInner #photosButton:hover,
+			#spotLightContentInner #moviesButton:hover,
+			#spotLightContentInner #blogButton:hover
+			{				
+				background-position: bottom left;
+			}
+		
+		#spotLightContentInner .spotlightButton span
+		{
+			display: none;
 		}
 		
 
@@ -437,33 +409,33 @@ li.ol {
 }
 
 	.bottomArea .bottomLeft{
-		background: url(/i/tco09//bottomArea_bottomLeft.png) no-repeat bottom left;
+		background: url(/i/tournament/tco09/bottomArea_bottomLeft.png) no-repeat bottom left;
 	}
 	
 	.bottomArea .bottomRight{
-		background: url(/i/tco09//bottomArea_bottomRight.png) no-repeat bottom right;
+		background: url(/i/tournament/tco09/bottomArea_bottomRight.png) no-repeat bottom right;
 	}
 	
 	.bottomArea .secNav{
-		background: url(/i/tco09//secondary_nav_bg.png) repeat-x;
+		background: url(/i/tournament/tco09/secondary_nav_bg.png) repeat-x;
 	}
 	
 	.bottomArea .secNav .secNavLeft{
-		background: url(/i/tco09//secondary_nav_left_bg.png) no-repeat left;
+		background: url(/i/tournament/tco09/secondary_nav_left_bg.png) no-repeat left;
 	}
 	
 	.bottomArea .secNav UL#secNavRight{
 		margin: 0;
-		padding: 3px 10px 0	80px;
+		padding: 3px 0px 0	20px;
 		height: 33px;
-		background: url(/i/tco09//secondary_nav_right_bg.png) no-repeat right;
+		background: url(/i/tournament/tco09/secondary_nav_right_bg.png) no-repeat right;
 		overflow: hidden;
 		list-style: none;
 	}
 	
 		UL#secNavRight LI{
 			float: left;
-			margin: 0 15px;
+			margin: 0 5px;
 			padding: 0;
 		}
 		
@@ -481,11 +453,11 @@ li.ol {
 				font-size: 12px;
 				text-decoration: none;
 				font-weight: bold;
-				padding-left: 26px;
+				padding-left: 24px;
 			}
 			
 				UL#secNavRight LI A.on{
-					background: url(/i/tco09//secNav_onLeft.png) no-repeat left;
+					background: url(/i/tournament/tco09/secNav_onLeft.png) no-repeat left;
 				}
 			
 			UL#secNavRight LI A:hover{
@@ -496,13 +468,13 @@ li.ol {
 				float: left;
 				height: 24px;
 				padding-top: 9px;
-				padding-right: 26px;
+				padding-right: 24px;
 				cursor: pointer;
 			}
 			
 				UL#secNavRight LI A.on SPAN{
 					color: #FFF;
-					background: url(/i/tco09//secNav_onRight.png) no-repeat right;
+					background: url(/i/tournament/tco09/secNav_onRight.png) no-repeat right;
 					cursor: pointer;
 				}
 	
@@ -513,17 +485,17 @@ li.ol {
 	
 		#tertiaryNav UL.tertNav{
 			background-color: #006894;
-			width: 719px;
+			width: 849px;
 			overflow: hidden;
 			list-style: none;
 			margin: 0;
-			padding: 0 0 0 150px;
+			padding: 0 0 0 20px;
 		} 	
 		
 			#tertiaryNav UL.tertNav LI{
 				float: left;
 				padding: 8px 0;
-				margin: 0 25px;
+				margin: 0 12px;
 			}
 			
 			#tertiaryNav UL.tertNav LI.first{
@@ -536,7 +508,7 @@ li.ol {
 		
 				#tertiaryNav UL.tertNav LI A{
 					color: #FFF;
-					font-size: 11px;
+					font-size: 12px;
 					font-weight: bold;
 					text-decoration: none;
 				}
@@ -545,15 +517,16 @@ li.ol {
 					color: #26bcd6;
 				}
 
+    			#tertiaryNav UL.tertNav LI A.on{
+					color: #26bcd6;
+				}
+				
 	.bottomAreaContent{
-		height: 100%;
+		/*height: 100%;*/
 		overflow: hidden;
 		padding: 14px 18px;
 	}
 	 
-	 #teaser .bottomAreaContent .mainContent {
-		width: 830px;
-	 }
 		.bottomAreaContent .mainContent{
 			float: left;
 			width: 640px;
@@ -561,7 +534,7 @@ li.ol {
 		
 			.bottomAreaContent .mainContent #currentPage{
 				color: #006894;
-				font-size: 11px;
+				font-size: 12px;
 				padding-bottom: 10px;
 			}
 			
@@ -575,7 +548,7 @@ li.ol {
 				}	
 
 			#mainContentInner .pageContent{
-				background: url(/i/tco09//pageContent_bg.png) repeat-x top;
+				background: url(/i/tournament/tco09/pageContent_bg.png) repeat-x top;
 				padding: 15px;
 			}
 			
@@ -594,7 +567,7 @@ li.ol {
 					font-size: 16px;
 					margin: 0;
 					padding: 0 0 0 23px;
-					background: url(/i/tco09//page_title_bg.png) no-repeat left;
+					background: url(/i/tournament/tco09/page_title_bg.png) no-repeat left;
 				} 
 				
 				#mainContentInner .pageContent P{
@@ -608,8 +581,8 @@ li.ol {
 				
 					#mainContentInner .pageContent DIV.subtitle H3.subtitle{
 						color: #006894;
-						font-size: 13px;
-						background: url(/i/tco09//subtitle_bg.png) no-repeat left;
+						font-size: 14px;
+						background: url(/i/tournament/tco09/subtitle_bg.png) no-repeat left;
 						padding: 0 0 0 13px;
 						margin: 0;
 					}
@@ -622,13 +595,14 @@ li.ol {
 		.bottomAreaContent .sponsors{
 			float: right;
 			width: 180px;
+			margin-top: 24px;
 		}
 		
 			.bottomAreaContent .sponsors H2.title{
 				display: block;
 				color: #006894;
-				font-size: 11px;
-				background: url(/i/tco09//sponsors_title.png) no-repeat;
+				font-size: 12px;
+				background: url(/i/tournament/tco09/sponsors_title.png) no-repeat;
 				width: 175px;
 				height: 21px;
 				padding: 5px 0 0 13px;
@@ -645,8 +619,8 @@ li.ol {
 		
 #footer{
 	color: #26bcd6;
-	background: url(/i/tco09//footer_bg.png) repeat-x top;
-	font-size: 11px;
+	background: url(/i/tournament/tco09/footer_bg.png) repeat-x top;
+	font-size: 12px;
 }
 
 #footerInner{
@@ -721,23 +695,26 @@ TABLE.data{
 		font-size: 13px;
 		color: #FFF;
 		text-align: left;
-		background: url(/i/tco09//table_th.png) repeat-x;
+		background: url(/i/tournament/tco09/table_th.png) top repeat-x;
 		height: 27px;
 		padding-left: 8px;
+		background-color: #006995;
 	}
 
 	TABLE.data TH.first{
-		background: url(/i/tco09//table_th_left.png) no-repeat left;
+		background: url(/i/tournament/tco09/table_th_left.png) no-repeat top left;
 		border: none;
 		width: 5px;
 		padding: 0;
+		background-color: #006995;
 	}
 
 	TABLE.data TH.last{
-		background: url(/i/tco09//table_th_right.png) no-repeat right;
+		background: url(/i/tournament/tco09/table_th_right.png) no-repeat top right;
 		border: none;
 		width: 5px;
 		padding: 0;
+		background-color: #006995;
 	}
 	
 	TABLE.data TD{
@@ -745,11 +722,11 @@ TABLE.data{
 		border: 1px solid #d7d7d7;
 		font-size: 12px;
 		padding: 8px 0;
-		background: #e6e6e6 url(/i/tco09//table_td_bg.png) repeat-x top;
+		background: #e6e6e6 url(/i/tournament/tco09/table_td_bg.png) repeat-x top;
 	}
 	
 	TABLE.data TR.even TD{
-		background: #c8eeff url(/i/tco09//table_td_even.png) repeat-x top;
+		background: #c8eeff url(/i/tournament/tco09/table_td_even.png) repeat-x top;
 	}
 	
 	TABLE.data TR.hover TD{
@@ -768,6 +745,8 @@ TABLE.data{
 	TABLE.data TD.alignText{
 		padding-left: 8px;
 	}
+
+    span.bigRed { color: #FF0000; font-weight: bold; text-decoration: none; }
 
 
 /* ----- FORMS ----- */
