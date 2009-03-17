@@ -11,7 +11,7 @@
 	#nav UL LI {
 		float: left;
 		height: 32px;
-		background: url(/images/home/nav_sprites.png) no-repeat;
+		background: url(/i/home/nav_sprites.png) no-repeat;
 		background-position: 0 -64px;
 		padding-left: 1px;
 		width:180px;
@@ -27,7 +27,7 @@
 	
 	#nav UL LI A {
 		height: 32px;
-		background: url(/images/home/nav_sprites.png) no-repeat;
+		background: url(/i/home/nav_sprites.png) no-repeat;
 		background-position: right -96px;
 		padding: 9px 0 0 0;
 		line-height: 12px;
@@ -61,14 +61,14 @@
 	}
 	
 	.active-item {
-	background: url(/images/home/nav_sprites.png) no-repeat;
+	background: url(/i/home/nav_sprites.png) no-repeat;
 	background-position: right -192px !important;
 	}
 	
 	/* #nav UL LI:hover UL {display:block;} */
 	
 	#nav UL UL {
-		background:url(/images/home/dropdown_nav_background.png) no-repeat bottom;
+		background:url(/i/home/dropdown_nav_background.png) no-repeat bottom;
 		display:none;
 		width:180px;
 		list-style-type:none;
@@ -90,7 +90,7 @@
 	
 	
 	#nav UL UL LI A {
-		background:url(/images/home/dropdown_nav_divider.png) no-repeat;
+		background:url(/i/home/dropdown_nav_divider.png) no-repeat;
 		height:20px;
 		display:block;
 		width:168px;
@@ -113,7 +113,7 @@
 	
 	#nav UL UL LI.last-li A:hover {
 		background-color:none;
-		background:url(/images/home/li-bottom-background.png) bottom no-repeat;
+		background:url(/i/home/li-bottom-background.png) bottom no-repeat;
 		color:#000;
 		margin:0px !important;
 		padding: 13px 0 8px 12px !important;

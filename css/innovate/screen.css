@@ -25,7 +25,7 @@ ADDED CSS STYLES
 	display: inline;
 	margin-left:50px;
 	width:412px;
-	background: url('../images/background_left.jpg') no-repeat;
+	background: url(/i/background_left.jpg) no-repeat;
 }
 
 #content_left_in {
@@ -63,7 +63,7 @@ ADDED CSS STYLES
 	float:right;
 	margin-right:20px;
 	width:412px;
-	background: url('../images/background_right.jpg') no-repeat;
+	background: url(/i/background_right.jpg) no-repeat;
 }
 
 #content_right_in {
@@ -139,6 +139,7 @@ A:hover {
 A img{
 	border: 0;
 }
+* :focus { outline: 0; }
 
 /* ------------------------------------
 LAYOUT
@@ -154,11 +155,13 @@ HEADER
 ------------------------------------ */
 #header {
 	height: 185px;
-	background: url(../images/bg_header.png) repeat-x;
+	background: url(/images/home/bg_header.png) repeat-x;
+	z-index:100;
 }
 
 #header .wrapper {
 	position: relative;
+	z-index:100;
 }
 
 	/* TC Direct Logo */
@@ -172,10 +175,10 @@ HEADER
 		width: 222px;
 		height: 83px;
 		top: 38px;
-		background: url(../images/tc_direct.png) no-repeat;
+		background: url(/images/home/tc_direct.png) no-repeat;
 	}
 	#header H1.tc-header A {
-		background: url(../images/tc_header.png) no-repeat;
+		background: url(/images/home/tc_header.png) no-repeat;
 		width: 269px;
 	}
 	
@@ -187,15 +190,6 @@ HEADER
 		display: none;
 	}
 	
-	#header H1 SUP {
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 27px;
-		width: 85px;
-		height: 26px;
-		background: url(../images/beta.png) no-repeat;
-	}
 
 	/* Ready, Engage TAGLINE */
 	#ready_engage {
@@ -204,7 +198,7 @@ HEADER
 		height: 24px;
 		right: 0;
 		top: 76px;
-		background: url(../images/ready_engage.png) no-repeat;
+		background: url(/images/home/ready_engage.png) no-repeat;
 	}
 	
 	#ready_engage SPAN {
@@ -221,7 +215,7 @@ HEADER
 	#nav UL LI {
 		float: left;
 		height: 32px;
-		background: url(../images/nav_sprites.png) no-repeat;
+		background: url(/images/home/nav_sprites.png) no-repeat;
 		background-position: 0 -64px;
 		padding-left: 1px;
 		width:180px;
@@ -235,7 +229,7 @@ HEADER
 	
 	#nav UL LI A {
 		height: 32px;
-		background: url(../images/nav_sprites.png) no-repeat;
+		background: url(/images/home/nav_sprites.png) no-repeat;
 		background-position: right -96px;
 		padding: 9px 0 0 0;
 		line-height: 12px;
@@ -263,14 +257,14 @@ HEADER
 	}
 	
 	.active-item {
-	background: url(../images/nav_sprites.png) no-repeat;
+	background: url(/images/home/nav_sprites.png) no-repeat;
 	background-position: right -192px !important;
 	}
 	
 	/* #nav UL LI:hover UL {display:block;} */
 	
 	#nav UL UL {
-		background:url(../images/dropdown_nav_background.png) no-repeat bottom;
+		background:url(/images/home/dropdown_nav_background.png) no-repeat bottom;
 		display:none;
 		width:180px;
 		list-style-type:none;
@@ -288,7 +282,7 @@ HEADER
 	
 	
 	#nav UL UL LI A {
-		background:url(../images/dropdown_nav_divider.png) no-repeat;
+		background:url(/images/home/dropdown_nav_divider.png) no-repeat;
 		height:20px;
 		display:block;
 		width:168px;
@@ -309,7 +303,7 @@ HEADER
 	
 	#nav UL UL LI.last-li A:hover {
 		background-color: none;
-		background:url(../images/li-bottom-background.png) bottom no-repeat;
+		background:url(/images/home/li-bottom-background.png) bottom no-repeat;
 		color:#000;
 		margin:0px !important;
 		width:168px;
@@ -329,7 +323,7 @@ HEADER
 	
 	#nav_support UL LI {
 		float: left;
-		background: url(../images/ico_sprites.png) no-repeat;
+		background: url(/images/home/ico_sprites.png) no-repeat;
 		background-position: 0 -21px;
 		padding: 0 8px 0 8px;
 	}
@@ -348,7 +342,7 @@ HEADER
 		font-weight: bold;
 		text-decoration: none;
 		color: #888;
-		background: url(../images/ico_sprites.png) no-repeat;
+		background: url(/images/home/ico_sprites.png) no-repeat;
 		background-position: 0 3px;
 		padding: 0 0 0 7px;
 	}
@@ -383,7 +377,7 @@ CONTENT
 		float: left;
 		width: 190px;
 		height: 500px;
-		background: url(../images/tabs_button_right.png) no-repeat top right;
+		background: url(/images/home/tabs_button_right.png) no-repeat top right;
 	}
 		
 		#tabs_button UL {
@@ -394,7 +388,7 @@ CONTENT
 			#tabs_button UL LI {
 				width: 190px;
 				height: 72px;
-				background: url(../images/tabs_button.png) no-repeat;
+				background: url(/images/home/tabs_button.png) no-repeat;
 				background-position: 0 -72px;
 			}
 		
@@ -413,7 +407,7 @@ CONTENT
 					font-size: 105%;
 					font-weight: bold;
 					
-					background: url(../images/ico_tabs_sprites.png) no-repeat;
+					background: url(/images/home/ico_tabs_sprites.png) no-repeat;
 				}
 				
 				#tabs_button LI.on A {
@@ -476,7 +470,7 @@ CONTENT
 	/* TABS CONTENT */
 	#tabs_panel {
 		margin-left: 189px;
-		background: url(../images/tabs_content_right.png) no-repeat top right;
+		background: url(/images/home/tabs_content_right.png) no-repeat top right;
 		padding: 10px;
 		min-height:500px;
 		height:auto !important;
@@ -486,7 +480,7 @@ CONTENT
 	
 		.tabs_content {
 			padding: 17px;
-			background: url(../images/bg_content_main.png) repeat-x;
+			background: url(/images/home/bg_content_main.png) repeat-x;
 			min-height: 462px;
 		}
 		
@@ -526,7 +520,7 @@ CONTENT
 				#what_todo LI {
 					height: 90px;
 					margin-bottom: 7px;
-					background: url(../images/bg_block.png) no-repeat;
+					background: url(/images/home/bg_block.png) no-repeat;
 				}
 				
 					#what_todo LI H3 {
@@ -546,7 +540,7 @@ CONTENT
 					}
 				
 					#what_todo LI .item {
-						background: url(../images/what_todo_sprites.png) no-repeat;
+						background: url(/images/home/what_todo_sprites.png) no-repeat;
 						width: 170px;
 						padding-left: 108px;
 						margin-left: 5px;
@@ -598,7 +592,7 @@ CONTENT
 		}
 		
 		.content_columns ul.what_is_list .list_title, .content_columns ul.pricing_list li{
-			background: url(../images/ico_sprites.png) no-repeat;
+			background: url(/images/home/ico_sprites.png) no-repeat;
 			background-position: 0 -50px;
 			padding-left: 20px;
 			font-size: 95%;
@@ -613,14 +607,14 @@ CONTENT
 		
 		.content_columns .pricing_image{
 			float: right;
-			background: url(../images/pricing.png) top right no-repeat;
+			background: url(/images/home/pricing.png) top right no-repeat;
 			width: 224px;
 			height: 129px;
 		}
 		
 		.content_columns .help_image{
 			float: right;
-			background: url(../images/help.png) top right no-repeat;
+			background: url(/images/home/help.png) top right no-repeat;
 			width: 200px;
 			height: 128px;
 		}
@@ -638,7 +632,7 @@ CONTENT
 		
 		.content_columns table thead{
 			width: 645px;
-			background: #231f20 url(../images/table_price_top.png) top left no-repeat;
+			background: #231f20 url(/images/home/table_price_top.png) top left no-repeat;
 			height: 5px;
 		}
 		
@@ -657,7 +651,7 @@ CONTENT
 		}
 		
 		.content_columns table tfoot{
-			background: #231f20 url(../images/table_price_bottom.png) bottom left no-repeat;
+			background: #231f20 url(/images/home/table_price_bottom.png) bottom left no-repeat;
 			height: 5px;
 		}
 		
@@ -700,7 +694,7 @@ CONTENT
 		}
 		
 		.content_columns p.ask{
-			background: url(../images/ico_sprites.png) no-repeat;
+			background: url(/images/home/ico_sprites.png) no-repeat;
 			background-position: 0 -49px;
 			padding-left: 20px;
 			font-weight: bold;
@@ -715,7 +709,7 @@ CONTENT
 		.content_columns ul.support_list li, .content_columns ul.methodology_list li, .content_columns ul.bug_race_list li{
 			padding-left: 22px;
 			height: 16px;
-			background: url(../images/check.png) top left no-repeat;
+			background: url(/images/home/check.png) top left no-repeat;
 			margin: 6px 0;
 		}
 		
@@ -760,7 +754,7 @@ NEWS
 #news {
 	clear: both;
 	padding: 15px 0 20px 0;
-	background: #fbfbfb url(../images/bg_content_news.png) repeat-x;
+	background: #fbfbfb url(/images/home/bg_content_news.png) repeat-x;
 }
 
 #whats_new SPAN {
@@ -770,7 +764,7 @@ NEWS
 #whats_new {
 	width: 141px;
 	height: 23px;
-	background: url(../images/whats_new.png) no-repeat;
+	background: url(/images/home/whats_new.png) no-repeat;
 }
 
 #news A:hover {
@@ -781,7 +775,7 @@ NEWS
 	#news .post {
 		width: 600px;
 		padding: 10px 0;
-		background: url(../images/post_hr.png) no-repeat bottom left;
+		background: url(/images/home/post_hr.png) no-repeat bottom left;
 	}
 	
 	#news .post H3 {
@@ -812,7 +806,7 @@ NEWS
 	
 	.learn_more A {
 		padding-left: 20px;
-		background: url(../images/ico_sprites.png) no-repeat;
+		background: url(/images/home/ico_sprites.png) no-repeat;
 		background-position: 0 -49px;
 		color: #d50000;
 		text-decoration: none;
@@ -838,7 +832,7 @@ PLATFORM TOOLS
 	}
 	
 	.platform_row_dark{
-		background: #f4f4f4 url(../images/bg_platform_dark.png) top left repeat-x;
+		background: #f4f4f4 url(/images/home/bg_platform_dark.png) top left repeat-x;
 	}
 	
 	.platform_row_dark div, .platform_row div{
@@ -891,7 +885,7 @@ LINKS
 	float: left;
 	width: 100%;
 	padding-top: 20px;
-	background: #eaeaea url(../images/bg_content_links.png) repeat-x;
+	background: #eaeaea url(/images/home/bg_content_links.png) repeat-x;
 	
 }
 
@@ -989,7 +983,7 @@ MISC
     width: 820px;
     padding: 20px 40px;
 	height:145px;
-	background-image:url(../images/carousel-container.png);
+	background-image:url(/images/home/carousel-container.png);
 	margin: 10px auto;
 	background-repeat:no-repeat;
 }
@@ -1024,7 +1018,7 @@ MISC
 .jcarousel-next-disabled-horizontal:hover,
 .jcarousel-next-disabled-horizontal:active {
     cursor: default;
-	background-image:url(../images/next-button-deactive.png)
+	background-image:url(/images/home/next-button-deactive.png)
 }
  .jcarousel-prev-horizontal {
     position: absolute;
@@ -1045,7 +1039,7 @@ MISC
  .jcarousel-prev-disabled-horizontal:hover,
  .jcarousel-prev-disabled-horizontal:active {
     cursor: default;
-	background-image:url(../images/prev-button-deactive.png)
+	background-image:url(/images/home/prev-button-deactive.png)
 }
 
 /* Homepage Specific */
@@ -1055,7 +1049,7 @@ MISC
 }
 	#welcome-banner h2 {
 		text-indent: -3000px;
-		background-image:url(../images/welcome-banner.png);
+		background-image:url(/images/home/welcome-banner.png);
 		background-position: center top;
 		background-repeat: no-repeat;
 		width: 930px;
@@ -1064,7 +1058,7 @@ MISC
 	}
 #news h2 {
 	text-indent: -3000px;
-	background-image:url(../images/news-announcements.png);
+	background-image:url(/images/home/news-announcements.png);
 	background-position: 40px top;
 	background-repeat: no-repeat;
 	height: 30px;
@@ -1083,14 +1077,14 @@ MISC
 	padding-bottom: 20px;
 }
 	#client-box {
-		background-image: url(../images/client-box-bkg.png);
+		background-image: url(/images/home/client-box-bkg.png);
 		background-position: left top;
 		background-repeat: no-repeat;
 		float: left;
 		width: 490px;
 	}
 	#client-box-bottom {
-		background-image: url(../images/client-box-bot.png);
+		background-image: url(/images/home/client-box-bot.png);
 		background-position: left top;
 		background-repeat: no-repeat;
 		float: left;
@@ -1107,14 +1101,14 @@ MISC
 }
 #enterprise-solutions {
 	margin-top: 13px;
-	background-image: url(../images/enterprise-bkg.png);
+	background-image: url(/images/home/enterprise-bkg.png);
 	background-repeat: no-repeat;
 	background-position: left top;
 	border-bottom: 1px solid #e6e6e6;
 	padding-top: 30px;
 }
 #tc-direct {
-	background-image: url(../images/tcdirect-bkg.png);
+	background-image: url(/images/home/tcdirect-bkg.png);
 	background-repeat: no-repeat;
 	background-position: left top;
 	padding-bottom: 0px;
@@ -1140,14 +1134,14 @@ MISC
 	padding-bottom: 20px;
 }
 	#member-box {
-		background-image: url(../images/member-box-bkg.png);
+		background-image: url(/images/home/member-box-bkg.png);
 		background-position: left top;
 		background-repeat: no-repeat;
 		float: left;
 		width: 362px;
 	}
 	#member-box-bottom {
-		background-image: url(../images/member-box-bot.png);
+		background-image: url(/images/home/member-box-bot.png);
 		background-position: left top;
 		background-repeat: no-repeat;
 		float: left;
@@ -1156,7 +1150,7 @@ MISC
 	}
 #compete h2 {
 	text-indent: -3000px;
-	background-image: url(../images/compete-against-best.png);
+	background-image: url(/images/home/compete-against-best.png);
 	background-position: center top;
 	background-repeat: no-repeat;
 	height: 52px;
@@ -1192,7 +1186,7 @@ MISC
 #compete-studio h3,
 #compete-digitalrun h3 {
 	text-indent: -3000px;
-	background-image: url(../images/competitions-header.png);
+	background-image: url(/images/home/competitions-header.png);
 	background-position: left top;
 	background-repeat: no-repeat;
 	width: 223px;
@@ -1200,10 +1194,10 @@ MISC
 	float: left;
 }
 #compete-studio h3 {
-	background-image: url(../images/studio-header.png);
+	background-image: url(/images/home/studio-header.png);
 }
 #compete-digitalrun h3 {
-	background-image: url(../images/digitalrun-header.png);
+	background-image: url(/images/home/digitalrun-header.png);
 }
 	#compete-competitions h3 a,
 	#compete-studio h3 a,
@@ -1272,10 +1266,10 @@ MISC
 	.button {
 		margin-left: auto;
 		margin-right: auto;
-		background: url( "../images/buttonbg.png" ) no-repeat;
+		background: url(/images/home/buttonbg.png) no-repeat;
 	}
 	
 	.button:hover {
 		text-decoration: none;
-		background: url( "../images/buttonOverbg.png" ) no-repeat;
+		background: url(/images/home/buttonOverbg.png) no-repeat;
 	}
