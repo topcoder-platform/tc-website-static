@@ -6,7 +6,7 @@ Engage
 #engage
 {
 	width: 930px;
-	background: transparent url(../images/engage/bg_engage.png) no-repeat left top;
+	background: transparent url(/i/innovate/bg_engage.png) no-repeat left top;
 }
 #engage #engage-header
 {
@@ -247,7 +247,7 @@ Engage
 	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
-	background: transparent url(../images/engage/btn_num.png) no-repeat left top;
+	background: transparent url(/i/innovate/btn_num.png) no-repeat left top;
 	padding-top: 4px;
 	margin-right: 8px;
 }
@@ -268,7 +268,7 @@ Engage
 	left: 0px;
 	position: absolute;
 	top: 0px;
-	background: transparent url(../images/engage/btn_prev.png) no-repeat left top;
+	background: transparent url(/i/innovate/btn_prev.png) no-repeat left top;
 	z-index: 2;
 }
 #engage-carousel-prev:hover
@@ -284,7 +284,7 @@ Engage
 	left: 36px;
 	position: absolute;
 	top: 0px;
-	background: transparent url(../images/engage/btn_next.png) no-repeat left top;
+	background: transparent url(/i/innovate/btn_next.png) no-repeat left top;
 	z-index: 2;
 }
 #engage-carousel-next:hover
@@ -413,10 +413,13 @@ Engage
 #contact-email-table td
 {
 	font-size: 11px;
-	text-align: left;
+	text-align: right;
 	background-color: #FFFFFF;
 	border-width: 0px;
-	padding: 2px 0px;
+	padding: 2px 2px;
+
+	white-space: nowrap;
+
 }
 #contact-email-table td .optional
 {
