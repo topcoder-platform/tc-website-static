@@ -16,117 +16,6 @@ BODY {
 }
 
 
-/************
-ADDED CSS STYLES
-*************/
-
-#content_left  {
-	float:left;
-	display: inline;
-	margin-left:50px;
-	width:412px;
-	background: url(/i/background_left.jpg) no-repeat;
-}
-
-#content_left_in {
-	margin-left:18px; 
-	margin-top:20px;
-}
-
-/* btn = button */
-
-#btn_websites {
-	float:left;
-}
-
-#btn_logodesign {
-	float:right;
-	margin-right:50px;
-}
-
-#btn_printdesign {
-	float:left;
-	margin-top:5px;
-}
-
-#btn_applications {
-	float:right;
-	margin-right:50px;
-	margin-top:5px;
-}
-
-#start_project {
-	margin-left:80px;
-}
-
-#content_right {
-	float:right;
-	margin-right:20px;
-	width:412px;
-	background: url(/i/background_right.jpg) no-repeat;
-}
-
-#content_right_in {
-	margin-left:18px; 
-	margin-top:15px;
-}
-
-#btn_tools {
-	float:left;
-	margin-left:20px;
-}
-
-#btn_training {
-	float:right;
-	margin-right:50px;
-}
-
-#btn_components {
-	float:left;
-	margin-left:20px;
-	margin-top:5px;
-}
-
-#buttons_right {
-	margin-bottom:10px;
-}
-
-#btn_support {
-	float:right;
-	margin-right:50px;
-	margin-top:5px;
-}
-
-#icon {
-	margin-top:40px;
-	margin-left:20px;
-
-}
-
-#find_out_more {
-	margin-top:18px;
-	margin-left:10px;
-}
-
-#banner {
-	margin-left:50px;
-}
-
-#bottom_banner {
-	
-	margin-top:40px;
-}
-
-#start_project {
-	
-	margin-left:80px;
-}
-
-
-/***************
-END ADDED CSS STYLES
-***************/
-
 
 A {
 	color: #d50000;
@@ -175,7 +64,6 @@ HEADER
 		width: 222px;
 		height: 83px;
 		top: 38px;
-		background: url(/images/home/tc_direct.png) no-repeat;
 	}
 	#header H1.tc-header A {
 		background: url(/images/home/tc_header.png) no-repeat;
@@ -364,125 +252,7 @@ HEADER
 /* ------------------------------------
 CONTENT
 ------------------------------------ */
-#direct_banner {
-	text-align: center;
-}
 
-#content_main {
-	padding: 0 0 20px 0;
-}
-
-	/* TABS BUTTON */
-	#tabs_button {
-		float: left;
-		width: 190px;
-		height: 500px;
-		background: url(/images/home/tabs_button_right.png) no-repeat top right;
-	}
-		
-		#tabs_button UL {
-			list-style-type: none;
-			
-		}
-		
-			#tabs_button UL LI {
-				width: 190px;
-				height: 72px;
-				background: url(/images/home/tabs_button.png) no-repeat;
-				background-position: 0 -72px;
-			}
-		
-			#tabs_button LI.on {
-				background-position: 0 0px;
-			}
-		
-				#tabs_button LI A {
-					display: block;
-					width: 125px;
-					padding: 20px 5px 0 60px;
-					height: 52px;
-					
-					text-decoration: none;
-					color: #6a6a6a;
-					font-size: 105%;
-					font-weight: bold;
-					
-					background: url(/images/home/ico_tabs_sprites.png) no-repeat;
-				}
-				
-				#tabs_button LI.on A {
-					color: #000;
-				}
-				
-				#tabs_button LI#tabs_intro A {
-					background-position: -190px 10px; 
-				}
-				
-				#tabs_button LI#tabs_intro A:hover {
-					background-position: 10px 10px; 
-					color: #000;
-				}
-				
-				#tabs_button LI#tabs_intro.on A {
-					background-position: 10px 10px; 
-				}
-				
-				#tabs_button LI#tabs_tcdirect A {
-					background-position: -190px -90px; 
-				}
-				
-				#tabs_button LI#tabs_tcdirect A:hover {
-					background-position: 10px -90px; 
-					color: #000;
-				}
-				
-				#tabs_button LI#tabs_tcdirect.on A {
-					background-position: 10px -90px; 
-				}
-				
-				#tabs_button LI#tabs_pricing A {
-					background-position: -190px -190px; 
-				}
-				
-				#tabs_button LI#tabs_pricing A:hover {
-					background-position: 10px -190px; 
-					color: #000;
-				}
-				
-				#tabs_button LI#tabs_pricing.on A {
-					background-position: 10px -190px; 
-				}
-				
-				#tabs_button LI#tabs_question A {
-					background-position: -190px -290px; 
-				}
-				
-				#tabs_button LI#tabs_question A:hover {
-					background-position: 10px -290px; 
-					color: #000;
-				}
-				
-				#tabs_button LI#tabs_question.on A {
-					background-position: 10px -290px; 
-				}
-				
-			
-	/* TABS CONTENT */
-	#tabs_panel {
-		margin-left: 189px;
-		background: url(/images/home/tabs_content_right.png) no-repeat top right;
-		padding: 10px;
-		min-height:500px;
-		height:auto !important;
-		height:500px;
-		font-size: 90%;
-	}
-	
-		.tabs_content {
-			padding: 17px;
-			background: url(/images/home/bg_content_main.png) repeat-x;
-			min-height: 462px;
-		}
 		
 	/* CONTENT COLUMN */
 	.content_columns {
@@ -492,84 +262,10 @@ CONTENT
 		{
 			line-height: 120%;
 		}
+
 		
-		.content_column1 {
-			float: left;
-			width: 340px;
-			min-height: 450px;
-			height: auto !important;
-			height: 450px;
-		}
-		
-			#start_your_project {
-				margin-top: 10px;
-				text-align: center;
-				margin-bottom: 20px;
-			}
-		
-		.content_column2 {
-			float: right;
-			width: 300px;
-		}
-		
-			#what_todo {
-				list-style-type: none;
-				margin-top: 5px;
-			}
-			
-				#what_todo LI {
-					height: 90px;
-					margin-bottom: 7px;
-					background: url(/images/home/bg_block.png) no-repeat;
-				}
-				
-					#what_todo LI H3 {
-						padding-top: 5px;
-						font-size: 120%;
-						margin: 2px 0 5px 0;
-					}
-					
-					#what_todo LI P {
-						font-size: 90%;
-						margin: 4px 0;
-					}
-					
-					#what_todo LI P.learn_more {
-						font-size: 100%;
-						margin-top: 5px !important;
-					}
-				
-					#what_todo LI .item {
-						background: url(/images/home/what_todo_sprites.png) no-repeat;
-						width: 170px;
-						padding-left: 108px;
-						margin-left: 5px;
-						margin-right: 5px;
-						min-height: 90px;
-						height: auto !important;
-						height: 90px;
-					}
-				
-						#what_design .item {					
-							background-position: 0 10px !important;
-						}
-						
-						#what_define .item {					
-							background-position: 0 -95px !important;
-						}
-						
-						#what_build .item {					
-							background-position: 0 -190px !important;
-						}
-						
-						#what_test .item {					
-							background-position: 0 -290px !important;
-						}
-						
-						#what_fix .item {					
-							background-position: 0 -400px !important;
-						}
-						
+
+	
 		.content_columns .right{
 			width: 100%;
 			text-align: right;
@@ -605,20 +301,7 @@ CONTENT
 			margin-bottom: 10px;
 		}
 		
-		.content_columns .pricing_image{
-			float: right;
-			background: url(/images/home/pricing.png) top right no-repeat;
-			width: 224px;
-			height: 129px;
-		}
-		
-		.content_columns .help_image{
-			float: right;
-			background: url(/images/home/help.png) top right no-repeat;
-			width: 200px;
-			height: 128px;
-		}
-		
+
 		.content_columns table{
 			width: 645px;
 			margin: 12px 0 10px 0;
@@ -630,11 +313,7 @@ CONTENT
 			background-color: #b3b3b3;
 		}
 		
-		.content_columns table thead{
-			width: 645px;
-			background: #231f20 url(/images/home/table_price_top.png) top left no-repeat;
-			height: 5px;
-		}
+		
 		
 		.content_columns table tbody tr.table_title{
 			background-color: #231f20;	
@@ -650,10 +329,7 @@ CONTENT
 			border-bottom: 1px solid #231f20;
 		}
 		
-		.content_columns table tfoot{
-			background: #231f20 url(/images/home/table_price_bottom.png) bottom left no-repeat;
-			height: 5px;
-		}
+		
 		
 		.content_columns tbody tr td{
 			border-left: 1px solid #b3b3b3;
@@ -706,12 +382,6 @@ CONTENT
 			margin-bottom: 20px;
 		}
 		
-		.content_columns ul.support_list li, .content_columns ul.methodology_list li, .content_columns ul.bug_race_list li{
-			padding-left: 22px;
-			height: 16px;
-			background: url(/images/home/check.png) top left no-repeat;
-			margin: 6px 0;
-		}
 		
 		.content_columns ul.methodology_list li
 		{
@@ -747,135 +417,6 @@ CONTENT
 			margin: 8px 0;
 			padding: 0;
 		}
-
-/* ------------------------------------
-NEWS
------------------------------------- */
-#news {
-	clear: both;
-	padding: 15px 0 20px 0;
-	background: #fbfbfb url(/images/home/bg_content_news.png) repeat-x;
-}
-
-#whats_new SPAN {
-	display: none;
-}
-
-#whats_new {
-	width: 141px;
-	height: 23px;
-	background: url(/images/home/whats_new.png) no-repeat;
-}
-
-#news A:hover {
-	text-decoration: underline;
-}
-
-	/* Post Item */
-	#news .post {
-		width: 600px;
-		padding: 10px 0;
-		background: url(/images/home/post_hr.png) no-repeat bottom left;
-	}
-	
-	#news .post H3 {
-		font-size: 115%;
-	}
-	
-	#news .post H3 A {
-		text-decoration: none;
-		color: #d50000;
-	}
-	
-	#news .post H3 SMALL {
-		color: #3e3e3e;
-		padding-left: 10px;
-	}
-	
-	#news .post P {
-		font-size: 90%;
-		color: #3e3e3e;
-		line-height: 16px;
-	}
-	
-	/* LEARN MORE BUTTON */
-	.learn_more {
-		margin: 1em 0 0 0;
-		line-height: 20px;
-	}
-	
-	.learn_more A {
-		padding-left: 20px;
-		background: url(/images/home/ico_sprites.png) no-repeat;
-		background-position: 0 -49px;
-		color: #d50000;
-		text-decoration: none;
-		font-weight: bold;
-	}
-	
-	.learn_more A:hover {
-		text-decoration: underline;
-	}
-	
-/* ------------------------------------
-PLATFORM TOOLS
------------------------------------- */
-
-#platform{
-	margin: 0 0 50px 0; 
-	font-size: 85%;
-	line-height: 150%;
-}
-
-	.platform_row, .platform_row_dark{
-		height: 160px;
-	}
-	
-	.platform_row_dark{
-		background: #f4f4f4 url(/images/home/bg_platform_dark.png) top left repeat-x;
-	}
-	
-	.platform_row_dark div, .platform_row div{
-		width: 930px;
-		margin: 0 auto;
-		text-align: left;
-	}
-	
-	#platform .platform_img{
-		clear: both;
-		float: left;
-		margin: 16px 20px 0 50px;
-	}
-	
-	#platform h3{
-		padding-top: 30px;
-		margin-right: 10px;
-	}
-	
-	#platform .sub_header{
-		position: absolute;
-		font-size: 12px;
-		color: #f00;
-		margin-top: 4px;
-		margin-left: 10px;
-	}
-	
-	#platform .sub_header a{
-		text-decoration: none;
-		color: #f00;
-	}
-	
-	#platform .sub_header a:hover{
-		text-decoration: underline;
-	}
-	
-	#platform .red-title{
-		font-weight: bold;
-		color: #f00;
-		margin-top: 2px;		
-	}
-	
-	
 
 
 /* ------------------------------------
@@ -967,7 +508,7 @@ MISC
 	border: none;
 }
 .center { text-align: center; }
-#accessibility, .hide { display: none; }
+.hide { display: none; }
 .clear { clear: both; height:1%; }
 
 /* Carousel Styling */
@@ -1041,235 +582,3 @@ MISC
     cursor: default;
 	background-image:url(/images/home/prev-button-deactive.png)
 }
-
-/* Homepage Specific */
-#welcome-banner {
-	width: 930px;
-	margin: 0px auto;
-}
-	#welcome-banner h2 {
-		text-indent: -3000px;
-		background-image:url(/images/home/welcome-banner.png);
-		background-position: center top;
-		background-repeat: no-repeat;
-		width: 930px;
-		height: 131px;
-		float: left;
-	}
-#news h2 {
-	text-indent: -3000px;
-	background-image:url(/images/home/news-announcements.png);
-	background-position: 40px top;
-	background-repeat: no-repeat;
-	height: 30px;
-	margin: 0px;
-	padding: 0px;
-}
-#content-main {
-	width: 930px;
-	float: left;
-	clear: left;
-}
-#client-content {
-	float: left;
-	width: 490px;
-	margin-right: 50px;
-	padding-bottom: 20px;
-}
-	#client-box {
-		background-image: url(/images/home/client-box-bkg.png);
-		background-position: left top;
-		background-repeat: no-repeat;
-		float: left;
-		width: 490px;
-	}
-	#client-box-bottom {
-		background-image: url(/images/home/client-box-bot.png);
-		background-position: left top;
-		background-repeat: no-repeat;
-		float: left;
-		width: 490px;
-		height: 40px;
-	}
-#enterprise-solutions,
-#tc-direct {
-	width: 440px;
-	float: left;
-	clear: left;
-	margin: 0px 12px 0px 10px;
-	padding: 15px 14px;
-}
-#enterprise-solutions {
-	margin-top: 13px;
-	background-image: url(/images/home/enterprise-bkg.png);
-	background-repeat: no-repeat;
-	background-position: left top;
-	border-bottom: 1px solid #e6e6e6;
-	padding-top: 30px;
-}
-#tc-direct {
-	background-image: url(/images/home/tcdirect-bkg.png);
-	background-repeat: no-repeat;
-	background-position: left top;
-	padding-bottom: 0px;
-}
-	#enterprise-solutions h3,
-	#tc-direct h3 {
-		font-size: 20px;
-		padding-top: 5px;
-	}
-	#enterprise-solutions h4,
-	#tc-direct h4 {
-		font-size: 14px;
-		font-weight: normal;
-		color: #666;
-	}
-	#tc-direct h4,
-	#tc-direct h3 {
-		padding-left: 72px;
-	}
-#member-content {
-	float: left;
-	width: 362px;
-	padding-bottom: 20px;
-}
-	#member-box {
-		background-image: url(/images/home/member-box-bkg.png);
-		background-position: left top;
-		background-repeat: no-repeat;
-		float: left;
-		width: 362px;
-	}
-	#member-box-bottom {
-		background-image: url(/images/home/member-box-bot.png);
-		background-position: left top;
-		background-repeat: no-repeat;
-		float: left;
-		width: 362px;
-		height: 40px;
-	}
-#compete h2 {
-	text-indent: -3000px;
-	background-image: url(/images/home/compete-against-best.png);
-	background-position: center top;
-	background-repeat: no-repeat;
-	height: 52px;
-	width: 340px;
-	margin: 0px 10px 0px 12px;
-	float: left;
-	clear: left;
-}
-#member-count {
-	width: 340px;
-	margin: 13px 10px 0px 12px;
-	float: left;
-	clear: left;
-}
-#compete div {
-	width: 340px;
-	margin: 0px 10px 0px 12px;
-	float: left;
-	clear: left;
-	border-bottom: 1px solid #d6d6d6;
-	padding: 15px 0px;
-}
-#compete img {
-	float: left;
-	padding-right: 4px;
-}
-#compete p {
-	font-size: 11px;
-	color: #313131;
-	line-height: 13px;
-}
-#compete-competitions h3,
-#compete-studio h3,
-#compete-digitalrun h3 {
-	text-indent: -3000px;
-	background-image: url(/images/home/competitions-header.png);
-	background-position: left top;
-	background-repeat: no-repeat;
-	width: 223px;
-	height: 18px;
-	float: left;
-}
-#compete-studio h3 {
-	background-image: url(/images/home/studio-header.png);
-}
-#compete-digitalrun h3 {
-	background-image: url(/images/home/digitalrun-header.png);
-}
-	#compete-competitions h3 a,
-	#compete-studio h3 a,
-	#compete-digitalrun h3 a {
-		display: block;
-		width: 200px;
-	}
-.wide-ad-banner {
-	margin: 0px auto;
-	width: 482px;
-}
-	.wide-ad-banner img {
-		margin-top: 10px;
-	}
-
-.link-list {
-	list-style-type: none;
-	padding-top: 20px;
-}
-	#tc-direct .link-list {
-		padding-top: 30px;
-	}
-	.link-list li {
-		float: left;
-		padding: 0px 6px;
-		margin: 0px;
-		border-right: 1px solid #000;
-		height: 17px;
-	}
-	.link-list li.last {
-		border-right: none;
-	}
-	.link-list li.first {
-		padding-left: 0px;
-	}
-	.link-list a {
-		text-transform: uppercase;
-		font-size: 11px;
-		line-height: 11px;
-		text-decoration: none;
-		font-weight: bold;
-	}
-	.link-list a:hover {
-		text-decoration: underline;
-	}
-	
-	.button-container {
-		float: right;
-		clear: both;
-		padding-top: 15px;
-	}
-	.button {
-		text-align: left;
-		color: #616161;
-		font-family: Arial;
-		font-size: 13px;
-		font-weight: bold;
-		text-decoration: none;
-		padding-left: 15px;
-		width: 132px;
-		height: 28px;
-		padding-top: 7px;
-		display: block;
-		text-transform: uppercase;
-	}
-	.button {
-		margin-left: auto;
-		margin-right: auto;
-		background: url(/images/home/buttonbg.png) no-repeat;
-	}
-	
-	.button:hover {
-		text-decoration: none;
-		background: url(/images/home/buttonOverbg.png) no-repeat;
-	}
