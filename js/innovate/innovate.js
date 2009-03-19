@@ -5,7 +5,7 @@ var currentCarouselItem = 4;        // For Carousel
 var totalCarouselItem = 5;          // For Carousel
 var autoRotateTime = 3000;          // For Carousel : in milliseconds, zero for no rotation
 var currentOrganizationImage = 1;   // For Organization Image Fade In / Fade Out
-var totalOrganizationImage = 4;     // For Organization Image Fade In / Fade Out
+var totalOrganizationImage = 6;     // For Organization Image Fade In / Fade Out
 var autoTimeImageFadeIn = 3000;     // For Organization Image Fade In / Fade Out
 
 
@@ -41,6 +41,8 @@ jQuery(document).ready(function() {
     $('#btn-lets-talk').click(function() {
         $('#engage-info').hide();
         $('#engage-contact').show();
+		$('#lets_talk').hide();
+		$('#lets_talk_grey').show();
     });
     $('#header').css('z-index', '100');
     $('#header .wrapper').css('z-index', '100');
