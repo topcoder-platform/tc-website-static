@@ -302,13 +302,13 @@ Engage
 	font-size: 12px;
 	font-family: Arial;
 }
-#engage-info .info-title
+#engage-info .info-title, .info-title
 {
 	color: #010101;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: "Myriad Pro", Arial;
 	font-weight: bold;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	padding: 0px;
 }
 #engage-info p
@@ -319,12 +319,12 @@ Engage
 #engage-info .info-list-row
 {
 	height: 75px;
-	margin: 25px 0px;
+	margin: 0px 0px;
 }
 #engage-info .info-list
 {
 	float: left;
-	width: 290px;
+	width: 490px;
 	padding-left: 10px;
 }
 #engage-info .info-list.left-list
