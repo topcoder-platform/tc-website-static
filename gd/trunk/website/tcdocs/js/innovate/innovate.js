@@ -37,8 +37,8 @@ jQuery(document).ready(function() {
     $('#logo' + currentOrganizationImage).show();
     fadeOutCallback();
 
-      // misc 
-    $('#btn-lets-talk').click(function() { 
+// misc 
+	$('#btn-lets-talk').click(function() { 
         $('#engage-info').hide(); 
         $('#engage-contact').show(); 
 		$('#lets_talk').hide(); 
