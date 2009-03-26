@@ -51,6 +51,19 @@ Engage
 	margin-top: 18px;
 }
 
+#engage-content .engage-right p.news-link { padding: 5px 0 2px 0; }
+#engage #engage-content .engage-right p.news-link a
+{
+	color: #C00;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#engage #engage-content .engage-right p.news-link a:hover
+{
+	color: #666;
+	text-decoration: underline;
+}
 
 #engage #engage-content .engage-left
 {
@@ -302,29 +315,31 @@ Engage
 	font-size: 12px;
 	font-family: Arial;
 }
-#engage-info .info-title, .info-title
+#engage-info .info-title
 {
 	color: #010101;
 	font-size: 16px;
 	font-family: "Myriad Pro", Arial;
 	font-weight: bold;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	padding: 0px;
 }
+
 #engage-info p
 {
-	text-align: justify;
-	padding: 7px 0px;
+	text-align: left;
+	padding: 4px 0px 4px 0px;
+	line-height: 16px;
 }
 #engage-info .info-list-row
 {
 	height: 75px;
-	margin: 0px 0px;
+	margin: 10px 0px 25px 0px;
 }
 #engage-info .info-list
 {
 	float: left;
-	width: 490px;
+	width: 290px;
 	padding-left: 10px;
 }
 #engage-info .info-list.left-list
