@@ -598,6 +598,14 @@ strong { color: #006894; }
 			margin-top: 24px;
 		}
 		
+		.bottomArea A.applyNowBtn{
+			display: block;
+			width: 124px;
+			height: 32px;
+			background: url(/i/tournament/tco09/apply_now_btn.png) no-repeat;
+			margin: 20px auto 0 auto;
+		}
+		
 			.bottomAreaContent .sponsors H2.title{
 				display: block;
 				color: #006894;
