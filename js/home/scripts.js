@@ -80,12 +80,22 @@ $(document).ready(function(){
 						
 			}
 			
-			showPopup = function(myPopup, fadeTime){
-                if (currentPopup != -1) { hidePopup($("#popup").children()[currentPopup], 50);}
+			showPopup = function(myPopup, fadeTime, popupNum){
+                if (currentPopup != -1) { hidePopup($("#popup").children()[currentPopup], 5);}
+                if (fadeTime == 10) {
+                    $("#popupLinks").find("a.person" + (popupNum + 1)).css('background-position', 'bottom');
+                } else {
+                    $("#popupLinks").find("a.person" + (currentPopup + 1)).css('background-position', 'bottom');
+                }
 				$(myPopup).fadeIn(fadeTime);
 			}
 			
-			hidePopup = function(myPopup, fadeTime){
+			hidePopup = function(myPopup, fadeTime, popupNum){
+                if (fadeTime == 10) {
+                    $("#popupLinks").find("a.person" + (popupNum + 1)).css('background-position', 'top');
+                } else {
+                    $("#popupLinks").find("a.person" + (currentPopup + 1)).css('background-position', 'top');
+                }
 				$(myPopup).fadeOut(fadeTime);
 			}
 							
@@ -158,7 +168,7 @@ $(document).ready(function(){
 				}
 			});
 			
-            $("#popupLinks").everyTime(5000, 'popup-rotate', popupRotate);
+            $("#popupLinks").everyTime(8000, 'popup-rotate', popupRotate);
 		}
 		
 		initMessages();
