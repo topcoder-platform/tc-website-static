@@ -606,6 +606,7 @@ strong { color: #006894; }
 			margin: 20px auto 0 auto;
 		}
 		
+		
 			.bottomAreaContent .sponsors H2.title{
 				display: block;
 				color: #006894;
@@ -756,16 +757,53 @@ TABLE.data{
 
     span.bigRed { color: #FF0000; font-weight: bold; text-decoration: none; }
     span.bigGreen { color: #009900; font-weight: bold; text-decoration: none; }
+	
+	table.stat th, #content table.stat td {  
+		padding: 5px 10px; 
+		border-bottom: 1px solid #c5c5c5; 
+	}
+	
+	table.stat th { 
+		background: #006995; 
+		text-align: left;
+		color: #fff; 
+	}
+	
+	
+	table.stat tr.dark td { 
+		background: #c8eeff; 
+	}
+	
+	table.stat tr.light td { background: #e6e6e6; }
+	
+	table.stat td.headerC { text-align: center; }
+	
+	table.stat td.headerR { text-align: right; }
+	
+	table.stat td.valueC, table.stat td.valueCE, table.stat td.valueCA { text-align: center; }
+	
+	table.stat td.valueR, table.stat td.valueRE, table.stat td.valueRA { text-align: right; }
+	
+	table.stat td.valueE, table.stat td.valueCE, table.stat td.valueRE {
+		color: #FF0000;
+		font-weight: bold;
+	}
+	
+	table.stat td.valueA, table.stat td.valueCA, table.stat td.valueRA{
+		color: #009900;
+		font-weight: bold;
+	}
+	
+	table.stat td.field {
+		color: #000000;
+		font-weight: bold;
+		font-size: 12px;
+	}
+	
+	table.stat a:link, table.stat a:visited { text-decoration: none; }
+	
+	table.stat a:hover, table.stat a:active { text-decoration: underline; }
+	
 
 /* ----- FORMS ----- */
 form { padding: 0; }
-fieldset { }
-legend { }
-label { }
-input { }
-.input { }
-textarea { }
-.textarea { }
-select { }
-.select { }
-
