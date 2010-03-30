@@ -78,6 +78,7 @@ table.calendar div.tchs09 { background: #ed1c24 url(/i/tournament/tco08/calendar
 table.calendar div.chat { background: #B3B313; }
 table.calendar div.tchs07 { background: #FF9900 url(/i/tournament/tchs07/calendar_bg.png) top center; }
 table.calendar div.tchs08 { background: #d1b54a url(/i/tournament/tchs08/calendarBg.png) top center repeat-x; }
+table.calendar div.tchs10 { background: #5c9741 }
 
 table.calendar div.amd { background: #00a76f; }
 table.calendar div.predictive { background: #a201fe; }
