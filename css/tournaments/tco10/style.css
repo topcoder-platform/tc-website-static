@@ -15,7 +15,7 @@ body{
 #wrapper{
 	width:1000px;
 	margin:0 auto;
-	padding-bottom:40px;	
+	padding-bottom:40px;
 }
 /****** header *****/
 #header{   /**** top coder open logo ****/
@@ -23,8 +23,8 @@ body{
 	width:100%;
 	position:relative;
 }
-        #header .logo{   /**** top coder open logo ****/                                 
-			background:url(/i/tournament/tco10/logo.png) no-repeat left top;                                           
+        #header .logo{   /**** top coder open logo ****/
+			background:url(/i/tournament/tco10/logo.png) no-repeat left top;
 			width:250px;
 			height:183px;
 			margin:0 auto;
@@ -71,7 +71,7 @@ body{
 			height:40px;
 			background:url(/i/tournament/tco10/gray-bg-bottom-middle.png) repeat-x left bottom !important;
 			background:url(/i/tournament/tco10/gray-bg-bottom-middle.gif) no-repeat center top;
-		}		
+		}
 		#content .contentInner .innerBottom .innerLeftBottom{   /****** gray frame left bottom corner **/
 			display:block;
 			position:absolute;
@@ -464,31 +464,31 @@ body{
 			right:-1px;
 			bottom:-1px;
 		}
-		
+
 		#mainbody .legend {
 			text-align:right;
 			position:relative;
 			margin-left:530px;
 			margin-top:-25px;
 		}
-		
+
 			#mainbody .legend p {
 				color:white;
 			}
-		
+
 			#mainbody .legend img {
 				padding:0 5px;
 			}
-			
+
 				#mainbody .legend img.did_not_compete {
 					margin-right:3px;
 				}
-		
+
 /**** footer ***/
 #footer{
 	text-align:center;
 }
-		#footer ul{     
+		#footer ul{
 			width:700px;
 			margin:0 auto;
 		}
@@ -543,7 +543,7 @@ body{
 							text-decoration:none;
 							display:block;
 						}
-						
+
 						.subMenu .secondaryNav.overviewNav li a {
 							padding:9px 6px 10px 20px;
 						}
@@ -558,7 +558,7 @@ body{
 							color:#FFF;
 							font-weight:bold;
 						}
-						
+
 						.subMenu .secondaryNav.overviewNav li.actived a {
 							padding-right:15px;
 							padding-left:25px;
@@ -702,7 +702,7 @@ table.leaderboard th input {
 	margin-top:-4px;
 	margin-left:4px;
 	position:absolute;
-	
+
 }
 
 table.leaderboard p {
@@ -771,27 +771,27 @@ table tr td.number{
 	.paging .show, .paging .gopage, .paging .nextprev {
 		float:left;
 	}
-	
+
 	.paging .nextprev {
 		float:right;
 	}
-	
+
 	.paging .gopage {
-		margin-left:90px;	
+		margin-left:90px;
 		width:120px;
-		
+
 	}
-		
-	
+
+
 	.paging .gopage input {
 		width:30px;
 		height:15px;
 	}
-	
+
 	.paging .nextprev {
 		margin-left:0px;
 	}
-	
+
 	.paging .nextprev .button2 {
 		padding-top:4px;
 	}
@@ -845,9 +845,9 @@ table tr td.number{
 			font-size:1.8em;
 			line-height:4.0em;
 		}
-		
-	
-		    
+
+
+
 /**** page node ***/
 h6.node{
 	background:url(/i/tournament/tco10/table-td-bg.gif) repeat-x left bottom;
@@ -872,7 +872,7 @@ h3.subTitle{
 	font-size:16px;
 	background:url(/i/tournament/tco10/sub-title-icon.gif) no-repeat left 5px;
 	padding-left:10px;
-	margin:15px 0 5px 0;	
+	margin:15px 0 5px 0;
 }
 /***** p ****/
 p{
@@ -910,7 +910,7 @@ p{
 		}
 		p span.write{
 			color:#ffffff;
-		}	
+		}
 
 
 /**** button ***/
@@ -940,9 +940,9 @@ a.button.small {
 	width:36px !important;
 	height:20px;
 	float:none;
-	margin-left:75px;
+	margin-left:45px;
 	margin-top:-20px;
-	padding-top:1px;
+	/*padding-top:1px;*/
 }
 
 a.button.off {
@@ -952,7 +952,7 @@ a.button.off {
 a.button2 {
 	width:56px;
 	background:url(/i/tournament/tco10/button2_on.png) no-repeat;
-}	
+}
 
 a.button2.off {
 	background:url(/i/tournament/tco10/button2_off.png) no-repeat;
@@ -962,7 +962,7 @@ a.button2.off {
 	height:30px;
 	width:100%;
 	background-color:#2d2d2d;
-	
+
 }
 
 	.buttons_bar .left {
@@ -970,9 +970,9 @@ a.button2.off {
 		height:100%;
 		padding:5px;
 	}
-	
+
 	.buttons_bar .right {
-		background:url(/i/tournament/tco10/buttons_bar_right.png) right 0px no-repeat;		
+		background:url(/i/tournament/tco10/buttons_bar_right.png) right 0px no-repeat;
 		height:100%;
 		padding:5px;
 		float:right;
@@ -997,7 +997,7 @@ ol.textlist li {
 	font-size:1.2em;
 	line-height:1.5em;
 	color:#adadad;
-	
+
 }
 ul.textlist {
 	margin-left:20px;
@@ -1011,7 +1011,7 @@ ul.textlist li {
 	color:#adadad;
 	font-size:1.2em;
 	line-height:1.5em;
-	
+
 }
 
 .textlist li a, .textlist li a:visited {
@@ -1044,7 +1044,7 @@ table tr td span.high {
 
 /***** Smaller text and italic text paragraphs for notes in content, not present in original style ****/
 /***** edit this to change the smaller or italicized noted text in main / copy  - EX: text below Algorithm schedule table ****/
-		
+
 p.note{
 	font-size:1.1em;
 	padding-top:1em;
@@ -1054,7 +1054,7 @@ p.imp-note{
 	font-style:oblique;
 	padding-top:1em;
 }
-		
+
 
 /***** other ****/
 .hide{
@@ -1064,7 +1064,7 @@ p.imp-note{
 	clear:both;
 }
 
-.coderTextRed, .coderTextYellow, .coderTextBlue, .coderTextGreen, .coderTextGray, .coderTextOrange { 
+.coderTextRed, .coderTextYellow, .coderTextBlue, .coderTextGreen, .coderTextGray, .coderTextOrange {
 font-weight: bold;
 background-color: transparent;
 }
@@ -1097,3 +1097,23 @@ text-decoration: underline;
 .coderTextWhite, .coderTextWhite:link, .coderTextWhite:visited, .coderTextWhite:hover, .coderTextWhite:active { color: #FFFFFF; }
 /* Black */
 .coderTextBlack, .coderTextBlack:link, .coderTextBlack:visited, .coderTextBlack:hover, .coderTextBlack:active { color: #AA66FF; }
+
+#qualificationLeaderboard  td{
+	text-align:left;
+}
+
+.center {
+    text-align:center;
+}
+
+span.bigGreen {
+    color: #009900;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+span.bigRed {
+    color: #FF0000;
+    font-weight: bold;
+    text-decoration: none;
+}
