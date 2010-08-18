@@ -152,7 +152,7 @@ $(document).ready(function(){
 	button = 1; 
 	
 	//the total scroll num
-	images = 13; 
+	images = 15; 
 	
 	//the scroll width
 	width = 904; 
