@@ -64,13 +64,13 @@ a:hover{
 
 /********************************************** page start **********************************************/
 body{
-	background:url(../../i/home/body_bg.gif) repeat-x #3e3e3e;
+	background:url(/i/home/body_bg.gif) repeat-x #3e3e3e;
 	}
 	
 	/** out lay **/
 	#outLay{
 		width:100%;
-		background:url(../../i/home/body_left_bg.gif) no-repeat left 114px;
+		background:url(/i/home/body_left_bg.gif) no-repeat left 114px;
 		}
 		
 		/** main Content **/
@@ -98,7 +98,7 @@ body{
 						width:260px;
 						height:38px;
 						display:block;
-						background:url(../../i/home/topCoder_logo.png) no-repeat;
+						background:url(/i/home/topCoder_logo.png) no-repeat;
 						}
 						
 				/** main Nav **/
@@ -120,7 +120,7 @@ body{
 					#mainContent #header #mainNav li.line{
 						width:1px;
 						padding:0;
-						background:url(../../i/home/mainNav_line.gif) no-repeat;
+						background:url(/i/home/mainNav_line.gif) no-repeat;
 						}
 						
 						
@@ -150,7 +150,7 @@ body{
 								width:100%;
 								height:25px;
 								line-height:25px;
-								background:url(../../i/home/aboutMe_tipContent.gif) no-repeat;
+								background:url(/i/home/aboutMe_tipContent.gif) no-repeat;
 								}
 								
 								#mainContent #header #mainNav li .tip .tipContent p{ 
@@ -167,7 +167,7 @@ body{
 								height:4px;
 								display:block;
 								margin-left:83px;
-								background:url(../../i/home/aboutMe_tip.gif) no-repeat;
+								background:url(/i/home/aboutMe_tip.gif) no-repeat;
 								}
 								
 
@@ -179,13 +179,13 @@ body{
 				#mainContent #content .content_top{
 					width:100%;
 					padding-top:5px;
-					background:url(../../i/home/mainContest_top.gif) no-repeat left top;
+					background:url(/i/home/mainContest_top.gif) no-repeat left top;
 					}
 					
 				#mainContent #content .content_bottom{
 					width:100%;
 					padding-bottom:5px;
-					background:url(../../i/home/mainContest_bottom.gif) no-repeat left bottom;
+					background:url(/i/home/mainContest_bottom.gif) no-repeat left bottom;
 					}
 					
 				#mainContent #content .content_inner{
@@ -224,13 +224,13 @@ body{
 					#mainContent #content .content_inner .map{
 						width:100%;
 						height:384px;
-						background:url(../../i/home/mapContest_bg.gif) repeat-x;
+						background:url(/i/home/mapContest_bg.gif) repeat-x;
 						}
 						
 						#mainContent #content .content_inner .map .mapInner{
 							width:100%;
 							height:384px;
-							background:url(../../i/home/earth_map.gif) no-repeat left top;
+							background:url(/i/home/earth_map.gif) no-repeat left top;
 							}
 							
 						/** intro **/
@@ -278,11 +278,11 @@ body{
 								height:59px;
 								display:block;
 								cursor:pointer;
-								background:url(../../i/home/get_Started_button.png) no-repeat;
+								background:url(/i/home/get_Started_button.png) no-repeat;
 								}
 								
 							#mainContent #content .content_inner .map .getStartButton a:hover{
-								background:url(../../i/home/get_Started_button_hover.png) no-repeat;
+								background:url(/i/home/get_Started_button_hover.png) no-repeat;
 								}
 								
 						/** tip **/
@@ -292,7 +292,7 @@ body{
 							position:absolute;
 							margin-left:540px;
 							margin-top:-194px;
-							background:url(../../i/home/tip_bg.png) no-repeat;
+							background:url(/i/home/tip_bg.png) no-repeat;
 							}
 							
 							#mainContent #content .content_inner .map #getStartTip p{
@@ -310,7 +310,7 @@ body{
 					/** nav **/		
 					#mainContent #content .content_inner .nav{
 						height:74px;
-						background:url(../../i/home/nav_bg.gif) repeat-x #f1f1f1;
+						background:url(/i/home/nav_bg.gif) repeat-x #f1f1f1;
 						}
 						
 						#mainContent #content .content_inner .nav ul{
@@ -338,7 +338,7 @@ body{
 									}
 									
 								#mainContent #content .content_inner .nav ul li.first a:hover,#mainContent #content .content_inner .nav ul li.second a:hover,#mainContent #content .content_inner .nav ul li.third a:hover{
-									background:url(../../i/home/tab_hover.gif) no-repeat center 1px;
+									background:url(/i/home/tab_hover.gif) no-repeat center 1px;
 									}
 									
 								
@@ -349,7 +349,7 @@ body{
 								font-size:24px;
 								font-weight:bold;
 								text-align:center;
-								background:url(../../i/home/red_tab_hover.gif) no-repeat;
+								background:url(/i/home/red_tab_hover.gif) no-repeat;
 								}
 								
 								#mainContent #content .content_inner .nav ul li.firstHover a{
@@ -362,7 +362,7 @@ body{
 								height:59px;
 								font-size:20px;
 								text-align:center;
-								background:url(../../i/home/red_tab_second.gif) no-repeat;
+								background:url(/i/home/red_tab_second.gif) no-repeat;
 								}
 								
 								#mainContent #content .content_inner .nav ul li.second a{
@@ -375,7 +375,7 @@ body{
 								height:59px;
 								font-size:20px;
 								text-align:center;
-								background:url(../../i/home/red_tab_third.gif) no-repeat;
+								background:url(/i/home/red_tab_third.gif) no-repeat;
 								}
 								
 								#mainContent #content .content_inner .nav ul li.third a{
@@ -386,7 +386,7 @@ body{
 					/** nav for development **/		
 					#mainContent #content .content_inner #developmentTab .nav{
 						height:74px;
-						background:url(../../i/home/nav_bg.gif) repeat-x #f1f1f1;
+						background:url(/i/home/nav_bg.gif) repeat-x #f1f1f1;
 						}
 						
 						#mainContent #content .content_inner #developmentTab .nav ul{
@@ -414,7 +414,7 @@ body{
 									}
 									
 								#mainContent #content .content_inner #developmentTab .nav ul li.first a:hover,#mainContent #content .content_inner #developmentTab .nav ul li.second a:hover,#mainContent #content .content_inner #developmentTab .nav ul li.third a:hover{
-									background:url(../../i/home/tab_hover.gif) no-repeat center 1px;
+									background:url(/i/home/tab_hover.gif) no-repeat center 1px;
 									}
 									
 								
@@ -424,7 +424,7 @@ body{
 								height:59px;
 								font-size:20px;
 								text-align:center;
-								background:url(../../i/home/development_tab.gif) no-repeat;
+								background:url(/i/home/development_tab.gif) no-repeat;
 								}
 								
 								#mainContent #content .content_inner #developmentTab .nav ul li.first a{
@@ -438,7 +438,7 @@ body{
 								font-size:24px;
 								font-weight:bold;
 								text-align:center;
-								background:url(../../i/home/development_tab_hover.gif) no-repeat;
+								background:url(/i/home/development_tab_hover.gif) no-repeat;
 								}
 								
 								#mainContent #content .content_inner #developmentTab .nav ul li.secondHover a{
@@ -451,7 +451,7 @@ body{
 								height:59px;
 								font-size:20px;
 								text-align:center;
-								background:url(../../i/home/development_tab.gif) no-repeat;
+								background:url(/i/home/development_tab.gif) no-repeat;
 								}
 								
 								#mainContent #content .content_inner #developmentTab .nav ul li.third a{
@@ -463,13 +463,13 @@ body{
 					#mainContent #content .content_inner #designTab .map{
 						width:100%;
 						height:384px;
-						background:url(../../i/home/master_map_bg.gif) repeat-x;
+						background:url(/i/home/master_map_bg.gif) repeat-x;
 						}
 						
 						#mainContent #content .content_inner #designTab .map .mapInner{
 							width:100%;
 							height:384px;
-							background:url(../../i/home/master_map_bg_top.gif) no-repeat left top;
+							background:url(/i/home/master_map_bg_top.gif) no-repeat left top;
 							}
 							
 							/** left Side **/
@@ -484,7 +484,7 @@ body{
 								#mainContent #content .content_inner #designTab .map .masterLeftSide h2{
 									width:275px;
 									height:107px;
-									background:url(../../i/home/master_logo.png) no-repeat;
+									background:url(/i/home/master_logo.png) no-repeat;
 									}
 									
 								#mainContent #content .content_inner #designTab .map .masterLeftSide p{
@@ -529,7 +529,7 @@ body{
 										font-weight:bold;
 										line-height:31px;
 										cursor:pointer;
-										background:url(../../i/home/master_compete_button.png) no-repeat;
+										background:url(/i/home/master_compete_button.png) no-repeat;
 										}
 										
 										#mainContent #content .content_inner #designTab .map .masterLeftSide .button a span{
@@ -538,15 +538,15 @@ body{
 									
 									#mainContent #content .content_inner #designTab .map .masterLeftSide .button a:hover{
 										text-decoration:none;
-										background:url(../../i/home/master_compete_button_hover.png) no-repeat;
+										background:url(/i/home/master_compete_button_hover.png) no-repeat;
 										}
 										
 									#mainContent #content .content_inner #designTab .map .masterLeftSide .button a.laungh{
-										background:url(../../i/home/master_laungh_button.png) no-repeat;
+										background:url(/i/home/master_laungh_button.png) no-repeat;
 										}
 										
 									#mainContent #content .content_inner #designTab .map .masterLeftSide .button a.laungh:hover{
-										background:url(../../i/home/master_laungh_button_hover.png) no-repeat;
+										background:url(/i/home/master_laungh_button_hover.png) no-repeat;
 										}
 										
 											
@@ -562,20 +562,20 @@ body{
 								#mainContent #content .content_inner #designTab .map .masterRightSide .topCorner{
 									width:100%;
 									padding-top:4px;
-									background:url(../../i/home/master_corner_top.gif) no-repeat left top;
+									background:url(/i/home/master_corner_top.gif) no-repeat left top;
 									}
 									
 								#mainContent #content .content_inner #designTab .map .masterRightSide .bottomCorner{
 									width:100%;
 									padding-bottom:3px;
-									background:url(../../i/home/master_corner_bottom.gif) no-repeat left bottom;
+									background:url(/i/home/master_corner_bottom.gif) no-repeat left bottom;
 									}
 									
 								#mainContent #content .content_inner #designTab .map .masterRightSide .inner{
 									height:327px;
 									border-left:#fff solid 1px;
 									border-right:#fff solid 1px;
-									background:url(../../i/home/master_corner_bg.gif) repeat-x;
+									background:url(/i/home/master_corner_bg.gif) repeat-x;
 									}
 									
 									/** scroll **/
@@ -598,7 +598,7 @@ body{
 												height:29px;
 												display:block;
 												position:absolute;
-												background:url(../../i/home/master_scroll_left_disable.gif) no-repeat;
+												background:url(/i/home/master_scroll_left_disable.gif) no-repeat;
 												}
 												
 												#mainContent #content .content_inner #designTab .map #pervButton a{
@@ -607,7 +607,7 @@ body{
 													display:block;
 													position:absolute;
 													text-indent:-9999px;
-													background:url(../../i/home/master_scroll_left.gif) no-repeat;
+													background:url(/i/home/master_scroll_left.gif) no-repeat;
 													}
 												
 												#mainContent #content .content_inner #designTab .map #pervButton a.hide{
@@ -619,7 +619,7 @@ body{
 													height:29px;
 													display:block;
 													position:absolute;
-													background:url(../../i/home/master_scroll_left_hover.gif) no-repeat;
+													background:url(/i/home/master_scroll_left_hover.gif) no-repeat;
 													}
 												
 											#mainContent #content .content_inner #designTab .map #nextButton{
@@ -628,7 +628,7 @@ body{
 												display:block;
 												position:absolute;
 												right:0;
-												background:url(../../i/home/master_scroll_right_disable.gif) no-repeat;
+												background:url(/i/home/master_scroll_right_disable.gif) no-repeat;
 												}
 												
 												#mainContent #content .content_inner #designTab .map #nextButton a{
@@ -638,7 +638,7 @@ body{
 													position:absolute;
 													right:0;
 													text-indent:-9999px;
-													background:url(../../i/home/master_scroll_right.gif) no-repeat;
+													background:url(/i/home/master_scroll_right.gif) no-repeat;
 													}
 													
 												#mainContent #content .content_inner #designTab .map #nextButton a.hide{
@@ -651,7 +651,7 @@ body{
 													display:block;
 													position:absolute;
 													right:0;
-													background:url(../../i/home/master_scroll_right_hover.gif) no-repeat;
+													background:url(/i/home/master_scroll_right_hover.gif) no-repeat;
 													}
 												
 											#mainContent #content .content_inner #designTab .map h2{
@@ -763,12 +763,12 @@ body{
 													font-weight:bold;
 													text-align:center;
 													color:#fffffe;
-													background:url(../../i/home/learn_button.gif) no-repeat;
+													background:url(/i/home/learn_button.gif) no-repeat;
 													}
 													
 												#mainContent #content .content_inner #designTab .map #scrollTxt .userDetail .button a:hover{
 													text-decoration:none;
-													background:url(../../i/home/learn_button_hover.gif) no-repeat;
+													background:url(/i/home/learn_button_hover.gif) no-repeat;
 													}
 													
 													#mainContent #content .content_inner #designTab .map #scrollTxt .userDetail .button a span{
@@ -778,7 +778,7 @@ body{
 							/** nav **/		
 							#mainContent #content .content_inner #designTab .nav{
 								height:74px;
-								background:url(../../i/home/master_nav_bg.gif) repeat-x #f1f1f1;
+								background:url(/i/home/master_nav_bg.gif) repeat-x #f1f1f1;
 								}
 								
 								#mainContent #content .content_inner #designTab .nav ul{
@@ -805,7 +805,7 @@ body{
 											}
 											
 										#mainContent #content .content_inner #designTab .nav ul li.first a:hover,#mainContent #content .content_inner #designTab .nav ul li.second a:hover,#mainContent #content .content_inner #designTab .nav ul li.third a:hover{
-											background:url(../../i/home/tab_hover.gif) no-repeat center 1px;
+											background:url(/i/home/tab_hover.gif) no-repeat center 1px;
 											}
 											
 										
@@ -815,7 +815,7 @@ body{
 										height:59px;
 										font-size:20px;
 										text-align:center;
-										background:url(../../i/home/blue_tab_first.gif) no-repeat;
+										background:url(/i/home/blue_tab_first.gif) no-repeat;
 										}
 										
 										#mainContent #content .content_inner #designTab .nav ul li.first a{
@@ -828,7 +828,7 @@ body{
 										height:59px;
 										font-size:20px;
 										text-align:center;
-										background:url(../../i/home/blue_tab_second.gif) no-repeat;
+										background:url(/i/home/blue_tab_second.gif) no-repeat;
 										}
 										
 										#mainContent #content .content_inner #designTab .nav ul li.second a{
@@ -842,7 +842,7 @@ body{
 										font-size:24px;
 										font-weight:bold;
 										text-align:center;
-										background:url(../../i/home/blue_tab_hover.gif) no-repeat;
+										background:url(/i/home/blue_tab_hover.gif) no-repeat;
 										}
 										
 										#mainContent #content .content_inner #designTab .nav ul li.thirdHover a{
@@ -853,7 +853,7 @@ body{
 					/** scroll **/
 					#mainContent #content .content_inner .scrollDiv{
 						height:155px;
-						background:url(../../i/home/scrollDiv_bg.gif) repeat-x;
+						background:url(/i/home/scrollDiv_bg.gif) repeat-x;
 						}
 						
 						/** match **/
@@ -873,7 +873,7 @@ body{
 								height:114px !important;
 								position:absolute;
 								left:17px;
-								background:url(../../i/home/scrollDiv_inner_bg.gif) repeat-x;
+								background:url(/i/home/scrollDiv_inner_bg.gif) repeat-x;
 								}
 								
 								#mainContent #content .content_inner .scrollDiv .match #matchSlider li{
@@ -893,7 +893,7 @@ body{
 											font-size:16px;
 											line-height:23px;
 											color:#333;
-											background:url(../../i/home/match_title_bg.gif) repeat-x left bottom;
+											background:url(/i/home/match_title_bg.gif) repeat-x left bottom;
 											}
 											
 											#mainContent #content .content_inner .scrollDiv .match #matchSlider .textList h2 span{
@@ -928,11 +928,11 @@ body{
 												color:#fffffe;
 												line-height:24px;
 												text-decoration:none;
-												background:url(../../i/home/button.gif) no-repeat left top;
+												background:url(/i/home/button.gif) no-repeat left top;
 												}
 												
 											#mainContent #content .content_inner .scrollDiv .match #matchSlider .textList .link .button:hover{
-												background:url(../../i/home/button_hover.gif) no-repeat left top;
+												background:url(/i/home/button_hover.gif) no-repeat left top;
 												}
 												
 												#mainContent #content .content_inner .scrollDiv .match #matchSlider .textList .link .button span{
@@ -943,11 +943,11 @@ body{
 													padding-right:24px;
 													font-family:Helvetica, Arial, sans-serif;
 													cursor:pointer;
-													background:url(../../i/home/button.gif) no-repeat right top;
+													background:url(/i/home/button.gif) no-repeat right top;
 													}
 													
 												#mainContent #content .content_inner .scrollDiv .match #matchSlider .textList .link .button:hover span{
-													background:url(../../i/home/button_hover.gif) no-repeat right top;
+													background:url(/i/home/button_hover.gif) no-repeat right top;
 													}
 											
 											/** link list **/
@@ -982,7 +982,7 @@ body{
 								height:114px !important;
 								position:absolute;
 								left:17px;
-								background:url(../../i/home/scrollDiv_inner_bg.gif) repeat-x;
+								background:url(/i/home/scrollDiv_inner_bg.gif) repeat-x;
 								}
 								
 								#mainContent #content .content_inner .scrollDiv .member #memberSlider li{
@@ -1052,11 +1052,11 @@ body{
 													font-weight:bold;
 													color:#fffffe;
 													line-height:16px;
-													background:url(../../i/home/member_button.gif) no-repeat left top;
+													background:url(/i/home/member_button.gif) no-repeat left top;
 													}
 													
 												#mainContent #content .content_inner .scrollDiv .member #memberSlider .textList .userInfo .month a:hover{
-													background:url(../../i/home/member_button_hover.gif) no-repeat left top;
+													background:url(/i/home/member_button_hover.gif) no-repeat left top;
 													}
 													
 												#mainContent #content .content_inner .scrollDiv .member #memberSlider .textList .userInfo .month a:hover{
@@ -1070,11 +1070,11 @@ body{
 														display:inline;
 														padding-right:10px;
 														cursor:pointer;
-														background:url(../../i/home/member_button.gif) no-repeat right top;
+														background:url(/i/home/member_button.gif) no-repeat right top;
 														}
 														
 													#mainContent #content .content_inner .scrollDiv .member #memberSlider .textList .userInfo .month a:hover span{
-														background:url(../../i/home/member_button_hover.gif) no-repeat right top;
+														background:url(/i/home/member_button_hover.gif) no-repeat right top;
 														}
 														
 											/** handle **/
@@ -1104,7 +1104,7 @@ body{
 					/** bottom scroll **/
 					#mainContent #content .content_inner .bottomScrollDiv{
 						height:158px;
-						background:url(../../i/home/bottomScroll_bg.gif) repeat-x;
+						background:url(/i/home/bottomScroll_bg.gif) repeat-x;
 						}
 						
 						#mainContent #content .content_inner .bottomScrollDiv .bottomScroll_inner{
@@ -1182,7 +1182,7 @@ body{
 											width:7px; 
 											height:100px; 
 											display:block;
-											background:url(../../i/home/bottomScroll_left_disable.gif) no-repeat left center; 
+											background:url(/i/home/bottomScroll_left_disable.gif) no-repeat left center; 
 											position:absolute; 
 											}
 										
@@ -1190,7 +1190,7 @@ body{
 												width:7px; 
 												height:100px;
 												display:block;
-												background:url(../../i/home/bottomScroll_left.gif) no-repeat left center; 
+												background:url(/i/home/bottomScroll_left.gif) no-repeat left center; 
 												position:absolute; 
 												text-indent:-9999px;
 												}
@@ -1200,13 +1200,13 @@ body{
 												}
 												
 											#previous a:hover{
-												background:url(../../i/home/bottomScroll_left_hover.gif) no-repeat left center;
+												background:url(/i/home/bottomScroll_left_hover.gif) no-repeat left center;
 												}
 							
 										#next{
 											width:7px; 
 											height:100px; 
-											background:url(../../i/home/bottomScroll_right_disable.gif) no-repeat left center; 
+											background:url(/i/home/bottomScroll_right_disable.gif) no-repeat left center; 
 											position:absolute; 
 											right:0;
 											}
@@ -1214,7 +1214,7 @@ body{
 											#next a{
 												width:7px; 
 												height:100px; 
-												background:url(../../i/home/bottomScroll_right.gif) no-repeat left center;
+												background:url(/i/home/bottomScroll_right.gif) no-repeat left center;
 												position:absolute; 
 												cursor:pointer;
 												text-indent:-9999px;
@@ -1226,7 +1226,7 @@ body{
 												}
 											
 											#next a:hover{
-												background:url(../../i/home/bottomScroll_right_hover.gif) no-repeat left center;
+												background:url(/i/home/bottomScroll_right_hover.gif) no-repeat left center;
 												}
 												
 										#buttons {
@@ -1241,15 +1241,15 @@ body{
 												float:left; 
 												display:inline;
 												margin-right:10px; 
-												background:url(../../i/home/scrollNum.gif) no-repeat;
+												background:url(/i/home/scrollNum.gif) no-repeat;
 												}
 												
 											#buttons a:hover{
-												background:url(../../i/home/scrollNum_hover.gif) no-repeat;
+												background:url(/i/home/scrollNum_hover.gif) no-repeat;
 												}
 												
 											#buttons a.hover{
-												background:url(../../i/home/hover_scrollNum.gif) no-repeat;
+												background:url(/i/home/hover_scrollNum.gif) no-repeat;
 												}
 							
 							
@@ -1259,7 +1259,7 @@ body{
 								height:115px;
 								display:block;
 								position:absolute;
-								background:url(../../i/home/scroll_left_disable.gif) no-repeat;
+								background:url(/i/home/scroll_left_disable.gif) no-repeat;
 								}
 							
 								.match #prevBtn a{
@@ -1267,11 +1267,11 @@ body{
 									height:115px;
 									display:block;
 									text-indent:-9999px;
-									background:url(../../i/home/scroll_left.gif) no-repeat;
+									background:url(/i/home/scroll_left.gif) no-repeat;
 									}
 									
 								.match #prevBtn a:hover{
-									background:url(../../i/home/scroll_left_hover.gif) no-repeat;
+									background:url(/i/home/scroll_left_hover.gif) no-repeat;
 									}
 								
 							.match #nextBtn{
@@ -1280,7 +1280,7 @@ body{
 								display:block;
 								position:absolute;
 								left:598px;
-								background:url(../../i/home/scroll_right_disable.gif) no-repeat;
+								background:url(/i/home/scroll_right_disable.gif) no-repeat;
 								}
 								
 								.match #nextBtn a{
@@ -1288,11 +1288,11 @@ body{
 									height:115px;
 									display:block;
 									text-indent:-9999px;
-									background:url(../../i/home/scroll_right.gif) no-repeat;
+									background:url(/i/home/scroll_right.gif) no-repeat;
 									}
 								
 								.match #nextBtn a:hover{
-									background:url(../../i/home/scroll_right_hover.gif) no-repeat;
+									background:url(/i/home/scroll_right_hover.gif) no-repeat;
 									}
 								
 							.member #prevBtn2{
@@ -1300,7 +1300,7 @@ body{
 								height:115px;
 								display:block;
 								position:absolute;
-								background:url(../../i/home/scroll_left_disable.gif) no-repeat;
+								background:url(/i/home/scroll_left_disable.gif) no-repeat;
 								}
 							
 								.member #prevBtn2 a{
@@ -1308,11 +1308,11 @@ body{
 									height:115px;
 									display:block;
 									text-indent:-9999px;
-									background:url(../../i/home/scroll_left.gif) no-repeat;
+									background:url(/i/home/scroll_left.gif) no-repeat;
 									}
 									
 								.member #prevBtn2 a:hover{
-									background:url(../../i/home/scroll_left_hover.gif) no-repeat;
+									background:url(/i/home/scroll_left_hover.gif) no-repeat;
 									}
 								
 							.member #nextBtn2{
@@ -1321,7 +1321,7 @@ body{
 								display:block;
 								position:absolute;
 								left:296px;
-								background:url(../../i/home/scroll_right_disable.gif) no-repeat;
+								background:url(/i/home/scroll_right_disable.gif) no-repeat;
 								}
 								
 								.member #nextBtn2 a{
@@ -1329,11 +1329,11 @@ body{
 									height:115px;
 									display:block;
 									text-indent:-9999px;
-									background:url(../../i/home/scroll_right.gif) no-repeat;
+									background:url(/i/home/scroll_right.gif) no-repeat;
 									}
 								
 								.member #nextBtn2 a:hover{
-									background:url(../../i/home/scroll_right_hover.gif) no-repeat;
+									background:url(/i/home/scroll_right_hover.gif) no-repeat;
 									}
 
 			
@@ -1410,7 +1410,7 @@ div.selectbox-wrapper ul li {
   width : 300px; /* Resize Width */
   display : block;
   text-align:left; 
-  background: #f9f9f9 url('../../i/home/dropdown_bg.png') no-repeat 100% 50%;
+  background: #f9f9f9 url('/i/home/dropdown_bg.png') no-repeat 100% 50%;
   cursor: pointer;
   border:1px solid #dadada;
   color: #4f4a4a;
