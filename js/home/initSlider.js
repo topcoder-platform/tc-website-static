@@ -492,34 +492,34 @@ $(document).ready(function(){
 	//ie6 button 
 	$('.masterLeftSide .button a').hover(function(){
 		
-		$(this).css('background','url(i/master_compete_button_hover.png) no-repeat');	
+		$(this).css('background','url(i/home/master_compete_button_hover.png) no-repeat');	
 		
 		
 	},function(){
 		
-		$(this).css('background','url(i/master_compete_button.png) no-repeat');	
+		$(this).css('background','url(i/home/master_compete_button.png) no-repeat');	
 	
 	});
 	
 	$('.masterLeftSide .button a.laungh').hover(function(){
 		
-		$(this).css('background','url(i/master_laungh_button_hover.png) no-repeat');	
+		$(this).css('background','url(i/home/master_laungh_button_hover.png) no-repeat');	
 		
 		
 	},function(){
 		
-		$(this).css('background','url(i/master_laungh_button.png) no-repeat');	
+		$(this).css('background','url(i/home/master_laungh_button.png) no-repeat');	
 	
 	});
 	
 	$('.getStartButton a').hover(function(){
 		
-		$(this).css('background','url(i/get_Started_button_hover.png) no-repeat');	
+		$(this).css('background','url(i/home/get_Started_button_hover.png) no-repeat');	
 		
 		
 	},function(){
 		
-		$(this).css('background','url(i/get_Started_button.png) no-repeat');	
+		$(this).css('background','url(i/home/get_Started_button.png) no-repeat');	
 	
 	}).click(function() {
 		location.href = "/home/community";
