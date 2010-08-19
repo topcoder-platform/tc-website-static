@@ -269,8 +269,8 @@ body{
 						#mainContent #content .content_inner .map .getStartButton{
 							width:262px;
 							height:59px;
-							margin-top:142px;
-							margin-left:596px;
+							margin: 20px 0px 0px 60px;
+							display:block;
 							}
 						
 							#mainContent #content .content_inner .map .getStartButton a{
