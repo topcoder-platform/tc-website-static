@@ -141,7 +141,7 @@ body{
 							text-decoration:none;
 							}
 						#mainContent #header #mainNav li .tip{ 
-							width:173px;
+							width:auto;
 							position:absolute;
 							margin-top:-34px;
 							}
@@ -151,6 +151,8 @@ body{
 								height:25px;
 								line-height:25px;
 								background:url(/i/home/aboutMe_tipContent.gif) no-repeat;
+								white-space:nowrap;
+								padding: 0px 3px;
 								}
 								
 								#mainContent #header #mainNav li .tip .tipContent p{ 
@@ -166,7 +168,7 @@ body{
 								width:7px;
 								height:4px;
 								display:block;
-								margin-left:83px;
+								margin-left:90px;
 								background:url(/i/home/aboutMe_tip.gif) no-repeat;
 								}
 								
@@ -1397,6 +1399,7 @@ div.selectbox-wrapper ul li {
   font-size: .8em;
   border-bottom:1px solid #dadada;
   height: 1.2em;
+  line-height: 1.2em;
   background: #f9f9f9;
 }
 
@@ -1415,6 +1418,7 @@ div.selectbox-wrapper ul li {
   border:1px solid #dadada;
   color: #4f4a4a;
   height: 2em;
+  line-height: 2em;
 }
 
 
