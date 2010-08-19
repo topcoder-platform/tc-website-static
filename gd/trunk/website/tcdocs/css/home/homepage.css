@@ -141,7 +141,7 @@ body{
 							text-decoration:none;
 							}
 						#mainContent #header #mainNav li .tip{ 
-							width:173px;
+							width:auto;
 							position:absolute;
 							margin-top:-34px;
 							}
@@ -150,7 +150,7 @@ body{
 								width:100%;
 								height:25px;
 								line-height:25px;
-								background:url(/i/home/aboutMe_tipContent.gif) no-repeat;
+								background:url(/i/home/aboutMe_tipContent.gif) repeat-x;
 								white-space:nowrap;
 								padding: 0px 3px;
 								}
