@@ -1,6 +1,9 @@
 // JavaScript Document
 $(document).ready(function(){
-						   
+	var rss_feed = "http://query.yahooapis.com/v1/public/yql?q=select%20channel.item.title%2Cchannel.item.link%20from%20xml%20where%20url%3D%22http%3A%2F%2Ftopcoder.com%2Fhome%2Ftc-test-area%2Fcategory%2Findex_scroll%2Ffeed%22&format=json&callback=?";
+	var rss_items;
+	var rss_w;
+	var rss_timer = 0;
 	$.fn.silder = function(options){
 	  
 		// default configuration properties
@@ -182,12 +185,7 @@ $(document).ready(function(){
 		}
 		
 		//move to left
-		animateLeft(current,button,function(){
-			if(auto == true){
-				window.clearInterval(oTime); 
-				oTime = setInterval(autoAnimateRight,speed);
-			}
-		});
+		animateLeft(current,button);
 		
 	});
 	
@@ -203,12 +201,7 @@ $(document).ready(function(){
 		}
 		
 		//move to right
-		animateRight(current,button,function(){
-			if(auto == true){
-				window.clearInterval(oTime);
-				oTime = setInterval(autoAnimateRight,speed);
-			}
-		});
+		animateRight(current,button);
 		
 	});
 	
@@ -219,31 +212,25 @@ $(document).ready(function(){
 		button=current;
 		clickButton = $(this).attr('id');
 		current = parseInt(clickButton.slice(1));
-		
+		if (auto) {
+			window.clearInterval(oTime);
+			oTime = setInterval(autoAnimateRight, speed);
+		}
 		//scroll left
-		if (current > button) {animateLeft(current,button,function(){
-			if(auto == true){
-				window.clearInterval(oTime);
-				oTime = setInterval(autoAnimateRight,speed);
-			}
-		});}
+		if (current > button) {animateLeft(current,button);}
 		
 		//scroll right
-		if (current < button) {animateRight(current,button,function(){
-			if(auto == true){
-				window.clearInterval(oTime);
-				oTime = setInterval(autoAnimateRight,speed);
-			}
-		});}
+		if (current < button) {animateRight(current,buton);}
 		
 	});
 	
 	//the function of scroll left
 	function animateLeft(current,button) {
-		
+		if (auto) {
+			window.clearInterval(oTime);
+			oTime = setInterval(autoAnimateRight, speed);
+		}
 		$('#p'+current).css("left",width +"px");
-		//$('#p'+current).animate({"left": "0px"}, 500, "swing");
-		//$('#p'+button).animate({"left": -width+"px"}, 500, "swing");
 		$('#p'+current).css({"left":"0px","opacity":0}).animate({"opacity": 1.0}, 1000);
 		$('#p'+button).css("left",-width+"px");
 		setbutton();
@@ -252,9 +239,10 @@ $(document).ready(function(){
 	
 	//the function of scroll right
 	function animateRight(current,button) {
-		//$('#p'+current).css("left",-width+"px");
-		//$('#p'+current).animate({"left": "0px"}, 500, "swing");
-		//$('#p'+button).animate({"left": width+"px"}, 500, "swing");
+		if (auto) {
+			window.clearInterval(oTime);
+			oTime = setInterval(autoAnimateRight, speed);
+		}
 		$('#p'+current).css({"left":-width+"px","opacity":0}).animate({"opacity": 1.0}, 1000);
 		$('#p'+current).css({"left":"0px","opacity":0}).animate({"opacity": 1.0}, 1000);
 		$('#p'+button).css("left",width+"px");
@@ -293,13 +281,13 @@ $(document).ready(function(){
 			current++
 		if (current == images + 1 ) {current = 1}
 		animateRight(current,button);
+		if(auto){
+			window.clearInterval(oTime);
+			oTime = setInterval(autoAnimateRight,speed);
+		}
 		
 	}
 	
-	//set timer
-	if(auto == true){
-		oTime = setInterval(autoAnimateRight,speed);
-	}
 	
 	/**
 		the scroll function of the design area
@@ -328,6 +316,10 @@ $(document).ready(function(){
 	
 	// init the first text position
 	$('#m1').animate({"left": "0px"}, 300, "swing");
+		if (auto) {
+			window.clearInterval(oTime);
+			oTime = setInterval(autoAnimateRight, speed);
+		}
 	
 	// the function of the next button
 	$("#nextButton a").click(function() {
@@ -459,67 +451,40 @@ $(document).ready(function(){
 		});
 	}
 	
-	/*the first link of the nav click
-	$('li.firstHover,li.first').click(function(){
-											   
-		$('#homeTab').show();
-		$('#developmentTab').hide();
-		$('#designTab').hide();
-	
-	});
-	
-	//the third link of the nav click
-	$('li.thirdHover,li.third').click(function(){
-		
-		$('#designTab').show();
-		$('#developmentTab').hide();
-		$('#homeTab').hide();
-	
-	});
-	
-	//the second link of the nav click
-	$('li.secondHover,li.second').click(function(){
-		
-		$('#developmentTab').show();
-		$('#designTab').hide();
-		$('#homeTab').hide();
-		$('#mainContent #content .content_inner #developmentTab .nav').css('background','url(i/nav_bg_2.gif) no-repeat');	
-	});*/
-	
 	//ie6 png fix
-	$('.getStartButton a,.map .intro .introInner,.masterLeftSide .button a,.masterLeftSide .button a.laungh,.masterLeftSide h2,#getStartTip,div#logo a').css('behavior','url(../css/iepngfix.htc)');
+	$('.getStartButton a,.map .intro .introInner,.masterLeftSide .button a,.masterLeftSide .button a.laungh,.masterLeftSide h2,#getStartTip,div#logo a,.scrollNav a,.icon a').css('behavior','url(../css/iepngfix.htc)');
 	
 	//ie6 button 
 	$('.masterLeftSide .button a').hover(function(){
 		
-		$(this).css('background','url(i/home/master_compete_button_hover.png) no-repeat');	
+		$(this).css('background','url(i/master_compete_button_hover.png) no-repeat');	
 		
 		
 	},function(){
 		
-		$(this).css('background','url(i/home/master_compete_button.png) no-repeat');	
+		$(this).css('background','url(i/master_compete_button.png) no-repeat');	
 	
 	});
 	
 	$('.masterLeftSide .button a.laungh').hover(function(){
 		
-		$(this).css('background','url(i/home/master_laungh_button_hover.png) no-repeat');	
+		$(this).css('background','url(i/master_laungh_button_hover.png) no-repeat');	
 		
 		
 	},function(){
 		
-		$(this).css('background','url(i/home/master_laungh_button.png) no-repeat');	
+		$(this).css('background','url(i/master_laungh_button.png) no-repeat');	
 	
 	});
 	
 	$('.getStartButton a').hover(function(){
 		
-		$(this).css('background','url(i/home/get_Started_button_hover.png) no-repeat');	
+		$(this).css('background','url(i/get_Started_button_hover.png) no-repeat');	
 		
 		
 	},function(){
 		
-		$(this).css('background','url(i/home/get_Started_button.png) no-repeat');	
+		$(this).css('background','url(i/get_Started_button.png) no-repeat');	
 	
 	}).click(function() {
 		location.href = "/home/community";
@@ -539,4 +504,81 @@ $(document).ready(function(){
                 window.location = loc;
         });
 
+	$.getJSON(
+		rss_feed,
+		function(data) {
+			$("#loading").hide();
+			$.each(data.query.results.rss, function(i, item) {
+				var html = '<li ' + (i==0?'class="active"':'') + '>'
+					+ '<a href="' + item.channel.item.link + '">' 
+					+ item.channel.item.title + '</a></li>';
+				$("#rssContent").append(html);
+			});
+			$("#rss ul li.active").fadeIn();
+			rss_timer = window.setInterval(moveRssNext, 5000);
+			
+			//set timer for clients
+			if(auto){
+				oTime = setInterval(autoAnimateRight,speed);
+			}
+
+			/*if ( $("#rss ul").length>0 ) {
+				rss_items = $("#rss ul li").length;
+				rss_w = $("#rss ul li:first").width();
+				$("#rss ul").width(rss_items*rss_w);
+			}*/
+		}
+	);
+	
+	// rss navigation
+	$("#rss .scrollNav a.moveNext").click(function(){
+		window.clearInterval(rss_timer);
+		moveRssNext();
+		rss_timer = window.setInterval(moveRssNext, 5000);
+	});
+	$("#rss .scrollNav a.movePrev").click(function(){
+		window.clearInterval(rss_timer);
+		var $current = $("#rss ul li.active");
+		var $prev = $current.prev();
+		$("#rss ul li").removeClass('active');
+		
+		if ($prev.length>0) {
+			$current.fadeOut('fast', function() {
+				$prev.addClass('active').fadeIn();
+			});
+		} else {
+			$current.fadeOut('fast', function() {
+				$("#rss ul li:last").addClass('active').fadeIn();
+			});
+		} 	
+		//var index = $("#rss ul li.active").index() * -1;
+		//$("#rss ul").animate({left: index*rss_w}, 300);
+		//$("#rss ul li.active").prev().fadeOut();
+		rss_timer = window.setInterval(moveRssNext, 5000);
+		return false;
+	});
+	function setRssTimer() {
+	}
+	function moveRssNext() {
+		var $current = $("#rss ul li.active");
+		var $next = $current.next();
+		$("#rss ul li").removeClass('active');
+		//var index = 0;
+		
+		if ($next.length>0) {
+			$current.fadeOut('fast', function() {
+				$next.addClass('active').fadeIn('fast');
+			});
+			//index = $("#rss ul li.active").index() * -1;
+		} else {
+			$current.fadeOut('fast', function() {
+				$("#rss ul li:first").addClass('active').fadeIn();
+			});
+		} 	
+		
+		//	$("#rss ul").animate({left: index*rss_w}, 300);
+		//$("#rss ul li.active").prev().fadeOut();
+		return false;
+	}
 });
+
