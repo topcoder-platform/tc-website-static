@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
-	var rss_feed = "http://query.yahooapis.com/v1/public/yql?q=select%20channel.item.title%2Cchannel.item.link%20from%20xml%20where%20url%3D%22http%3A%2F%2Ftopcoder.com%2Fhome%2Ftc-test-area%2Fcategory%2Findex_scroll%2Ffeed%22&format=json&callback=?";
+	var rss_feed = "http://query.yahooapis.com/v1/public/yql?q=select%20channel.item.title%2Cchannel.item.link%20from%20xml%20where%20url%3D%22http%3A%2F%2Ftopcoder.com%2Fhome%2Fblog%2Fcategory%2Fblog%2Ftop-news%2ffeed%22&format=json&callback=";
 	var rss_items;
 	var rss_w;
 	var rss_timer = 0;
