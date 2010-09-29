@@ -1371,6 +1371,7 @@ div.selectbox-wrapper {
   overflow:auto;
   background: #fbfbfb;
   left: 70px;
+  z-index: 1000;
 }
 
 /*Drop down list styles*/
