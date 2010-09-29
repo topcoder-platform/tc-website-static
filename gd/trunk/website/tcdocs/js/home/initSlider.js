@@ -510,7 +510,7 @@ $(document).ready(function(){
 			$("#loading").hide();
 			$.each(data.query.results.rss, function(i, item) {
 				var html = '<li ' + (i==0?'class="active"':'') + '>'
-					+ '<a href="' + item.channel.item.link + '">' 
+					+ '<a href="http://www.topcoder.com/home/blog/category/top-news/">' //' + item.channel.item.link + '">'
 					+ item.channel.item.title + '</a></li>';
 				$("#rssContent").append(html);
 			});
