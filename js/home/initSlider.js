@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
-	var rss_feed = "http://query.yahooapis.com/v1/public/yql?q=select%20channel.item.title%2Cchannel.item.link%20from%20xml%20where%20url%3D%22http%3A%2F%2Ftopcoder.com%2Fhome%2Fblog%2Fcategory%2Fblog%2Ftop-news%2ffeed%22&format=json&callback=?";
+	var rss_feed = "http://query.yahooapis.com/v1/public/yql?q=select%20channel.item.title%2Cchannel.item.link%20from%20xml%20where%20url%3D%22http%3A%2F%2Ftopcoder.com%2Fhome%2Fblog%2Fcategory%2Fblog%2Fplatform-updates%2ffeed%22&format=json&callback=?";
 	var rss_items;
 	var rss_w;
 	var rss_timer = 0;
@@ -457,34 +457,34 @@ $(document).ready(function(){
 	//ie6 button 
 	$('.masterLeftSide .button a').hover(function(){
 		
-		$(this).css('background','url(i/master_compete_button_hover.png) no-repeat');	
+		$(this).css('background','url(i/home/master_compete_button_hover.png) no-repeat');	
 		
 		
 	},function(){
 		
-		$(this).css('background','url(i/master_compete_button.png) no-repeat');	
+		$(this).css('background','url(i/home/master_compete_button.png) no-repeat');	
 	
 	});
 	
 	$('.masterLeftSide .button a.laungh').hover(function(){
 		
-		$(this).css('background','url(i/master_laungh_button_hover.png) no-repeat');	
+		$(this).css('background','url(i/home/master_laungh_button_hover.png) no-repeat');	
 		
 		
 	},function(){
 		
-		$(this).css('background','url(i/master_laungh_button.png) no-repeat');	
+		$(this).css('background','url(i/home/master_laungh_button.png) no-repeat');	
 	
 	});
 	
 	$('.getStartButton a').hover(function(){
 		
-		$(this).css('background','url(i/get_Started_button_hover.png) no-repeat');	
+		$(this).css('background','url(i/home/get_Started_button_hover.png) no-repeat');	
 		
 		
 	},function(){
 		
-		$(this).css('background','url(i/get_Started_button.png) no-repeat');	
+		$(this).css('background','url(i/home/get_Started_button.png) no-repeat');	
 	
 	}).click(function() {
 		location.href = "/home/community";
@@ -510,7 +510,7 @@ $(document).ready(function(){
 			$("#loading").hide();
 			$.each(data.query.results.rss, function(i, item) {
 				var html = '<li ' + (i==0?'class="active"':'') + '>'
-					+ '<a href="http://www.topcoder.com/home/blog/category/top-news/">' //' + item.channel.item.link + '">'
+					+ '<a href="http://www.topcoder.com/home/blog/category/top-news/">' //' + item.channel.item.link + '">' 
 					+ item.channel.item.title + '</a></li>';
 				$("#rssContent").append(html);
 			});
