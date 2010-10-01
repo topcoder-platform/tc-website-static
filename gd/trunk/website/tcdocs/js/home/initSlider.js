@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
-	var rss_feed = "http://query.yahooapis.com/v1/public/yql?q=select%20channel.item.title%2Cchannel.item.link%20from%20xml%20where%20url%3D%22http%3A%2F%2Ftopcoder.com%2Fhome%2Fblog%2Fcategory%2Fblog%2Fplatform-updates%2ffeed%22&format=json&callback=?";
+	var rss_feed = "http://query.yahooapis.com/v1/public/yql?q=select%20channel.item.title%2Cchannel.item.link%20from%20xml%20where%20url%3D%22http%3A%2F%2Ftopcoder.com%2Fhome%2Fblog%2Fcategory%2Fblog%2Ftop-news%2ffeed%22&format=json&callback=?";
 	var rss_items;
 	var rss_w;
 	var rss_timer = 0;
@@ -510,7 +510,7 @@ $(document).ready(function(){
 			$("#loading").hide();
 			$.each(data.query.results.rss, function(i, item) {
 				var html = '<li ' + (i==0?'class="active"':'') + '>'
-					+ '<a href="http://www.topcoder.com/home/blog/category/top-news/">' //' + item.channel.item.link + '">' 
+					+ '<a href="' + item.channel.item.link + '">' 
 					+ item.channel.item.title + '</a></li>';
 				$("#rssContent").append(html);
 			});
