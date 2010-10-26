@@ -344,7 +344,7 @@ body{
 .crossButton{   /**** right cross button ***/
 	float:right;
 	background:url(/i/tournament/tco10/cross.png) no-repeat center center;
-	width:176px;
+	width:270px;
 	height:175px;
 	display:inline;
 	margin-right:15px;
@@ -382,13 +382,21 @@ body{
 			background-image:url(/i/tournament/tco10/photo.png) !important;
 			background-image:url(/i/tournament/tco10/photo.gif);
 		}
+		.crossButton .comics{   /******* photo button ****/
+			background-image:url(/i/tournament/tco10/comics.png) !important;
+			background-image:url(/i/tournament/tco10/comics.gif);
+		}
+		.crossButton .tweet{   /******* photo button ****/
+			background-image:url(/i/tournament/tco10/tweet.png) !important;
+			background-image:url(/i/tournament/tco10/tweet.gif);
+		}
 		.crossButton .hover{
 			background-position:left -84px;
 		}
 /****** left welcome text wrapper *****/
 .welcomeText{
-	width:700px;
-	height:175px;
+	width:630px;
+	height:300px;
 }
 		.welcomeText .welcomeTitle{   /******* text title ******/
 			font-family:"MyriadPro-BoldCond","Trebuchet MS", Arial, Helvetica, sans-serif;
