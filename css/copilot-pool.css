@@ -499,8 +499,9 @@ a.button1:hover span.right{
     margin:0 auto;
 }
 .copilot-pool .charts .palisade .left-control{
-   /* float:left;*/
-    position:relative;
+    /* float:left;*/
+  /*  position:relative;*/
+    float:left;
 }
 /*
 .copilot-pool .charts .palisade .left-control div.controller{
@@ -525,7 +526,7 @@ a.button1:hover span.right{
 }
 */
 .copilot-pool .charts .palisade .left-control div.controller{
-    background: url(/i/copilots/tabs-bg.png) no-repeat left -1px;
+    background: url(/i/copilots/tabs-bg.png) no-repeat -1px -1px;
     height:26px;
     text-decoration:none;
     width:162px;
@@ -534,7 +535,7 @@ a.button1:hover span.right{
     cursor:pointer;
 }
 .copilot-pool .charts .palisade .left-control div.active{
-   background-position:left -28px;
+   background-position:-1px -28px;
 }
 .copilot-pool .charts .palisade .left-control div.controllerWrapper{
     background: url(/i/copilots/tabs-bg.png) no-repeat right -1px;
@@ -552,17 +553,15 @@ a.button1:hover span.right{
 .copilot-pool .charts .palisade .left-control div.controller span{
     display:block;
     background: url(/i/copilots/tabs-bg.png) repeat-x left -55px ;
-    padding:5px 5px 0px;
-    height:26px;
+    padding:0px 5px 0px;
+    line-height:26px;
 
 }
-.copilot-pool .charts .palisade .right-area{
-    /*float:left; */  
+.copilot-pool .charts .palisade .right-area{ 
     font-size:12px;
-    position:absolute;
-    left:180px;
-    top:15px;
-    right:20px;
+    margin-left:180px;
+    padding-right:20px;
+    padding-top:15px;
 }
 .copilot-pool .charts .palisade .right-area table{
     display:none;
@@ -717,14 +716,12 @@ a.button1:hover span.right{
 .details-chart #chart3 .legend .failures-legend span.icon{
     background-color:#B2B2B2;
 }
-
 img.personSmall {
 
 	max-height:75px;
 
 	max-width:68px;
 }
-
 .noChartData{
     font-size:12px;
     font-weight:bold;
@@ -734,6 +731,13 @@ img.personSmall {
     padding-bottom:30px;
     color:#B5B5B5;
     font-style:italic;
+}
+.copilot-pool .charts .palisade .left-control .leftControlMask{
+    min-height:210px;
+    border-left:1px solid #B5B5B5;
+    border-right:1px solid #B5B5B5;
+    width:155px;
+    background-color:#f2f2f2;
 }
 
 
