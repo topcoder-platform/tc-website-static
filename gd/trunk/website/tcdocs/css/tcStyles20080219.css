@@ -443,6 +443,10 @@ color: #FFFFFF;
 #navbar li.exp li li li a:visited,
 #navbar li.exp li li li a:hover,
 #navbar li.exp li li li a:active,
+#navbar li.exp li li li li a:link,
+#navbar li.exp li li li li a:visited,
+#navbar li.exp li li li li a:hover,
+#navbar li.exp li li li li a:active,
 #navbar li.exp_ed li a:link,
 #navbar li.exp_ed li a:visited,
 #navbar li.exp_ed li a:hover,
@@ -454,7 +458,11 @@ color: #FFFFFF;
 #navbar li.exp_ed li li li a:link,
 #navbar li.exp_ed li li li a:visited,
 #navbar li.exp_ed li li li a:hover,
-#navbar li.exp_ed li li li a:active
+#navbar li.exp_ed li li li a:active,
+#navbar li.exp_ed li li li li a:link,
+#navbar li.exp_ed li li li li a:visited,
+#navbar li.exp_ed li li li li a:hover,
+#navbar li.exp_ed li li li li a:active
 {
 background-image: none;
 }
@@ -463,14 +471,19 @@ background-image: none;
 #navbar li li.exp a:link,
 #navbar li li.exp a:visited,
 #navbar li li li.exp a:link,
-#navbar li li li.exp a:visited {
+#navbar li li li.exp a:visited,
+#navbar li li li li.exp a:link,
+#navbar li li li li.exp a:visited
+{
 background-image: url(/i/interface/exp.gif);
 background-repeat: no-repeat;
 background-position: 1px 50%;
 }
 #navbar li.exp a:hover,
 #navbar li li.exp a:hover,
-#navbar li li li.exp a:hover {
+#navbar li li li.exp a:hover,
+#navbar li li li li.exp a:hover
+{
 background-image: url(/i/interface/exp_w.gif);
 }
 #navbar li.exp_ed a:link,
@@ -478,14 +491,20 @@ background-image: url(/i/interface/exp_w.gif);
 #navbar li li.exp_ed a:link,
 #navbar li li.exp_ed a:visited,
 #navbar li li li.exp_ed a:link,
-#navbar li li li.exp_ed a:visited {
+#navbar li li li.exp_ed a:visited,
+#navbar li li li li.exp_ed a:link,
+#navbar li li li li.exp_ed a:visited
+{
 background-image: url(/i/interface/exp_ed.gif);
 background-repeat: no-repeat;
 background-position: 1px 50%;
 }
 #navbar li.exp_ed a:hover,
 #navbar li li.exp_ed a:hover,
-#navbar li li li.exp_ed a:hover { 
+#navbar li li li.exp_ed a:hover,
+#navbar li li li li.exp_ed a:hover
+
+{ 
 background-image: url(/i/interface/exp_ed_w.gif);
 }
 #navbar li a:link, #navbar li a:visited {
@@ -513,8 +532,14 @@ padding: 5px 10px 5px 10px;
 color: #999999;
 font-size: 11px;
 margin: 0px 15px 0px 20px;
+padding: 5px 10px 5px 10px;
 }
-#navbar li a:hover, #navbar li li a:hover, #navbar li li li a:hover, #navbar li li li li a:hover  {
+#navbar li li li li li a:link, #navbar li li li li li a:visited {
+color: #999999;
+font-size: 11px;
+margin: 0px 15px 0px 27px;
+}
+#navbar li a:hover, #navbar li li a:hover, #navbar li li li a:hover, #navbar li li li li a:hover,#navbar li li li li li a:hover  {
 color: #000000;
 background-color: #FFFFFF;
 }
