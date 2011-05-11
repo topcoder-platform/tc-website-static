@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+body {
+	position:relative;
+	margin:0;
+	padding:0;
+	width:100%;
+	font-family:Arial;
+	background-color:#FFFFFF;
+}
+
+/*--------------
+ button style
+--------------*/
+a.btn1{
+	background:url(../i/btn1.gif) no-repeat left top;
+	padding-left:6px;
+	display:inline-block;
+	height:26px;
+	overflow:hidden;
+	color:#333333;
+	font-size:12px;
+	font-weight:bold;
+}
+	a.btn1.red {
+		background-image:url(../i/btn1-red.gif);
+		color:#FFFFFE;
+	}
+a.btn1 .rightSide{
+	background:url(../i/btn1.gif) no-repeat right -52px;
+	padding-right:6px;
+	display:inline-block;
+}
+	a.btn1.red .rightSide{
+		background-image:url(../i/btn1-red.gif);
+	}
+a.btn1 .inner{
+	background:url(../i/btn1.gif) repeat-x left -26px;
+	display:inline-block;
+	cursor:pointer;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+}
+	a.btn1.red .inner{
+		padding:0 17px;
+		background-image:url(../i/btn1-red.gif);
+	}
+
+a.btn1:hover{
+	background-position:left -78px;
+}
+a.btn1:hover .rightSide{
+	background-position:right bottom;
+}
+a.btn1:hover .inner{
+	background-position:left -104px;
+}
+
+/* HEADER */
+#header {
+	width:100%;
+	height:70px;
+	padding-top:30px;
+	background:url(../i/header.png) repeat-x 0 0;
+}
+
+/* LOGO */
+.logo {
+	width:234px;
+	height:36px;
+	margin-left:40px;
+	background:url(../i/logo.png) no-repeat 0 0;
+}
+
+/* CONTENT */
+#content {
+	width:100%;
+	margin-top:4px;
+	padding-top:28px;
+	background:url(../i/content.png) repeat-x top #cccccc;
+}
+
+#content .contentBottom {
+	width:100%;
+	height:70px;
+	line-height:70px;
+	font-size:12px;
+	color:#333333;
+	text-align:center;
+}
+			
+/*
+* POPUP
+*/
+
+.popup {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	background:url(../i/bgBlack.png) repeat;
+    z-index:3;
+}
+
+	.popup .popupWindow {
+		width:680px;
+		height:430px;
+		margin-top:100px;
+		margin:100px auto;
+		padding-top:3px;
+		padding-left:7px;
+		background:url(../i/popup.png) repeat-x 0 0 #FFFFFF;
+		border:1px #CCCCCC solid;
+	}
+	
+	.popupRemovePhoto .popupWindow {
+		width:485px;
+		height:211px;
+	}
+
+		.popup .title {
+			width:670px;
+			height:41px;
+			line-height:41px;
+			font-family:"Myriad Pro";
+			font-size:18px;
+			font-weight:bold;
+			text-align:center;
+			background-color:#FFFFFF;
+			border:1px #DCDCDC solid;
+		}
+		
+		.popupRemovePhoto .title {
+			width:476px;
+		}
+
+		.popup .content {
+			width:660px;
+			height:358px;
+			margin-top:5px;
+			padding:8px 5px;
+			background-color:#FFFFFF;
+			border:1px #DCDCDC solid;
+		}
+		
+		.popupRemovePhoto .content {
+			width:465px;
+			height:137px;
+		}
+
+			.popup .content img {
+				float:left;
+				border:1px #CCCCCC solid;
+			}
+            
+            .popup .content #uploadImage img {
+				margin-left:0px;
+			}
+			
+			.popupRemovePhoto .content img {
+				float:left;
+				margin-left:0px;
+				margin-right:9px;
+			}
+			
+			.popup .content .locateInput {
+				float:left;
+				width:270px;
+				height:20px;
+				font-size:12px;
+				line-height:20px;
+				padding-left:10px;
+				border:1px #CCCCCC solid;
+				overflow:hidden;
+				margin-right:2px;
+			}
+			
+				.popup .content .locateInput .inner {
+					float:left;
+					width:300px;
+				}
+			
+			.popup .content .btnBrowse {
+				float:right;
+				position:relative;
+				top:-2px;
+			}
+			
+				.popup .content .btnBrowse .inner {
+					padding:0 14px;
+				}
+				
+				.file-wrapper input {
+					height:100%;
+					cursor:pointer;
+					position: absolute;
+					right: 0;
+					top: 0;
+					filter: alpha(opacity=1);
+					-moz-opacity: 0.01;
+					opacity: 0.01;
+				}
+				
+			.popup .content .inputFile {
+				position:absolute;
+				z-index:-1;
+			}
+				
+			.popup .content .alert {
+				float:left;
+				width:239px;
+				height:61px;
+				padding-top:7px;
+				padding-left:8px;
+				padding-right:8px;
+				margin-top:10px;
+				margin-bottom:8px;
+				font-size:12px;
+				line-height:17px;
+				color:#CC0000;
+				background-color:#FEFFDB;
+				border:1px #CBCC9A solid;
+			}
+			
+			.popup .content .btnCancel {
+				float:left;
+				margin-left:35px;
+				margin-top:15px;
+			}
+			
+				.popup .content .btnCancel .inner {
+					padding:0 14px;
+				}
+				
+			.popup .content .btnUpload {
+				float:left;
+				margin-left:20px;
+				margin-top:15px;
+			}
+			
+			.popup .content .text {
+				float:left;
+				width:329px;
+				height:78px;
+				line-height:78px;
+				font-size:12px;
+				text-align:center;
+			}
+				
+			.popup .content .btnNo {
+				float:left;
+				margin-right:2px;
+				margin-left:73px;
+			}
+			
+				.popup .content .btnNo .inner {
+					padding:0 28px;
+				}
+				
+			.popup .content .btnYes {
+				float:left;
+				margin-right:2px;
+			}
+			
+				.popup .content .btnYes .inner {
+					padding:0 25px;
+				}
+                
+                .popup a {
+                    text-decoration:none;
+                }
+
+                .popup a:focus {
+                    outline:none;
+                }
+
+
+		#photoUploadLeft {
+			float:left;
+			width:370px;
+			margin-top:20px;
+			padding-left:3px;
+		}
+		#photoUploadRight {
+			float:right;
+			width:263px;
+			padding-left:10px;
+			margin-top:20px;
+		}
+        
+        #previewDiv {
+            overflow:hidden;
+            width:117px;
+            height:140px;
+            margin-left:67px;
+        }
+		
+		#uploadImage {
+			border:1px #cccccc solid;
+			width:auto;
+			height:auto;
+			background:#eeeeee;
+			float:left;
+			margin-top:20px;
+		}
+		
+		#uploadImage p{
+			width:380px;
+			height:270px;
+			line-height:270px;
+			text-align:center;
+		}
+
+
+
+.clear {
+	clear:both;
+}	
+
+.hide {
+	display:none;
+}
