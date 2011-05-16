@@ -1,13 +1,15 @@
 /*
  * Copyright (C) 2011 TopCoder Inc., All Rights Reserved.
  */
+
 /**
  * Used to handle user upload/remove photo logic.
  * 
- * @author TCSASSEMBLER
+ * @author pvmagacho
  * @version 1.0
  */
 $(document).ready(function() {
+    $.ajaxSetup({cache : false});
 
     var coor = null;
     
@@ -84,8 +86,8 @@ $(document).ready(function() {
                 
                 $("#submitPhotoForum input[name=picWidth]").val(picWidth);
                 $("#submitPhotoForum input[name=picHeight]").val(picHeight);
-            }
-            
+            }                     
+
             $("#submitPhotoForum").submit();
         }
         
@@ -96,6 +98,7 @@ $(document).ready(function() {
         
         var src = previewPath;
         $("#uploadImage").html("<img>");
+        $("#uploadImage").hide();
         $("#uploadImage img").attr("src", src);
         $('#photoUploadRight img').attr("src", src);
         $('#photoUploadRight img').css("width", "113px");
@@ -107,7 +110,6 @@ $(document).ready(function() {
         
         var targetHeight = 270.0, targetWidth = 380.0;
         var newImage = new Image();
-        newImage.src = src;
         newImage.onload = function onLoadImg() {
             var aspect = newImage.height / newImage.width;
             if (aspect > ( targetHeight / targetWidth )) {
@@ -119,13 +121,15 @@ $(document).ready(function() {
             }
             picWidth = $("#uploadImage").width();
             picHeight = $("#uploadImage").height();
-        
+
+            $("#uploadImage").show();
             $("#uploadImage img").Jcrop({
                 onChange: showPreview,
                 onSelect: showPreview,
                 aspectRatio: 115/138
             });
-	}
+        }
+        newImage.src = src;
     }
     
     function showPreview(coords) {
