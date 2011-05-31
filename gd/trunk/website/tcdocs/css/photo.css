@@ -270,6 +270,9 @@ a.btn1:hover .inner{
                 .popup a {
                     text-decoration:none;
                 }
+				.popup a.link{
+                    text-decoration:underline;
+                }
 
                 .popup a:focus {
                     outline:none;
