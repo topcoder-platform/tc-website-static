@@ -94,7 +94,7 @@ a.btn1:hover .inner{
 * POPUP
 */
 
-.popup {
+.photoPopup {
 	position:absolute;
 	top:0;
 	left:0;
@@ -103,7 +103,7 @@ a.btn1:hover .inner{
     z-index:3;
 }
 
-	.popup .popupWindow {
+	.photoPopup .popupWindow {
 		width:680px;
 		height:430px;
 		margin-top:100px;
@@ -119,7 +119,7 @@ a.btn1:hover .inner{
 		height:211px;
 	}
 
-		.popup .title {
+		.photoPopup .title {
 			width:670px;
 			height:41px;
 			line-height:41px;
@@ -135,7 +135,7 @@ a.btn1:hover .inner{
 			width:476px;
 		}
 
-		.popup .content {
+		.photoPopup .content {
 			width:660px;
 			height:358px;
 			margin-top:5px;
@@ -149,12 +149,12 @@ a.btn1:hover .inner{
 			height:137px;
 		}
 
-			.popup .content img {
+			.photoPopup .content img {
 				float:left;
 				border:1px #CCCCCC solid;
 			}
             
-            .popup .content #uploadImage img {
+            .photoPopup .content #uploadImage img {
 				margin-left:0px;
 			}
 			
@@ -164,7 +164,7 @@ a.btn1:hover .inner{
 				margin-right:9px;
 			}
 			
-			.popup .content .locateInput {
+			.photoPopup .content .locateInput {
 				float:left;
 				width:270px;
 				height:20px;
@@ -176,18 +176,18 @@ a.btn1:hover .inner{
 				margin-right:2px;
 			}
 			
-				.popup .content .locateInput .inner {
+				.photoPopup .content .locateInput .inner {
 					float:left;
 					width:300px;
 				}
 			
-			.popup .content .btnBrowse {
+			.photoPopup .content .btnBrowse {
 				float:right;
 				position:relative;
 				top:-2px;
 			}
 			
-				.popup .content .btnBrowse .inner {
+				.photoPopup .content .btnBrowse .inner {
 					padding:0 14px;
 				}
 				
@@ -202,12 +202,12 @@ a.btn1:hover .inner{
 					opacity: 0.01;
 				}
 				
-			.popup .content .inputFile {
+			.photoPopup .content .inputFile {
 				position:absolute;
 				z-index:-1;
 			}
 				
-			.popup .content .alert {
+			.photoPopup .content .alert {
 				float:left;
 				width:239px;
 				height:61px;
@@ -223,24 +223,24 @@ a.btn1:hover .inner{
 				border:1px #CBCC9A solid;
 			}
 			
-			.popup .content .btnCancel {
+			.photoPopup .content .btnCancel {
 				float:left;
 				margin-left:35px;
 				margin-top:15px;
 			}
 			
-				.popup .content .btnCancel .inner {
+				.photoPopup .content .btnCancel .inner {
 					padding:0 14px;
 				}
 				
-			.popup .content .btnUpload {
+			.photoPopup .content .btnUpload {
 				float:left;
 				margin-left:20px;
 				margin-top:15px;
 			}
 			
-			.popup .content .text {
-				float:left;
+			.photoPopup .content .text {
+			/*	float:left; */
 				width:329px;
 				height:78px;
 				line-height:78px;
@@ -248,33 +248,30 @@ a.btn1:hover .inner{
 				text-align:center;
 			}
 				
-			.popup .content .btnNo {
+			.photoPopup .content .btnNo {
 				float:left;
 				margin-right:2px;
 				margin-left:73px;
 			}
 			
-				.popup .content .btnNo .inner {
+				.photoPopup .content .btnNo .inner {
 					padding:0 28px;
 				}
 				
-			.popup .content .btnYes {
+			.photoPopup .content .btnYes {
 				float:left;
 				margin-right:2px;
 			}
 			
-				.popup .content .btnYes .inner {
+				.photoPopup .content .btnYes .inner {
 					padding:0 25px;
 				}
                 
-                .popup a {
+                .photoPopup a {
                     text-decoration:none;
                 }
-				.popup a.link{
-                    text-decoration:underline;
-                }
 
-                .popup a:focus {
+                .photoPopup a:focus {
                     outline:none;
                 }
 

@@ -14,12 +14,12 @@ $(document).ready(function() {
     var coor = null;
     
     $('#submitPhotoLink').click(function() {
-        $('.popup').css("height", $(document).height());
+        $('.photoPopup').css("height", $(document).height());
         $('.popupUploadPhoto').show();
     });
     
     $('#removePhotoLink').click(function() {
-        $('.popup').css("height", $(document).height());
+        $('.photoPopup').css("height", $(document).height());
         $('.popupRemovePhoto').show();
     });
     
@@ -161,6 +161,6 @@ $(document).ready(function() {
         }
     }
     
-    $('.popup').css("height", $(document).height());
+    $('.photoPopup').css("height", $(document).height());
 })
 
