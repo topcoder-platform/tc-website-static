@@ -13523,5 +13523,55 @@ a:hover{
 			}
 
 
+.term_title
+{
+	padding-left: 30px;
+}
+
+.term_group
+{
+	margin-top: 10px;
+	background-repeat: no-repeat;
+	background-position: 1px 50%;
+}
+
+.term_group_icon
+{
+	width:10px; 
+	height: 20px;
+	float:left;
+	margin-top:1px;
+	display:block;
+}
+
+.term_group_exp
+{
+	background-image: url('/i/interface/exp_ed_black.gif');
+}
+
+.term_group_col
+{
+	background-image: url('/i/interface/exp_black.gif');
+}
+
+.term_group_box
+{
+	border: 1px solid rgb(136,136,136);
+	padding: 2px 5px;
+	background: rgb(255,238,159);
+	float:left;
+	margin-left:5px;
+	width:550px;
+}
+
+.term_group_content
+{
+	padding-left: 40px;
+	margin-top: 10px;
+}
+
+.leftalign td {
+	text-align:left;
+}
 
 
