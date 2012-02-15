@@ -525,7 +525,7 @@ a.button1:hover span.right{
     padding-top:5px;
 }
 */
-.copilot-pool .charts .palisade .left-control div.controller{
+/*.copilot-pool .charts .palisade .left-control div.controller{
     background: url(/i/copilots/tabs-bg.png) no-repeat -1px -1px;
     height:26px;
     text-decoration:none;
@@ -556,7 +556,7 @@ a.button1:hover span.right{
     padding:0px 5px 0px;
     line-height:26px;
 
-}
+}*/
 .copilot-pool .charts .palisade .right-area{ 
     font-size:12px;
     margin-left:180px;
@@ -740,5 +740,68 @@ img.personSmall {
     background-color:#f2f2f2;
 }
 
-
-
+/* new add for BUGR-6044 */
+.copilot-pool .charts .palisade-control{
+	border-bottom:0;
+	background:url(/i/copilots/tabs-bg-border.png) left bottom repeat-x;
+	min-height:10px;
+}
+.copilot-pool .charts .palisade .left-control div.controller{
+    background: url(/i/copilots/tabs-bg-normal.png) repeat-x left top;
+    text-decoration:none;
+    width:156px;
+    color:#0000FF;
+    padding-left:9px;
+    cursor:pointer;
+	position:relative;
+	border-right:1px solid #b5b5b5;
+	border-bottom:1px solid #b5b5b5;
+}
+.copilot-pool .charts .palisade .left-control div.active{
+    background: url(/i/copilots/tabs-bg-active.png) repeat-x left top;
+}
+.copilot-pool .charts .palisade .left-control div.controllerWrapper{
+    text-decoration:none;
+	background: url(/i/copilots/tabs-bg-normal.png) repeat-x left top;
+    color:#0000FF;
+    cursor:pointer;
+	min-height:26px;
+}
+.copilot-pool .charts .palisade .left-control div.active div.controllerWrapper{
+    background: url(/i/copilots/tabs-bg-normal.png) repeat-x left top;
+    font-weight:bold;
+    color:#000000;
+	min-height:26px;
+}
+.copilot-pool .charts .palisade .left-control div.controller span{
+    display:block;
+    padding:6px 5px;
+    line-height:14px;
+}
+.copilot-pool .charts .palisade .left-control div.controller span.arrow{
+    display:none;
+    padding:0;
+}
+.copilot-pool .charts .palisade .left-control div.active div.controllerWrapper span.arrow{
+	display:block;
+	width:15px;
+	height:26px;
+	position:absolute;
+	overflow:hidden;
+	right:-15px;
+	top:0;
+	background:url(/i/copilots/tabs-bg-arrow.png) -2px -1px no-repeat;
+	padding:0px;
+}
+.copilot-pool .charts .palisade .left-control div.controller:hover{
+	background:url(/i/copilots/tabs-bg-normal-hover.png) left bottom repeat-x;
+}
+.copilot-pool .charts .palisade .left-control div.controller:hover div.controllerWrapper{
+	background:url(/i/copilots/tabs-bg-normal-hover.png) left bottom repeat-x;
+}
+.copilot-pool .charts .palisade .left-control div.active:hover{
+    background: url(/i/copilots/tabs-bg-active.png) repeat-x left top;
+}
+.copilot-pool .charts .palisade .left-control div.active:hover div.controllerWrapper{
+    background: url(/i/copilots/tabs-bg-normal.png) repeat-x left top;
+}
