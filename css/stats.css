@@ -19,8 +19,7 @@ padding: 0px 15px 15px 15px;
 {
 border-left: 1px solid #999999; 
 border-right: 1px solid #999999; 
-border-bottom: 7px solid #CCCCCC; 
-background-color: #EEEEEE;
+border-bottom: 1px solid #999999; 
 vertical-align: top;
 }
 .pagingBox
@@ -44,14 +43,11 @@ white-space: nowrap;
 font-size: 18px;
 font-weight: bold;
 padding: 2px 5px 2px 5px;
-background-color: #EEEEEE;
 vertical-align: top;
 white-space: nowrap;
 }
 .quoteCell
 {
-width: 100%;
-background-color: #EEEEEE;
 vertical-align: middle;
 }
 .quoteBox
@@ -66,6 +62,14 @@ border-left: 3px solid #999999;
 border-right: 3px solid #999999; 
 border-top: 1px solid #CCCCCC; 
 border-bottom: 1px solid #CCCCCC; 
+}
+.newQuoteBox
+{
+color: #666666;
+font-size: 15px;
+font-weight: bold;
+font-style: italic;
+padding: 5px 8px 15px 8px;
 }
 .quoteTitle
 {
@@ -122,7 +126,6 @@ vertical-align: top;
 font-size: 11px;
 line-height: 14px;
 padding: 0px 5px 0px 5px;
-background-color: #EEEEEE;
 vertical-align: top;
 }
 .cat, .catNW
@@ -152,7 +155,7 @@ vertical-align: top;
 {
 font-size: 11px;
 padding: 2px 5px 2px 5px;
-vertical-align: top;
+vertical-align: middle;
 }
 .statLt{ background-color: #FFFFFF; }
 .statDk{ background-color: #EEEEEE; }
@@ -256,4 +259,170 @@ div.tabLinkNA{
 font-size: 11px;
 color: #666666;
 background: #999999 url(/i/interface/tab_na.gif) bottom center repeat-x;
+}
+
+.quoteBadgesRecord{
+	text-align:center;
+	padding:10px 80px;
+}
+.quoteBadgesRecord a,
+.quoteBadgesRecord span.quoteBadgesItem{
+	width:48px;
+	height:48px;
+	display:inline-block;
+	cursor:pointer;
+    background:url(../images/badge.grid.large.png) no-repeat;
+}
+
+.quoteBadgesRecord span.badge1 {
+    background-position: 0px 0px;
+}
+.quoteBadgesRecord span.badge2 {
+    background-position: 0px -48px;
+}
+.quoteBadgesRecord span.badge3 {
+    background-position: 0px -96px;
+}
+.quoteBadgesRecord span.badge4 {
+    background-position: 0px -144px;
+}
+.quoteBadgesRecord span.badge5 {
+    background-position: 0px -192px;
+}
+.quoteBadgesRecord span.badge6 {
+    background-position: -48px 0px;
+}
+.quoteBadgesRecord span.badge7 {
+    background-position: -48px -48px;
+}
+.quoteBadgesRecord span.badge8 {
+    background-position: -48px -96px;
+}
+.quoteBadgesRecord span.badge9 {
+    background-position: -48px -144px;
+}
+.quoteBadgesRecord span.badge10 {
+    background-position: -48px -192px;
+}
+.badgeCon {
+    position:relative;
+    height:18px;
+    padding-left:19px;
+    padding-top:2px;
+}
+.smallBadge {
+    position:absolute;
+    top:1px;
+    left:0px;
+    display: inline-block;
+    background:url(../images/badge.grid.small.png) no-repeat;
+    width:17px;
+    height:17px;
+}
+.smallBadge1 {
+    background-position: 0px 0px;
+}
+.smallBadge2 {
+    background-position: 0px -17px;
+}
+.smallBadge3 {
+    background-position: 0px -34px;
+}
+.smallBadge4 {
+    background-position: 0px -51px;
+}
+.smallBadge5 {
+    background-position: 0px -68px;
+}
+.smallBadge6 {
+    background-position: -17px 0px;
+}
+.smallBadge7 {
+    background-position: -17px -17px;
+}
+.smallBadge8 {
+    background-position: -17px -34px;
+}
+.smallBadge9 {
+    background-position: -17px -51px;
+}
+.smallBadge10 {
+    background-position: -17px -68px;
+}
+
+.quoteBadgesRecord img{
+	border:0;
+	margin:0;
+}
+.quoteBadgesRecord span.quoteBadgesItem .achievementName,
+.quoteBadgesRecord span.quoteBadgesItem .achievementDesc{
+	display:none;
+}
+
+/*toolTips*/
+.toolTips {
+    position: absolute;
+    width: 158px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.toolTips h3 {
+    padding: 5px 7px 4px 7px;
+    line-height: 14px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    background: transparent url(../images/toolTipsBg.png) 0 0 repeat;
+    border: 1px solid #000000;
+    border-bottom-color: #474747;
+}
+
+.toolTips .tipsContent {
+    line-height: 14px;
+    font-size: 11px;
+    color: #ffffff;
+    background: transparent url(../images/toolTipsBg.png) 0 0 repeat;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.toolTips .tipsContent p {
+	margin:0;
+    padding: 12px 7px 10px 7px;
+    border-bottom: 1px solid #474747;
+    color: #989898;
+	min-height:10px;
+
+}
+
+.toolTips .tipsContent .timeStamp {
+    display: block;
+    padding: 4px 7px 5px 7px;
+    color: #595959;
+
+}
+
+.toolTips .tipsArrow {
+    width: 158px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background: transparent url(../images/toolTipsArrows.png) 0 0 no-repeat;
+}
+
+.quoteBadgesItemTips h3 {
+    color: #298ec5;
+}
+
+.quoteBadgesItemTips .tipsContent p {
+    padding: 19px 7px 17px 7px;
+}
+.statTableHolderInnerTable {
+    margin-top: 4px;
+}
+.statTableHolderInnerTable td{
+	padding-left:0;
+}
+.statTableProfileTable{
+	width:100%;
 }
