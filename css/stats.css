@@ -37,6 +37,7 @@ clear:both;
 font-size: 18px;
 font-weight: bold;
 white-space: nowrap;
+width: 17%;
 }
 .handleCell
 {
@@ -49,6 +50,7 @@ white-space: nowrap;
 .quoteCell
 {
 vertical-align: middle;
+width: 65%
 }
 .quoteBox
 {
