@@ -13574,4 +13574,1210 @@ a:hover{
 	text-align:left;
 }
 
+/* new style */
+.clear{
+    height:0;
+    line-height:0;
+    clear:both;
+    overflow:hidden;
+}
 
+/* corner */    
+.inner{
+    margin:0;
+    padding:0;
+    border:#bababa solid 1px;
+    position:relative;
+}
+
+.inner .corner{
+    width:4px;
+    height:4px;
+    overflow:hidden;
+    position:absolute;
+    background-image:url(/i/corner.png);
+    background-repeat:no-repeat;
+}
+
+.inner .tl{
+    top:-1px;
+    left:-1px;
+    background-position:0 0;
+}
+
+.inner .tr{
+    top:-1px;
+    right:-1px;
+    background-position:-4px 0;
+}
+
+.inner .bl{
+    bottom:-1px;
+    left:-1px;
+    background-position:0 -4px;
+}
+
+.inner .br{
+    bottom:-1px;
+    right:-1px;
+    background-position:-4px -4px;
+}
+
+/* shadow */
+.shadow{
+    margin:0 4px 0 4px;
+    padding:0;
+    height:2px;
+    overflow:hidden;
+    background:url(/i/shadow.png) repeat-x 0 0;
+}
+
+/* placeholder */
+.placeholder{
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:24px;
+    color:#b30000;
+    line-height:100px;
+    text-align:center;
+}
+
+.mainColumn{
+    min-width:740px;
+    width:100%;
+    padding:8px 0 0 0;
+}
+
+/* header */
+.mainColumn .columnHeader{
+    width:100%;
+    height:33px;
+}
+
+.mainColumn .columnHeader h2{
+    height:33px;
+    background:url(/i/iconSpecification.png) no-repeat left center;
+}
+
+.mainColumn .columnHeader h2 span{
+    height:29px;
+    margin:0 0 0 29px;
+    padding:0 0 0 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    display:block;
+    line-height:28px;
+    text-transform:uppercase;
+    border-bottom:#333333 solid 1px;
+}
+
+/* columnTitle */
+.mainColumn .columnTitle{
+    min-height:34px;
+    padding:15px 0 30px 5px;
+}
+
+.mainColumn .columnTitle h3{
+    width:auto;
+    float:left;
+    display:inline;
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:24px;
+    line-height:34px;
+    font-weight:normal;
+    color:#b30000;
+}
+
+.mainColumn .columnTitle .buttonArea{
+    width:252px;
+    float:right;
+    display:inline;
+}
+
+.mainColumn .columnTitle .buttonArea a{
+    width:auto;
+    float:left;
+    display:inline;
+    padding:0 0 0 34px;
+    text-decoration:none;
+    background-image:url(/i/btn.png);
+    background-repeat:no-repeat;
+    background-position:0 0;
+}
+
+.mainColumn .columnTitle .buttonArea a.register{
+    margin-right:10px;
+    background-image:url(/i/btnIconForRegistion.png);
+}
+
+.mainColumn .columnTitle .buttonArea a.submit{
+    background-image:url(/i/btnIconForSubmit.png);
+}
+
+.mainColumn .columnTitle .buttonArea a span{
+    width:auto;
+    float:left;
+    display:inline;
+    padding:0 4px 0 0;
+    background-image:url(/i/btn.png);
+    background-repeat:no-repeat;
+    background-position:right -68px;
+}
+
+.mainColumn .columnTitle .buttonArea a span span{
+    width:77px;
+    height:34px;
+    margin:0;
+    padding:0 0 0 5px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:15px;
+    line-height:34px;
+    color:#fffffe;
+    letter-spacing:-1px;
+    /* text shadow */
+    text-shadow:#960000 0 -1px 0;
+    cursor:pointer;
+    background-image:url(/i/btn.png);
+    background-repeat:repeat-x;
+    background-position:0 -34px;
+}
+
+.mainColumn .columnTitle .buttonArea a.register:hover,
+.mainColumn .columnTitle .buttonArea a.submit:hover{
+    background-position:0 -68px;
+}
+
+.mainColumn .columnTitle .buttonArea a:hover span,
+.mainColumn .columnTitle .buttonArea a:hover span span{
+    background-image:url(/i/btnHover.png);
+}
+
+.mainColumn .columnTitle .buttonArea a.disable,
+.mainColumn .columnTitle .buttonArea a.disable:hover{
+    background-position:0 -34px;
+}
+
+.mainColumn .columnTitle .buttonArea a.disable span,
+.mainColumn .columnTitle .buttonArea a.disable span span,
+.mainColumn .columnTitle .buttonArea a.disable:hover span,
+.mainColumn .columnTitle .buttonArea a.disable:hover span span{
+    cursor:default;
+    background-image:url(/i/btnDisable.png) !important;
+}
+
+.mainColumn .columnTitle .buttonArea a.register.disable span span{
+    /* text shadow */
+    text-shadow:#ca7f80 0 -1px 0;
+}
+
+/* columnContent */
+.columnMainContainer{
+    padding:0 0 0 5px;
+}
+
+.mainColumn .columnContent{
+    width:488px;
+    float:left;
+    display:inline;
+}
+
+.mainColumn .columnContent .prizeSection{
+    width:100%;
+    margin:0 0 20px 0;
+}
+
+.mainColumn .columnContent .prizeSection .corner{
+    background-image:url(/i/cornerPrize.png);
+}
+
+.mainColumn .columnContent .prizeSectionNoMilestones .corner{
+    background-image:url(/i/cornerNoPrize.png);
+}
+
+/* prizeInfor */
+.mainColumn .columnContent .prizeSection .prizeInfor{
+    height:82px;
+    background-image:url(/i/bgPrizeSection.png);
+    background-repeat:repeat-x;
+    background-position:0 0;
+    background-color:#e9e9e9;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor ul{
+    margin:0;
+    padding:0;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li{
+    width:30%;
+    height:82px;
+    float:left;
+    display:inline;
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    background:url(/i/line.png) repeat-y right top;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.firstPlace,
+.mainColumn .columnContent .prizeSection .prizeInfor li.secondPlace{
+    width:24%;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.drPoints{
+    width:20%;
+    background:none;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li span{
+    display:block;
+    padding:14px 0 0 0;
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    line-height:24px;
+    text-align:center;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li strong{
+    font-size:28px;
+    font-weight:bold;
+    color:#b30000;
+    line-height:1em;
+    /* text shadow */
+    text-shadow:#fafafa 0 1px 0;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.drPoints strong{
+    color:#666667;
+}
+
+/* milestonesInfor */
+.mainColumn .columnContent .prizeSection .milestonesInfor{
+    height:98px;
+}
+
+.mainColumn .columnContent .prizeSection .milestonesInfor h3{
+    height:30px;
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    line-height:30px;
+    text-align:center;
+    background-image:url(/i/bgMilestones.png);
+    background-repeat:repeat-x;
+    background-position:0 0;
+    background-color:#e9e9e9;
+    border-top:#bababa solid 1px;
+    border-bottom:#bababa solid 1px;
+}
+
+.mainColumn .columnContent .prizeSection .milestonesInfor ul{
+    margin:0;
+    padding:0;
+}
+
+.mainColumn .columnContent .prizeSection .milestonesInfor ul li{
+    width:auto;
+    height:66px;
+    float:left;
+    display:inline;
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    background:url(/i/line.png) no-repeat right top;
+}
+
+.mainColumn .columnContent .prizeSection .milestonesInfor ul li.last{
+    background:none;
+}
+
+.mainColumn .columnContent .prizeSection .milestonesInfor ul li span{
+    display:block;
+    padding:8px 0 0 0;
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:24px;
+    text-align:center;
+}
+
+.mainColumn .columnContent .prizeSection .milestonesInfor ul li strong{
+    font-size:18px;
+    font-weight:bold;
+    color:#b30000;
+    line-height:1em;
+}
+
+/* columnSideBar */
+.mainColumn .columnSideBar{
+    width:252px;
+    float:right;
+    display:inline;
+}
+
+/* timeline */
+.mainColumn .columnSideBar .timeline{
+    width:100%;
+    margin:0 0 22px 0;
+}
+
+.mainColumn .columnSideBar .timeline h3{
+    height:30px;
+    border-bottom:#bababa solid 1px;
+    background-image:url(/i/bgMilestones.png);
+    background-repeat:repeat-x;
+    background-position:0 0;
+}
+
+.mainColumn .columnSideBar .timeline h3 span{
+    display:block;
+    margin:0 0 0 18px;
+    padding:0 0 0 28px;
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    line-height:30px;
+    background-image:url(/i/iconTime.png);
+    background-repeat:no-repeat;
+    background-position:0 center;
+}
+
+.mainColumn .columnSideBar .timeline ul{
+    margin:0 10px;
+    padding:0;
+}
+
+.mainColumn .columnSideBar .timeline ul li{
+    margin:0;
+    padding:7px 0;
+    line-height:21px;
+    list-style:none;
+    border-bottom:#bababa dotted 1px;
+}
+
+.mainColumn .columnSideBar .timeline ul li.last{
+    border-bottom:0;
+}
+
+.mainColumn .columnSideBar .timeline ul li strong{
+    width:80px;
+    float:left;
+    display:inline;
+    margin:0;
+    padding:0;
+    font-weight:bold;
+}
+
+.mainColumn .columnSideBar .timeline ul li.twoLine strong{
+    line-height:11px;
+}
+
+.mainColumn .columnSideBar .timeline ul li span{
+    width:150px;
+    display:inline-block;
+    margin:0;
+    padding:0;
+    text-align:right;
+}
+
+/* contestLinks */
+.contestLinks{
+    width:100%;
+    margin:0 0 12px 0;
+}
+
+.contestLinks h3{
+    padding:0 0 6px 0;
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+}
+
+.contestLinks ul{
+    margin:3px 0 12px 0;
+    padding:0;
+}
+
+.contestLinks ul li{
+    margin:0 14px;
+    padding:0;
+    line-height:24px;
+    list-style:none;
+}
+
+.contestLinks ul li a{
+    font-size:12px;
+    color:#333334;
+    text-decoration:underline;
+}
+
+.contestLinks ul li a:hover{
+    color:#ff0000;
+}
+
+/* donwloads */
+.donwloads{
+    width:100%;
+    margin:0 0 12px 0;
+}
+
+.donwloads h3{
+    padding:0 0 6px 0;
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+}
+
+.donwloads ul{
+    margin:0 0 5px 0;
+    padding:0;
+}
+
+.donwloads ul li{
+    margin:0 14px;
+    padding:0;
+    line-height:24px;
+    list-style:none;
+    border-bottom:#bababa dotted 1px;
+}
+
+.donwloads ul li.last{
+    border-bottom:0;
+}
+
+.donwloads ul li a{
+    display:inline-block;
+    padding:5px 0 0 0;
+    font-size:12px;
+    font-weight:bold;
+    color:#333334;
+    line-height:20px;
+    text-decoration:underline;
+}
+
+.donwloads ul li a:hover{
+    color:#ff0000;
+}
+
+.donwloads ul li p{
+    margin:0;
+    padding:0 0 7px 0;
+    font-size:11px;
+    line-height:14px;
+    color:#7c7c7c;
+}
+
+/* guidelines */
+.guidelines{
+    width:100%;
+    margin:0 0 20px 0;
+}
+
+.guidelines h3{
+    padding:0 0 6px 0;
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+}
+
+.guidelines .container{
+    padding:4px 14px 7px 14px;
+}
+
+.guidelines p{
+    margin:0;
+    padding:3px 0;
+    font-size:12px;
+    line-height:16px;
+}
+
+/* tabSection */
+.tabSection{
+    width:100%;
+}
+
+.tabSection .tab{
+    height:41px;
+    border-bottom:#333333 solid 3px;
+}
+
+.tabSection .tab ul{
+    margin:0;
+    padding:0;
+    position:relative;
+    top:9px;
+}
+
+.tabSection .tab ul li{
+    width:auto;
+    float:left;
+    display:inline;
+    margin:0 2px 0 0;
+    padding:0;
+}
+
+.tabSection .tab ul li a{
+    width:auto;
+    height:41px;
+    float:left;
+    display:inline;
+    text-decoration:none;
+    background-repeat:no-repeat;
+    background-position:center bottom;
+}
+
+.tabSection .tab ul li a span{
+    width:auto;
+    float:left;
+    display:inline;
+    padding:0 0 0 4px;
+    background-image:url(/i/bgTab.png);
+    background-repeat:no-repeat;
+    background-position:0 0;
+}
+
+.tabSection .tab ul li a span span{
+    width:auto;
+    float:left;
+    display:inline;
+    padding:0 4px 0 0;
+    background-image:url(/i/bgTab.png);
+    background-repeat:no-repeat;
+    background-position:right -64px;
+}
+
+.tabSection .tab ul li a span span span{
+    width:142px;
+    height:32px;
+    float:left;
+    display:inline;
+    padding:0;
+    font-size:14px;
+    font-weight:bold;
+    color:#fffffe;
+    line-height:32px;
+    text-align:center;
+    cursor:pointer;
+    background-image:url(/i/bgTab.png);
+    background-repeat:repeat-x;
+    background-position:0 -32px;
+}
+
+.tabSection .tab ul li a:hover span,
+.tabSection .tab ul li a:hover span span,
+.tabSection .tab ul li a:hover span span span{
+    background-image:url(/i/bgTabHover.png);
+}
+
+.tabSection .tab ul li a.current{
+    background-image:url(/i/bgTabCurrentArrow.png);
+}
+
+.tabSection .tab ul li a.current span,
+.tabSection .tab ul li a.current span span,
+.tabSection .tab ul li a.current span span span,
+.tabSection .tab ul li a.current:hover span,
+.tabSection .tab ul li a.current:hover span span,
+.tabSection .tab ul li a.current:hover span span span{
+    background-image:url(/i/bgTabCurrent.png);
+}
+
+.tabSection .tab ul li a.disable span,
+.tabSection .tab ul li a.disable span span,
+.tabSection .tab ul li a.disable span span span,
+.tabSection .tab ul li a.disable:hover span,
+.tabSection .tab ul li a.disable:hover span span,
+.tabSection .tab ul li a.disable:hover span span span{
+    cursor:default;
+    background-image:url(/i/bgTabDisable.png);
+}
+
+/* overview */
+#overview{
+    width:100%;
+    display:block;
+}
+
+/* contestOverview */
+#overview .contestOverview{
+    border-bottom:#bababa dotted 1px;
+}
+
+#overview .contestOverview .containerInner{
+    margin:14px 0 0 6px;
+    padding:0 0 0 36px;
+    background:url(/i/iconContestOverview.png) no-repeat 0 6px;
+}
+
+#overview .contestOverview h3{
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+}
+
+#overview .contestOverview p{
+    margin:0;
+    padding:2px 0 16px 0;
+    line-height:18px;
+}
+
+/* technologies */
+#overview .technologies{
+    border-bottom:#bababa dotted 1px;
+}
+
+#overview .technologies .containerInner{
+    margin:14px 0 0 6px;
+    padding:0 0 0 36px;
+    background:url(/i/iconTechnologies.png) no-repeat 0 6px;
+}
+
+#overview .technologies h3{
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+}
+
+#overview .technologies ul{
+    margin:2px 0 16px 0;
+    padding:0;
+}
+
+#overview .technologies ul li{
+    margin:0;
+    padding:0 0 0 10px;
+    font-size:12px;
+    line-height:18px;
+    list-style:none;
+    background-image:url(/i/dot.png);
+    background-repeat:no-repeat;
+    background-position:left center;
+}
+
+#overview .technologies ul li.first{
+    width:118px;
+    float:left;
+    display:inline;
+}
+
+#overview .technologies ul li.last{
+    margin-left:118px;
+}
+
+#overview .technologies ul li.first-last{
+    width:118px;
+}
+
+/* eligibility */
+#overview .eligibility{
+    border-bottom:#bababa dotted 1px;
+}
+
+#overview .eligibility .containerInner{
+    margin:14px 0 0 6px;
+    padding:0 0 0 36px;
+    background:url(/i/iconEligibility.png) no-repeat 0 6px;
+}
+
+#overview .eligibility h3{
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+}
+
+#overview .eligibility p{
+    margin:0;
+    padding:6px 0 18px 0;
+    line-height:18px;
+}
+
+#overview .eligibility dl{
+    margin:0;
+    padding:0;
+}
+
+#overview .eligibility dl dt{
+    margin:0;
+    padding:0;
+    font-size:12px;
+    line-height:18px;
+}
+
+#overview .eligibility dl dd{
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+#overview .eligibility ul{
+    margin:0 0 18px 0;
+    padding:0;
+}
+
+#overview .eligibility li{
+    margin:0 0 0 25px;
+    padding:0 0 0 10px;
+    font-size:12px;
+    line-height:18px;
+    list-style:none;
+    background:url(/i/dot.png) no-repeat left 6px;
+}
+
+/* milestones */
+#milestones{
+    width:100%;
+    display:none;
+}
+
+/* milestoneWinners */
+#milestones .milestoneWinners{
+    width:100%;
+    margin:10px 0 0 0;
+}
+
+#milestones .milestoneWinners h3{
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+    line-height:32px;
+}
+
+#milestones .milestoneWinners .milestoneWinnersList{
+    height:46px;
+    position:relative;
+    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+}
+
+#milestones .milestoneWinners .milestoneWinnersList .greyBg{
+    background-image:url(/i/bgMilestoneWinnersGrey.png);
+}
+
+#milestones .milestoneWinners .milestoneWinnersList .milestoneWinnersListInner{
+    height:46px;
+    background-image:url(/i/greyLine.png);
+    background-repeat:repeat-y;
+    background-position:right 0;
+}
+
+/* corner */
+#milestones .milestoneWinners .milestoneWinnersList .corner{
+    width:3px;
+    height:3px;
+    position:absolute;
+    overflow:hidden;
+    background-image:url(/i/cornerMilestoneWinners.png);
+    background-repeat:no-repeat;
+}
+
+#milestones .milestoneWinners .milestoneWinnersList .tl{
+    top:0;
+    left:0;
+    background-position:0 0;
+}
+
+#milestones .milestoneWinners .milestoneWinnersList .tr{
+    top:0;
+    right:0;
+    background-position:-3px 0;
+}
+
+#milestones .milestoneWinners .milestoneWinnersList .bl{
+    bottom:0;
+    left:0;
+    background-position:0 -3px;
+}
+
+#milestones .milestoneWinners .milestoneWinnersList .br{
+    bottom:0;
+    right:0;
+    background-position:-3px -3px;
+}
+
+#milestones .milestoneWinners ul{
+    margin:0 1px 0 0;
+    padding:0;
+}
+
+#milestones .milestoneWinners ul li{
+    width:auto;
+    float:left;
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+#milestones .milestoneWinners ul li.prize1st{
+    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+}
+
+#milestones .milestoneWinners ul li.prize2nd{
+    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+}
+
+#milestones .milestoneWinners ul li.prize3rd{
+    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+}
+
+#milestones .milestoneWinners ul li.prize4th{
+    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+}
+
+#milestones .milestoneWinners ul li.prize5th{
+    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+}
+
+#milestones .milestoneWinners ul li.prize1st div{
+    background-image:url(/i/greyLine.png);
+    background-repeat:repeat-y;
+    background-position:0 0;
+}
+
+#milestones .milestoneWinners ul li div span.contest{
+    display:block;
+    background:url(/i/lineMilestoneWinners.png) no-repeat left center;
+}
+
+#milestones .milestoneWinners ul li.prize1st div span.contest{
+    background-image:none;
+}
+
+#milestones .milestoneWinners ul li span span{
+    height:46px;
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+    line-height:44px;
+    /* text shadow */
+    text-shadow:#fbfbfb 0 1px 0;
+    background-repeat:no-repeat;
+    background-position:0 0;
+}
+
+#milestones .milestoneWinners ul li.prize1st span span{
+    background-image:url(/i/iconFirstPrize.png);
+}
+
+#milestones .milestoneWinners ul li.prize2nd span span{
+    background-image:url(/i/iconSecondPrize.png);
+}
+
+#milestones .milestoneWinners ul li.prize3rd span span{
+    background-image:url(/i/iconThirdPrize.png);
+}
+
+#milestones .milestoneWinners ul li.prize4th span span{
+    background-image:url(/i/iconForthPrize.png);
+}
+
+#milestones .milestoneWinners ul li.prize5th span span{
+    background-image:url(/i/iconFifthPrize.png);
+}
+
+/* feedback */
+#milestones .feedback{
+    padding:18px 0;
+    border-bottom:#bababa dotted 1px;
+}
+
+#milestones .feedback .title{
+    position:relative;
+}
+
+#milestones .feedback a.toggle{
+    position:absolute;
+    right:4px;
+    top:0;
+    font-size:12px;
+    color:#333334;
+    line-height:16px;
+    text-decoration:underline;
+}
+
+#milestones .feedback a.toggle:hover{
+    color:#ff0000;
+}
+
+#milestones .feedback h3{
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+    line-height:16px;
+}
+
+#milestones .feedback .hidden{
+    display:none;
+}
+
+#milestones .feedback p{
+    margin:0;
+    padding:8px 0 0 0;
+    font-size:12px;
+    line-height:18px;
+}
+
+/* Winners */
+#winners{
+    width:100%;
+    display:none;
+}
+
+/* winnerSection */
+#winners .winnerSection{
+    width:100%;
+    margin:20px 0 0 0;
+}
+
+/* reslutTop */
+#winners .reslutTop{
+    height:54px;
+    border-bottom:#bababa solid 1px;
+    background-image:url(/i/bgWinnersPrize.png);
+    background-repeat:repeat-x;
+    background-position:0 0;
+}
+
+#winners .reslutTop ul{
+    margin:0;
+    padding:0;
+}
+
+#winners .reslutTop li{
+    width:50%;
+    height:54px;
+    margin:0;
+    padding:0;
+    float:left;
+    display:inline;
+    list-style:none;
+    background-image:url(/i/lineMilestoneWinners.png);
+    background-repeat:repeat-y;
+    background-position:0 0;
+}
+
+#winners .reslutTop li.first{
+    background-image:none;
+}
+
+#winners .reslutTop li div{
+    margin:0 0 0 10px;
+    padding:0 0 0 28px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    line-height:54px;
+    background-repeat:no-repeat;
+    background-position:left center;
+}
+
+#winners .reslutTop li div.firstPrize{
+    background-image:url(/i/prizeFirst.png);
+}
+
+#winners .reslutTop li div.seccondPrize{
+    background-image:url(/i/prizeSecond.png);
+}
+
+#winners .reslutTop li div a{
+    text-decoration:none;
+}
+
+#winners .reslutTop li div a:hover{
+    text-decoration:underline;
+}
+
+/* resultInfor */
+#winners .resultInfor{
+    min-height:10px;
+    background-image:url(/i/shadow.png);
+    background-repeat:repeat-x;
+    background-position:0 0;
+}
+
+#winners .resultInfor ul{
+    margin:0;
+    padding:0;
+}
+
+#winners .resultInfor li{
+    width:50%;
+    float:left;
+    display:inline;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:38px;
+    list-style:none;
+}
+
+#winners .resultInfor li div{
+    margin:0 0 0 10px;
+    padding:0 10px 0 0;
+    text-align:right;
+    border-bottom:#bababa dotted 1px;
+}
+
+#winners .resultInfor li.last div{
+    border-bottom:0;
+}
+
+#winners .resultInfor li div strong{
+    width:140px;
+    float:left;
+    display:inline;
+    text-align:left;
+}
+
+/* resultList */
+#winners .resultList{
+    width:100%;
+    min-height:10px;
+    background-image:url(/i/bgWinnersTable.png);
+    background-repeat:repeat-x;
+    background-position:0 0;
+    background-color:#e9e9e9;
+}
+
+#winners .resultList table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+#winners .resultList th{
+    height:48px;
+    font-size:11px;
+    line-height:13px;
+    text-align:center;
+    background-image:url(/i/lineMilestoneWinners.png);
+    background-repeat:repeat-y;
+    background-position:0 0;
+    border-top:#bababa solid 1px;
+    border-bottom:#bababa solid 1px;
+}
+
+#winners .resultList th.first{
+    background-image:none;
+}
+
+#winners .resultList td{
+    height:25px;
+    font-size:11px;
+    text-align:center;
+    border-bottom:#bababa dotted 1px;
+    background:#fffffd;
+}
+
+#winners .resultList .last td{
+    border-bottom:0;
+}
+
+#winners .resultList td.handle{
+    text-align:left;
+}
+
+#winners .resultList td a{
+    text-decoration:none;
+}
+
+#winners .resultList td a:hover{
+    text-decoration:underline;
+}
+
+#winners .resultList td span.success{
+    color:#3aaf11;
+}
+
+#winners .resultList td span.fail{
+    color:#b30000;
+}
+
+#winners .resultList td a.tooltip{
+    font-weight:bold;
+    position:relative;
+    z-index:10;
+}
+
+#winners .resultList td.drPoints strong,
+#winners .resultList td.score span{
+    width:38px;
+    display:block;
+    margin:0 auto;
+    text-align:right;
+}
+
+/* tip */
+.tip{
+    width:210px;
+    display:none;
+    position:absolute;
+    z-index:100;
+    background:#fffffd;
+}
+
+.tip .tipHeader{
+    background-image:url(/i/bgTipHeader.png);
+    background-repeat:repeat-x;
+    background-position:0 0;
+    background-color:#eaeaea;
+    border-bottom:#bababa solid 1px;
+}
+
+.tip .tipHeader h2{
+    margin:0 0 0 10px;
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    text-align:left;
+    color:#333333;
+    line-height:30px;
+}
+
+.tip .tipBody{
+    margin:0;
+    padding:0;
+}
+
+.tip .tipBody ul{
+    margin:5px 0;
+    padding:0;
+}
+
+.tip .tipBody ul li{
+    margin:0;
+    padding:5px 18px 5px 10px;
+    line-height:18px;
+    list-style:none;
+    text-align:left;
+}
+
+.tip .tipBody ul li a,
+.tip .tipBody ul li a.reviewerName{
+    font-size:12px;
+    text-decoration:none;
+}
+
+.tip .tipBody ul li a:hover,
+.tip .tipBody ul li a.reviewerName:hover{
+    text-decoration:underline;
+}
+
+.tip .tipBody ul li a.reviewerName{
+    width:80px;
+    float:left;
+    display:inline;
+    text-align:left;
+    padding:0 0 0 34px;
+    font-weight:bold;
+    background-repeat:no-repeat;
+    background-position:0 center;
+}
+
+.tip .tipBody ul li a.reviewScore{
+    float:right;
+}
