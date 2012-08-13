@@ -1,4 +1,4 @@
-/* GENERAL SITE STYLES */
+/i/cimages/* GENERAL SITE STYLES */
 html, body {
 font-family: Arial, Helvetica, Verdana, sans-serif;
 line-height: 1.4;
@@ -43,7 +43,7 @@ left:3px;
 z-index:1;
 }
 div.topBar{
-background: transparent url(/i/interface/top_bg.gif) top center repeat-x;
+background: transparent url(../i/cimages/top_bg.gif) top center repeat-x;
 vertical-align: top;
 height: 84px;
 padding: 0px 10px 0px 3px;
@@ -65,7 +65,7 @@ left: 0px;
  top:32px;
  height: 30px;
  padding-right: 30px;
- background: transparent url(/i/interface/shortcutBar.png) top right no-repeat;
+ background: transparent url(../i/cimages/shortcutBar.png) top right no-repeat;
 }
 #shortcutBar div.icon {
  float: left;
@@ -111,14 +111,15 @@ padding-top: 4px;
 padding-bottom: 15px;
 }
 
-table.pageTitleTable{ border: 0px; margin: 5px 0px 15px 0px; }
+table.pageTitleTable{ border: 0px; margin: -5px 0px 5px 0px; width:100%;}
 table.pageTitleTable td.pageTitle
 {
 width: 100%;
 border-bottom: 1px solid #666666;
 white-space: nowrap;
-padding: 0px;
+padding-top: 10px;
 margin: 0px;
+margin-top: 30px;
 text-align: left;
 }
 table.pageTitleTable td.pageSubtitle
@@ -132,6 +133,7 @@ vertical-align: bottom;
 border-bottom: 1px solid #666666;
 padding: 0px 0px 3px 0px;
 margin: 0px;
+
 }
 div.linkBox{
 float: right;
@@ -232,7 +234,7 @@ width: expression( document . body . clientWidth > 1024 ? "650px": "auto" );
 }
 div.sectionHeader{
 text-align: left;
-background: #999999 url(/i/stats/headerBG.gif) top center;
+background: #999999 url(../i/cimages/headerBG.gif) top center;
 border: 1px solid #999999; 
 font-size: 12px;
 font-weight: bold;
@@ -254,19 +256,19 @@ line-height: normal;
 white-space: nowrap;
 }
 a.button:link, a.button:visited{
-background: #d2d2d2 url(/i/interface/buttonBg.png) top center repeat;
+background: #d2d2d2 url(../i/cimages/buttonBg.png) top center repeat;
 color: #333333;
 border: 1px solid #999999;
 text-decoration: none;
 }
 a.button:hover, a.button:active{
-background: #6a6a6a url(/i/interface/buttonBg_on.png) top center repeat;
+background: #6a6a6a url(../i/cimages/buttonBg_on.png) top center repeat;
 color: #FFFFFF;
 border: 1px solid #999999;
 text-decoration: none;
 }
 div.button{
-background: #EEEEEE url(/i/interface/buttonBg_off.png) top center repeat;
+background: #EEEEEE url(../i/cimages/buttonBg_off.png) top center repeat;
 color: #BBBBBB;
 border: 1px solid #CCCCCC;
 }
@@ -282,25 +284,24 @@ line-height: normal;
 white-space: nowrap;
 }
 a.bigButton:link, a.bigButton:visited{
-background: #d2d2d2 url(/i/interface/buttonBg.png) top center repeat;
+background: #d2d2d2 url(../i/cimages/buttonBg.png) top center repeat;
 color: #333333;
 border: 1px solid #999999;
 text-decoration: none;
 }
 a.bigButton:hover, a.bigButton:active{
-background: #6a6a6a url(/i/interface/buttonBg_on.png) top center repeat;
+background: #6a6a6a url(../i/cimages/buttonBg_on.png) top center repeat;
 color: #FFFFFF;
 border: 1px solid #999999;
 text-decoration: none;
 }
 div.bigButton{
-background: #EEEEEE url(/i/interface/buttonBg_off.png) top center repeat;
+background: #EEEEEE url(../i/cimages/buttonBg_off.png) top center repeat;
 color: #BBBBBB;
 border: 1px solid #CCCCCC;
 text-decoration: none;
 }
 span.selected{
-background: #EFEFEF;
 border: 1px solid #CCCCCC;
 padding: 0px 4px 0px 4px;
 }
@@ -320,7 +321,7 @@ line-height: normal;
 table.stat th.title, table.stat td.title {
 text-align: left;
 background-color: #999999;
-background-image: url(/i/stats/headerBG.gif);
+background-image: url(../i/cimages/headerBG.gif);
 border-bottom: 1px solid #999999; 
 font-size: 12px;
 font-weight: bold;
@@ -384,7 +385,7 @@ display: none;
 #navbar, div.leftColContent {
 float: left;
 /* clear: both; */
-background: #353E44 url(/i/interface/leftnav_bg.gif) center right repeat-y;
+background: #353E44 url(../i/cimages/leftnav_bg.gif) center right repeat-y;
 font-size: 11px;
 font-weight: bold;
 width: 185px; /* width of whole left column is content width + padding */
@@ -475,7 +476,7 @@ background-image: none;
 #navbar li li li li.exp a:link,
 #navbar li li li li.exp a:visited
 {
-background-image: url(/i/interface/exp.gif);
+background-image: url(../i/cimages/exp.gif);
 background-repeat: no-repeat;
 background-position: 1px 50%;
 }
@@ -484,7 +485,7 @@ background-position: 1px 50%;
 #navbar li li li.exp a:hover,
 #navbar li li li li.exp a:hover
 {
-background-image: url(/i/interface/exp_w.gif);
+background-image: url(../i/cimages/exp_w.gif);
 }
 #navbar li.exp_ed a:link,
 #navbar li.exp_ed a:visited,
@@ -495,7 +496,7 @@ background-image: url(/i/interface/exp_w.gif);
 #navbar li li li li.exp_ed a:link,
 #navbar li li li li.exp_ed a:visited
 {
-background-image: url(/i/interface/exp_ed.gif);
+background-image: url(../i/cimages/exp_ed.gif);
 background-repeat: no-repeat;
 background-position: 1px 50%;
 }
@@ -505,7 +506,7 @@ background-position: 1px 50%;
 #navbar li li li li.exp_ed a:hover
 
 { 
-background-image: url(/i/interface/exp_ed_w.gif);
+background-image: url(../i/cimages/exp_ed_w.gif);
 }
 #navbar li a:link, #navbar li a:visited {
 float: left;
@@ -582,3 +583,22 @@ A.bcLink:link { color: #0000FF; text-decoration: none; }
 A.bcLink:visited { color: #0000FF; text-decoration: none; }
 A.bcLink:hover { color: #FF0000; text-decoration: none; }
 A.bcLink:active { color: #0000FF; text-decoration: none; }
+
+
+.statTableHolderSpecial .statTable{
+	margin-bottom:0px;
+}
+.increaseTR td{
+	line-height:20px;
+	vertical-align:middle;
+}
+.topOrderMedal{
+	padding-left:24px;
+	display:inline-block;
+	background:url(../i/cimages/top-order-medal.gif) left center no-repeat;
+}
+.topOrderStar{
+	padding-left:24px;
+	display:inline-block;
+	background:url(../i/cimages/top-order-star.gif) left center no-repeat;
+}
