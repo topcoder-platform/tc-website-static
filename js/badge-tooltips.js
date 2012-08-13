@@ -40,7 +40,8 @@ $(document).ready(function() {
 				window.hover.show();
 				var offset = $(this).offset();
 				var t = offset.top - window.hover.outerHeight() - 2;
-				var l = offset.left + $(this).outerWidth() / 2 - 44;
+				var l = offset.left - $(this).outerWidth() / 2 - 80;
+                //var l = offset.left - $(this).outerWidth() / 2 - 115;
 				window.hover.css({
 									 left:l + 'px',
 									 top:t + 'px'

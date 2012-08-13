@@ -37,7 +37,6 @@ clear:both;
 font-size: 18px;
 font-weight: bold;
 white-space: nowrap;
-width: 17%;
 }
 .handleCell
 {
@@ -50,22 +49,8 @@ white-space: nowrap;
 .quoteCell
 {
 vertical-align: middle;
-width: 65%
 }
 .quoteBox
-{
-color: #666666;
-font-size: 15px;
-font-weight: bold;
-font-style: italic;
-margin: 10px 20px 10px 20px;
-padding: 5px 8px 15px 8px;
-border-left: 3px solid #999999; 
-border-right: 3px solid #999999; 
-border-top: 1px solid #CCCCCC; 
-border-bottom: 1px solid #CCCCCC; 
-}
-.newQuoteBox
 {
 color: #666666;
 font-size: 15px;
@@ -101,7 +86,7 @@ background-color: #EEEEEE;
 {
 text-align: left;
 background-color: #999999;
-background-image: url(/i/stats/headerBG.gif);
+background-image: url(../i/cimages/headerBG.gif);
 border-style: hidden;
 border-collapse: collapse;
 border-top: 1px solid #999999; 
@@ -157,7 +142,7 @@ vertical-align: top;
 {
 font-size: 11px;
 padding: 2px 5px 2px 5px;
-vertical-align: middle;
+vertical-align: top;
 }
 .statLt{ background-color: #FFFFFF; }
 .statDk{ background-color: #EEEEEE; }
@@ -188,7 +173,7 @@ A.statLink:active{ color: #FF0000; text-decoration: none;}
 padding: 0px 5px 0px 5px;
 background-repeat: repeat-x;
 background-position: top center;
-background-image: url(/i/stats/border.gif);
+background-image: url(../i/cimages/border.gif);
 }
 .tabTextOn, .tabTextOff, .tabTextNA
 {
@@ -199,7 +184,7 @@ padding-right: 0px;
 white-space: nowrap;
 background-repeat: repeat-x;
 background-position: top center;
-background-image: url(/i/stats/border.gif);
+background-image: url(../i/cimages/border.gif);
 }
 
 .tabLeftOff{ border-left: 1px solid #999999; border-top: 1px solid #999999; background-color: #CCCCCC; }
@@ -213,9 +198,9 @@ background-position: top center;
 /*border-top: 1px solid #999999; */
 padding: 0px 20px 0px 20px;
 }
-.tabMidOnOff{ background-image: url(/i/stats/tabMidOnOff.gif); }
-.tabMidOffOn{ background-image: url(/i/stats/tabMidOffOn.gif); }
-.tabMidOffOff{ background-image: url(/i/stats/tabMidOffOff.gif); }
+.tabMidOnOff{ background-image: url(../i/cimages/tabMidOnOff.gif); }
+.tabMidOffOn{ background-image: url(../i/cimages/tabMidOffOn.gif); }
+.tabMidOffOff{ background-image: url(../i/cimages/tabMidOffOff.gif); }
 
 .tabRightOn, .tabRightOff
 { 
@@ -223,135 +208,88 @@ background-repeat: no-repeat;
 background-position: top right;
 padding: 0px 30px 0px 0px;
  }
-.tabRightOff{ background-image: url(/i/stats/tabRightOff.gif); }
-.tabRightOn{ background-image: url(/i/stats/tabRightOn.gif); }
+.tabRightOff{ background-image: url(../i/cimages/tabRightOff.gif); }
+.tabRightOn{ background-image: url(../i/cimages/tabRightOn.gif); }
 
 .tabIconOn, .tabTextOn { background-color: #EEEEEE; }
 .tabIconOff, .tabTextOff { background-color: #CCCCCC; }
-.tabIconNA, .tabTextNA { background-color: #DDDDDD; color: #999999; background-image: url(/i/stats/borderNA.gif);}
+.tabIconNA, .tabTextNA { background-color: #DDDDDD; color: #999999; background-image: url(../i/cimages/borderNA.gif);}
 
 table.tabTable{ 
 border-collapse: collapse;
 border-left: 1px solid #999999; 
 }
 A.tabLinkOn, A.tabLinkOn:link, A.tabLinkOff, A.tabLinkOff:link{
-color: #0000FF;
 display: block;
-width:100%;
 text-decoration: none;
+font-weight:normal;
 }
 
 A.tabLinkOn, A.tabLinkOn:link{ background: #EEEEEE; }
-A.tabLinkOff, A.tabLinkOff:link{ background: #CCCCCC url(/i/interface/tab_off.gif) bottom center repeat-x; }
+A.tabLinkOff, A.tabLinkOff:link{ background: #a5a5a5 url(../i/cimages/tab_off.gif) top center repeat-x; }
 
 A.tabLinkOn:visited, A.tabLinkOff:visited { color: #0000FF;text-decoration: none; }
-A.tabLinkOn:hover, A.tabLinkOff:hover { color: #FF0000;background:#FFFFFF;text-decoration: none; }
-A.tabLinkOn:active, A.tabLinkOff:hover { color: #FF0000;background:#FFFFFF;text-decoration: none; }
+A.tabLinkOn:hover, A.tabLinkOff:hover { background:#FFFFFF;text-decoration: none; }
+A.tabLinkOn:active, A.tabLinkOff:hover { background:#FFFFFF;text-decoration: none; }
 
-A.tabLinkOn div, A.tabLinkOff div, div.tabLinkNA{
-padding: 8px 10px 8px 10px;
+A.tabLinkOn, A.tabLinkOff, .tabLinkNA{
 font-size: 11px;
-line-height: 100%; 
-border-top: 1px solid #999999; 
-border-right: 1px solid #999999; 
-white-space: nowrap;
 }
 A.tabLinkOn div{ font-weight:bold; }
-div.tabLinkNA{
+.tabLinkNA{
 font-size: 11px;
 color: #666666;
-background: #999999 url(/i/interface/tab_na.gif) bottom center repeat-x;
+background: #999999 url(../i/cimages/tab_na.gif) bottom center repeat-x;
 }
 
+.tabTableTabListSpecial td{
+	vertical-align:middle;
+	border-right: 1px solid #999999; 
+	border-top: 1px solid #999999;
+	background: #a5a5a5 url(../i/cimages/tab_off.gif) top center repeat-x;
+}
+.tabTableTabListSpecial td .tabLinkNA{
+	display:block;
+	height:30px;
+	line-height:30px;
+	padding:0 10px;
+	text-align:center;
+}
+.tabTableTabListSpecial td a{
+	display:block;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	padding:0 10px;
+	vertical-align:middle;
+	display:table-cell;
+	cursor:pointer;
+}
+.tabTableTabListSpecial td a .twoLine{
+	padding-top:2px;
+	line-height:12px;
+}
+
+.statTableHolderInnerTable{
+	margin-top:4px;
+}
+.statTableHolderInnerTable td{
+	padding-left:0;
+}
+.statTableProfileTable{
+	width:100%;
+}
 .quoteBadgesRecord{
 	text-align:center;
 	padding:10px 80px;
 }
 .quoteBadgesRecord a,
 .quoteBadgesRecord span.quoteBadgesItem{
-	width:48px;
-	height:48px;
+	width:52px;
+	height:52px;
 	display:inline-block;
 	cursor:pointer;
-    background:url(../images/badge.grid.large.png) no-repeat;
 }
-
-.quoteBadgesRecord span.badge1 {
-    background-position: 0px 0px;
-}
-.quoteBadgesRecord span.badge2 {
-    background-position: 0px -48px;
-}
-.quoteBadgesRecord span.badge3 {
-    background-position: 0px -96px;
-}
-.quoteBadgesRecord span.badge4 {
-    background-position: 0px -144px;
-}
-.quoteBadgesRecord span.badge5 {
-    background-position: 0px -192px;
-}
-.quoteBadgesRecord span.badge6 {
-    background-position: -48px 0px;
-}
-.quoteBadgesRecord span.badge7 {
-    background-position: -48px -48px;
-}
-.quoteBadgesRecord span.badge8 {
-    background-position: -48px -96px;
-}
-.quoteBadgesRecord span.badge9 {
-    background-position: -48px -144px;
-}
-.quoteBadgesRecord span.badge10 {
-    background-position: -48px -192px;
-}
-.badgeCon {
-    position:relative;
-    height:18px;
-    padding-left:19px;
-    padding-top:2px;
-}
-.smallBadge {
-    position:absolute;
-    top:1px;
-    left:0px;
-    display: inline-block;
-    background:url(../images/badge.grid.small.png) no-repeat;
-    width:17px;
-    height:17px;
-}
-.smallBadge1 {
-    background-position: 0px 0px;
-}
-.smallBadge2 {
-    background-position: 0px -17px;
-}
-.smallBadge3 {
-    background-position: 0px -34px;
-}
-.smallBadge4 {
-    background-position: 0px -51px;
-}
-.smallBadge5 {
-    background-position: 0px -68px;
-}
-.smallBadge6 {
-    background-position: -17px 0px;
-}
-.smallBadge7 {
-    background-position: -17px -17px;
-}
-.smallBadge8 {
-    background-position: -17px -34px;
-}
-.smallBadge9 {
-    background-position: -17px -51px;
-}
-.smallBadge10 {
-    background-position: -17px -68px;
-}
-
 .quoteBadgesRecord img{
 	border:0;
 	margin:0;
@@ -374,7 +312,7 @@ background: #999999 url(/i/interface/tab_na.gif) bottom center repeat-x;
     font-size: 11px;
     font-weight: bold;
     color: #ffffff;
-    background: transparent url(../images/toolTipsBg.png) 0 0 repeat;
+    background: transparent url(../i/cimages/toolTipsBg.png) 0 0 repeat;
     border: 1px solid #000000;
     border-bottom-color: #474747;
 }
@@ -383,7 +321,7 @@ background: #999999 url(/i/interface/tab_na.gif) bottom center repeat-x;
     line-height: 14px;
     font-size: 11px;
     color: #ffffff;
-    background: transparent url(../images/toolTipsBg.png) 0 0 repeat;
+    background: transparent url(../i/cimages/toolTipsBg.png) 0 0 repeat;
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
 }
@@ -409,7 +347,7 @@ background: #999999 url(/i/interface/tab_na.gif) bottom center repeat-x;
     height: 10px;
     display: block;
     overflow: hidden;
-    background: transparent url(../images/toolTipsArrows.png) 0 0 no-repeat;
+    background: transparent url(../i/cimages/toolTipsArrows.png) 0 0 no-repeat;
 }
 
 .quoteBadgesItemTips h3 {
@@ -419,12 +357,26 @@ background: #999999 url(/i/interface/tab_na.gif) bottom center repeat-x;
 .quoteBadgesItemTips .tipsContent p {
     padding: 19px 7px 17px 7px;
 }
-.statTableHolderInnerTable {
-    margin-top: 4px;
+
+.flag1{
+	background:url(../i/cimages/badge-profile-1.png) left top no-repeat;
 }
-.statTableHolderInnerTable td{
-	padding-left:0;
+.flag2{
+	background:url(../i/cimages/badge-profile-2.png) left top no-repeat;
 }
-.statTableProfileTable{
-	width:100%;
+.flag3{
+	background:url(../i/cimages/badge-profile-3.png) left top no-repeat;
 }
+.flag4{
+	background:url(../i/cimages/badge-profile-4.png) left top no-repeat;
+}
+.flag5{
+	background:url(../i/cimages/badge-profile-5.png) left top no-repeat;
+}
+.flag6{
+	background:url(../i/cimages/badge-profile-6.png) left top no-repeat;
+}
+.flag7{
+	background:url(../i/cimages/badge-profile-7.png) left top no-repeat;
+}
+

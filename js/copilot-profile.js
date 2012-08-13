@@ -11,6 +11,8 @@ google.setOnLoadCallback(drawColumnChart);
 // This array stored all the colors that can be used for different contest types
 var colorsArray = ['#D1D1D1','#B2B2B2','#666666','#A60000', '#A21B00', '#DA0000', '#DF1C33', '#FF4A00','#FF9000','#FEC228','#FFD97A','#FFE6A8'];
 
+
+var chart, view;
 /**
  * Use Google visualization Chart to draw the pie chart. The data of the chart should be stored
  * in the global variable namely piechart.
@@ -27,13 +29,12 @@ function drawPieChart() {
         data.setValue(index, 1, item.value);
     })
 
-    var chart = new google.visualization.PieChart($(".pie-chart")[0]);
-
+    chart = new google.visualization.PieChart($(".pie-chart")[0]);
     // get the sub array from colorsArray which matches the number of contest types to display
     var chartColors = colorsArray.splice(0, piechart.length);
 
     chart.draw(data, {
-        width:620,
+        width:450,
         height: 340,
         title: 'Overall Contests',
         titleFontSize:14,
@@ -70,7 +71,7 @@ function drawColumnChart() {
     })
 
     var chart = new google.visualization.ColumnChart($(".column-chart")[0]);
-    var width = $("#copilot-profile").width();
+    var width =600;
     chart.draw(data, {
         width: width,
         height: 250,
@@ -97,20 +98,6 @@ $(document).ready(function() {
         return false;
     })
     $(controllers[0]).trigger("click");
-
-    // add tool tips for the copilot profile page
-    $("#copilot-profile img[title]").tooltip({
-        direction: 'up' ,
-        opacity:0.97,
-        onBeforeShow : function() {
-
-        },
-        effect: 'slide',
-        position: "top ",// tweak the position
-        offset: [10,2]
-    }).dynamic({ right: { direction: 'right', bounce: true } });
-
 })
-
 
 
