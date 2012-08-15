@@ -101,7 +101,11 @@ var tooltipTimeout;
 function showTooltip(source, num) {
     getElementsByClassName('tip' + num)[0].style.display = 'block';
     getElementsByClassName('tip' + num)[0].style.top = source.getBoundingClientRect().top + (document.documentElement.scrollTop || document.body.scrollTop) + 2 + 'px';
-    getElementsByClassName('tip' + num)[0].style.left = source.getBoundingClientRect().left + (document.documentElement.scrollLeft || document.body.scrollLeft) + 32 + 'px';
+    if(hasClass(getElementsByClassName('tip' + num)[0], 'reviewStyleTip')) {
+        getElementsByClassName('tip' + num)[0].style.left = source.getBoundingClientRect().left + (document.documentElement.scrollLeft || document.body.scrollLeft) - 210 + 'px';
+    } else {
+        getElementsByClassName('tip' + num)[0].style.left = source.getBoundingClientRect().left + (document.documentElement.scrollLeft || document.body.scrollLeft) + 32 + 'px';
+    }
 }
 
 function hideTooltip(num) {
@@ -129,18 +133,39 @@ function ieHack(){
     } 
 }
 
-//body onload
-document.onreadystatechange = function(){   
-    if(document.readyState=="complete"){   
+function setupView() {
         resizeColumnWidth();
         tabToggle();
         toggleForFeed();
         setWidth();
         ieHack();
-    } 
+        // show the specified tab contents from the 'tab' request parameter
+        var tabHeaders = getElementsByClassName('tab')[0].getElementsByTagName('a');
+        var currentTab = tabHeaders[0];
+        for(i = 0; i < tabHeaders.length; i++ ){
+            if(hasClass(tabHeaders[i],'current')){
+                currentTab = tabHeaders[i];
+            }
+        }
+        addClass(currentTab, 'current');
+        var rel = currentTab.getAttribute('rel');
+        for(k=0;k<getElementsByClassName('tabContainerInner').length;k++){
+            getElementsByClassName('tabContainerInner')[k].style.display = 'none';
+        }
+        document.getElementById(rel).style.display = 'block';
+        setWidth();
 }
 
 window.onresize = function(){
     resizeColumnWidth();
     setWidth();
 }
+
+
+//body onload
+document.addEventListener("DOMContentLoaded", setupView, false);
+document.onreadystatechange = function(){
+    if(document.readyState=="complete"){
+        setupView();
+    }
+};
