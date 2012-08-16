@@ -404,7 +404,7 @@ function renderGroupBadges(categoryName, groupRenderDiv, singleRenderDiv, badges
         var id = $(it).find('.achievementId').val();
         var name = $(it).find('.achievementName').val();
         var desc = $(it).find('.achievementDesc').val();
-        var time = 'earned on: ' + $(it).find('.achievementDate').val();
+        var time = '';//earned on: ' + $(it).find('.achievementDate').val();
         
         if (groupRenderDiv.find('.' + name2cssClass(mapBadge(id))).length > 0) {
             // group badge
