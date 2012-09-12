@@ -17,12 +17,7 @@ $(document).ready(function() {
         $('.photoPopup').css("height", $(document).height());
         $('.popupUploadPhoto').show();
     });
-
-    $('.submitPhotoLink').click(function () {
-        $('.photoPopup').css("height", $(document).height());
-        $('.popupUploadPhoto').show();
-    });
-
+    
     $('#removePhotoLink').click(function() {
         $('.photoPopup').css("height", $(document).height());
         $('.popupRemovePhoto').show();
@@ -113,16 +108,16 @@ $(document).ready(function() {
             $("#photoUploadLeft .locateInput .inner").html(originalFile);
         }
         
-        var targetHeight = 400.0, targetWidth = 400.0;
+        var targetHeight = 270.0, targetWidth = 380.0;
         var newImage = new Image();
         newImage.onload = function onLoadImg() {
             var aspect = newImage.height / newImage.width;
             if (aspect > ( targetHeight / targetWidth )) {
-                $("#uploadImage img").css("height", "400px");
-                $("#uploadImage img").css("width", Math.round(400/aspect)+"px");
+                $("#uploadImage img").css("height", "270px");
+                $("#uploadImage img").css("width", Math.round(270/aspect)+"px");
             } else {
-                $("#uploadImage img").css("width", "400px");
-                $("#uploadImage img").css("height", Math.round(400*aspect)+"px");
+                $("#uploadImage img").css("width", "380px");
+                $("#uploadImage img").css("height", Math.round(380*aspect)+"px");
             }
             picWidth = $("#uploadImage").width();
             picHeight = $("#uploadImage").height();
@@ -156,18 +151,10 @@ $(document).ready(function() {
     function handleRemoveResult(result) {
         if (result.success) {
             $('#photoUploadForm input').val("");
-            $(".submitPhotoLink").parent().show();
+            $("#submitPhotoLink").parent().show();
             $("#removePhotoLink").parent().hide();
             
-            $("img.memberPhoto").parent().attr('id', "submitPhotoLink");
-            $("img.memberPhoto").parent().attr('href', "javascript:;");
-            $("img.memberPhoto").attr("src", "/i/member_photo_upload_default.png");
-
-            $('#submitPhotoLink').click(function () {
-                $('.photoPopup').css("height", $(document).height());
-                $('.popupUploadPhoto').show();
-            });
-
+            $("img.memberPhoto").attr("src", "/i/m/nophoto_submit.gif");
             alert("Remove photo successful");
         } else if (result.error) {
             alert(result.error.message);
