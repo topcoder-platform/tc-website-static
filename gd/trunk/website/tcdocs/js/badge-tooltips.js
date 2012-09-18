@@ -8,9 +8,6 @@ $(document).ready(function() {
 		});
     });
 	
-	if($.browser.msie){
-		$('.quoteBadgesItem').css({'margin-left':'3px'});
-	}
 });
 
 ;(function ($) {
@@ -40,8 +37,7 @@ $(document).ready(function() {
 				window.hover.show();
 				var offset = $(this).offset();
 				var t = offset.top - window.hover.outerHeight() - 2;
-				var l = offset.left - $(this).outerWidth() / 2 - 80;
-                //var l = offset.left - $(this).outerWidth() / 2 - 115;
+				var l = offset.left - window.hover.outerWidth() + 42 + $(this).outerWidth() / 2;
 				window.hover.css({
 									 left:l + 'px',
 									 top:t + 'px'
