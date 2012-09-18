@@ -24,7 +24,6 @@
 
 .subBadge {
     height:48px;
-    cursor: pointer;
     display:inline-block;
 }
 
@@ -61,16 +60,16 @@
 }
 
 .Forum-Posts-100 { 
-    width: 40px;
+    width: 38px;
     background-position: -48px -480px !important; 
 }
 .Forum-Posts-500 { 
     width: 31px;
-    background-position: -88px -480px !important; 
+    background-position: -86px -480px !important; 
 }
 .Forum-Posts-1000 { 
-    width: 31px;
-    background-position: -119px -480px !important; 
+    width: 33px;
+    background-position: -117px -480px !important; 
 }
 .Forum-Posts-5000 { 
     width: 50px;
@@ -104,16 +103,16 @@
     background-position: 0px -576px !important; 
 }
 .Milestone-Prizes-50 { 
-    width: 40px;
+    width: 35px;
     background-position: -48px -576px !important; 
 }
 .Milestone-Prizes-100 { 
-    width: 31px;
-    background-position: -88px -576px !important; 
+    width: 32px;
+    background-position: -84px -576px !important; 
 }
 .Milestone-Prizes-250 { 
     width: 31px;
-    background-position: -119px -576px !important; 
+    background-position: -116px -576px !important; 
 }
 .Milestone-Prizes-500 { 
     width: 50px;
@@ -125,16 +124,16 @@
     background-position: 0px -624px !important; 
 }
 .Winning-Placements-25 { 
-    width: 40px;
+    width: 38px;
     background-position: -48px -624px !important; 
 }
 .Winning-Placements-50 { 
     width: 31px;
-    background-position: -88px -624px !important; 
+    background-position: -86px -624px !important; 
 }
 .Winning-Placements-100 { 
-    width: 31px;
-    background-position: -119px -624px !important; 
+    width: 33px;
+    background-position: -117px -624px !important; 
 }
 .Winning-Placements-250 { 
     width: 50px;
@@ -146,16 +145,16 @@
     background-position: 0px -672px !important; 
 }
 .First-Place-Wins-25 { 
-    width: 40px;
+    width: 38px;
     background-position: -48px -672px !important; 
 }
 .First-Place-Wins-50 { 
     width: 31px;
-    background-position: -88px -672px !important; 
+    background-position: -86px -672px !important; 
 }
 .First-Place-Wins-100 { 
-    width: 31px;
-    background-position: -119px -672px !important; 
+    width: 33px;
+    background-position: -117px -672px !important; 
 }
 .First-Place-Wins-250 { 
     width: 50px;
@@ -348,16 +347,16 @@
     background-position: -28px -816px !important; 
 }
 .Business-Analysis-Group {
-    width: 142px;
+    width: 52px;
     background-position: -58px -816px !important; 
 }
 
 .Big-Data {
-    width: 33px;
+    width: 38px;
     background-position: 0px -864px !important; 
 }
 .Analytics-Group {
-    width: 167px;
+    width: 52px;
     background-position: -33px -864px !important; 
 }
 
@@ -372,7 +371,7 @@
 }
 
 .Testing-and-QA-Group {
-    width: 142px;
+    width: 52px;
     background-position: -58px -912px !important;  
 }
 

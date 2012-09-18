@@ -3774,7 +3774,7 @@ vertical-align:middle;
 	border: 1px solid #000000;
 	float: left;
 	margin: 0 15px 12px 0;
-	cursor: pointer;
+	
 }
 .achievementWrapper .lastOfRow{
 	margin-right: 0;
@@ -3792,35 +3792,30 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b2{
    background: url(/i/skillBadges.png) no-repeat -52px 0;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b3{
    background: url(/i/skillBadges.png) no-repeat -84px 0;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b4{
    background: url(/i/skillBadges.png) no-repeat -116px 0;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b5{
    background: url(/i/skillBadges.png) no-repeat -150px 0;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 
 
@@ -3829,35 +3824,30 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b7{
    background: url(/i/skillBadges.png) no-repeat -50px -51px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b8{
    background: url(/i/skillBadges.png) no-repeat -83px -51px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b9{
    background: url(/i/skillBadges.png) no-repeat -116px -51px;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b10{
    background: url(/i/skillBadges.png) no-repeat -150px -51px;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 
 
@@ -3866,35 +3856,30 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b12{
    background: url(/i/skillBadges.png) no-repeat -50px -103px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b13{
    background: url(/i/skillBadges.png) no-repeat -83px -103px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b14{
    background: url(/i/skillBadges.png) no-repeat -116px -103px;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b15{
    background: url(/i/skillBadges.png) no-repeat -150px -103px;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 
 .achiv .b16{
@@ -3902,35 +3887,30 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b17{
    background: url(/i/skillBadges.png) no-repeat -50px -154px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b18{
    background: url(/i/skillBadges.png) no-repeat -83px -154px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b19{
    background: url(/i/skillBadges.png) no-repeat -116px -154px;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b20{
    background: url(/i/skillBadges.png) no-repeat -150px -154px;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 
 .achiv .b21{
@@ -3938,35 +3918,33 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b22{
    background: url(/i/skillBadges.png) no-repeat -50px -205px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
 }
 .achiv .b23{
    background: url(/i/skillBadges.png) no-repeat -83px -205px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b24{
    background: url(/i/skillBadges.png) no-repeat -116px -205px;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b25{
    background: url(/i/skillBadges.png) no-repeat -150px -205px;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 
 
@@ -3975,35 +3953,35 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b2a{
    background: url(/i/skillBadgesH.png) no-repeat -50px 0;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b3a{
    background: url(/i/skillBadgesH.png) no-repeat -83px 0;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b4a{
    background: url(/i/skillBadgesH.png) no-repeat -116px 0;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b5a{
    background: url(/i/skillBadgesH.png) no-repeat -150px 0;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 
 
@@ -4012,35 +3990,35 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b7a{
    background: url(/i/skillBadgesH.png) no-repeat -50px -51px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b8a{
    background: url(/i/skillBadgesH.png) no-repeat -83px -51px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b9a{
    background: url(/i/skillBadgesH.png) no-repeat -116px -51px;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b10a{
    background: url(/i/skillBadgesH.png) no-repeat -150px -51px;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 
 
@@ -4049,35 +4027,35 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b12a{
    background: url(/i/skillBadgesH.png) no-repeat -50px -103px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b13a{
    background: url(/i/skillBadgesH.png) no-repeat -83px -103px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b14a{
    background: url(/i/skillBadgesH.png) no-repeat -116px -103px;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b15a{
    background: url(/i/skillBadgesH.png) no-repeat -150px -103px;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 
 .achiv .b16a{
@@ -4085,35 +4063,35 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b17a{
    background: url(/i/skillBadgesH.png) no-repeat -50px -154px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b18a{
    background: url(/i/skillBadgesH.png) no-repeat -83px -154px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b19a{
    background: url(/i/skillBadgesH.png) no-repeat -116px -154px;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b20a{
    background: url(/i/skillBadgesH.png) no-repeat -150px -154px;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 
 .achiv .b21a{
@@ -4121,35 +4099,35 @@ float: left;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b22a{
    background: url(/i/skillBadgesH.png) no-repeat -50px -205px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b23a{
    background: url(/i/skillBadgesH.png) no-repeat -83px -205px;
     width: 33px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b24a{
    background: url(/i/skillBadgesH.png) no-repeat -116px -205px;
     width: 34px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 .achiv .b25a{
    background: url(/i/skillBadgesH.png) no-repeat -150px -205px;
     width: 50px;
     height: 48px;
     float: left;
-    cursor: pointer;
+    
 }
 
 
@@ -4177,7 +4155,7 @@ padding: 5px 0;
     width: 50px;
     height: 57px;
     float: left;
-    cursor: pointer;
+    
 }
 
 .footer-badges .fb2{
@@ -4186,7 +4164,7 @@ padding: 5px 0;
     height: 57px;
     float: left;
 	margin-left: 25px;
-    cursor: pointer;
+    
 }
 
 .footer-badges .fb3{
@@ -4194,7 +4172,7 @@ padding: 5px 0;
     width: 50px;
     height: 57px;
     float: right;
-    cursor: pointer;
+    
 }
 
 /*toolTips*/
