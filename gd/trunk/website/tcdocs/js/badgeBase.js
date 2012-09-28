@@ -12,10 +12,10 @@
  * @author TCSASSEMBLER
  * @version 1.0
  */
- 
+
 /**
  * The global badge info.
- */ 
+ */
 var globalBadgeInfo = {
     categorizedBadgeNames: {
         'progress meters development': [
@@ -25,6 +25,48 @@ var globalBadgeInfo = {
                 {name: 'Forum Posts: 500'},
                 {name: 'Forum Posts: 1000'},
                 {name: 'Forum Posts: 5000'}]
+            },
+            {name: 'Rated SRMs', auto: true, subBadges: [
+                {name: 'Rated SRMs: 1'},
+                {name: 'Rated SRMs: 5'},
+                {name: 'Rated SRMs: 25'},
+                {name: 'Rated SRMs: 100'},
+                {name: 'Rated SRMs: 300'}]
+            },
+            {name: 'SRM Room Wins', auto: true, subBadges: [
+                {name: 'SRM Room Wins: 1'},
+                {name: 'SRM Room Wins: 5'},
+                {name: 'SRM Room Wins: 20'},
+                {name: 'SRM Room Wins: 50'},
+                {name: 'SRM Room Wins: 100'}]
+            },
+            {name: 'Solved SRM Problems', auto: true, subBadges: [
+                {name: 'Solved SRM Problems: 1'},
+                {name: 'Solved SRM Problems: 10'},
+                {name: 'Solved SRM Problems: 50'},
+                {name: 'Solved SRM Problems: 200'},
+                {name: 'Solved SRM Problems: 500'}]
+            },
+            {name: 'Successful Challenges', auto: true, subBadges: [
+                {name: 'Successful Challenges: 1'},
+                {name: 'Successful Challenges: 5'},
+                {name: 'Successful Challenges: 25'},
+                {name: 'Successful Challenges: 100'},
+                {name: 'Successful Challenges: 200'}]
+            },
+            {name: 'Marathon Matches', auto: true, subBadges: [
+                {name: 'Marathon Matches: 1'},
+                {name: 'Marathon Matches: 3'},
+                {name: 'Marathon Matches: 10'},
+                {name: 'Marathon Matches: 20'},
+                {name: 'Marathon Matches: 50'}]
+            },
+            {name: 'Marathon Top-5 Placements', auto: true, subBadges: [
+                {name: 'Marathon Top-5 Placements: 1'},
+                {name: 'Marathon Top-5 Placements: 2'},
+                {name: 'Marathon Top-5 Placements: 4'},
+                {name: 'Marathon Top-5 Placements: 8'},
+                {name: 'Marathon Top-5 Placements: 16'}]
             },
             {name: 'Passing Submissions', auto: true, subBadges:[
                 {name: 'Passing Submissions: 1'},
@@ -54,7 +96,7 @@ var globalBadgeInfo = {
                 {name: 'First-Place Wins: 100'},
                 {name: 'First-Place Wins: 250'}]
             }],
-            
+
         'progress meters studio': [
             {name: 'Forum Posts', auto: true, subBadges: [
                 {name: 'Studio Forum Posts: 1'},
@@ -91,7 +133,7 @@ var globalBadgeInfo = {
                 {name: 'Studio First-Place Wins: 100'},
                 {name: 'Studio First-Place Wins: 250'}]
             }],
-            
+
         'merit groups': [
             {name: 'UI and Graphic Design', auto: false, subBadges: [
                 {name: 'Wireframe', auto: false},
@@ -118,6 +160,11 @@ var globalBadgeInfo = {
                 {name: 'Big Data', auto: false}]
             }],
         'special': [
+            {name: 'SRM Winner Div 1', auto: true},
+            {name: 'SRM Winner Div 2', auto: true},
+            {name: 'Marathon Match Winner', auto: true},
+            {name: 'Algorithm Target', auto: true},
+            {name: 'Marathon Target', auto: true},
             {name: 'Studio Cup top 5', auto: true},
             {name: 'TCO On-Site Competitor', auto: false},
             {name: 'TopCoder Event Trip Winner', auto: false},
@@ -127,9 +174,14 @@ var globalBadgeInfo = {
             {name: 'Studio Cup Winner', auto: true},
             {name: 'TCO Champion', auto: false},
             {name: 'TCCC Finalist', auto: false},
-            {name: 'Digital Run Winner', auto: true},    
-            {name: 'Member of the Month', auto: false},    
+            {name: 'Digital Run Winner', auto: true},
+            {name: 'Member of the Month', auto: false},
             {name: 'TCCC Champion', auto: false}],
+        'skill': [
+            {name: 'Marathon Copilot / Problem Writer', auto: false},
+            {name: 'Algorithm Problem Writer', auto: false},
+            {name: 'Solved Hard Div1 Problem in SRM', auto: true},
+            {name: 'Solved Hard Div2 Problem in SRM', auto: true}],
         'reviewing': [
             {name: 'Studio Spec Reviewer', auto: false},
             {name: 'Studio Screener', auto: false},
@@ -150,7 +202,7 @@ var globalBadgeInfo = {
  *
  * @param name the name.
  * @return converted css name.
- */ 
+ */
 function name2cssClass(name) {
     return name.split(/\W+/).join('-');
 }
@@ -159,7 +211,7 @@ function name2cssClass(name) {
  * The the id of the rule the badge corresponds to.
  * @param {} name the badge name
  * @return {Number} the rule ID.
- */ 
+ */
 function getBadgeId(name) {
     for(var i=1; i<89; i++) {
         if(mapBadge(i.toString()) == name) {
@@ -186,7 +238,7 @@ function mapBadge(id) {
             return 'Forum Posts: 1000';
         case "5":
             return 'Forum Posts: 5000';
-        case "6": 
+        case "6":
             return 'Passing Submissions: 1';
         case "7":
             return 'Passing Submissions: 50';
@@ -236,7 +288,7 @@ function mapBadge(id) {
             return 'Studio Forum Posts: 1000';
         case "30":
             return 'Studio Forum Posts: 5000';
-        case "31": 
+        case "31":
             return 'Studio Passing Submissions: 1';
         case "32":
             return 'Studio Passing Submissions: 50';
@@ -352,6 +404,84 @@ function mapBadge(id) {
             return 'TopCoder Spirit';
         case "88":
             return 'TopCoder Mentor';
+        case "89":
+            return 'Rated SRMs: 1';
+        case "90":
+            return 'Rated SRMs: 5';
+        case "91":
+            return 'Rated SRMs: 25';
+        case "92":
+            return 'Rated SRMs: 100';
+        case "93":
+            return 'Rated SRMs: 300';
+        case "94":
+            return 'SRM Room Wins: 1';
+        case "95":
+            return 'SRM Room Wins: 5';
+        case "96":
+            return 'SRM Room Wins: 20';
+        case "97":
+            return 'SRM Room Wins: 50';
+        case "98":
+            return 'SRM Room Wins: 100';
+        case "99":
+            return 'Solved SRM Problems: 1';
+        case "100":
+            return 'Solved SRM Problems: 10';
+        case "101":
+            return 'Solved SRM Problems: 50';
+        case "102":
+            return 'Solved SRM Problems: 200';
+        case "103":
+            return 'Solved SRM Problems: 500';
+        case "104":
+            return 'Successful Challenges: 1';
+        case "105":
+            return 'Successful Challenges: 5';
+        case "106":
+            return 'Successful Challenges: 25';
+        case "107":
+            return 'Successful Challenges: 100';
+        case "108":
+            return 'Successful Challenges: 200';
+        case "109":
+            return 'Marathon Matches: 1';
+        case "110":
+            return 'Marathon Matches: 3';
+        case "111":
+            return 'Marathon Matches: 10';
+        case "112":
+            return 'Marathon Matches: 20';
+        case "113":
+            return 'Marathon Matches: 50';
+        case "114":
+            return 'Marathon Top-5 Placements: 1';
+        case "115":
+            return 'Marathon Top-5 Placements: 2';
+        case "116":
+            return 'Marathon Top-5 Placements: 4';
+        case "117":
+            return 'Marathon Top-5 Placements: 8';
+        case "118":
+            return 'Marathon Top-5 Placements: 16';
+        case "119":
+            return 'SRM Winner Div 1';
+        case "120":
+            return 'SRM Winner Div 2';
+        case "121":
+            return 'Marathon Match Winner';
+        case "122":
+            return 'Algorithm Target';
+        case "123":
+            return 'Marathon Target';
+        case "124":
+            return 'Algorithm Problem Writer';
+        case "125":
+            return 'Marathon Copilot / Problem Writer';
+        case "126":
+            return 'Solved Hard Div1 Problem in SRM';
+        case "127":
+            return 'Solved Hard Div2 Problem in SRM';
     }
 }
 
@@ -362,81 +492,84 @@ function mapBadge(id) {
  * @param groupRenderDiv the group render div.
  * @param singleRenderDiv the single render div.
  * @param badgesDiv all badges.
- */ 
+ */
 function renderGroupBadges(categoryName, groupRenderDiv, singleRenderDiv, badgesDiv) {
     // render group badges
     if (typeof globalBadgeInfo.categorizedBadgeNames[categoryName] != 'undefined') {
         $.each(globalBadgeInfo.categorizedBadgeNames[categoryName], function(index, item) {
             if (typeof item['subBadges'] != 'undefined') {
                 var groupDiv = $('<div>');
+                groupDiv.hide(); // hide by default, display later if child badge is actually earned
                 groupDiv.addClass('groupBadge');
                 groupDiv.addClass(name2cssClass(item.name));
-                
+
                 $.each(item.subBadges, function(ii, it) {
                     var badgeSpan = $('<span>');
                     badgeSpan.addClass('subBadge');
                     badgeSpan.addClass(name2cssClass(it.name));
-                    
+
                     groupDiv.append(badgeSpan);
-                    
+
                     badgeSpan.badgeTooltips({
                         title: it.name,
                         content: it.name//,
-                    });                    
+                    });
                 });
-                
+
                 //var tmpDiv = $('<div>');
                 //tmpDiv.addClass('subBadge bigBadge');
                 //tmpDiv.addClass(name2cssClass(item.name));
                 //groupDiv.append(tmpDiv);
-                
+
                 groupRenderDiv.append(groupDiv);
             }
         });
     }
-    
+
     groupRenderDiv.append($('<div class="clear-float">'));
-    
+
     var singleCount = 0;
-    
+
     // show badges
     badgesDiv.find('.quoteBadgesItem').each(function(i, it) {
         var id = $(it).find('.achievementId').val();
         var name = $(it).find('.achievementName').val();
         var desc = $(it).find('.achievementDesc').val();
         var time = '';//earned on: ' + $(it).find('.achievementDate').val();
-        
+
         if (groupRenderDiv.find('.' + name2cssClass(mapBadge(id))).length > 0) {
             // group badge
-            groupRenderDiv.find('.' + name2cssClass(mapBadge(id))).addClass('selected');
-            groupRenderDiv.find('.' + name2cssClass(mapBadge(id))).badgeTooltips({
+            var badgeEl = groupRenderDiv.find('.' + name2cssClass(mapBadge(id)));
+            badgeEl.parent().show(); // display parent group
+            badgeEl.addClass('selected');
+            badgeEl.badgeTooltips({
                 title: name,
                 content: desc,
                 time: time
-            });            
+            });
         } else {
             // single badge
             if (singleRenderDiv != null) {
                 var badge = $('<div>');
                 badge.addClass('singleBadge');
                 badge.addClass(name2cssClass(mapBadge(id)));
-                
+
                 if (singleCount % 3 == 0) {
                     badge.addClass('leftMost');
                 }
                 singleCount++;
-                
+
                 singleRenderDiv.append(badge);
-                
+
                 badge.badgeTooltips({
                     title: name,
                     content: desc,
                     time: time
-                });            
+                });
             }
         }
     });
-    
+
     if (singleRenderDiv != null) {
         singleRenderDiv.append('<div class="clear-float"></div>');
     }
