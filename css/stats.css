@@ -421,3 +421,19 @@ background: #999999 url(../i/cimages/tab_na.gif) bottom center repeat-x;
 .smallBadge24 { background-position: -51px -68px; }
 .smallBadge25 { background-position: -68px -68px; }
 
+.panelMacro {
+margin: 10px 20px;
+}
+.infoMacro {
+border-style: solid;
+border-width: 1px;
+border-color: #3C78B5;
+background-color: #D8E4F1;
+text-align: left;
+margin-top: 5px;
+margin-bottom: 5px;
+padding: 0;
+text-align: left;
+width: 100%;
+}
+
