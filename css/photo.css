@@ -104,8 +104,8 @@ a.btn1:hover .inner{
 }
 
 	.photoPopup .popupWindow {
-		width:680px;
-		height:430px;
+		width:700px;
+		height:560px;
 		margin-top:100px;
 		margin:100px auto;
 		padding-top:3px;
@@ -120,7 +120,7 @@ a.btn1:hover .inner{
 	}
 
 		.photoPopup .title {
-			width:670px;
+			width:690px;
 			height:41px;
 			line-height:41px;
 			font-family:"Myriad Pro";
@@ -136,8 +136,8 @@ a.btn1:hover .inner{
 		}
 
 		.photoPopup .content {
-			width:660px;
-			height:358px;
+			width:680px;
+			height:488px;
 			margin-top:5px;
 			padding:8px 5px;
 			background-color:#FFFFFF;
@@ -291,9 +291,9 @@ a.btn1:hover .inner{
         
         #previewDiv {
             overflow:hidden;
-            width:117px;
+            width:140px;
             height:140px;
-            margin-left:67px;
+            margin-left:55px;
         }
 		
 		#uploadImage {
@@ -306,9 +306,9 @@ a.btn1:hover .inner{
 		}
 		
 		#uploadImage p{
-			width:380px;
-			height:270px;
-			line-height:270px;
+			width:400px;
+			height:400px;
+			line-height:400px;
 			text-align:center;
 		}
 
