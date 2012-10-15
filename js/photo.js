@@ -101,23 +101,23 @@ $(document).ready(function() {
         $("#uploadImage").hide();
         $("#uploadImage img").attr("src", src);
         $('#photoUploadRight img').attr("src", src);
-        $('#photoUploadRight img').css("width", "113px");
-        $('#photoUploadRight img').css("height", "158px");
+        $('#photoUploadRight img').css("width", "140px");
+        $('#photoUploadRight img').css("height", "140px");
         
         if (originalFile) {
             $("#photoUploadLeft .locateInput .inner").html(originalFile);
         }
         
-        var targetHeight = 270.0, targetWidth = 380.0;
+        var targetHeight = 400.0, targetWidth = 400.0;
         var newImage = new Image();
         newImage.onload = function onLoadImg() {
             var aspect = newImage.height / newImage.width;
             if (aspect > ( targetHeight / targetWidth )) {
-                $("#uploadImage img").css("height", "270px");
-                $("#uploadImage img").css("width", Math.round(270/aspect)+"px");
+                $("#uploadImage img").css("height", "400px");
+                $("#uploadImage img").css("width", Math.round(400/aspect)+"px");
             } else {
-                $("#uploadImage img").css("width", "380px");
-                $("#uploadImage img").css("height", Math.round(380*aspect)+"px");
+                $("#uploadImage img").css("width", "400px");
+                $("#uploadImage img").css("height", Math.round(400*aspect)+"px");
             }
             picWidth = $("#uploadImage").width();
             picHeight = $("#uploadImage").height();
@@ -126,7 +126,7 @@ $(document).ready(function() {
             $("#uploadImage img").Jcrop({
                 onChange: showPreview,
                 onSelect: showPreview,
-                aspectRatio: 115/138
+                aspectRatio: 140/140
             });
         }
         newImage.src = src;
@@ -136,7 +136,7 @@ $(document).ready(function() {
         if (parseInt(coords.w) > 0)
         {
             coor = coords;
-            var rx = 113 / coords.w;
+            var rx = 136 / coords.w;
             var ry = 136 / coords.h
             
             $('#photoUploadRight img').css({
