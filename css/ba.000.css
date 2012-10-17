@@ -265,9 +265,17 @@ h2 {
 .First-place-wins { background-position: 0px -192px; }
 .UI-and-graphic-design { background-position: 0px -240px; }
 .Implementation { background-position: 0px -288px; }
-.Business-analysis { background-position: 0px -336px; }
-.Analytics { background-position: 0px -384px; }
-.Testing-and-QA { background-position: 0px -432px; }
+.Business-analysis {
+background-position: 110px -336px;
+}
+.Analytics {
+background-position: 86px -384px;
+}
+
+.Testing-and-QA {
+background-position: 110px -432px;
+}
+
 
 /* progress meters-development sub badges */
 .forum-posts-1 { 
@@ -554,42 +562,47 @@ h2 {
 }
 
 
-.idea-generation { 
-    width: 28px;
-    background-position: 0px -816px !important; 
+.idea-generation {
+width: 28px;
+background-position: 110px -816px !important;
 }
-.conceptualization { 
-    width: 30px;
-    background-position: -28px -816px !important; 
+
+.conceptualization {
+width: 30px;
+background-position: 82px -816px !important;
 }
+
 .Business-analysis-group {
-    width: 142px;
-    background-position: -58px -816px !important; 
+width: 52px;
+background-position: 52px -816px !important;
 }
 
 .big-data {
-    width: 33px;
-    background-position: 0px -864px !important; 
+width: 33px;
+background-position: -115px -864px !important;
 }
+
 .Analytics-group {
-    width: 167px;
-    background-position: -33px -864px !important; 
+width: 52px;
+background-position: 53px -864px !important;
 }
 
-.test-scenarios { 
-    width: 29px;
-    background-position: 0px -912px !important; 
+.test-scenarios {
+width: 29px;
+background-position: 110px -912px !important;
 }
 
-.bug-hunts { 
-    width: 29px;
-    background-position: -29px -912px !important;  
+
+.bug-hunts {
+width: 29px;
+background-position: 82px -912px !important;
 }
 
 .Testing-and-QA-group {
-    width: 142px;
-    background-position: -58px -912px !important;  
+width: 52px;
+background-position: 52px -912px !important;
 }
+
 
 .error {
 	color: red;
