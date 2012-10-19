@@ -6,7 +6,7 @@ google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(drawPieChart);
 // load the column chart to display comparison of Planed, Real, Failure and
 // Reposted contest number for each contest type in bars.
-google.setOnLoadCallback(drawColumnChart);
+//google.setOnLoadCallback(drawColumnChart);
 
 // This array stored all the colors that can be used for different contest types
 var colorsArray = ['#D1D1D1','#B2B2B2','#666666','#A60000', '#A21B00', '#DA0000', '#DF1C33', '#FF4A00','#FF9000','#FEC228','#FFD97A','#FFE6A8'];
@@ -54,35 +54,35 @@ function drawPieChart() {
  * Use Google Visualization Chart to draw the bar chart. The data of the chart should be stored
  * in the global variable namely barchart.
  */
-function drawColumnChart() {
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'type');
-    data.addColumn('number', 'Planned Contests');
-    data.addColumn('number', 'Real Contests');
-    data.addColumn('number', 'Reposts');
-    data.addColumn('number', 'Failures');
-    data.addRows(barchart.length);
-    $.each(barchart, function(index, item) {
-        data.setValue(index, 0, item.name);
-        data.setValue(index, 1, item.plannedContests);
-        data.setValue(index, 2, item.realContests);
-        data.setValue(index, 3, item.reposts);
-        data.setValue(index, 4, item.failures);
-    })
-
-    var chart = new google.visualization.ColumnChart($(".column-chart")[0]);
-    var width =600;
-    chart.draw(data, {
-        width: width,
-        height: 250,
-        title: 'No. of Contests',
-        titleColor:'#333333',
-        colors:["#D00000","#000000","#666666","#B2B2B2"],
-        legend:'none',
-        fontSize:11,
-        titleFontSize:12
-    });
-}
+//function drawColumnChart() {
+//    var data = new google.visualization.DataTable();
+//    data.addColumn('string', 'type');
+//    data.addColumn('number', 'Planned Contests');
+//    data.addColumn('number', 'Real Contests');
+//    data.addColumn('number', 'Reposts');
+//    data.addColumn('number', 'Failures');
+//    data.addRows(barchart.length);
+//    $.each(barchart, function(index, item) {
+//        data.setValue(index, 0, item.name);
+//        data.setValue(index, 1, item.plannedContests);
+//        data.setValue(index, 2, item.realContests);
+//        data.setValue(index, 3, item.reposts);
+//        data.setValue(index, 4, item.failures);
+//    })
+//
+//    var chart = new google.visualization.ColumnChart($(".column-chart")[0]);
+//    var width =600;
+//    chart.draw(data, {
+//        width: width,
+//        height: 250,
+//        title: 'No. of Contests',
+//        titleColor:'#333333',
+//        colors:["#D00000","#000000","#666666","#B2B2B2"],
+//        legend:'none',
+//        fontSize:11,
+//        titleFontSize:12
+//    });
+//}
 
 $(document).ready(function() {
     

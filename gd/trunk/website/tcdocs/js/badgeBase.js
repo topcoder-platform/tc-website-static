@@ -516,10 +516,12 @@ function renderGroupBadges(categoryName, groupRenderDiv, singleRenderDiv, badges
                     });
                 });
 
-                //var tmpDiv = $('<div>');
-                //tmpDiv.addClass('subBadge bigBadge');
-                //tmpDiv.addClass(name2cssClass(item.name));
-                //groupDiv.append(tmpDiv);
+                if(categoryName == 'merit groups') {
+                    var tmpDiv = $('<div>');
+                    tmpDiv.addClass('subBadge bigBadge');
+                    tmpDiv.addClass(name2cssClass(item.name)+"-group");
+                    groupDiv.append(tmpDiv);
+                }
 
                 groupRenderDiv.append(groupDiv);
             }
@@ -573,4 +575,23 @@ function renderGroupBadges(categoryName, groupRenderDiv, singleRenderDiv, badges
     if (singleRenderDiv != null) {
         singleRenderDiv.append('<div class="clear-float"></div>');
     }
+
+    if (categoryName == 'merit groups') {
+        $(".groupBadgeDiv .groupBadge").each(function () {
+            var allSelected = true;
+
+            $(this).find("span.subBadge").each(function () {
+                if (!$(this).hasClass("selected")) {
+                    allSelected = false;
+                }
+            })
+
+            if (allSelected) {
+                $(this).find("div.subBadge").addClass("selected");
+            } else {
+                $(this).find("div.subBadge").removeClass("selected");
+            }
+        });
+    }
 }
+
