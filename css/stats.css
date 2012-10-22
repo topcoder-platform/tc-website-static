@@ -415,11 +415,70 @@ background: #999999 url(../i/cimages/tab_na.gif) bottom center repeat-x;
 .smallBadge19 { background-position: -51px -51px; }
 .smallBadge20 { background-position: -68px -51px; }
 
-.smallBadge21 { background-position: 0px -68px; } 
+.smallBadge21 { background-position: 0px -68px; }
 .smallBadge22 { background-position: -17px -68px; }
 .smallBadge23 { background-position: -34px -68px; }
 .smallBadge24 { background-position: -51px -68px; }
 .smallBadge25 { background-position: -68px -68px; }
+
+.smallBadge54 { background-position: 0px -85px; }
+.smallBadge119 { background-position: -17px -85px; }
+.smallBadge120 { background-position: -34px -85px; }
+.smallBadge121 { background-position: -51px -85px; }
+.smallBadge122 { background-position: -68px -85px; }
+
+.smallBadge52 { background-position: 0px -102px; }
+.smallBadge123 { background-position: -17px -102px; }
+.smallBadge124 { background-position: -34px -102px; }
+.smallBadge125 { background-position: -51px -102px; }
+.smallBadge126 { background-position: -68px -102px; }
+
+.smallBadge53 { background-position: 0px -119px; }
+.smallBadge127 { background-position: -17px -119px; }
+
+.smallBadge51 { background-position: 0px -136px; }
+
+.smallBadge77 { background-position: 0px -153px; }
+
+.smallBadge75 { background-position: 0px -170px; }
+
+.smallBadge76 { background-position: 0px -187px; }
+
+.smallBadge89 { background-position: 0px -204px; }
+.smallBadge90 { background-position: -17px -204px; }
+.smallBadge91 { background-position: -34px -204px; }
+.smallBadge92 { background-position: -51px -204px; }
+.smallBadge93 { background-position: -68px -204px; }
+
+.smallBadge94 { background-position: 0px -221px; }
+.smallBadge95 { background-position: -17px -221px; }
+.smallBadge96 { background-position: -34px -221px; }
+.smallBadge97 { background-position: -51px -221px; }
+.smallBadge98 { background-position: -68px -221px; }
+
+.smallBadge99 { background-position: 0px -238px; }
+.smallBadge100 { background-position: -17px -238px; }
+.smallBadge101 { background-position: -34px -238px; }
+.smallBadge102 { background-position: -51px -238px; }
+.smallBadge103 { background-position: -68px -238px; }
+
+.smallBadge104 { background-position: 0px -255px; }
+.smallBadge105 { background-position: -17px -255px; }
+.smallBadge106 { background-position: -34px -255px; }
+.smallBadge107 { background-position: -51px -255px; }
+.smallBadge108 { background-position: -68px -255px; }
+
+.smallBadge109 { background-position: 0px -272px; }
+.smallBadge110 { background-position: -17px -272px; }
+.smallBadge111 { background-position: -34px -272px; }
+.smallBadge112 { background-position: -51px -272px; }
+.smallBadge113 { background-position: -68px -272px; }
+
+.smallBadge114 { background-position: 0px -289px; }
+.smallBadge115 { background-position: -17px -289px; }
+.smallBadge116 { background-position: -34px -289px; }
+.smallBadge117 { background-position: -51px -289px; }
+.smallBadge118 { background-position: -68px -289px; }
 
 .panelMacro {
 margin: 10px 20px;
