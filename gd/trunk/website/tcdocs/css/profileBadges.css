@@ -438,86 +438,86 @@
 
 .Wireframe { 
     width: 31px;
-    background-position: 0px -720px !important; 
+    background-position: 0px -1009px !important; 
 }
 .Desktop-App-UI { 
     width: 35px;
-    background-position: -31px -720px !important; 
+    background-position: -31px -1009px !important; 
 }
 .Mobile-UI { 
     width: 24px;
-    background-position: -66px -720px !important; 
+    background-position: -66px -1009px !important; 
 }
 .Web-UI {
     width: 32px;
-    background-position: -90px -720px !important; 
+    background-position: -90px -1009px !important; 
 }
 .Branding-Marketing-Presentation { 
     width: 26px;
-    background-position: -122px -720px !important; 
+    background-position: -122px -1009px !important; 
 }
-.UI-and-Graphic-Design-group {
+.UI-and-Graphic-Design-Group {
     width: 52px;
-    background-position: -148px -720px !important;
+    background-position: -148px -1009px !important; 
 }
 
 .UI-Development {
     width: 40px;
-    background-position: 0px -768px !important; 
+    background-position: 0px -1057px !important; 
 }
 .Architecture-and-Design { 
     width: 30px;
-    background-position: -40px -768px !important; 
+    background-position: -40px -1057px !important; 
 }
 .Component-Development { 
     width: 35px;
-    background-position: -70px -768px !important; 
+    background-position: -70px -1057px !important; 
 }
 .Assembly { 
     width: 40px;
-    background-position: -105px -768px !important; 
+    background-position: -105px -1057px !important; 
 }
-.Implementation-group {
+.Implementation-Group {
     width: 55px;
-    background-position: -145px -768px !important;
+    background-position: -145px -1057px !important; 
 }
+
 
 .Idea-Generation { 
     width: 28px;
-    background-position: 110px -816px !important;
+    background-position: -90px -1105px !important; 
 }
 .Conceptualization { 
     width: 30px;
-    background-position: 82px -816px !important;
+    background-position: -117px -1105px !important; 
 }
-.Business-Analysis-group {
+.Business-Analysis-Group {
     width: 52px;
-    background-position: 52px -816px !important;
+    background-position: 52px -1105px !important; 
 }
 
 .Big-Data {
-    width: 33px;
-    background-position: -115px -864px !important;
+    width: 38px;
+    background-position: -110px -1153px !important; 
 }
-.Analytics-group {
+.Analytics-Group {
     width: 52px;
-    background-position: 53px -864px !important;
+    background-position: 53px -1153px !important; 
 }
 
 .Test-Scenarios { 
     width: 29px;
-    background-position: 110px -912px !important;
+    background-position: -90px -1201px !important; 
 }
 
 .Bug-Hunts { 
     width: 29px;
-    background-position: 82px -912px !important;
+    background-position: -119px -1201px !important;  
 }
 
-
-.Testing-and-QA-group {
+.Testing-and-QA-Group {
     width: 52px;
-    background-position: 52px -912px !important;
+    background-position: 52px -1201px !important;  
 }
 
 span.subBadge.selected {

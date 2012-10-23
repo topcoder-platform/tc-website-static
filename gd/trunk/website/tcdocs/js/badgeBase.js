@@ -499,7 +499,8 @@ function renderGroupBadges(categoryName, groupRenderDiv, singleRenderDiv, badges
         $.each(globalBadgeInfo.categorizedBadgeNames[categoryName], function(index, item) {
             if (typeof item['subBadges'] != 'undefined') {
                 var groupDiv = $('<div>');
-                groupDiv.hide(); // hide by default, display later if child badge is actually earned
+                
+                if (categoryName != 'merit groups') groupDiv.hide(); // hide by default, display later if child badge is actually earned
                 groupDiv.addClass('groupBadge');
                 groupDiv.addClass(name2cssClass(item.name));
 
@@ -519,7 +520,7 @@ function renderGroupBadges(categoryName, groupRenderDiv, singleRenderDiv, badges
                 if(categoryName == 'merit groups') {
                     var tmpDiv = $('<div>');
                     tmpDiv.addClass('subBadge bigBadge');
-                    tmpDiv.addClass(name2cssClass(item.name)+"-group");
+                    tmpDiv.addClass(name2cssClass(item.name)+"-Group");
                     groupDiv.append(tmpDiv);
                 }
 
