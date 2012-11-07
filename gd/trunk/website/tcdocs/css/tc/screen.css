@@ -3136,9 +3136,7 @@ a.hint, a.hint:visited{
 
 /* member profile right main module */
 .rightMain div.rightModule{
-	background:url(/i/right-module-bg.png) repeat-x left top;
-	border:1px solid #D6D6D6;
-	height:133px;
+	height:140px;
 	position:relative;
 	}
 .foto
