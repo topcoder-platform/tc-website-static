@@ -84,8 +84,8 @@ $(document).ready(function() {
                 $("#submitPhotoForum input[name=rx]").val(coor.x + coor.w);
                 $("#submitPhotoForum input[name=ry]").val(coor.y + coor.h);
                 
-                $("#submitPhotoForum input[name=picWidth]").val(picWidth - 2);
-                $("#submitPhotoForum input[name=picHeight]").val(picHeight - 2);
+                $("#submitPhotoForum input[name=picWidth]").val(picWidth);
+                $("#submitPhotoForum input[name=picHeight]").val(picHeight);
             }                     
 
             $("#submitPhotoForum").submit();
