@@ -14025,6 +14025,10 @@ a:hover{
     margin:0 0 12px 0;
 }
 
+.donwloads .inner {
+    padding: 5px 10px;
+}
+
 .donwloads h3{
     padding:0 0 6px 0;
     font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
@@ -14032,16 +14036,22 @@ a:hover{
     font-weight:normal;
     color:#b30000;
 }
+.donwloads span.register {
+    display: inline-block;
+    padding: 0;
+}
 
+.downloads a.register {
+    padding: 0;
+}
 .donwloads ul{
-    margin:0 0 5px 0;
+    margin:0;
     padding:0;
 }
 
 .donwloads ul li{
-    margin:0 14px;
+    margin:0;
     padding:0;
-    line-height:24px;
     list-style:none;
     border-bottom:#bababa dotted 1px;
 }
@@ -14052,12 +14062,13 @@ a:hover{
 
 .donwloads ul li a{
     display:inline-block;
-    padding:5px 0 0 0;
+    padding:0px;
     font-size:12px;
     font-weight:bold;
     color:#333334;
     line-height:20px;
-    text-decoration:underline;
+    text-decoration:none;
+    max-width: 100%;
 }
 
 .donwloads ul li a:hover{
@@ -14073,7 +14084,7 @@ a:hover{
 }
 
 .donwloads a{
-    margin:0 14px;
+    margin:0;
     padding:0;
     padding:5px 0 0 0;
     color:#333334;
@@ -14088,16 +14099,13 @@ a:hover{
 
 .donwloads span{
     margin:0;
-    padding:0 12px 7px;
     font-size:12px;
-    line-height:34px;
 }
 
 .donwloads strong {
     margin:0;
-    padding:0 12px 7px;
+    padding:0;
     font-size:12px;
-    line-height:34px;
     color: red;
 }
 /* guidelines */
