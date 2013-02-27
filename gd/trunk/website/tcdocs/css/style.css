@@ -14252,7 +14252,7 @@ a:hover{
     word-wrap: break-word;
 }
 
-#overview .contestOverview h3{
+#overview .contestOverview > h3{
     font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
     font-size:16px;
     font-weight:normal;
@@ -14322,6 +14322,115 @@ a:hover{
 }
 #overview .technologies  strong {
     padding:2px 0 18px 0;
+}
+
+/* payments */
+#overview .payments{
+    border-bottom:#bababa dotted 1px;
+}
+
+#overview .payments .containerInner{
+    padding:0 0 0 36px;
+    word-wrap: break-word;
+}
+
+#overview .payments h3{
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+    background:url(/i/iconPayments.png) no-repeat 0 6px;
+    padding: 8px 30px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .payments p{
+    margin:0;
+    padding:2px 0 18px 0;
+    line-height:18px;
+}
+#overview .payments dl{
+    margin:0;
+    padding:0;
+}
+
+#overview .payments dl dt{
+    margin:0;
+    padding:0;
+    font-size:12px;
+    line-height:18px;
+}
+
+#overview .payments dl dd{
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+#overview .payments ul{
+    margin:0 0 18px 0;
+    padding:0;
+}
+
+#overview .payments li{
+    margin:0 0 0 25px;
+    padding:0 0 0 10px;
+    font-size:12px;
+    line-height:18px;
+    list-style:none;
+    background:url(/i/dot.png) no-repeat left 6px;
+}
+
+/* restrictions */
+#overview .restrictions{
+    border-bottom:#bababa dotted 1px;
+}
+
+#overview .restrictions .containerInner{
+    padding:0 0 0 36px;
+    word-wrap: break-word;
+}
+
+#overview .restrictions h3{
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+    background:url(/i/iconRestrictions.png) no-repeat 0 6px;
+    padding: 8px 30px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .restrictions p{
+    margin:0;
+    padding:2px 0 18px 0;
+    line-height:18px;
+}
+
+/* support */
+#overview .support{
+    border-bottom:#bababa dotted 1px;
+}
+
+#overview .support .containerInner{
+    padding:0 0 0 36px;
+    word-wrap: break-word;
+}
+
+#overview .support h3{
+    font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#b30000;
+    background:url(/i/iconSupport.png) no-repeat 0 6px;
+    padding: 8px 30px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .support p{
+    margin:0;
+    padding:2px 0 18px 0;
+    line-height:18px;
 }
 
 /* eligibility */
@@ -14396,7 +14505,7 @@ a:hover{
     font-size:16px;
     font-weight:normal;
     color:#b30000;padding: 8px 30px;
-    background:url(/i/iconContestOverview.png) no-repeat 0 6px;
+    background:url(/i/iconGuidelines.png) no-repeat 0 6px;
     margin: 14px 0 0 6px;
 }
 #overview .finalSubmissionGuidelines .container{
