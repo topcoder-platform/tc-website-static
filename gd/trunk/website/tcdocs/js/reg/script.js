@@ -124,6 +124,11 @@ $(document).ready(function(){
 		$(this).siblings('.handleOkey,.handleError').hide();
 		$('.editErrorNotice').hide();
 	});
+    $('select').change(function() {
+        $(this).removeClass('error').siblings('.tipError,tipError2').hide();
+		$(this).siblings('.handleOkey,.handleError').hide();
+		$('.editErrorNotice').hide();
+    });
 	
 	var errors = $("#errors span");
 	if (errors.length != 0) {
@@ -138,6 +143,10 @@ $(document).ready(function(){
 			$('#lastName').after("<span class=\"tipError2\">" + errors[i].innerHTML + "</span>");
 			$('#lastName').addClass('error').siblings('.tipError2').show();
 		}
+        if (errors[i].innerHTML.indexOf("country") != -1) {
+            $('#homeCountry').after("<span class=\"tipError2\">" + errors[i].innerHTML + "</span>");
+            $('#homeCountry').addClass('error').siblings('.tipError2').show();
+        }
 		if (errors[i].innerHTML.indexOf("handle") != -1) {
 			$('#handle').after("<span class=\"tipError2\">" + errors[i].innerHTML + "</span>");
 			$('#handle').addClass('error').siblings('.tipError2').show();
@@ -214,6 +223,10 @@ $(document).ready(function(){
 			$('#lastName').addClass('error').siblings('.error2').show();
 			checkStauts = false;
 		}
+        if($.trim($('#homeCountry').val()).length == 0){
+            $('#homeCountry').addClass('error').siblings('.error1').show();
+            checkStauts = false;
+        }
 		if($.trim($('#handle').val()).length < 2 ){
 			$('#handle').addClass('error').siblings('.tipError').show();
 			$('#handle').siblings('.signError,.signOkey').hide();
