@@ -256,7 +256,8 @@ var globalBadgeInfo = {
         /* 124 */ 'Algorithm Problem Writer',
         /* 125 */ 'Marathon Copilot / Problem Writer',
         /* 126 */ 'Solved Hard Div1 Problem in SRM',
-        /* 127 */ 'Solved Hard Div2 Problem in SRM'
+        /* 127 */ 'Solved Hard Div2 Problem in SRM',
+                  'NASA Tournament Lab Badge'
     ]
 
 };
