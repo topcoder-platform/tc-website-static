@@ -13790,7 +13790,7 @@ a:hover{
     background-image:url(/i/cornerPrize.png);
 }
 
-.mainColumn .columnContent .prizeSectionNoMilestones .corner{
+.mainColumn .columnContent .prizeSectionNoCheckpoints .corner{
     background-image:url(/i/cornerNoPrize.png);
 }
 
@@ -13852,19 +13852,19 @@ a:hover{
     color:#666667;
 }
 
-/* milestonesInfor */
-.mainColumn .columnContent .prizeSection .milestonesInfor{
+/* checkpointsInfor */
+.mainColumn .columnContent .prizeSection .checkpointsInfor{
     height:98px;
 }
 
-.mainColumn .columnContent .prizeSection .milestonesInfor h3{
+.mainColumn .columnContent .prizeSection .checkpointsInfor h3{
     height:30px;
     font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
     font-size:14px;
     font-weight:normal;
     line-height:30px;
     text-align:center;
-    background-image:url(/i/bgMilestones.png);
+    background-image:url(/i/bgCheckpoints.png);
     background-repeat:repeat-x;
     background-position:0 0;
     background-color:#e9e9e9;
@@ -13872,12 +13872,12 @@ a:hover{
     border-bottom:#bababa solid 1px;
 }
 
-.mainColumn .columnContent .prizeSection .milestonesInfor ul{
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul{
     margin:0;
     padding:0;
 }
 
-.mainColumn .columnContent .prizeSection .milestonesInfor ul li{
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul li{
     width:auto;
     height:66px;
     float:left;
@@ -13889,11 +13889,11 @@ a:hover{
     background:url(/i/line.png) no-repeat right top;
 }
 
-.mainColumn .columnContent .prizeSection .milestonesInfor ul li.last{
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul li.last{
     background:none;
 }
 
-.mainColumn .columnContent .prizeSection .milestonesInfor ul li span{
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul li span{
     display:block;
     padding:8px 0 0 0;
     font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
@@ -13902,7 +13902,7 @@ a:hover{
     text-align:center;
 }
 
-.mainColumn .columnContent .prizeSection .milestonesInfor ul li strong{
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul li strong{
     font-size:18px;
     font-weight:bold;
     color:#b30000;
@@ -13925,7 +13925,7 @@ a:hover{
 .mainColumn .columnSideBar .timeline h3{
     height:30px;
     border-bottom:#bababa solid 1px;
-    background-image:url(/i/bgMilestones.png);
+    background-image:url(/i/bgCheckpoints.png);
     background-repeat:repeat-x;
     background-position:0 0;
 }
@@ -14519,19 +14519,19 @@ a:hover{
     line-height:16px;
 }
 
-/* milestones */
-#milestones{
+/* checkpoints */
+#checkpoints{
     width:100%;
     display:none;
 }
 
-/* milestoneWinners */
-#milestones .milestoneWinners{
+/* checkpointWinners */
+#checkpoints .checkpointWinners{
     width:100%;
     margin:10px 0 0 0;
 }
 
-#milestones .milestoneWinners h3{
+#checkpoints .checkpointWinners h3{
     font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
     font-size:16px;
     font-weight:normal;
@@ -14539,17 +14539,17 @@ a:hover{
     line-height:32px;
 }
 
-#milestones .milestoneWinners .milestoneWinnersList{
+#checkpoints .checkpointWinners .checkpointWinnersList{
     height:46px;
     position:relative;
-    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+    background:url(/i/bgCheckpointWinners.png) repeat-x left top;
 }
 
-#milestones .milestoneWinners .milestoneWinnersList .greyBg{
-    background-image:url(/i/bgMilestoneWinnersGrey.png);
+#checkpoints .checkpointWinners .checkpointWinnersList .greyBg{
+    background-image:url(/i/bgCheckpointWinnersGrey.png);
 }
 
-#milestones .milestoneWinners .milestoneWinnersList .milestoneWinnersListInner{
+#checkpoints .checkpointWinners .checkpointWinnersList .checkpointWinnersListInner{
     height:46px;
     background-image:url(/i/greyLine.png);
     background-repeat:repeat-y;
@@ -14557,45 +14557,45 @@ a:hover{
 }
 
 /* corner */
-#milestones .milestoneWinners .milestoneWinnersList .corner{
+#checkpoints .checkpointWinners .checkpointWinnersList .corner{
     width:3px;
     height:3px;
     position:absolute;
     overflow:hidden;
-    background-image:url(/i/cornerMilestoneWinners.png);
+    background-image:url(/i/cornerCheckpointWinners.png);
     background-repeat:no-repeat;
 }
 
-#milestones .milestoneWinners .milestoneWinnersList .tl{
+#checkpoints .checkpointWinners .checkpointWinnersList .tl{
     top:0;
     left:0;
     background-position:0 0;
 }
 
-#milestones .milestoneWinners .milestoneWinnersList .tr{
+#checkpoints .checkpointWinners .checkpointWinnersList .tr{
     top:0;
     right:0;
     background-position:-3px 0;
 }
 
-#milestones .milestoneWinners .milestoneWinnersList .bl{
+#checkpoints .checkpointWinners .checkpointWinnersList .bl{
     bottom:0;
     left:0;
     background-position:0 -3px;
 }
 
-#milestones .milestoneWinners .milestoneWinnersList .br{
+#checkpoints .checkpointWinners .checkpointWinnersList .br{
     bottom:0;
     right:0;
     background-position:-3px -3px;
 }
 
-#milestones .milestoneWinners ul{
+#checkpoints .checkpointWinners ul{
     margin:0 1px 0 0;
     padding:0;
 }
 
-#milestones .milestoneWinners ul li{
+#checkpoints .checkpointWinners ul li{
     width:auto;
     float:left;
     display:inline;
@@ -14603,42 +14603,42 @@ a:hover{
     padding:0;
 }
 
-#milestones .milestoneWinners ul li.prize1st{
-    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+#checkpoints .checkpointWinners ul li.prize1st{
+    background:url(/i/bgCheckpointWinners.png) repeat-x left top;
 }
 
-#milestones .milestoneWinners ul li.prize2nd{
-    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+#checkpoints .checkpointWinners ul li.prize2nd{
+    background:url(/i/bgCheckpointWinners.png) repeat-x left top;
 }
 
-#milestones .milestoneWinners ul li.prize3rd{
-    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+#checkpoints .checkpointWinners ul li.prize3rd{
+    background:url(/i/bgCheckpointWinners.png) repeat-x left top;
 }
 
-#milestones .milestoneWinners ul li.prize4th{
-    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+#checkpoints .checkpointWinners ul li.prize4th{
+    background:url(/i/bgCheckpointWinners.png) repeat-x left top;
 }
 
-#milestones .milestoneWinners ul li.prize5th{
-    background:url(/i/bgMilestoneWinners.png) repeat-x left top;
+#checkpoints .checkpointWinners ul li.prize5th{
+    background:url(/i/bgCheckpointWinners.png) repeat-x left top;
 }
 
-#milestones .milestoneWinners ul li.prize1st div{
+#checkpoints .checkpointWinners ul li.prize1st div{
     background-image:url(/i/greyLine.png);
     background-repeat:repeat-y;
     background-position:0 0;
 }
 
-#milestones .milestoneWinners ul li div span.contest{
+#checkpoints .checkpointWinners ul li div span.contest{
     display:block;
-    background:url(/i/lineMilestoneWinners.png) no-repeat left center;
+    background:url(/i/lineCheckpointWinners.png) no-repeat left center;
 }
 
-#milestones .milestoneWinners ul li.prize1st div span.contest{
+#checkpoints .checkpointWinners ul li.prize1st div span.contest{
     background-image:none;
 }
 
-#milestones .milestoneWinners ul li span span{
+#checkpoints .checkpointWinners ul li span span{
     height:46px;
     display:block;
     font-size:14px;
@@ -14651,37 +14651,37 @@ a:hover{
     background-position:0 0;
 }
 
-#milestones .milestoneWinners ul li.prize1st span span{
+#checkpoints .checkpointWinners ul li.prize1st span span{
     background-image:url(/i/iconFirstPrize.png);
 }
 
-#milestones .milestoneWinners ul li.prize2nd span span{
+#checkpoints .checkpointWinners ul li.prize2nd span span{
     background-image:url(/i/iconSecondPrize.png);
 }
 
-#milestones .milestoneWinners ul li.prize3rd span span{
+#checkpoints .checkpointWinners ul li.prize3rd span span{
     background-image:url(/i/iconThirdPrize.png);
 }
 
-#milestones .milestoneWinners ul li.prize4th span span{
+#checkpoints .checkpointWinners ul li.prize4th span span{
     background-image:url(/i/iconForthPrize.png);
 }
 
-#milestones .milestoneWinners ul li.prize5th span span{
+#checkpoints .checkpointWinners ul li.prize5th span span{
     background-image:url(/i/iconFifthPrize.png);
 }
 
 /* feedback */
-#milestones .feedback{
+#checkpoints .feedback{
     padding:18px 0;
     border-bottom:#bababa dotted 1px;
 }
 
-#milestones .feedback .title{
+#checkpoints .feedback .title{
     position:relative;
 }
 
-#milestones .feedback a.toggle{
+#checkpoints .feedback a.toggle{
     position:absolute;
     right:4px;
     top:0;
@@ -14691,11 +14691,11 @@ a:hover{
     text-decoration:underline;
 }
 
-#milestones .feedback a.toggle:hover{
+#checkpoints .feedback a.toggle:hover{
     color:#ff0000;
 }
 
-#milestones .feedback h3{
+#checkpoints .feedback h3{
     font-family:"Lucida Sans Unicode", Arial, Helvetica, sans-serif;
     font-size:16px;
     font-weight:normal;
@@ -14703,11 +14703,11 @@ a:hover{
     line-height:16px;
 }
 
-#milestones .feedback .hidden{
+#checkpoints .feedback .hidden{
     display:none;
 }
 
-#milestones .feedback p{
+#checkpoints .feedback p{
     margin:0;
     padding:8px 0 0 0;
     font-size:12px;
@@ -14748,7 +14748,7 @@ a:hover{
     float:left;
     display:inline;
     list-style:none;
-    background-image:url(/i/lineMilestoneWinners.png);
+    background-image:url(/i/lineCheckpointWinners.png);
     background-repeat:repeat-y;
     background-position:0 0;
 }
@@ -14844,7 +14844,7 @@ a:hover{
     font-size:11px;
     line-height:13px;
     text-align:center;
-    background-image:url(/i/lineMilestoneWinners.png);
+    background-image:url(/i/lineCheckpointWinners.png);
     background-repeat:repeat-y;
     background-position:0 0;
     border-top:#bababa solid 1px;

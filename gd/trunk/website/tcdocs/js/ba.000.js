@@ -15,12 +15,12 @@ var global = {
                 {name: 'passing submissions: 250'},
                 {name: 'passing submissions: 500'}]
             },
-			{name: 'Milestone prizes', auto: true, subBadges: [
-                {name: 'milestone prizes: 1'},
-                {name: 'milestone prizes: 50'},
-                {name: 'milestone prizes: 100'},
-                {name: 'milestone prizes: 250'},
-                {name: 'milestone prizes: 500'}]
+			{name: 'Checkpoint prizes', auto: true, subBadges: [
+                {name: 'checkpoint prizes: 1'},
+                {name: 'checkpoint prizes: 50'},
+                {name: 'checkpoint prizes: 100'},
+                {name: 'checkpoint prizes: 250'},
+                {name: 'checkpoint prizes: 500'}]
             },
 			{name: 'Winning placements', auto: true, subBadges: [
                 {name: 'winning placements: 1'},
@@ -52,12 +52,12 @@ var global = {
                 {name: 'studio passing submissions: 250'},
                 {name: 'studio passing submissions: 500'}]
             },
-			{name: 'Milestone prizes', auto: true, subBadges: [
-                {name: 'studio milestone prizes: 1'},
-                {name: 'studio milestone prizes: 50'},
-                {name: 'studio milestone prizes: 100'},
-                {name: 'studio milestone prizes: 250'},
-                {name: 'studio milestone prizes: 500'}]
+			{name: 'Checkpoint prizes', auto: true, subBadges: [
+                {name: 'studio checkpoint prizes: 1'},
+                {name: 'studio checkpoint prizes: 50'},
+                {name: 'studio checkpoint prizes: 100'},
+                {name: 'studio checkpoint prizes: 250'},
+                {name: 'studio checkpoint prizes: 500'}]
             },
 			{name: 'Winning placements', auto: true, subBadges: [
                 {name: 'studio winning placements: 1'},
@@ -718,15 +718,15 @@ function mapBadge(id) {
 		case "10":
 			return 'passing submissions: 500';
 		case "11":
-			return 'milestone prizes: 1';
+			return 'checkpoint prizes: 1';
 		case "12":
-			return 'milestone prizes: 50';
+			return 'checkpoint prizes: 50';
 		case "13":
-			return 'milestone prizes: 100';
+			return 'checkpoint prizes: 100';
 		case "14":
-			return 'milestone prizes: 250';
+			return 'checkpoint prizes: 250';
 		case "15":
-			return 'milestone prizes: 500';
+			return 'checkpoint prizes: 500';
 		case "16":
 			return 'winning placements: 1';
 		case "17":
@@ -768,15 +768,15 @@ function mapBadge(id) {
 		case "35":
 			return 'studio passing submissions: 500';
 		case "36":
-			return 'studio milestone prizes: 1';
+			return 'studio checkpoint prizes: 1';
 		case "37":
-			return 'studio milestone prizes: 50';
+			return 'studio checkpoint prizes: 50';
 		case "38":
-			return 'studio milestone prizes: 100';
+			return 'studio checkpoint prizes: 100';
 		case "39":
-			return 'studio milestone prizes: 250';
+			return 'studio checkpoint prizes: 250';
 		case "40":
-			return 'studio milestone prizes: 500';
+			return 'studio checkpoint prizes: 500';
 		case "41":
 			return 'studio winning placements: 1';
 		case "42":
