@@ -43,20 +43,20 @@ function removeClass(obj, cls) {
 }
 
 
-//set the width of Milestones
+//set the width of Checkpoints
 function setWidth(){
-    if(getElementsByClassName('milestonesInfor').length){
-        for(i=0;i<getElementsByClassName('milestonesInfor')[0].getElementsByTagName('li').length;i++){
-            getElementsByClassName('milestonesInfor')[0].getElementsByTagName('li')[i].style.width = parseInt(parseInt(getElementsByClassName('milestonesInfor')[0].getElementsByTagName('ul')[0].offsetWidth)/getElementsByClassName('milestonesInfor')[0].getElementsByTagName('li').length) + 'px';  
+    if(getElementsByClassName('checkpointsInfor').length){
+        for(i=0;i<getElementsByClassName('checkpointsInfor')[0].getElementsByTagName('li').length;i++){
+            getElementsByClassName('checkpointsInfor')[0].getElementsByTagName('li')[i].style.width = parseInt(parseInt(getElementsByClassName('checkpointsInfor')[0].getElementsByTagName('ul')[0].offsetWidth)/getElementsByClassName('checkpointsInfor')[0].getElementsByTagName('li').length) + 'px';  
         }
     }else{
         if(getElementsByClassName('prizeSection').length){
-            addClass(getElementsByClassName('prizeSection')[0],'prizeSectionNoMilestones');
+            addClass(getElementsByClassName('prizeSection')[0],'prizeSectionNoCheckpoints');
         }
     }
-    if(getElementsByClassName('milestoneWinnersList').length){
-        for(i=0;i<getElementsByClassName('milestoneWinnersList')[0].getElementsByTagName('li').length;i++){
-            getElementsByClassName('milestoneWinnersList')[0].getElementsByTagName('li')[i].style.width = parseInt(parseInt(getElementsByClassName('milestoneWinnersList')[0].getElementsByTagName('ul')[0].offsetWidth)/getElementsByClassName('milestoneWinnersList')[0].getElementsByTagName('li').length) + 'px';   
+    if(getElementsByClassName('checkpointWinnersList').length){
+        for(i=0;i<getElementsByClassName('checkpointWinnersList')[0].getElementsByTagName('li').length;i++){
+            getElementsByClassName('checkpointWinnersList')[0].getElementsByTagName('li')[i].style.width = parseInt(parseInt(getElementsByClassName('checkpointWinnersList')[0].getElementsByTagName('ul')[0].offsetWidth)/getElementsByClassName('checkpointWinnersList')[0].getElementsByTagName('li').length) + 'px';   
         }
     }
 }

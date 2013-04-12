@@ -54,7 +54,7 @@
 .Marathon-Matches { background-position: 0px -673px; }
 .Marathon-Top-5-Placements { background-position: 0px -721px; }
 .Passing-Submissions { background-position: 0px -48px; }
-.Milestone-Prizes { background-position: 0px -96px; }
+.Checkpoint-Prizes { background-position: 0px -96px; }
 .Winning-Placements { background-position: 0px -144px; }
 .First-Place-Wins { background-position: 0px -192px; }
 .UI-and-Graphic-Design { background-position: 0px -240px; }
@@ -233,23 +233,23 @@
     background-position: -150px -817px !important; 
 }
 
-.Milestone-Prizes-1 { 
+.Checkpoint-Prizes-1 { 
     width: 48px;
     background-position: 0px -865px !important; 
 }
-.Milestone-Prizes-50 { 
+.Checkpoint-Prizes-50 { 
     width: 35px;
     background-position: -48px -865px !important; 
 }
-.Milestone-Prizes-100 { 
+.Checkpoint-Prizes-100 { 
     width: 32px;
     background-position: -84px -865px !important; 
 }
-.Milestone-Prizes-250 { 
+.Checkpoint-Prizes-250 { 
     width: 31px;
     background-position: -116px -865px !important; 
 }
-.Milestone-Prizes-500 { 
+.Checkpoint-Prizes-500 { 
     width: 50px;
     background-position: -150px -865px !important; 
 }
@@ -341,23 +341,23 @@
     background-position: -150px -817px !important; 
 }
 
-.Studio-Milestone-Prizes-1 { 
+.Studio-Checkpoint-Prizes-1 { 
     width: 48px;
     background-position: 0px -865px !important; 
 }
-.Studio-Milestone-Prizes-50 { 
+.Studio-Checkpoint-Prizes-50 { 
     width: 40px;
     background-position: -48px -865px !important; 
 }
-.Studio-Milestone-Prizes-100 { 
+.Studio-Checkpoint-Prizes-100 { 
     width: 31px;
     background-position: -88px -865px !important; 
 }
-.Studio-Milestone-Prizes-250 { 
+.Studio-Checkpoint-Prizes-250 { 
     width: 31px;
     background-position: -119px -865px !important; 
 }
-.Studio-Milestone-Prizes-500 { 
+.Studio-Checkpoint-Prizes-500 { 
     width: 50px;
     background-position: -150px -865px !important; 
 }

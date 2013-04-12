@@ -260,7 +260,7 @@ h2 {
 /* group badges */	
 .Forum-posts { background-position: 0px 0px; }
 .Passing-submissions { background-position: 0px -48px; }
-.Milestone-prizes { background-position: 0px -96px; }
+.Checkpoint-prizes { background-position: 0px -96px; }
 .Winning-placements { background-position: 0px -144px; }
 .First-place-wins { background-position: 0px -192px; }
 .UI-and-graphic-design { background-position: 0px -240px; }
@@ -322,23 +322,23 @@ background-position: 110px -432px;
     background-position: -150px -528px !important; 
 }
 
-.milestone-prizes-1 { 
+.checkpoint-prizes-1 { 
     width: 48px;
     background-position: 0px -576px !important; 
 }
-.milestone-prizes-50 { 
+.checkpoint-prizes-50 { 
     width: 40px;
     background-position: -48px -576px !important; 
 }
-.milestone-prizes-100 { 
+.checkpoint-prizes-100 { 
     width: 31px;
     background-position: -88px -576px !important; 
 }
-.milestone-prizes-250 { 
+.checkpoint-prizes-250 { 
     width: 31px;
     background-position: -119px -576px !important; 
 }
-.milestone-prizes-500 { 
+.checkpoint-prizes-500 { 
     width: 50px;
     background-position: -150px -576px !important; 
 }
@@ -430,23 +430,23 @@ background-position: 110px -432px;
     background-position: -150px -528px !important; 
 }
 
-.studio-milestone-prizes-1 { 
+.studio-checkpoint-prizes-1 { 
     width: 48px;
     background-position: 0px -576px !important; 
 }
-.studio-milestone-prizes-50 { 
+.studio-checkpoint-prizes-50 { 
     width: 40px;
     background-position: -48px -576px !important; 
 }
-.studio-milestone-prizes-100 { 
+.studio-checkpoint-prizes-100 { 
     width: 31px;
     background-position: -88px -576px !important; 
 }
-.studio-milestone-prizes-250 { 
+.studio-checkpoint-prizes-250 { 
     width: 31px;
     background-position: -119px -576px !important; 
 }
-.studio-milestone-prizes-500 { 
+.studio-checkpoint-prizes-500 { 
     width: 50px;
     background-position: -150px -576px !important; 
 }
