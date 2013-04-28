@@ -257,7 +257,8 @@ var globalBadgeInfo = {
         /* 125 */ 'Marathon Copilot / Problem Writer',
         /* 126 */ 'Solved Hard Div1 Problem in SRM',
         /* 127 */ 'Solved Hard Div2 Problem in SRM',
-                  'NASA Tournament Lab Badge'
+        /* 128 */ 'NASA Tournament Lab Client Badge',
+        /* 129 */ 'CoECI Client Badge'
     ]
 
 };
