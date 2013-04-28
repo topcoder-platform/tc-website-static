@@ -529,7 +529,10 @@ span.subBadge.selected {
     border: none;
 }
 
-.NASA-Tournament-Lab-Badge {
+.NASA-Tournament-Lab-Client-Badge {
     background-position: -98px 48px !important;
 }
 
+.CoECI-Client-Badge {
+    background-position: -146px 48px !important;
+}
