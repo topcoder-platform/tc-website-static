@@ -1,3 +1,17 @@
+/*
+ * Copyright (C) 2012 TopCoder Inc., All Rights Reserved.
+ */
+
+/**
+ * @author isv
+ * Version 1.1
+ * 
+ * Version 1.1 (Member Payments Automation assembly) change notes: added code for payment processing by user.
+ */
+var MINIMUM_PAYMENT_ACCRUAL_AMOUNT;
+var PAY_ME_CONFIRMATION_TEMPLATE;
+var USER_PAYMENT_METHOD;
+
 
 document.write('<link type="image/x-icon" rel="shortcut icon" href="/i/favicon.ico"/>');
   function getGraph(url,wd,ht) {
@@ -106,4 +120,136 @@ function goTo(selection) {
 
 function doWrite(s) {
     document.write(s);
+}
+
+/**
+ * Validates the pagination parameters. 
+ * 
+ * @return {Boolean} true if pagination parameters are valid; false otherwise.
+ */
+function checkPaymentHistoryForm() {
+    var myForm = document.f;
+    var nr = myForm.nr.value;
+    var sr = myForm.sr.value;
+    
+    var error = '';
+    if (!isPositiveNumber(nr)) {
+        error += 'Number of records is not positive numeric value';
+        error += '\n';
+    }
+    if (!isPositiveNumber(sr)) {
+        error += 'Starting record number is not positive numeric value';
+        error += '\n';
+    }
+
+    if (error != '') {
+        alert(error);
+        return false;
+    } else {
+        $('input[name=paymentId]').attr('disabled', 'disabled');
+        return true;
+    }
+    
+}
+
+/**
+ * Checks if specified text provides positive integer number.
+ * 
+ * @param v a number to validate.
+ * @return {Boolean} true if specified string provided positive integer number: false otherwise.
+ */
+function isPositiveNumber(v) {
+    var regExp = new RegExp('^[0-9]+$');
+    var matches = regExp.test(v);
+    if (matches) {
+        var n = parseInt(v);
+        if (n <= 0) {
+            return false;
+        } else {
+            return true;
+        }
+    } else {
+        return false;
+    }
+}
+
+$(document).ready(function() {
+    $('.uncheckAll').click(function() {
+        $('.uncheckable').attr('checked', false);
+        updatePayMe();
+    });
+    
+    $('.checkAll').click(function () {
+        $('.checkable').attr('checked', true);
+        updatePayMe();
+    });
+    
+    $('.payable').click(function() {
+        if (!$(this).hasClass('negative')) {
+            updatePayMe();
+        }
+    });
+    
+    $('#payMe').click(function() {
+        if (isUserPaymentMethodValid()) {
+            var total = calcTotalPayment();
+            var confirmationMessage = PAY_ME_CONFIRMATION_TEMPLATE.replace('{0}', '$' + total.toFixed(2));
+
+            if (confirm(confirmationMessage)) {
+                var myForm = document.f;
+                myForm.method = 'POST';
+                myForm.module.value = 'PayMe';
+                myForm.submit();
+            }
+        }
+    });
+    
+    $('.getable').click(function () {
+        var myForm = document.f;
+        myForm.method = 'GET';
+        myForm.module.value = 'PaymentHistory';
+        
+        $('input[name=paymentId]').attr('disabled', 'disabled');
+    });
+
+    updatePayMe();
+    
+});
+
+/**
+ * Updates the text of Pay Me button with total amount of selected payments.
+ */
+function updatePayMe() {
+    var total = calcTotalPayment();
+    if (total >= 0) {
+        $('#payMe').val('Pay Me: $' + total.toFixed(2));
+    } else {
+        $('#payMe').val('Pay Me: -$' + Math.abs(total.toFixed(2)));
+    }
+    if (total < MINIMUM_PAYMENT_ACCRUAL_AMOUNT || !isUserPaymentMethodValid()) {
+        $('#payMe').attr('disabled', 'disabled');
+    } else {
+        $('#payMe').removeAttr('disabled');
+    }
+}
+
+/**
+ * Calculates the total amount of payments selected by user.
+ * 
+ * @return {Number} a total amount of selected payments.
+ */
+function calcTotalPayment() {
+    var total = 0.00;
+    $('.payable:checked').each(function () {
+        var amount = parseFloat($(this).parent().find('.paymentNetAmount').val());
+        total += amount;
+    });
+    return total;
+}
+
+/**
+ * Checks if current user has a payment method set to any value other than NULL or 1,3,4 (Not Set,Wire,ACH)
+ */
+function isUserPaymentMethodValid() {
+    return (USER_PAYMENT_METHOD != null) && (USER_PAYMENT_METHOD != 1) && (USER_PAYMENT_METHOD != 3) && (USER_PAYMENT_METHOD != 4);
 }
