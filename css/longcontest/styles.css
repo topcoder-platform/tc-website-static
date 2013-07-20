@@ -17,11 +17,12 @@
             width: 880px;
         }
         
-        .problemText .CodeMirror {
+        #codeMirrorContainer .CodeMirror {
+            width: auto;
             height: auto;
         }
         
-        .problemText .CodeMirror-scroll {
+        #codeMirrorContainer .CodeMirror-scroll {
             overflow-y: hidden;
-            overflow-x: auto;
+            overflow-x: hidden;
         }
