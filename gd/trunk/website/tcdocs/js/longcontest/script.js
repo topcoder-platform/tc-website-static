@@ -56,14 +56,18 @@ $(document).ready(function() {
 
     
     if ($('#longContestViewSolution').length) {
-        if ($codeArea.length) {
-             myCodeMirror = CodeMirror.fromTextArea(document.getElementById("submissionArea"), {
+        var container = $('#codeMirrorContainer');
+        if (container.length) {
+            myCodeMirror = CodeMirror(container.get(0),
+            {
+                value: $('#problemTextOriginal').val(),
                 lineNumbers: true,
                 matchBrackets: true,
                 viewportMargin: Infinity,
                 readOnly: true,
                 mode: getMode($('#lid').val())
-          });
+            });
+            $('.problemText').hide();
         }
     }
 });
