@@ -15021,3 +15021,237 @@ a:hover{
     line-height: 18px;
     font-size: 12px;
 }
+
+/*modal window css*/
+#modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    opacity: 0.6;
+    filter:alpha(opacity=60);/*ie7 ie8 */
+}
+#new-modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index:11111;
+}
+
+#new-modal-window .outLay {
+    position: relative;
+    display: none;
+}
+
+#new-modal-window .large{
+    width: 450px;
+}
+
+#new-modal-window .large2 {
+    width: 530px;
+}
+
+#new-modal-window .outLay .modalHeader .closeModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: url(/i/modal/modal-close.png) left top no-repeat;
+    width: 30px;
+    height: 30px;
+    text-indent: -999px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#new-modal-window .outLay .modalHeader .closeModal:hover {
+    background-position: left -30px;
+}
+
+#new-modal-window .outLay .modalHeader {
+    background: url(/i/modal/modal-header.png) left top no-repeat;
+    padding-left: 8px;
+    height: 36px;
+    *width: 351px;/*ie7*/
+}
+
+#new-modal-window .outLay .modalHeader .modalHeaderRight {
+    background: url(/i/modal/modal-header.png) right -80px no-repeat;
+    padding-right: 8px;
+}
+
+#new-modal-window .outLay .modalHeader .modalHeaderCenter {
+    background: url(/i/modal/modal-header.png) left -40px repeat-x;
+    padding: 10px 0 10px 22px;
+    color: #000001;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 36px;
+}
+
+#new-modal-window .outLay .modalHeader .modalHeaderCenter h2 {
+    font-size: 16px;
+}
+
+#new-modal-window .outLay .modalHeader.confirmation .modalHeaderCenter h2 {
+    font-size: 14px;
+}
+
+#new-modal-window .outLay .modalFooter {
+    background: url(/i/modal/preloader-corner.png) left -24px no-repeat;
+    padding-left: 8px;
+}
+
+#new-modal-window .outLay .modalFooter .modalFooterRight {
+    background: url(/i/modal/preloader-corner.png) right -40px no-repeat;
+    padding-right: 8px;
+}
+
+#new-modal-window .outLay .modalFooter .modalFooterCenter {
+    background: url(/i/modal/preloader-corner.png) left -32px repeat-x;
+    padding-top: 8px;
+}
+
+#new-modal-window .outLay .modalHeaderSmall {
+    height: 8px;
+    background: url(/i/modal/preloader-corner.png) left top no-repeat;
+    padding-left: 8px;
+    overflow: hidden;
+}
+
+#new-modal-window .outLay .modalHeaderSmall .modalHeaderSmallRight {
+    height: 8px;
+    background: url(/i/modal/preloader-corner.png) right -16px no-repeat;
+    padding-right: 8px;
+}
+#new-modal-window .outLay .modalHeaderSmall .modalHeaderSmallCenter {
+    height: 8px;
+    background: url(/i/modal/preloader-corner.png) left -8px repeat-x;
+}
+
+#new-modal-window .outLay .modalBody {
+    border: 4px solid #000000;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background: #e6e6e6 url(/i/modal/modal-body-normal.png) left top repeat-x;
+    min-height: 10px;
+
+    color: #333333;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#new-modal-window #demoModal .outLay .modalBody {
+    min-width: 352px;
+    padding: 33px 0 0 0;
+}
+
+#new-modal-window .outLay .modalBody .modalContent {
+    background: url(/i/modal/modal-notice.png) left center no-repeat;
+    width: 241px;
+    margin: 0 0 0px 19px;
+    padding: 0 25px 11px 66px;
+    min-height: 40px;
+    list-style: none;
+}
+
+#new-modal-window .outLay .modalBody .modalContent.multiple {
+    padding-top: 3px;
+}
+
+#new-modal-window .outLay .modalBody.serverError .modalContent {
+    background-image: url(/i/modal/modal-error.png);
+}
+
+
+#new-modal-window .outLay .modalBody .modalContent li {
+    margin-bottom: 2px;
+    word-wrap: break-word;
+    padding-top: 10px;
+}
+
+#new-modal-window .outLay .modalBody .modalContent li.single {
+    padding-top: 10px;
+}
+
+#new-modal-window .outLay .modalBody .modalContent.multiple li {
+    background: url(/i/modal/modal-arrow.png) left 4px no-repeat;
+    padding-left: 15px;
+}
+
+#new-modal-window .outLay .modalBody .modalCommandBox {
+    border-top: 1px solid #ccc;
+    padding: 16px 0 12px;
+    text-align: center;
+    height:25px;
+    *width: 351px;/*ie7*/
+}
+
+/* #preloaderModal */
+#preloaderModal{
+    width:100px;
+    height:80px;
+}
+#preloaderModal .modalBody{
+    height:auto;
+    min-height:10px;
+    padding-top:4px;
+    text-align:center;
+    background:url(/i/modal/preloader-body.png) left -2px repeat-x;
+}
+#preloaderModal .modalBody .preloaderTips {
+    padding-top:5px;
+    font-size:12px;
+    color:#333333;
+}
+
+.newButton1 {
+    background: url(/i/modal/button-new-1.png) no-repeat scroll left top transparent;
+    color: #FFFFFE;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.newButton1 .btnR {
+    background: url(/i/modal/button-new-1.png) no-repeat scroll right -48px transparent;
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 4px;
+}
+
+.newButton1 .btnC {
+    background: url(/i/modal/button-new-1.png) repeat-x scroll left -24px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    padding: 0 18px;
+    text-align: center;
+    color: white;
+}
+
+.newButton1:hover{
+    background-position:left -72px;
+}
+.newButton1:hover .btnR{
+    background-position:right -120px;
+}
+.newButton1:hover .btnC{
+    background-position:left -96px;
+}
+
+
+/* end #preloaderModal */
+
+
