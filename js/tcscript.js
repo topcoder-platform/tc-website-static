@@ -217,6 +217,34 @@ $(document).ready(function() {
 
     updatePayMe();
 
+    //TopCoder Project Permission Error Page changes
+    //https://apps.topcoder.com/bugs/browse/BUGR-8819
+    $('.buttonArea .register').click(function(){
+        // the 'isAnonymous' is defined in the projectDetails.jsp file
+        if(!isAnonymous) {
+            var thisObj = this;
+            adjustAndShow("#preloaderModal");
+            //Check Project Permission using ajax call
+            $.ajax({
+                type: "get",
+                url: '?module=CheckPermission',
+                success: function(data){
+                    var result = $.parseJSON(data);
+                    closeModal();
+                    if('OK' !== result.msg && !result.isAnonymous) {
+                        adjustAndShow("#errorModal");
+                    } else {
+                        location.href = $(thisObj).attr('href');
+                    }
+                }
+            });
+            return false;
+        } else {
+            // for the Anonymous user, go to the viewRegistration page directly.
+            return true;
+        }
+    });
+
     $("#new-modal-window .closeModal, #new-modal-window .defaultBtn").click(function(){
         closeModal();
     });
