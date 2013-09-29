@@ -115,7 +115,7 @@ a.btn1:hover .inner{
 	}
 	
 	.popupRemovePhoto .popupWindow {
-		width:485px;
+		width:495px;
 		height:211px;
 	}
 
@@ -132,7 +132,7 @@ a.btn1:hover .inner{
 		}
 		
 		.popupRemovePhoto .title {
-			width:476px;
+			width:486px;
 		}
 
 		.photoPopup .content {
@@ -145,7 +145,7 @@ a.btn1:hover .inner{
 		}
 		
 		.popupRemovePhoto .content {
-			width:465px;
+			width:475px;
 			height:137px;
 		}
 
