@@ -248,7 +248,8 @@ $(document).ready(function() {
     $("#new-modal-window .closeModal, #new-modal-window .defaultBtn").click(function(){
         closeModal();
     });
-    
+
+    $("#m_cs_competitions").parent().find("a:eq(0)").css("color", "#f8941e");
 });
 
 /**
