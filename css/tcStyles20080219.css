@@ -40,7 +40,7 @@ div.memberCountBox{
 position:absolute;
 top:5px;
 left:3px;
-z-index:1;
+z-index:0;
 }
 div.topBar{
 background: transparent url(../i/cimages/top_bg.gif) top center repeat-x;
@@ -53,7 +53,7 @@ white-space: nowrap;
 #outerLogo{
 width: 360px;
 position: relative;
-z-index: 2;
+z-index: 0;
 }
 #innerLogo{
 position: absolute;
