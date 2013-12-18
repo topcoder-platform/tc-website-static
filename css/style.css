@@ -13848,6 +13848,22 @@ a:hover{
     text-shadow:#fafafa 0 1px 0;
 }
 
+.mainColumn .columnContent .prizeSection .prizeInfor li.inactive strong{
+    color:#b2b2b2;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.inactive{
+    color:#b2b2b2;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.multiPrize{
+    width: 20%
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.lastPrize{
+    background:none;
+}
+
 .mainColumn .columnContent .prizeSection .prizeInfor li.drPoints strong{
     color:#666667;
 }
