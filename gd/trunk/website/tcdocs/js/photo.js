@@ -12,17 +12,69 @@ $(document).ready(function() {
     $.ajaxSetup({cache : false});
 
     var coor = null;
+
+
+
+    if($(".popup-wrapper").length > 0) {
+        // Remove photo popup open handler
+        $('#removePhotoLink').on(ev, function () {
+            showPopup('remove-photo');
+        });
+
+        // Add secondary email popup open handler
+        $('#addSecondaryEmailLink').on(ev, function (e) {
+            showPopup('secondary-email');
+            e.preventDefault();
+        });
+
+        $("#removePhotoButton").live('click', function(){
+            hidePopup('remove-photo');
+            var request = {};
+            request.removalReason = "Self removal";
+
+            $.ajax({
+                type: 'post',
+                url:  "photo?module=remove",
+                data: request,
+                cache: false,
+                dataType: 'json',
+                async : false,
+                success: handleRemoveResult
+            });
+        })
+
+    } else {
+        $('#removePhotoLink').click(function() {
+            $('.photoPopup').css("height", $(document).height());
+            $('.popupRemovePhoto').show();
+        });
+
+        /* BUTTON YES REMOVE PHOTO */
+        $('.btnYes').live('click', function() {
+            $('.popupRemovePhoto').hide();
+
+            var request = {};
+            request.removalReason = "Self removal";
+
+            $.ajax({
+                type: 'post',
+                url:  "photo?module=remove",
+                data: request,
+                cache: false,
+                dataType: 'json',
+                async : false,
+                success: handleRemoveResult
+            });
+        });
+
+    }
     
-    $('#submitPhotoLink').click(function() {
+    $('.submitPhotoTrigger').click(function() {
         $('.photoPopup').css("height", $(document).height());
         $('.popupUploadPhoto').show();
     });
     
-    $('#removePhotoLink').click(function() {
-        $('.photoPopup').css("height", $(document).height());
-        $('.popupRemovePhoto').show();
-    });
-    
+
     /* BUTTON CANCEL UPLOAD PHOTO */
 	$('.btnCancel').live('click', function() {
 		$('.popupUploadPhoto').hide();
@@ -33,24 +85,7 @@ $(document).ready(function() {
 		$('.popupRemovePhoto').hide();
 	});
 	
-	/* BUTTON YES REMOVE PHOTO */
-	$('.btnYes').live('click', function() {
-		$('.popupRemovePhoto').hide();
-        
-        var request = {};
-        request.removalReason = "Self removal";
-        
-        $.ajax({
-            type: 'post',
-            url:  "photo?module=remove",
-            data: request,
-            cache: false,
-            dataType: 'json',
-            async : false,
-            success: handleRemoveResult
-        });
-	});        
-        
+
     /* SHOW WINDOW OPEN FILE */
 	photoSelected = function() {
         $('#photoUploadForm').submit(); 
@@ -151,7 +186,7 @@ $(document).ready(function() {
     function handleRemoveResult(result) {
         if (result.success) {
             $('#photoUploadForm input').val("");
-            $("#submitPhotoLink").parent().show();
+            $(".submitPhotoTrigger:eq(1)").parent().show();
             $("#removePhotoLink").parent().hide();
             
             $("img.memberPhoto").attr("src", "/i/m/nophoto_submit.gif");
