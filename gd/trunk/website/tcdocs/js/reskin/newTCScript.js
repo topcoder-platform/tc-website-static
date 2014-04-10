@@ -186,9 +186,14 @@ function basicPasswordValidate(/*String*/ password, /*String*/ passwordAlphabet)
 $(document).ready(function(){
 
     // setup current node
-    if($("#nodeName").length && $("#nodeName").val()) {
-        $('#' + $("#nodeName").val()).css({color:'#FF8A00'});
+    if ($("#nodeName").length && $("#nodeName").val()) {
+        var currentNode = $('#' + $("#nodeName").val());
+
+        currentNode.css({color: '#FF8A00', 'font-weight': "bold"});
+
+        currentNode.parents("li:eq(1)").addClass('expanded').children().show();
     }
+
 
     if( $("div.leftNavWrapper").parent().is("td")) {
         $("section.navigation").parent().css('width', '185px').css('display', 'block');
@@ -197,6 +202,7 @@ $(document).ready(function(){
 
         $("td.bodyColumn").nextAll().remove();
         $("td.statTableSpacer").nextAll().remove();
+        $("td.bodyText").nextAll().remove();
     }
 
    $("table").css('visibility', 'visible');
