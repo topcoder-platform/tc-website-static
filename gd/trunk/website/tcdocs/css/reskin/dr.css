@@ -203,3 +203,45 @@ table.drStat td {
     font-size: 11px;
     border-top: 1px solid #FFFFFF;
 }
+
+div.popUp {
+    display: none;
+    left: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+}
+
+div.popUp div {
+    background: none repeat scroll 0% 0% #FFFFCC;
+    border: 1px solid #999999;
+    float: left;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0px;
+    padding: 4px 6px;
+    white-space: nowrap;
+}
+
+table.stat td.B {
+    border-right: 1px solid #e7e7e7 !important;
+}
+
+.maxWidthBody, .myTCBody, .fixedWidthBody {
+    float: left;
+    width: 734px !important;
+}
+
+td.drTD {
+    text-align: center;
+}
+
+td.drTD .fixedWidthBody, td.drTD .pageTitleTable {
+    text-align: left;
+}
+
+td.drTD .pagingBox {
+    width:100% !important;
+}
