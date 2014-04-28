@@ -33,6 +33,169 @@ var app = {
 	}
 }
 
+/** methods ported from tcscript.js **/
+
+document.write('<link type="image/x-icon" rel="shortcut icon" href="/i/favicon.ico"/>');
+
+function getGraph(url,wd,ht) {
+    var last=0;
+    var daHt = parseInt(ht) + parseInt('49');
+    var size = "top=2,left=2,width="+wd+",height="+daHt+"status=0,resizable=yes";
+    popup = window.open('/statistics/graphPopup.jsp?'+url+'&width='+wd+'&height='+ht,null,size);
+    return;
+}
+
+function getGraph(url,wd,ht,name) {
+    var last=0;
+    var daHt = parseInt(ht) + parseInt('49');
+    var size = "top=2,left=2,width="+wd+",height="+daHt+",status=0,resizable=yes";
+    popup = window.open('/statistics/graphPopup.jsp?'+url+'&width='+wd+'&height='+ht,name,size);
+    return;
+}
+
+function tcTime() {
+    w=window.open("http://www.topcoder.com/tc?module=Static&d1=calendar&d2=time","Time","top=2,left=2,width=250,height=50,resizable=yes,status=1");
+    return;
+}
+
+function sponsorLink(spons) {
+    w=window.open(spons,"Sponsor");
+    return;
+}
+
+function sponsorLinkWindow(spons,nam,top,lef,wid,hei) {
+    w=window.open(spons,nam,"top="+top+",left="+lef+",width="+wid+",height="+hei+",resizable=yes,toolbar=no,location=no,scrollbars=no,menubar=no,status=no");
+    return;
+}
+
+function openWin(url, name, w, h) {
+    var left = Math.round((screen.availWidth - w)/2);
+    var top = Math.round((screen.availHeight-h)/2);
+    win = window.open(url, name, "scrollbars=yes,toolbar=no,resizable=yes,menubar=no"
+        + ",width=" + w + ",height=" + h
+        + ",left=" + left + ",top=" + top);
+    win.location.href = url;
+    win.focus();
+}
+
+function infoWindow(url) {
+    var width = 300
+    var height = 250
+    var left = (screen.availWidth - width) / 2;
+    var top = (screen.availHeight-height)/2;
+    OpenWin=this.open(url,"Info",
+        "toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes"
+            + ",width=" + width + ",height=" + height
+            + ",left=" + left + ",top=" + top);
+}
+
+function openProblemRating(id) {
+    var width = Math.round(560);
+    var height = Math.round(660);
+    var left = Math.round((screen.availWidth - width) / 2);
+    var top = 0;
+    var cmd = "toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,top="+top+",left="+left+",width=" + width + ",height=" + height + ",status=0";
+    var name="problemRating";
+    window.open('/tc?module=ProblemRatingQuestions&pid='+id,name,cmd);
+    return;
+}
+
+
+function goTo(selection) {
+    sel = selection.options[selection.selectedIndex].value;
+    if (sel == "alltimewin")
+    {
+        window.location = "/stat?c=all_time_wins";
+    }
+    else if (sel == "winningdebuts")
+    {
+        window.location = "/stat?c=winning_debuts";
+    }
+    else if (sel == "impressivedebuts")
+    {
+        window.location = "/stat?c=impressive_debuts";
+    }
+    else if (sel == "hightesttotal")
+    {
+        window.location = "/stat?c=highest_totals";
+    }
+    else if (sel == "ratingpointgain")
+    {
+        window.location = "/stat?c=biggest_rating_gains";
+    }
+    else if (sel == "consecwins")
+    {
+        window.location = "/stat?c=most_consecutive_wins";
+    }
+    else if (sel == "submissionaccuracy")
+    {
+        window.location = "/stat?c=highest_accuracy";
+    }
+    else if (sel == "challengesuccess")
+    {
+        window.location = "/stat?c=best_challengers";
+    }
+
+
+    else {}
+}
+
+
+function doWrite(s) {
+    document.write(s);
+}
+
+/**
+ * Validates the pagination parameters.
+ *
+ * @return {Boolean} true if pagination parameters are valid; false otherwise.
+ */
+function checkPaymentHistoryForm() {
+    var myForm = document.f;
+    var nr = myForm.nr.value;
+    var sr = myForm.sr.value;
+
+    var error = '';
+    if (!isPositiveNumber(nr)) {
+        error += 'Number of records is not positive numeric value';
+        error += '\n';
+    }
+    if (!isPositiveNumber(sr)) {
+        error += 'Starting record number is not positive numeric value';
+        error += '\n';
+    }
+
+    if (error != '') {
+        alert(error);
+        return false;
+    } else {
+        $('input[name=paymentId]').attr('disabled', 'disabled');
+        return true;
+    }
+
+}
+
+/**
+ * Checks if specified text provides positive integer number.
+ *
+ * @param v a number to validate.
+ * @return {Boolean} true if specified string provided positive integer number: false otherwise.
+ */
+function isPositiveNumber(v) {
+    var regExp = new RegExp('^[0-9]+$');
+    var matches = regExp.test(v);
+    if (matches) {
+        var n = parseInt(v);
+        if (n <= 0) {
+            return false;
+        } else {
+            return true;
+        }
+    } else {
+        return false;
+    }
+}
+
 function tcTime() {
     w=window.open("http://www.topcoder.com/tc?module=Static&d1=calendar&d2=time","Time","top=2,left=2,width=250,height=50,resizable=yes,status=1");
     return;
@@ -185,6 +348,9 @@ function basicPasswordValidate(/*String*/ password, /*String*/ passwordAlphabet)
 
 $(document).ready(function(){
 
+    $("tr[valign=top]").addClass('alignTop');
+    $("tr[valign=bottom]").addClass('alignBottom');
+
     // setup current node
     if ($("#nodeName").length && $("#nodeName").val()) {
         var currentNode = $('#' + $("#nodeName").val());
@@ -313,47 +479,52 @@ $(document).ready(function(){
         try {
 
         // load the news
-        $.get("/js/reskin/news.html", function (data) {
-            $(data + '').find("#replacercode div.post").each(function () {
+        $.get("/js/reskin/blogNews.html", function (data) {
 
-                if(count > 5) {
-                    return false;
-                }
+            $(".post-container").html($(data + '').find(".grid-2-3").html());
+            $(".post-container .pagingWrapper").remove();
 
-                var title = $(this).find(".title a:eq(1)").text();
-                var category = $(this).find(".title a:eq(0) span").text();
-                var categoryLink = $(this).find(".title a:eq(0)").attr('href');
-                var imgLink = $(this).find("div.entry img").attr('src');
-                var imgLinkHref = $(this).find("div.entry img").parent().attr('href');
-                $(this).find("div.entry img").remove();
-                var entryContent = $(this).find("div.entry").html();
-                var date = $(this).find(".byline").text();
-                date = date.replace('Posted on', '');
-                date = $.trim(date.replace(/by.*/, ''));
-                var author = $(this).find(".byline span").text();
-                var plink = $(this).find(".links a:eq(0)").attr('href');
 
-                var templateHTML = $(".post-container").find(".postTemplate").html();
-                var postItem = $('' + templateHTML);
-                postItem.find("a.title").text(title).attr('href', plink);
-                postItem.find("div.date span").text(date);
-                postItem.find("div.author span").text(author);
-                postItem.find("div.category a").text(category).attr('href', categoryLink);
-                if(imgLink) {
-                    postItem.find("a.figure img").attr('src', imgLink).attr('alt', '');
-                    if(imgLinkHref) {
-                        postItem.find("a.figure").attr('href', imgLinkHref);
-                    }
-                } else {
-                    postItem.find("a.figure").remove();
-                }
+            // $(data + '').find("#replacercode div.post").each(function () {
 
-                postItem.find(".details").prepend(entryContent + '');
-                postItem.find(".details .more a").attr('href', plink);
+            //     if(count > 5) {
+            //         return false;
+            //     }
 
-                $(".post-container").append($("<section class='post'></section>").html(postItem));
-                count ++;
-            })
+            //     var title = $(this).find(".title a:eq(1)").text();
+            //     var category = $(this).find(".title a:eq(0) span").text();
+            //     var categoryLink = $(this).find(".title a:eq(0)").attr('href');
+            //     var imgLink = $(this).find("div.entry img").attr('src');
+            //     var imgLinkHref = $(this).find("div.entry img").parent().attr('href');
+            //     $(this).find("div.entry img").remove();
+            //     var entryContent = $(this).find("div.entry").html();
+            //     var date = $(this).find(".byline").text();
+            //     date = date.replace('Posted on', '');
+            //     date = $.trim(date.replace(/by.*/, ''));
+            //     var author = $(this).find(".byline span").text();
+            //     var plink = $(this).find(".links a:eq(0)").attr('href');
+
+            //     var templateHTML = $(".post-container").find(".postTemplate").html();
+            //     var postItem = $('' + templateHTML);
+            //     postItem.find("a.title").text(title).attr('href', plink);
+            //     postItem.find("div.date span").text(date);
+            //     postItem.find("div.author span").text(author);
+            //     postItem.find("div.category a").text(category).attr('href', categoryLink);
+            //     if(imgLink) {
+            //         postItem.find("a.figure img").attr('src', imgLink).attr('alt', '');
+            //         if(imgLinkHref) {
+            //             postItem.find("a.figure").attr('href', imgLinkHref);
+            //         }
+            //     } else {
+            //         postItem.find("a.figure").remove();
+            //     }
+
+            //     postItem.find(".details").prepend(entryContent + '');
+            //     postItem.find(".details .more a").attr('href', plink);
+
+            //     $(".post-container").append($("<section class='post'></section>").html(postItem));
+            //     count ++;
+            // })
         });
 
         } catch(e) {
@@ -367,7 +538,7 @@ $(document).ready(function(){
         try {
 
         jQuery.getFeed({
-            url: '/js/reskin/rss.xml',
+            url: '/js/reskin/newBlogRss.xml',
             success: function(feed) {
                 $.each(feed.items, function(index, item){
 
