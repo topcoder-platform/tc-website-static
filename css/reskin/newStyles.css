@@ -1,6 +1,6 @@
 /* HTML5 Reset style
 -----------------------------------*/
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -1726,14 +1726,17 @@ td.bodyText td {
     vertical-align: middle;
 }
 
-td.alignBottom {
+td.alignBottom, tr.alignBottom td  {
     vertical-align: bottom !important;
 }
 
-td.alignTop {
-    vertical-align: bottom !important;
+td.alignTop, tr.alignTop td {
+    vertical-align: top !important;
 }
 
+td.alignMiddle, tr.alignMiddle td {
+    vertical-align: middle !important;
+}
 
 table.problemSearch td {
     padding: 2px;
@@ -1827,6 +1830,23 @@ span.subtitle, span.bodySubtitle {
 .bodyColumn li {
     padding-bottom: 3px;
     padding-top: 3px;
+}
+
+.bodyColumn ul {
+    list-style-type: disc;
+    margin: 10px !important;
+    padding-left: 10px !important;
+}
+
+.bodyColumn ol {
+    list-style-type: decimal;
+    margin: 10px !important;
+    padding-left: 10px !important;
+}
+
+.bodyColumn pre {
+    margin-top: 12px;
+    font-size: 12px;
 }
 
 .centerControls {
@@ -1934,3 +1954,290 @@ p.justifyText {
     color: #666666;
     font-size: 15px;
 }
+
+a.blueLink {
+    color:#0071bc;
+    -moz-transition-duration:.3s;
+    -webkit-transition-duration:.3s;
+    transition-duration:.3s
+}
+a.blueLink:hover {
+    color:#0071bc;
+    text-shadow:0 0 3px #989898
+}
+.blogCategoryMenu {
+    float:left;
+    margin-top:5px
+}
+.blogCategoryMenu a {
+    -moz-transition-duration:.3s;
+    -webkit-transition-duration:.3s;
+    transition-duration:.3s;
+    float:left;
+    margin:0;
+    padding:0 10px;
+    height:29px;
+    line-height:29px;
+    margin-right:20px;
+    border-radius:7px;
+    position:relative;
+    z-index:0
+}
+.blogCategoryMenu a:visited {
+    color:#666
+}
+.blogCategoryMenu a.active, .blogCategoryMenu a:hover {
+    background-color:#ffae00;
+    color:#fff
+}
+.excerpt, .pageContent .contentWrapper {
+    line-height:24px
+}
+.excerpt {
+    line-height:20px
+}
+.blogPageMainContent {
+    padding-top:40px
+}
+.pageTitleWrapper .pageTitle h2.blogPageTitle {
+    position:relative;
+    background-image:none;
+    word-wrap:break-word
+}
+.blogIcon {
+    position:absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:86px;
+    background-image:url(/i/ico-title-blog.png);
+    z-index:2
+}
+.blogCategoryWrapper {
+    clear:both;
+    height:40px;
+    background-color:#f8f8f8
+}
+.blogCategoryWrapper .innerWrapper {
+    padding:0 80px 0 70px
+}
+.blogCategoryWrapper a {
+    font-family:arial;
+    color:#666;
+    font-size:15px
+}
+.blogTitle {
+    font-size:30px;
+    font-weight:400;
+    line-height:42px;
+    color:#0071bc;
+    margin-bottom:10px
+}
+.blogDescBox {
+    float:left;
+    min-height:25px;
+    clear:both;
+    padding-bottom:20px;
+    margin-bottom:20px;
+    border-bottom:1px #e7e7e7 solid;
+    width:100%
+}
+.blogDescBox .postDate {
+    background:url(/i/reskin/post_date.png) no-repeat center left;
+    float:left;
+    line-height:25px;
+    padding-left:25px;
+    color:#666
+}
+.blogDescBox .postAuthor {
+    float:left
+}
+.blogDescBox .postCategory {
+    background:url(/i/reskin/post-category.png) no-repeat center left;
+    float:left;
+    margin-left:10px;
+    padding-left:25px;
+    line-height:25px
+}
+.author {
+    line-height:25px
+}
+.pageContent .sideQuote {
+    float:left;
+    clear:both
+}
+
+.showMoreWrapper {
+    padding-top:10px;
+    text-align:center
+}
+.showMoreWrapper .btn {
+    width:100px
+}
+.blogItem {
+    clear:both;
+    overflow:hidden;
+    margin-bottom:30px;
+    min-height:220px
+}
+.blogItem .imagePlaceholder {
+    position:absolute;
+    width:158px;
+    margin-top:7px;
+    z-index:2
+}
+.blogItem .blogRightSection {
+    float:left;
+    clear:both
+}
+.blogItem .contentRight {
+    padding-left:180px
+}
+.excerpt {
+    margin-bottom:10px
+}
+.blogItem .shareVia {
+    float:left
+}
+.blogItem .shareVia span {
+    height:21px;
+    line-height:21px
+}
+.blogItem .continueReading {
+    float:right;
+    background:url(/i/reskin/next.png) no-repeat center right;
+    padding-right:15px;
+    margin-top:5px
+}
+.blogItem .blogTitle {
+    font-size:18px;
+    font-weight:400;
+    line-height:22px;
+    color:#0071bc
+}
+.blogItem .blogDescBox {
+    width:100%;
+    padding:0;
+    margin:5px 0;
+    border:none;
+    overflow:hidden
+}
+.blogMenuMobile, .mobiThumbPlaceholder, .showMoreWrapperMobile {
+    display:none
+}
+
+
+.shareVia .shareButton.small.shareMail {
+    background-position: 0 0;
+}
+.shareVia .shareButton.shareMail {
+    background-position: 0 0;
+}
+.shareVia .shareButton.small {
+    background-image: url("/i/reskin/ico-social-blog-main.png");
+    height: 23px;
+    width: 22px;
+}
+.shareVia .shareButton {
+    background-image: url("/i/reskin/ico-social-blog-detail.png");
+    float: left;
+    height: 40px;
+    margin-left: 10px;
+    transition: none 0s ease 0s;
+    width: 40px;
+}
+
+.shareVia {
+    overflow:hidden;
+    padding-bottom:30px
+}
+.singleContent .shareVia {
+    margin-top:20px
+}
+.shareVia span {
+    float:left;
+    display:inline-block;
+    height:39px;
+    line-height:39px
+}
+.shareVia .shareButton {
+    float:left;
+    margin-left:10px;
+    background-image:url(/i/reskin/ico-social-blog-detail.png);
+    width:40px;
+    height:40px;
+    -webkit-transition:none;
+    transition:none
+}
+.shareVia .shareButton.small {
+    background-image:url(/i/reskin/ico-social-blog-main.png);
+    width:22px;
+    height:23px
+}
+.shareVia .shareButton.small.shareMail {
+    background-position:0 0
+}
+.shareVia .shareButton.small.shareMail:hover {
+    background-position:-44px 0
+}
+.shareVia .shareButton.small.shareFb {
+    background-position:0 -27px
+}
+.shareVia .shareButton.small.shareFb:hover {
+    background-position:-44px -27px
+}
+.shareVia .shareButton.small.shareTw {
+    background-position:0 -53px
+}
+.shareVia .shareButton.small.shareTw:hover {
+    background-position:-44px -53px
+}
+.shareVia .shareButton.small.shareGPlus {
+    background-position:0 -76px
+}
+.shareVia .shareButton.small.shareGPlus:hover {
+    background-position:-44px -76px
+}
+.shareVia .shareButton.shareMail {
+    background-position:0 0
+}
+.shareVia .shareButton.shareMail:hover {
+    background-position:-63px 0
+}
+.shareVia .shareButton.shareFb {
+    background-position:0 -125px
+}
+.shareVia .shareButton.shareFb:hover {
+    background-position:-63px -125px
+}
+.shareVia .shareButton.shareTw {
+    background-position:0 -63px
+}
+.shareVia .shareButton.shareTw:hover {
+    background-position:-63px -63px
+}
+.shareVia .shareButton.shareGPlus {
+    background-position:0 -188px
+}
+.shareVia .shareButton.shareGPlus:hover {
+    background-position:-63px -188px
+}
+
+.invisible{ display:none; }
+
+.statTableHolder td {
+    font-size: 13px;
+}
+
+.statTable td {
+    font-size: 12px;
+    padding: 3px;
+}
+
+.challengeNameTD {
+    padding: 6px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0071BC;
+}
+

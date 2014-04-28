@@ -1,30 +1,33 @@
-function makeInvisible(){
-var object = document.getElementById("onTop");
-object.className = 'invisible';
-object = document.getElementById("onLeft");
-object.className = 'invisible';
-object = document.getElementById("onRight");
-object.className = 'invisible';
-object = document.getElementById("onBottom");
-object.className = 'invisible';
-object = document.getElementById("printableLink");
-object.className = 'invisible';
-object = document.getElementById("navigableLink");
-object.className = '';
-return;
+function setElementClass(elementName, className) {
+    var object = document.getElementById(elementName);
+    if(object != null) {
+        object.className = className;
+    }
 }
-function makeNavigable(){
-var object = document.getElementById("onTop");
-object.className = '';
-object = document.getElementById("onLeft");
-object.className = '';
-object = document.getElementById("onRight");
-object.className = '';
-object = document.getElementById("onBottom");
-object.className = '';
-object = document.getElementById("printableLink");
-object.className = '';
-object = document.getElementById("navigableLink");
-object.className = 'invisible';
-return;
+
+
+function makeInvisible() {
+
+
+    setElementClass("onTop",'invisible');
+    setElementClass("onLeft",'invisible');
+    setElementClass("onRight",'invisible');
+    setElementClass("onBottom",'invisible');
+    setElementClass("printableLink",'invisible');
+    setElementClass("navigableLink",'');
+
+
+    return;
+}
+function makeNavigable() {
+
+
+    setElementClass("onTop",'');
+    setElementClass("onLeft",'');
+    setElementClass("onRight",'');
+    setElementClass("onBottom",'');
+    setElementClass("printableLink",'');
+    setElementClass("navigableLink",'invisible');
+
+    return;
 }
