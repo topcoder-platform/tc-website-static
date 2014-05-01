@@ -366,9 +366,24 @@ $(document).ready(function(){
 
         $("body > table").addClass('mainContent');
 
-        $("td.bodyColumn").nextAll().remove();
-        $("td.statTableSpacer").nextAll().remove();
-        $("td.bodyText").nextAll().remove();
+        $("td.bodyText").each(function(index, t) {
+            if($(this).closest('table')[0] === $("table:eq(0)")[0]){
+                $("td.bodyText").nextAll().remove();
+            };
+        });
+
+        $("td.bodyColumn").each(function(index, t) {
+            if($(this).closest('table')[0] === $("table:eq(0)")[0]){
+                $("td.bodyText").nextAll().remove();
+            };
+        });
+
+        $("td.statTableSpacer").each(function(index, t) {
+            if($(this).closest('table')[0] === $("table:eq(0)")[0]){
+                $("td.bodyText").nextAll().remove();
+            };
+        });
+
     }
 
    $("table").css('visibility', 'visible');
