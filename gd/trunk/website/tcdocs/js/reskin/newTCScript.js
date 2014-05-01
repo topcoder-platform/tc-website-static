@@ -368,19 +368,19 @@ $(document).ready(function(){
 
         $("td.bodyText").each(function(index, t) {
             if($(this).closest('table')[0] === $("table:eq(0)")[0]){
-                $("td.bodyText").nextAll().remove();
+                $(this).nextAll().remove();
             };
         });
 
         $("td.bodyColumn").each(function(index, t) {
             if($(this).closest('table')[0] === $("table:eq(0)")[0]){
-                $("td.bodyText").nextAll().remove();
+                $(this).nextAll().remove();
             };
         });
 
         $("td.statTableSpacer").each(function(index, t) {
             if($(this).closest('table')[0] === $("table:eq(0)")[0]){
-                $("td.bodyText").nextAll().remove();
+                $(this).nextAll().remove();
             };
         });
 
