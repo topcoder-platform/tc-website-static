@@ -35,28 +35,28 @@
 }
 
 .rtBody textarea {
-    height: 120px;
+    height: 400px;
     resize: vertical;
 }
 
 .rtBody input[type=text],
 .rtBody textarea {
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: normal;
     font-size: 14px;
     background: #ffffff;
     border: 1px solid #e7e7e7;
     padding: 6px 8px;
     line-height: 20px;
     border-radius: 4px;
-    color: #666666;
-    width: 612px;
+    color: #0E2233;
+    width: 700px;
     margin: 3px 0 8px;
 }
 
 .rtBody select {
-    font-weight: 300;
-    color: #666666;
+    font-weight: normal;
+    color: #0E2233;
 }
 
 .rtBody .info-message td {
@@ -67,21 +67,26 @@
 --------------------*/
 .rtThreadCell,
 .rtThreadCellWrap {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .rtLinkBold {
     font-weight: 600;
+    border-bottom: 1px #f5f5f5 dotted;
 }
 
 .rtTable b,
 .rtTable strong {
-    font-weight: 300;
+    font-weight: normal;
 }
 
 .rtTable .rtThreadCellWrap b,
 .rtTable .rtThreadCellWrap strong {
-    font-weight: 600;
+    font-weight: bold;
+}
+
+.rtThreadCellWrap a {
+    color: #666666;
 }
 
 .pageTitleTable {
@@ -128,12 +133,12 @@
     border: 1px solid #e7e7e7;
     border-bottom: 5px solid #e7e7e7;
     font-size: 14px;
-    color: #666666;
+    color: #0e2233;
     margin-bottom: 10px;
 }
 
 .rtTable .rtTextCell100 {
-    font-weight: 300;
+    font-weight: normal;
 
     width: 100%;
     padding: 12px 19px 12px 13px;
@@ -218,7 +223,7 @@
 
 .rtTablePost .rtHeader a,
 .rtTablePostHistory .rtThreadCellWrap a {
-    color: #ff9900;
+    color: #0071BC;
 }
 
 .rtTablePost .rtHeader a:hover,
@@ -232,6 +237,7 @@
     background: #f7f7f7;
     vertical-align: top;
     padding-top: 15px;
+    font-size: 12px !important;
 }
 
 .rtPosterSpacer > a {
@@ -284,7 +290,7 @@
 
 .rtbcTable {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: normal;
     line-height: 18px;
 }
 
@@ -302,16 +308,15 @@
 ----------------------*/
 .rtBody .breadcrumbs {
     font-size: 14px;
-    font-weight: 300;
-    padding-bottom: 6px;
+    font-weight: normal;
+    padding-bottom: 6px !important;
     vertical-align: middle;
     color: #666666;
-    display: block;
 }
 
 .rtBody .breadcrumbs b,
 .rtBody .breadcrumbs strong {
-    font-weight: 300;
+    font-weight: normal;
 }
 
 .rtBody .breadcrumbs img {
@@ -327,6 +332,10 @@
 
 .rtTable .rtbcLinkNew {
     font-weight: 600;
+}
+
+.rtHeader .rtbcLink {
+    color: #0071bc;
 }
 
 .rtBody .coderTextBlue,
@@ -414,11 +423,11 @@
     color: #666666;
     float: right;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: normal;
 }
 
 .rtBody .topLinksR b {
-    font-weight: 300;
+    font-weight: normal;
 }
 
 .rtBody .rtFooter {
@@ -450,7 +459,7 @@
 
 .nextThread,
 .prevThread {
-    font-weight: 300;
+    font-weight: normal;
     background: url(/i/reskin/thread-icons.png) no-repeat;
 }
 
@@ -476,7 +485,7 @@
     height: 20px;
     float: left;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: normal;
 }
 
 .rtBody .tabs .current a {
@@ -534,6 +543,10 @@
 .rtBody a.coderTextBlue:hover,
 .rtBody a.coderTextBlack:hover {
     text-decoration: underline;
+}
+
+.rtBody .coderTextBlue, .rtBody .coderTextRed, .rtBody .coderTextOrange, .rtBody .coderTextYellow, .rtBody .coderTextGreen, .rtBody .coderTextGray, .rtBody .coderTextBlack {
+   font-size: 13px !important;
 }
 
 /* paging
@@ -657,3 +670,9 @@ table.mainContent .pageTitleTable {
 .tableSubHeader {
     color:#666666;font-size:14px;
 }
+
+.rtThreadCell {
+    font-size: 13px;
+}
+
+

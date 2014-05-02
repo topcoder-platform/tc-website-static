@@ -1948,6 +1948,7 @@ div.sectionHeader{
 p.justifyText {
     margin: 12px;
     text-align: left;
+    font-size: 14px;
 }
 
 .recordBook strong {
@@ -2243,6 +2244,10 @@ a.blueLink:hover {
 
 .formFrame td {
     font-size: 13px;
+}
+
+.statDk {
+    background: none repeat scroll 0 0 #F5F5F5;
 }
 
 
