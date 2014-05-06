@@ -41,9 +41,6 @@ a {
 a, a:active, a:visited {
     text-decoration: none;
     color: #FF8A00;
-    -moz-transition-duration: .3s;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
     outline: none;
 }
 
@@ -2249,5 +2246,1731 @@ a.blueLink:hover {
 .statDk {
     background: none repeat scroll 0 0 #F5F5F5;
 }
+
+/* new style */
+.clear {
+    height: 0;
+    line-height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+/* corner */
+.inner {
+    margin: 0;
+    padding: 0;
+    border: #bababa solid 1px;
+    position: relative;
+}
+
+.inner .corner {
+    width: 4px;
+    height: 4px;
+    overflow: hidden;
+    position: absolute;
+    background-image: url(/i/corner.png);
+    background-repeat: no-repeat;
+}
+
+.inner .tl {
+    top: -1px;
+    left: -1px;
+    background-position: 0 0;
+}
+
+.inner .tr {
+    top: -1px;
+    right: -1px;
+    background-position: -4px 0;
+}
+
+.inner .bl {
+    bottom: -1px;
+    left: -1px;
+    background-position: 0 -4px;
+}
+
+.inner .br {
+    bottom: -1px;
+    right: -1px;
+    background-position: -4px -4px;
+}
+
+/* shadow */
+.shadow {
+    margin: 0 4px 0 4px;
+    padding: 0;
+    height: 2px;
+    overflow: hidden;
+    background: url(/i/shadow.png) repeat-x 0 0;
+}
+
+/* placeholder */
+.placeholder {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #b30000;
+    line-height: 100px;
+    text-align: center;
+}
+
+.mainColumn {
+    min-width: 740px;
+    width: 100%;
+    padding: 8px 0 0 0;
+}
+
+/* header */
+.mainColumn .columnHeader {
+    width: 100%;
+    height: 33px;
+}
+
+.mainColumn .columnHeader h2 {
+    height: 33px;
+    background: url(/i/iconSpecification.png) no-repeat left center;
+}
+
+.mainColumn .columnHeader h2 span {
+    height: 29px;
+    margin: 0 0 0 29px;
+    padding: 0 0 0 8px;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: block;
+    line-height: 28px;
+    text-transform: uppercase;
+    border-bottom: #333333 solid 1px;
+}
+
+/* columnTitle */
+.mainColumn .columnTitle {
+    min-height: 34px;
+    padding: 15px 0 30px 5px;
+}
+
+.mainColumn .columnTitle h3 {
+    width: auto;
+    float: left;
+    display: inline;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    color: #b30000;
+}
+
+.mainColumn .columnTitle .buttonArea {
+    width: 252px;
+    float: right;
+    display: inline;
+}
+
+.mainColumn .columnTitle .buttonArea a {
+    width: auto;
+    float: left;
+    display: inline;
+    padding: 0 0 0 34px;
+    text-decoration: none;
+    background-image: url(/i/btn.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.mainColumn .columnTitle .buttonArea a.register {
+    margin-right: 10px;
+    background-image: url(/i/btnIconForRegistion.png);
+}
+
+.mainColumn .columnTitle .buttonArea a.submit {
+    background-image: url(/i/btnIconForSubmit.png);
+}
+
+.mainColumn .columnTitle .buttonArea a span {
+    width: auto;
+    float: left;
+    display: inline;
+    padding: 0 4px 0 0;
+    background-image: url(/i/btn.png);
+    background-repeat: no-repeat;
+    background-position: right -68px;
+}
+
+.mainColumn .columnTitle .buttonArea a span span {
+    width: 77px;
+    height: 34px;
+    margin: 0;
+    padding: 0 0 0 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 34px;
+    color: #fffffe;
+    letter-spacing: -1px;
+    /* text shadow */
+    text-shadow: #960000 0 -1px 0;
+    cursor: pointer;
+    background-image: url(/i/btn.png);
+    background-repeat: repeat-x;
+    background-position: 0 -34px;
+}
+
+.mainColumn .columnTitle .buttonArea a.register:hover,
+.mainColumn .columnTitle .buttonArea a.submit:hover {
+    background-position: 0 -68px;
+}
+
+.mainColumn .columnTitle .buttonArea a:hover span,
+.mainColumn .columnTitle .buttonArea a:hover span span {
+    background-image: url(/i/btnHover.png);
+}
+
+.mainColumn .columnTitle .buttonArea a.disable,
+.mainColumn .columnTitle .buttonArea a.disable:hover {
+    background-position: 0 -34px;
+    cursor: default;
+}
+
+.mainColumn .columnTitle .buttonArea a.disable span,
+.mainColumn .columnTitle .buttonArea a.disable span span,
+.mainColumn .columnTitle .buttonArea a.disable:hover span,
+.mainColumn .columnTitle .buttonArea a.disable:hover span span {
+    cursor: default;
+    background-image: url(/i/btnDisable.png) !important;
+}
+
+.mainColumn .columnTitle .buttonArea a.register.disable span span {
+    /* text shadow */
+    text-shadow: #ca7f80 0 -1px 0;
+}
+
+/* columnContent */
+.columnMainContainer {
+    padding: 0 0 0 5px;
+}
+
+.mainColumn .columnContent {
+    width: 488px;
+    float: left;
+    display: inline;
+}
+
+.mainColumn .columnContent .prizeSection {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.mainColumn .columnContent .prizeSection .corner {
+    background-image: url(/i/cornerPrize.png);
+}
+
+.mainColumn .columnContent .prizeSectionNoCheckpoints .corner {
+    background-image: url(/i/cornerNoPrize.png);
+}
+
+/* prizeInfor */
+.mainColumn .columnContent .prizeSection .prizeInfor {
+    height: 82px;
+    background-image: url(/i/bgPrizeSection.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-color: #e9e9e9;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li {
+    width: 30%;
+    height: 82px;
+    float: left;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background: url(/i/line.png) repeat-y right top;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.firstPlace,
+.mainColumn .columnContent .prizeSection .prizeInfor li.secondPlace {
+    width: 24%;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.drPoints {
+    width: 20%;
+    background: none;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li span {
+    display: block;
+    padding: 14px 0 0 0;
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li strong {
+    font-size: 28px;
+    font-weight: bold;
+    color: #b30000;
+    line-height: 1em;
+    /* text shadow */
+    text-shadow: #fafafa 0 1px 0;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.inactive strong {
+    color: #b2b2b2;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.inactive {
+    color: #b2b2b2;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.multiPrize {
+    width: 20%
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.lastPrize {
+    background: none;
+}
+
+.mainColumn .columnContent .prizeSection .prizeInfor li.drPoints strong {
+    color: #666667;
+}
+
+/* checkpointsInfor */
+.mainColumn .columnContent .prizeSection .checkpointsInfor {
+    height: 98px;
+}
+
+.mainColumn .columnContent .prizeSection .checkpointsInfor h3 {
+    height: 30px;
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    background-image: url(/i/bgCheckpoints.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-color: #e9e9e9;
+    border-top: #bababa solid 1px;
+    border-bottom: #bababa solid 1px;
+}
+
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul li {
+    width: auto;
+    height: 66px;
+    float: left;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background: url(/i/line.png) no-repeat right top;
+}
+
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul li.last {
+    background: none;
+}
+
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul li span {
+    display: block;
+    padding: 8px 0 0 0;
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.mainColumn .columnContent .prizeSection .checkpointsInfor ul li strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b30000;
+    line-height: 1em;
+}
+
+/* columnSideBar */
+.mainColumn .columnSideBar {
+    width: 252px;
+    float: right;
+    display: inline;
+}
+
+/* timeline */
+.mainColumn .columnSideBar .timeline {
+    width: 100%;
+    margin: 0 0 22px 0;
+}
+
+.mainColumn .columnSideBar .timeline h3 {
+    height: 30px;
+    border-bottom: #bababa solid 1px;
+    background-image: url(/i/bgCheckpoints.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+.mainColumn .columnSideBar .timeline h3 span {
+    display: block;
+    margin: 0 0 0 18px;
+    padding: 0 0 0 28px;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    background-image: url(/i/iconTime.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+.mainColumn .columnSideBar .timeline ul {
+    margin: 0 10px !important;
+    padding: 0 !important;
+}
+
+.mainColumn .columnSideBar .timeline ul li {
+    margin: 0;
+    padding: 7px 0;
+    line-height: 21px;
+    list-style: none;
+    border-bottom: #bababa dotted 1px;
+}
+
+.mainColumn .columnSideBar .timeline ul li.last {
+    border-bottom: 0;
+}
+
+.mainColumn .columnSideBar .timeline ul li strong {
+    width: 80px;
+    float: left;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.mainColumn .columnSideBar .timeline ul li.twoLine strong {
+    line-height: 11px;
+}
+
+.mainColumn .columnSideBar .timeline ul li span {
+    width: 150px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.mainColumn .columnSideBar .inner {
+    word-wrap: break-word;
+}
+
+/* contestLinks */
+.contestLinks {
+    width: 100%;
+    margin: 0 0 12px 0;
+}
+
+.contestLinks h3 {
+    padding: 0 0 6px 0;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+}
+
+.contestLinks ul {
+    margin: 3px 0 12px 0 !important;
+    padding: 0 !important;
+}
+
+.contestLinks ul li {
+    margin: 0 14px;
+    padding: 0;
+    line-height: 24px;
+    list-style: none;
+}
+
+.contestLinks ul li a {
+    font-size: 12px;
+    color: #333334;
+    text-decoration: underline;
+}
+
+.contestLinks ul li a:hover {
+    color: #ff0000;
+}
+
+/* donwloads */
+.donwloads {
+    width: 100%;
+    margin: 0 0 12px 0;
+}
+
+.donwloads .inner {
+    padding: 5px 10px;
+}
+
+.donwloads h3 {
+    padding: 0 0 6px 0;
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+}
+
+.donwloads span.register {
+    display: inline-block;
+    padding: 0;
+}
+
+.downloads a.register {
+    padding: 0;
+}
+
+.donwloads ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.donwloads ul li {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    border-bottom: #bababa dotted 1px;
+}
+
+.donwloads ul li.last {
+    border-bottom: 0;
+}
+
+.donwloads ul li a {
+    display: inline-block;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333334;
+    line-height: 20px;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.donwloads ul li a:hover {
+    color: #ff0000;
+}
+
+.donwloads ul li p {
+    margin: 0;
+    padding: 0 0 7px 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7c7c7c;
+}
+
+.donwloads a {
+    margin: 0;
+    padding: 0;
+    padding: 5px 0 0 0;
+    color: #333334;
+    line-height: 20px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.donwloads a:hover {
+    color: #ff0000;
+}
+
+.donwloads span {
+    margin: 0;
+    font-size: 12px;
+}
+
+.donwloads strong {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: red;
+}
+
+/* guidelines */
+.guidelines {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.guidelines h3 {
+    padding: 0 0 6px 0;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+}
+
+.guidelines .container {
+    padding: 4px 14px 7px 14px;
+}
+
+.guidelines p {
+    margin: 0;
+    padding: 3px 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* tabSection */
+.tabSection {
+    width: 100%;
+}
+
+.tabSection .tab {
+    height: 41px;
+    border-bottom: #333333 solid 3px;
+}
+
+.tabSection .tab ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    top: 9px;
+}
+
+.tabSection .tab ul li {
+    width: auto;
+    float: left;
+    display: inline;
+    margin: 0 2px 0 0;
+    padding: 0;
+}
+
+.tabSection .tab ul li a {
+    width: auto;
+    height: 41px;
+    float: left;
+    display: inline;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.tabSection .tab ul li a span {
+    width: auto;
+    float: left;
+    display: inline;
+    padding: 0 0 0 4px;
+    background-image: url(/i/bgTab.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.tabSection .tab ul li a span span {
+    width: auto;
+    float: left;
+    display: inline;
+    padding: 0 4px 0 0;
+    background-image: url(/i/bgTab.png);
+    background-repeat: no-repeat;
+    background-position: right -64px;
+}
+
+.tabSection .tab ul li a span span span {
+    width: 142px;
+    height: 32px;
+    float: left;
+    display: inline;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fffffe;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    background-image: url(/i/bgTab.png);
+    background-repeat: repeat-x;
+    background-position: 0 -32px;
+}
+
+.tabSection .tab ul li a:hover span,
+.tabSection .tab ul li a:hover span span,
+.tabSection .tab ul li a:hover span span span {
+    background-image: url(/i/bgTabHover.png);
+}
+
+.tabSection .tab ul li a.current {
+    background-image: url(/i/bgTabCurrentArrow.png);
+    cursor: default;
+}
+
+.tabSection .tab ul li a.current span,
+.tabSection .tab ul li a.current span span,
+.tabSection .tab ul li a.current span span span,
+.tabSection .tab ul li a.current:hover span,
+.tabSection .tab ul li a.current:hover span span,
+.tabSection .tab ul li a.current:hover span span span {
+    background-image: url(/i/bgTabCurrent.png);
+    cursor: default;
+}
+
+.tabSection .tab ul li a.disable span,
+.tabSection .tab ul li a.disable span span,
+.tabSection .tab ul li a.disable span span span,
+.tabSection .tab ul li a.disable:hover span,
+.tabSection .tab ul li a.disable:hover span span,
+.tabSection .tab ul li a.disable:hover span span span {
+    cursor: default;
+    background-image: url(/i/bgTabDisable.png);
+}
+
+/* overview */
+#overview {
+    width: 100%;
+    display: block;
+}
+
+/* contestOverview */
+#overview .contestOverview {
+    border-bottom: #bababa dotted 1px;
+}
+
+#overview .contestOverview .containerInner {
+    padding: 0 0 0 36px;
+    word-wrap: break-word;
+}
+
+#overview .contestOverview > h3 {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+    background: url(/i/iconContestOverview.png) no-repeat 0 6px;
+    padding: 8px 30px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .contestOverview p {
+    margin: 0;
+    padding: 2px 0 8px 0;
+    line-height: 18px;
+    word-wrap: break-word;
+}
+
+#overview .contestOverview p span {
+    white-space: normal !important;
+}
+
+/* technologies */
+#overview .technologies {
+    border-bottom: #bababa dotted 1px;
+}
+
+#overview .technologies .containerInner {
+    padding: 0 0 8px 36px;
+    word-wrap: break-word;
+}
+
+#overview .technologies h3 {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+    background: url(/i/iconTechnologies.png) no-repeat 0 6px;
+    padding: 8px 30px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .technologies ul {
+    margin: -21px 0 16px !important;
+    padding: 0 !important;
+}
+
+#overview .technologies ul li {
+    background-image: url("/i/dot.png");
+    background-position: left 8px;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    line-height: 18px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+#overview .technologies ul li.first {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+#overview .technologies ul li.last {
+    margin-left: 118px;
+}
+
+#overview .technologies ul li.first-last {
+    width: 118px;
+}
+
+#overview .technologies strong {
+    padding: 2px 0 18px 0;
+}
+
+/* payments */
+#overview .payments {
+    border-bottom: #bababa dotted 1px;
+}
+
+#overview .payments .containerInner {
+    padding: 0 0 0 36px;
+    word-wrap: break-word;
+}
+
+#overview .payments h3 {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+    background: url(/i/iconPayments.png) no-repeat 0 6px;
+    padding: 8px 30px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .payments p {
+    margin: 0;
+    padding: 2px 0 18px 0;
+    line-height: 18px;
+}
+
+#overview .payments dl {
+    margin: 0;
+    padding: 0;
+}
+
+#overview .payments dl dt {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#overview .payments dl dd {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#overview .payments ul {
+    margin: 0 0 18px 0 !important;
+    padding: 0 !important;
+}
+
+#overview .payments li {
+    margin: 0 0 0 25px;
+    padding: 0 0 0 10px;
+    font-size: 12px;
+    line-height: 18px;
+    list-style: none;
+    background: url(/i/dot.png) no-repeat left 6px;
+}
+
+/* restrictions */
+#overview .restrictions {
+    border-bottom: #bababa dotted 1px;
+}
+
+#overview .restrictions .containerInner {
+    padding: 0 0 0 36px;
+    word-wrap: break-word;
+}
+
+#overview .restrictions h3 {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+    background: url(/i/iconRestrictions.png) no-repeat 0 6px;
+    padding: 8px 30px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .restrictions p {
+    margin: 0;
+    padding: 2px 0 18px 0;
+    line-height: 18px;
+}
+
+/* support */
+#overview .support {
+    border-bottom: #bababa dotted 1px;
+}
+
+#overview .support .containerInner {
+    padding: 0 0 0 36px;
+    word-wrap: break-word;
+}
+
+#overview .support h3 {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+    background: url(/i/iconSupport.png) no-repeat 0 6px;
+    padding: 8px 30px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .support p {
+    margin: 0;
+    padding: 2px 0 18px 0;
+    line-height: 18px;
+}
+
+/* eligibility */
+#overview .eligibility {
+    border-bottom: #bababa dotted 1px;
+}
+
+#overview .eligibility .containerInner {
+    padding: 0 0 0 36px;
+    word-wrap: break-word;
+}
+
+#overview .eligibility h3 {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+    background: url(/i/iconEligibility.png) no-repeat 0 6px;
+    padding: 8px 30px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .eligibility p {
+    margin: 0;
+    padding: 2px 0 18px 0;
+    line-height: 18px;
+}
+
+#overview .eligibility dl {
+    margin: 0;
+    padding: 0;
+}
+
+#overview .eligibility dl dt {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#overview .eligibility dl dd {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#overview .eligibility ul {
+    margin: 0 0 18px 0 !important;
+    padding: 0 !important;
+}
+
+#overview .eligibility li {
+    margin: 0 0 0 25px;
+    padding: 0 0 0 10px;
+    font-size: 12px;
+    line-height: 18px;
+    list-style: none;
+    background: url(/i/dot.png) no-repeat left 6px;
+}
+
+/* final Submission Guidelines */
+#overview .finalSubmissionGuidelines {
+    border-bottom: #bababa dotted 1px;
+}
+
+#overview .finalSubmissionGuidelines .containerInner {
+    padding: 0 0 0 36px;
+    word-wrap: break-word;
+}
+
+#overview .finalSubmissionGuidelines h3 {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+    padding: 8px 30px;
+    background: url(/i/iconGuidelines.png) no-repeat 0 6px;
+    margin: 14px 0 0 6px;
+}
+
+#overview .finalSubmissionGuidelines .container {
+    padding: 2px 0 8px;
+}
+
+#overview .finalSubmissionGuidelines p {
+    margin: 0;
+    padding: 3px 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* checkpoints */
+#checkpoints {
+    width: 100%;
+    display: none;
+}
+
+/* checkpointWinners */
+#checkpoints .checkpointWinners {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+#checkpoints .checkpointWinners h3 {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+    line-height: 32px;
+}
+
+#checkpoints .checkpointWinners .checkpointWinnersList {
+    height: 46px;
+    position: relative;
+    background: url(/i/bgCheckpointWinners.png) repeat-x left top;
+}
+
+#checkpoints .checkpointWinners .checkpointWinnersList .greyBg {
+    background-image: url(/i/bgCheckpointWinnersGrey.png);
+}
+
+#checkpoints .checkpointWinners .checkpointWinnersList .checkpointWinnersListInner {
+    height: 46px;
+    background-image: url(/i/greyLine.png);
+    background-repeat: repeat-y;
+    background-position: right 0;
+}
+
+/* corner */
+#checkpoints .checkpointWinners .checkpointWinnersList .corner {
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    overflow: hidden;
+    background-image: url(/i/cornerCheckpointWinners.png);
+    background-repeat: no-repeat;
+}
+
+#checkpoints .checkpointWinners .checkpointWinnersList .tl {
+    top: 0;
+    left: 0;
+    background-position: 0 0;
+}
+
+#checkpoints .checkpointWinners .checkpointWinnersList .tr {
+    top: 0;
+    right: 0;
+    background-position: -3px 0;
+}
+
+#checkpoints .checkpointWinners .checkpointWinnersList .bl {
+    bottom: 0;
+    left: 0;
+    background-position: 0 -3px;
+}
+
+#checkpoints .checkpointWinners .checkpointWinnersList .br {
+    bottom: 0;
+    right: 0;
+    background-position: -3px -3px;
+}
+
+#checkpoints .checkpointWinners ul {
+    margin: 0 1px 0 0 !important;
+    padding: 0 !important;
+}
+
+#checkpoints .checkpointWinners ul li {
+    width: auto;
+    float: left;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#checkpoints .checkpointWinners ul li.prize1st {
+    background: url(/i/bgCheckpointWinners.png) repeat-x left top;
+}
+
+#checkpoints .checkpointWinners ul li.prize2nd {
+    background: url(/i/bgCheckpointWinners.png) repeat-x left top;
+}
+
+#checkpoints .checkpointWinners ul li.prize3rd {
+    background: url(/i/bgCheckpointWinners.png) repeat-x left top;
+}
+
+#checkpoints .checkpointWinners ul li.prize4th {
+    background: url(/i/bgCheckpointWinners.png) repeat-x left top;
+}
+
+#checkpoints .checkpointWinners ul li.prize5th {
+    background: url(/i/bgCheckpointWinners.png) repeat-x left top;
+}
+
+#checkpoints .checkpointWinners ul li.prize1st div {
+    background-image: url(/i/greyLine.png);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+}
+
+#checkpoints .checkpointWinners ul li div span.contest {
+    display: block;
+    background: url(/i/lineCheckpointWinners.png) no-repeat left center;
+}
+
+#checkpoints .checkpointWinners ul li.prize1st div span.contest {
+    background-image: none;
+}
+
+#checkpoints .checkpointWinners ul li span span {
+    height: 46px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 44px;
+    /* text shadow */
+    text-shadow: #fbfbfb 0 1px 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#checkpoints .checkpointWinners ul li.prize1st span span {
+    background-image: url(/i/iconFirstPrize.png);
+}
+
+#checkpoints .checkpointWinners ul li.prize2nd span span {
+    background-image: url(/i/iconSecondPrize.png);
+}
+
+#checkpoints .checkpointWinners ul li.prize3rd span span {
+    background-image: url(/i/iconThirdPrize.png);
+}
+
+#checkpoints .checkpointWinners ul li.prize4th span span {
+    background-image: url(/i/iconForthPrize.png);
+}
+
+#checkpoints .checkpointWinners ul li.prize5th span span {
+    background-image: url(/i/iconFifthPrize.png);
+}
+
+/* feedback */
+#checkpoints .feedback {
+    padding: 18px 0;
+    border-bottom: #bababa dotted 1px;
+}
+
+#checkpoints .feedback .title {
+    position: relative;
+}
+
+#checkpoints .feedback a.toggle {
+    position: absolute;
+    right: 4px;
+    top: 0;
+    font-size: 12px;
+    color: #333334;
+    line-height: 16px;
+    text-decoration: underline;
+}
+
+#checkpoints .feedback a.toggle:hover {
+    color: #ff0000;
+}
+
+#checkpoints .feedback h3 {
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+    line-height: 16px;
+}
+
+#checkpoints .feedback .hidden {
+    display: none;
+}
+
+#checkpoints .feedback p {
+    margin: 0;
+    padding: 8px 0 0 0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* Winners */
+#winners {
+    width: 100%;
+    display: none;
+}
+
+/* winnerSection */
+#winners .winnerSection {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+/* reslutTop */
+#winners .reslutTop {
+    height: 54px;
+    border-bottom: #bababa solid 1px;
+    background-image: url(/i/bgWinnersPrize.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+#winners .reslutTop ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#winners .reslutTop li {
+    width: 50%;
+    height: 54px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline;
+    list-style: none;
+    background-image: url(/i/lineCheckpointWinners.png);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+}
+
+#winners .reslutTop li.first {
+    background-image: none;
+}
+
+#winners .reslutTop li div {
+    margin: 0 0 0 10px;
+    padding: 0 0 0 28px;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 54px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#winners .reslutTop li div.firstPrize {
+    background-image: url(/i/prizeFirst.png);
+}
+
+#winners .reslutTop li div.seccondPrize {
+    background-image: url(/i/prizeSecond.png);
+}
+
+#winners .reslutTop li div a {
+    text-decoration: none;
+}
+
+#winners .reslutTop li div a:hover {
+    text-decoration: underline;
+}
+
+/* resultInfor */
+#winners .resultInfor {
+    min-height: 10px;
+    background-image: url(/i/shadow.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+#winners .resultInfor ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#winners .resultInfor li {
+    width: 50%;
+    float: left;
+    display: inline;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 38px;
+    list-style: none;
+}
+
+#winners .resultInfor li div {
+    margin: 0 0 0 10px;
+    padding: 0 10px 0 0;
+    text-align: right;
+    border-bottom: #bababa dotted 1px;
+}
+
+#winners .resultInfor li.last div {
+    border-bottom: 0;
+}
+
+#winners .resultInfor li div strong {
+    width: 140px;
+    float: left;
+    display: inline;
+    text-align: left;
+}
+
+/* resultList */
+#winners .resultList {
+    width: 100%;
+    min-height: 10px;
+    background-image: url(/i/bgWinnersTable.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-color: #e9e9e9;
+}
+
+#winners .resultList table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#winners .resultList th {
+    height: 48px;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    background-image: url(/i/lineCheckpointWinners.png);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    border-top: #bababa solid 1px;
+    border-bottom: #bababa solid 1px;
+}
+
+#winners .resultList th.first {
+    background-image: none;
+}
+
+#winners .resultList td {
+    height: 25px;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: #bababa dotted 1px;
+    background: #fffffd;
+}
+
+#winners .resultList .last td {
+    border-bottom: 0;
+}
+
+#winners .resultList td.handle {
+    text-align: left;
+}
+
+#winners .resultList td a {
+    text-decoration: none;
+}
+
+#winners .resultList td a:hover {
+    text-decoration: underline;
+}
+
+#winners .resultList td span.success {
+    color: #3aaf11;
+}
+
+#winners .resultList td span.fail {
+    color: #b30000;
+}
+
+#winners .resultList td a.tooltip {
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+}
+
+#winners .resultList td.drPoints strong,
+#winners .resultList td.score span {
+    width: 38px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* tip */
+.tip {
+    width: 210px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background: #fffffd;
+}
+
+.tip .tipHeader {
+    background-image: url(/i/bgTipHeader.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-color: #eaeaea;
+    border-bottom: #bababa solid 1px;
+}
+
+.tip .tipHeader h2 {
+    margin: 0 0 0 10px !important;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    text-align: left !important;
+    color: #333333;
+    line-height: 30px !important;
+}
+
+.tip .tipBody {
+    margin: 0;
+    padding: 0;
+}
+
+.tip .tipBody ul {
+    margin: 5px 0 !important;
+    padding: 0 !important;
+}
+
+.tip .tipBody ul li {
+    margin: 0;
+    padding: 5px 18px 5px 10px;
+    line-height: 18px;
+    list-style: none;
+    text-align: left;
+}
+
+.tip .tipBody ul li a,
+.tip .tipBody ul li a.reviewerName {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.tip .tipBody ul li a:hover,
+.tip .tipBody ul li a.reviewerName:hover {
+    text-decoration: underline;
+}
+
+.tip .tipBody ul li a.reviewerName {
+    width: 80px;
+    float: left;
+    display: inline;
+    text-align: left;
+    padding: 0 0 0 34px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+.tip .tipBody ul li a.reviewScore {
+    float: right;
+}
+
+/* reviewStyle */
+.reviewStyle {
+    width: 100%;
+    margin: 0 0 12px 0;
+}
+
+.reviewStyle h3 {
+    padding: 0 0 6px 0;
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #b30000;
+}
+
+.reviewStyle ul {
+    margin: 3px 0 12px 0 !important;
+    padding: 0 !important;
+}
+
+.reviewStyle ul li {
+    line-height: 24px;
+    list-style: none outside none;
+    margin: 0 14px 0 16px;
+    padding: 0;
+}
+
+.mainColumn .columnSideBar {
+    font-size: 13px;
+}
+
+.mainColumn .columnSideBar .reviewStyle ul li.twoLine strong {
+    line-height: 11px;
+}
+
+.mainColumn .columnSideBar .reviewStyle ul li span {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 150px;
+}
+
+.reviewStyle ul li a.tooltip {
+    text-decoration: none;
+    background: url(/i/bg-help.png) no-repeat scroll 0 -5% transparent;
+    height: 15px;
+    width: 13px;
+    line-height: 14px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.reviewStyle ul li a.tooltip:hover {
+    background: url(/i/bg-help.png) no-repeat scroll 0 100% transparent;
+}
+
+.reviewStyleTip .tipBody {
+    margin: 5px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+/*modal window css*/
+#modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /*ie7 ie8 */
+}
+
+#new-modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11111;
+}
+
+#new-modal-window .outLay {
+    position: relative;
+    display: none;
+}
+
+#new-modal-window .large {
+    width: 450px;
+}
+
+#new-modal-window .large2 {
+    width: 530px;
+}
+
+#new-modal-window .outLay .modalHeader .closeModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: url(/i/modal/modal-close.png) left top no-repeat;
+    width: 30px;
+    height: 30px;
+    text-indent: -999px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#new-modal-window .outLay .modalHeader .closeModal:hover {
+    background-position: left -30px;
+}
+
+#new-modal-window .outLay .modalHeader {
+    background: url(/i/modal/modal-header.png) left top no-repeat;
+    padding-left: 8px;
+    height: 36px;
+    *width: 351px; /*ie7*/
+}
+
+#new-modal-window .outLay .modalHeader .modalHeaderRight {
+    background: url(/i/modal/modal-header.png) right -80px no-repeat;
+    padding-right: 8px;
+}
+
+#new-modal-window .outLay .modalHeader .modalHeaderCenter {
+    background: url(/i/modal/modal-header.png) left -40px repeat-x;
+    padding: 10px 0 10px 22px;
+    color: #000001;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 36px;
+}
+
+#new-modal-window .outLay .modalHeader .modalHeaderCenter h2 {
+    font-size: 16px;
+}
+
+#new-modal-window .outLay .modalHeader.confirmation .modalHeaderCenter h2 {
+    font-size: 14px;
+}
+
+#new-modal-window .outLay .modalFooter {
+    background: url(/i/modal/preloader-corner.png) left -24px no-repeat;
+    padding-left: 8px;
+}
+
+#new-modal-window .outLay .modalFooter .modalFooterRight {
+    background: url(/i/modal/preloader-corner.png) right -40px no-repeat;
+    padding-right: 8px;
+}
+
+#new-modal-window .outLay .modalFooter .modalFooterCenter {
+    background: url(/i/modal/preloader-corner.png) left -32px repeat-x;
+    padding-top: 8px;
+}
+
+#new-modal-window .outLay .modalHeaderSmall {
+    height: 8px;
+    background: url(/i/modal/preloader-corner.png) left top no-repeat;
+    padding-left: 8px;
+    overflow: hidden;
+}
+
+#new-modal-window .outLay .modalHeaderSmall .modalHeaderSmallRight {
+    height: 8px;
+    background: url(/i/modal/preloader-corner.png) right -16px no-repeat;
+    padding-right: 8px;
+}
+
+#new-modal-window .outLay .modalHeaderSmall .modalHeaderSmallCenter {
+    height: 8px;
+    background: url(/i/modal/preloader-corner.png) left -8px repeat-x;
+}
+
+#new-modal-window .outLay .modalBody {
+    border: 4px solid #000000;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background: #e6e6e6 url(/i/modal/modal-body-normal.png) left top repeat-x;
+    min-height: 10px;
+
+    color: #333333;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#new-modal-window #demoModal .outLay .modalBody {
+    min-width: 352px;
+    padding: 33px 0 0 0;
+}
+
+#new-modal-window .outLay .modalBody .modalContent {
+    background: url(/i/modal/modal-notice.png) left center no-repeat;
+    width: 241px;
+    margin: 0 0 0px 19px;
+    padding: 0 25px 11px 66px;
+    min-height: 40px;
+    list-style: none;
+}
+
+#new-modal-window .outLay .modalBody .modalContent.multiple {
+    padding-top: 3px;
+}
+
+#new-modal-window .outLay .modalBody.serverError .modalContent {
+    background-image: url(/i/modal/modal-error.png);
+}
+
+#new-modal-window .outLay .modalBody .modalContent li {
+    margin-bottom: 2px;
+    word-wrap: break-word;
+    padding-top: 10px;
+}
+
+#new-modal-window .outLay .modalBody .modalContent li.single {
+    padding-top: 10px;
+}
+
+#new-modal-window .outLay .modalBody .modalContent.multiple li {
+    background: url(/i/modal/modal-arrow.png) left 4px no-repeat;
+    padding-left: 15px;
+}
+
+#new-modal-window .outLay .modalBody .modalCommandBox {
+    border-top: 1px solid #ccc;
+    padding: 16px 0 12px;
+    text-align: center;
+    height: 25px;
+    *width: 351px; /*ie7*/
+}
+
+/* #preloaderModal */
+#preloaderModal {
+    width: 100px;
+    height: 80px;
+}
+
+#preloaderModal .modalBody {
+    height: auto;
+    min-height: 10px;
+    padding-top: 4px;
+    text-align: center;
+    background: url(/i/modal/preloader-body.png) left -2px repeat-x;
+}
+
+#preloaderModal .modalBody .preloaderTips {
+    padding-top: 5px;
+    font-size: 12px;
+    color: #333333;
+}
+
+.newButton1 {
+    background: url(/i/modal/button-new-1.png) no-repeat scroll left top transparent;
+    color: #FFFFFE;
+    display: inline-block;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.newButton1 .btnR {
+    background: url(/i/modal/button-new-1.png) no-repeat scroll right -48px transparent;
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 4px;
+}
+
+.newButton1 .btnC {
+    background: url(/i/modal/button-new-1.png) repeat-x scroll left -24px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    padding: 0 18px;
+    text-align: center;
+    color: white;
+}
+
+.newButton1:hover {
+    background-position: left -72px;
+}
+
+.newButton1:hover .btnR {
+    background-position: right -120px;
+}
+
+.newButton1:hover .btnC {
+    background-position: left -96px;
+}
+
+
+/* end #preloaderModal */
+
+
 
 

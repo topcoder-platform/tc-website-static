@@ -219,6 +219,33 @@ function hidePopup(elem) {
 }
 
 /**
+ * Close modal windows
+ */
+function closeModal() {
+    $("#modal-background, #new-modal-window .outLay").hide();
+}
+
+/**
+ * Adjust the overlay background and model window and display them
+ */
+function adjustAndShow(modal) {
+    $("#modal-background").css("height", document.body.scrollHeight > document.body.offsetHeight ? (document.body.scrollHeight>$(window).height()? document.body.scrollHeight :$(window).height()) : (document.body.offsetHeight>$(window).height()? document.body.offsetHeight:$(window).height()));
+    $("#modal-background, " + modal).show();
+    $("#new-modal-window").css("margin-left", - $("#new-modal-window").width() / 2 + "px").css("margin-top", - $("#new-modal-window").height() / 2 + "px");
+    var height = 0;
+    $(modal + ".outLay .modalBody .modalContent li").each(function(){
+        height += $(this).height();
+    });
+    if(!$(modal+ ".outLay .modalBody .modalContent").hasClass("multiple")){
+        $(modal+ ".outLay .modalBody .modalContent li:first").css("padding-top", ($(".outLay .modalBody .modalContent").height() - height) / 2 + "px");
+    }
+    if (jQuery.browser.msie && jQuery.browser.version == '9.0') {
+        $(modal + " .modalBody").css("margin-top", "-2px");
+    }
+}
+
+
+/**
  * Updates the text of Pay Me button with total amount of selected payments.
  */
 function updatePayMe() {
@@ -486,6 +513,38 @@ $(document).ready(function(){
     });
 
     updatePayMe();
+
+    $('.buttonArea .register').click(function(){
+        // the 'isAnonymous' is defined in the projectDetails.jsp file
+        if(!isAnonymous) {
+            var thisObj = this;
+            adjustAndShow("#preloaderModal");
+            //Check Project Permission using ajax call
+            $.ajax({
+                type: "get",
+                url: '?module=CheckPermission',
+                success: function(data){
+                    var result = $.parseJSON(data);
+                    closeModal();
+                    if('OK' !== result.msg && !result.isAnonymous) {
+                        adjustAndShow("#errorModal");
+                    } else {
+                        location.href = $(thisObj).attr('href');
+                    }
+                }
+            });
+            return false;
+        } else {
+            // for the Anonymous user, go to the viewRegistration page directly.
+            return true;
+        }
+    });
+
+    $("#new-modal-window .closeModal, #new-modal-window .defaultBtn").click(function(){
+        closeModal();
+    });
+
+    $("#m_cs_competitions").parent().find("a:eq(0)").css("color", "#f8941e");
 
     if ($(".post-container").length > 0) {
 
