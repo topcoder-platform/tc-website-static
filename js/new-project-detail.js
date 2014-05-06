@@ -20,11 +20,20 @@ var getElementsByClassName = function(searchClass,node,tag) {
 }
 
 function resizeColumnWidth(){
-    getElementsByClassName('mainColumn')[0].style.width = parseInt(getElementsByClassName('topBar')[0].offsetWidth) - 216 + 'px';   
+
+    var topElement = document.getElementById("navigation");
+    var offSet = 70;
+
+    if(topElement == null) {
+        topElement = getElementsByClassName('topBar')[0];
+        offSet = 0;
+    }
+
+    getElementsByClassName('mainColumn')[0].style.width = parseInt(topElement.offsetWidth) - 216 - offSet + 'px';
     getElementsByClassName('columnTitle')[0].getElementsByTagName('h3')[0].style.width = '0px';
-    getElementsByClassName('columnTitle')[0].getElementsByTagName('h3')[0].style.width = parseInt(getElementsByClassName('columnTitle')[0].offsetWidth) - 277 + 'px';   
+    getElementsByClassName('columnTitle')[0].getElementsByTagName('h3')[0].style.width = parseInt(getElementsByClassName('columnTitle')[0].offsetWidth) - 277 - offSet + 'px';
     getElementsByClassName('columnContent')[0].style.width = '0px';
-    getElementsByClassName('columnContent')[0].style.width = parseInt(getElementsByClassName('mainColumn')[0].offsetWidth) - 277 + 'px';
+    getElementsByClassName('columnContent')[0].style.width = parseInt(getElementsByClassName('mainColumn')[0].offsetWidth) - 277 - offSet + 'px';
 }
 
 function hasClass(obj, cls) {
