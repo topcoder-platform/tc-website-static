@@ -1,6 +1,6 @@
 .mainContent {
-    width: 1280px !important;
-    margin: 30px auto;
+    width: 100% !important;
+    margin: 30px 10px !important;
 }
 
 .rtBody {
@@ -8,7 +8,7 @@
 }
 
 .rtBody table {
-    width: 100%;
+    width: 95%;
 }
 
 .rtBody .pageSubtitle {
@@ -19,8 +19,8 @@
     margin-top: 5px;
     line-height: 18px;
     font-size: 12px;
-    font-weight: 400;
-    color: #c2c2c2;
+    font-weight: normal;
+    color: #777777;
 }
 
 .rtBody .controls {
@@ -70,14 +70,8 @@
     font-weight: 400;
 }
 
-.rtLinkBold {
-    font-weight: 600;
-    border-bottom: 1px #f5f5f5 dotted;
-}
-
-.rtTable b,
-.rtTable strong {
-    font-weight: normal;
+a.rtLinkBold, a.rtLinkNew {
+    font-weight: bold !important;
 }
 
 .rtTable .rtThreadCellWrap b,
@@ -85,8 +79,20 @@
     font-weight: bold;
 }
 
+.rtTextCell b, .rtTextCell100 b, .rtTextCell strong, .rtTextCell100 strong {
+    font-weight: bold;
+}
+
 .rtThreadCellWrap a {
+    color: #333333;
+}
+
+.rtThreadCellWrap a:visited {
     color: #666666;
+}
+
+.rtThreadCellWrap a:hover {
+    color: #0088cc;
 }
 
 .pageTitleTable {
@@ -124,7 +130,8 @@
 }
 
 .rtDescIndent {
-    font-size: 13px;
+    font-size: 12px;
+    color: #666666;
 }
 
 /* rt table
@@ -139,22 +146,20 @@
 
 .rtTable .rtTextCell100 {
     font-weight: normal;
-
     width: 100%;
     padding: 12px 19px 12px 13px;
 }
 
 .rtTable .rtTextCell100 b {
-    font-weight: 600;
+    font-weight: bold;
     display: inline-block;
     padding: 4px 0 2px;
-    color: #666666;
 }
 
 .rtTable .rtHeader {
     border-top: 1px solid #e7e7e7;
     background: #f1f1f1;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
 }
 
@@ -176,6 +181,7 @@
 
 .rtTable .rtTextCellHlt {
     background: #fffdcf;
+    font-size: 14px !important;
 }
 
 .rtTable input,
@@ -674,5 +680,21 @@ table.mainContent .pageTitleTable {
 .rtThreadCell {
     font-size: 13px;
 }
+
+pre { color: #990000; }
+
+.pointer {
+    cursor: pointer;
+}
+
+.rtThreadCell b a.rtLinkNew {
+    font-weight: normal !important;
+}
+
+.rtTable tbody tr td {
+    background-color: #FCFCFC;
+}
+
+
 
 
