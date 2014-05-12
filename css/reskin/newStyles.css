@@ -399,6 +399,7 @@ em {
     font-size: 13px;
     font-weight: bold;
     float: left;
+    border: none;
 }
 
 .headerTopRightMenu .headerTopRightMenuLink.logIn .icon {
@@ -1003,6 +1004,8 @@ em {
     color: #959595;
     z-index: 100000;
     position: relative;
+    width: auto !important;
+    padding: 0 !important;
 }
 
 #footer .container {
