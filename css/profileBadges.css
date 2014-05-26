@@ -536,3 +536,76 @@ span.subBadge.selected {
 .CoECI-Client-Badge {
     background-position: -146px 48px !important;
 }
+
+
+/* HP Badge Level 1 */
+.HP-Badges-Level-1 {
+    height: 49px;
+    background-position: 0px -1538px;
+}
+
+.hpLogo {
+    width: 50px;
+    background-position: 0px -1587px !important;
+}
+
+.Getting-Started {
+    width: 36px;
+    background-position: -50px -1587px !important;
+}
+
+.Novice {
+    width: 32px;
+    background-position: -85px -1587px !important;
+}
+
+.Journeyman {
+    width: 33px;
+    background-position: -116px -1587px !important;
+}
+
+.Expert {
+    width: 46px;
+    background-position: -150px -1587px !important;
+}
+
+.HP-Badges-Level-1-wrapper .bigBadge, .HP-Badges-Level-2-wrapper .bigBadge {
+    display: none;
+}
+
+/* HP Badge Level 2 */
+.HP-Badges-Level-2 {
+    height: 49px;
+    background-position: 0px -1636px;
+}
+
+.HP-Badges-Level-2 {
+    height: 49px;
+    background-position: 0px -1636px;
+}
+
+.Master {
+    width: 36px;
+    background-position: -50px -1685px !important;
+}
+
+.Grand-Master {
+    width: 32px;
+    background-position: -85px -1685px !important;
+}
+
+.Paragon {
+    width: 33px;
+    background-position: -116px -1685px !important;
+}
+
+.Grand-Paragon {
+    width: 46px;
+    background-position: -150px -1685px !important;
+}
+
+
+/* HP Badge Level 3 */
+.Social-Evangelist {
+    background-position: -192px -624px;
+}

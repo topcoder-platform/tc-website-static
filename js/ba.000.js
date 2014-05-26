@@ -99,6 +99,29 @@ var global = {
             {name: 'Analytics', auto: false, subBadges: [
                 {name: 'big data', auto: false}]
             }],
+
+        'HP Badges': [
+            {name: 'HP Badges Level 1', auto: false, level:true, subBadges: [
+                    {name: 'hpLogo', description:'', auto: false, disabled:true},
+                    {name: 'Getting Started', description:'Successfully obtaining an API Key', auto: false},
+                    {name: 'Novice', description:'Building a single application using at least one IDOL OnDemand API', auto: false},
+                    {name: 'Journeyman', description:'Building two application using two or more IDOL OnDemand APIs, each from different categories', auto: false},
+                    {name: 'Expert', description:'Building an application with at least 1 IDOL OnDemand API from each category', auto: false}
+                ]
+            },
+
+            {name: 'HP Badges Level 2', auto: false, level:true, subBadges: [
+                    {name: 'hpLogo', description:'', auto: false},
+                    {name: 'Master', description:'5 passing submissions with Level 4 or higher on IDOL Category', auto: false},
+                    {name: 'Grand Master', description:'10 passing submissions with Level 4 or higher on IDOL Category', auto: false},
+                    {name: 'Paragon', description:'20 passing submissions with Level 4 or higher on IDOL Category', auto: false},
+                    {name: 'Grand Paragon', description:'25 passing submissions with Level 4 or higher on IDOL Category', auto: false}
+                ]
+            },
+
+            {name: 'Social Evangelist', description:'Evangelizing HP IDOL OnDemand in blogs and social media', auto: false}
+         ],
+
 		'special': [
 			{name: 'Studio Cup top 5', auto: true},
 			{name: 'TCO on-site competitor', auto: false},
@@ -154,7 +177,9 @@ function clearWrappers() {
 }
 
 function createGroupBadge(description, badges) {
+
     var name = description.name;
+    var isLevel = description.level && description.level == true;
     var wrapper = document.createElement('div');
     wrapper.className = 'groupBadgeWrapper ' + name2cssClass(name) + '-wrapper';
     
@@ -169,12 +194,15 @@ function createGroupBadge(description, badges) {
     badge.className = 'groupBadge'+' '+ cssClass;
     for (var i = 0; i < description.subBadges.length; ++i) {
         var subName = description.subBadges[i].name;
+        var desc = description.subBadges[i].description;
+        var disabled = description.subBadges[i].disabled
+            && description.subBadges[i].disabled == true;
         var subBadge = document.createElement('span');
-        subBadge.className = 'subBadge' + ' ' + name2cssClass(subName);
+        subBadge.className = 'subBadge' + ' ' + name2cssClass(subName) + (isLevel ? ' level' : '');
         badge.appendChild(subBadge);
         
         var badgeRecord = badges[subName] = {name: subName, editable: editable, isSubBadge: true, 
-                badge: subBadge, parent: wrapper};
+                badge: subBadge, parent: wrapper, description: desc, disabled:disabled};
         
         subBadge.badgeRecord = badgeRecord;
         subBadge.onmouseover = overSubBadge;
@@ -228,6 +256,7 @@ function createSingleBadge(description, badges) {
     var cssClass = name2cssClass(name);
     var badge = document.createElement('div');
     badge.className = 'singleBadge'+' '+ cssClass;
+    badge.title = description.description;
     
     wrapper.appendChild(badge);
 
@@ -275,7 +304,8 @@ function prepBadges() {
         
 		for (var i = 0; i < descriptions.length; i++, rowCount++) {
 			var description = descriptions[i];
-			if (isGroup) {
+            var isDescriptionGroup = descriptions.length && descriptions[i].subBadges;
+			if (isDescriptionGroup) {
                 var wrapper = createGroupBadge(description, badges);
 			} else {
                 var wrapper = createSingleBadge(description, badges);
@@ -324,10 +354,11 @@ function getElementViewTop(element) {
 function overSubBadge() {
     var subBadge = this;
     var tooltip = document.getElementById('tooltip');
-    tooltip.innerHTML = this.badgeRecord.name;
+    var tipContent = this.badgeRecord.description ?  this.badgeRecord.description : this.badgeRecord.name;
+    tooltip.innerHTML = tipContent;
     tooltip.style.display = 'block';
     tooltip.style.position = 'fixed';
-    var width = this.badgeRecord.name.length * 8
+    var width = tipContent.length * 8
     tooltip.style.width =  width + 'px';
     tooltip.style.left = (getElementViewLeft(this) - width / 2 + this.offsetWidth / 2) + 'px';
     tooltip.style.top = (getElementViewTop(this) - 25) + 'px';
@@ -431,11 +462,18 @@ function downSubBadge() {
     var subBadge = this;
     var group = subBadge.badgeRecord.parent.childNodes[1];
     var name = subBadge.badgeRecord.name;
+
+    if(subBadge.badgeRecord.disabled == true) {
+        return;
+    }
+
     // if the badge is a group subbadge
     if (subBadge == group.childNodes[group.childNodes.length - 1]) {
         subBadge.badgeRecord.parent.childNodes[0].onmousedown();
         return;
     }
+    var hasLevel = $(this).hasClass('level');
+    var isAdd = false;
     
     if (!subBadge.edited) {
         subBadge.edited = true;
@@ -445,6 +483,7 @@ function downSubBadge() {
         } else {
             classAdd(this, 'selected');
             addBadges.push(subBadge.badgeRecord);
+            isAdd = true;
         }
     }
     else {
@@ -464,8 +503,28 @@ function downSubBadge() {
                     removeBadges.splice(i, 1);
                     break;
                 }
+            isAdd = true;
         }
     }
+
+    if(hasLevel) {
+        // level badges
+        var spanIndex = $(this).parent().find("span").index(this);
+        $(this).parent().find("span").each(function(index) {
+            if(isAdd) {
+                // this badge is light on, all the previous badge which is not on should be set on
+                if(index < spanIndex && !$(this).hasClass('selected')) {
+                    $(this).mousedown();
+                }
+            } else {
+                // this badge is turned off, all the following badges should be turned off
+                if(index > spanIndex && $(this).hasClass('selected')) {
+                    $(this).mousedown();
+                }
+            }
+        })
+    }
+
     checkParentBadge(this.badgeRecord);    
     
     var commitButton = document.getElementById('commitButton');
@@ -475,6 +534,8 @@ function downSubBadge() {
 		commitButton.style.visibility = 'hidden';
     }
 }
+
+
 function downCheckbox() {
 	var checkbox = this;
 	var badgeRecord = checkbox.badgeRecord;
@@ -682,7 +743,7 @@ function initializeData() {
  * @return {Number} the rule ID.
  */ 
 function getBadgeId(name) {
-	for(var i=1; i<89; i++) {
+	for(var i=1; i<140; i++) {
 		if(mapBadge(i.toString()) == name) {
 			return i;
 		}
@@ -873,6 +934,24 @@ function mapBadge(id) {
 			return 'TopCoder spirit';
 		case "88":
 			return 'TopCoder mentor';
+        case "130":
+            return 'Getting Started';
+        case "131":
+            return 'Novice';
+        case "132":
+            return 'Journeyman';
+        case "133":
+            return 'Expert';
+        case "134":
+            return 'Master';
+        case "135":
+            return 'Grand Master';
+        case "136":
+            return 'Paragon';
+        case "137":
+            return 'Grand Paragon';
+        case "138":
+            return 'Social Evangelist';
 	}
 }
 

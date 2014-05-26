@@ -101,7 +101,21 @@ var globalBadgeInfo = {
                 {name: 'First-Place Wins: 50'},
                 {name: 'First-Place Wins: 100'},
                 {name: 'First-Place Wins: 250'}]
-            }],
+            },
+            {name: 'HP Badges Level 1', currentlyAtText: '', subBadges: [
+                {name: 'Getting Started'},
+                {name: 'Novice'},
+                {name: 'Journeyman'},
+                {name: 'Expert'}]
+            },
+            {name: 'HP Badges Level 2', currentlyAtText: '', subBadges: [
+                {name: 'Master'},
+                {name: 'Grand Master'},
+                {name: 'Paragon'},
+                {name: 'Grand Paragon'}]
+            }
+        ],
+
 
         'merit groups': [ // used in copilot profile
             {name: 'UI and Graphic Design', subBadges: [
@@ -258,7 +272,16 @@ var globalBadgeInfo = {
         /* 126 */ 'Solved Hard Div1 Problem in SRM',
         /* 127 */ 'Solved Hard Div2 Problem in SRM',
         /* 128 */ 'NASA Tournament Lab Client Badge',
-        /* 129 */ 'CoECI Client Badge'
+        /* 129 */ 'CoECI Client Badge',
+        /* 130 */ 'Getting Started',
+        /* 131 */ 'Novice',
+        /* 132 */ 'Journeyman',
+        /* 133 */ 'Expert',
+        /* 134 */ 'Master',
+        /* 135 */ 'Grand Master',
+        /* 136 */ 'Paragon',
+        /* 137 */ 'Grand Paragon',
+        /* 138 */ 'Social Evangelist'
     ]
 
 };
@@ -313,6 +336,10 @@ function renderGroupBadges(categoryName, groupRenderDiv, singleRenderDiv, badges
                 groupDiv.addClass('groupBadge');
                 groupDiv.addClass(name2cssClass(item.name));
 
+                if(name2cssClass(item.name).indexOf("HP-") >= 0) {
+                    groupDiv.append($('<span class="subBadge hpLogo "></span>'));
+                }
+
                 $.each(item.subBadges, function(ii, it) {
                     var badgeSpan = $('<span>');
                     badgeSpan.addClass('subBadge');
@@ -353,6 +380,8 @@ function renderGroupBadges(categoryName, groupRenderDiv, singleRenderDiv, badges
         if (time != '') time = 'Earned on ' + time;
         else time = 'Earned on TBD';
         var hasCurrentlyAt = $(it).find('.achievementHasCurrentlyAt').val();
+
+//        console.log(id + ' ' + name2cssClass(globalBadgeInfo.mapBadge[id]) + ' ' + groupRenderDiv.find('.' + name2cssClass(globalBadgeInfo.mapBadge[id])).length);
 
         if (groupRenderDiv.find('.' + name2cssClass(globalBadgeInfo.mapBadge[id])).length > 0) {
             // group badge
