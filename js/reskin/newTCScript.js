@@ -553,7 +553,7 @@ $(document).ready(function(){
         try {
 
         // load the news
-        $.get("/js/reskin/blogNews.html", function (data) {
+        $.get("/blog/", function (data) {
 
             $(".post-container").html($(data + '').find(".grid-2-3").html());
             $(".post-container .pagingWrapper").remove();
@@ -612,7 +612,7 @@ $(document).ready(function(){
         try {
 
         jQuery.getFeed({
-            url: '/js/reskin/newBlogRss.xml',
+            url: '/feed/?post_type=blog',
             success: function(feed) {
                 $.each(feed.items, function(index, item){
 
