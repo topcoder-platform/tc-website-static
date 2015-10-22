@@ -371,9 +371,21 @@ function basicPasswordValidate(/*String*/ password, /*String*/ passwordAlphabet)
     return true;
 }
 
+function adjustFooterMargin() {
 
+    var height_diff = $( window ).height() - $( 'body' ).height();
+    if ( height_diff > 0 ) {
+        $( '.bottom-footer' ).css( 'margin-top', height_diff );
+    } else {
+        $( '.bottom-footer' ).css( 'margin-top', "" );
+    }
+}
 
-$(document).ready(function(){
+$(document).ready(function() {
+
+    $(".leftNavWrapper").parent().hide();
+
+    adjustFooterMargin();
 
     $("tr[valign=top]").addClass('alignTop');
     $("tr[valign=bottom]").addClass('alignBottom');
@@ -553,52 +565,54 @@ $(document).ready(function(){
         try {
 
         // load the news
-        $.get("/blog/", function (data) {
+        $.get("/blog", function (data) {
 
             $(".post-container").html($(data + '').find(".grid-2-3").html());
             $(".post-container .pagingWrapper").remove();
 
 
-            // $(data + '').find("#replacercode div.post").each(function () {
+             $(data + '').find("#replacercode div.post").each(function () {
 
-            //     if(count > 5) {
-            //         return false;
-            //     }
+                 if(count > 5) {
+                     return false;
+                 }
 
-            //     var title = $(this).find(".title a:eq(1)").text();
-            //     var category = $(this).find(".title a:eq(0) span").text();
-            //     var categoryLink = $(this).find(".title a:eq(0)").attr('href');
-            //     var imgLink = $(this).find("div.entry img").attr('src');
-            //     var imgLinkHref = $(this).find("div.entry img").parent().attr('href');
-            //     $(this).find("div.entry img").remove();
-            //     var entryContent = $(this).find("div.entry").html();
-            //     var date = $(this).find(".byline").text();
-            //     date = date.replace('Posted on', '');
-            //     date = $.trim(date.replace(/by.*/, ''));
-            //     var author = $(this).find(".byline span").text();
-            //     var plink = $(this).find(".links a:eq(0)").attr('href');
+                 var title = $(this).find(".title a:eq(1)").text();
+                 var category = $(this).find(".title a:eq(0) span").text();
+                 var categoryLink = $(this).find(".title a:eq(0)").attr('href');
+                 var imgLink = $(this).find("div.entry img").attr('src');
+                 var imgLinkHref = $(this).find("div.entry img").parent().attr('href');
+                 $(this).find("div.entry img").remove();
+                 var entryContent = $(this).find("div.entry").html();
+                 var date = $(this).find(".byline").text();
+                 date = date.replace('Posted on', '');
+                 date = $.trim(date.replace(/by.*/, ''));
+                 var author = $(this).find(".byline span").text();
+                 var plink = $(this).find(".links a:eq(0)").attr('href');
 
-            //     var templateHTML = $(".post-container").find(".postTemplate").html();
-            //     var postItem = $('' + templateHTML);
-            //     postItem.find("a.title").text(title).attr('href', plink);
-            //     postItem.find("div.date span").text(date);
-            //     postItem.find("div.author span").text(author);
-            //     postItem.find("div.category a").text(category).attr('href', categoryLink);
-            //     if(imgLink) {
-            //         postItem.find("a.figure img").attr('src', imgLink).attr('alt', '');
-            //         if(imgLinkHref) {
-            //             postItem.find("a.figure").attr('href', imgLinkHref);
-            //         }
-            //     } else {
-            //         postItem.find("a.figure").remove();
-            //     }
+                 var templateHTML = $(".post-container").find(".postTemplate").html();
+                 var postItem = $('' + templateHTML);
+                 postItem.find("a.title").text(title).attr('href', plink);
+                 postItem.find("div.date span").text(date);
+                 postItem.find("div.author span").text(author);
+                 postItem.find("div.category a").text(category).attr('href', categoryLink);
+                 if(imgLink) {
+                     postItem.find("a.figure img").attr('src', imgLink).attr('alt', '');
+                     if(imgLinkHref) {
+                         postItem.find("a.figure").attr('href', imgLinkHref);
+                     }
+                 } else {
+                     postItem.find("a.figure").remove();
+                 }
 
-            //     postItem.find(".details").prepend(entryContent + '');
-            //     postItem.find(".details .more a").attr('href', plink);
+                 postItem.find(".details").prepend(entryContent + '');
+                 postItem.find(".details .more a").attr('href', plink);
 
-            //     $(".post-container").append($("<section class='post'></section>").html(postItem));
-            //     count ++;
-            // })
+                 $(".post-container").append($("<section class='post'></section>").html(postItem));
+                 count ++;
+             })
+
+            adjustFooterMargin();
         });
 
         } catch(e) {
@@ -635,6 +649,78 @@ $(document).ready(function(){
             // ignore
         }
     }
+
+
+    // forEach method to be used to iterate arrays and NodeList
+    function forEach(array, callback, scope) {
+        var i;
+
+        for (i = 0; i < array.length; i += 1) {
+            callback.call(scope, i, array[i]);
+        }
+    }
+
+
+    // Helper function for toggling class of an element
+    // modified from: http://youmightnotneedjquery.com/#toggle_class
+    function toggleClass(el, className, toggle) {
+        if (el.classList) {
+            if (typeof(toggle) !== 'boolean') {
+                el.classList.toggle(className);
+            } else if (toggle) {
+                el.classList.add(className);
+            } else {
+                el.classList.remove(className);
+            }
+        } else {
+            var classes = el.className.split(' ');
+            var existingIndex = classes.indexOf(className);
+
+            if (typeof(toggle) !== 'boolean') {
+                toggle = existingIndex >= 0;
+            }
+
+            if (toggle) {
+                if (existingIndex >= 0) {
+                    classes.splice(existingIndex, 1);
+                }
+            } else {
+                if (existingIndex === -1) {
+                    classes.push(className);
+                }
+            }
+
+            el.className = classes.join(' ');
+        }
+    }
+
+
+    // Elements and variables
+    var body = document.getElementsByTagName('body')[0],
+        searchBox = document.getElementById('searchBox'),
+        searchNeedle = searchBox.value,
+        suggestionList = document.querySelectorAll('.suggestion-list')[0],
+        headerWrapper = document.querySelectorAll('.header-wrapper')[0],
+        userMenu = document.querySelectorAll('.user-menu')[0],
+        suggestionSamples = null,
+        counter = 0,
+        suggestionsHtml = '';
+
+    // Attach click handler to menu buttons
+    forEach(document.querySelectorAll('.btn-open-menu, .btn-close-menu'), function (i, el) {
+        el.addEventListener('click', function () {
+            toggleClass(body, 'menu-visible');
+        });
+    });
+
+    // Attach click handler to login button(s)
+    forEach(document.querySelectorAll('.btn-login, .btn-logout'), function (i, el) {
+        el.addEventListener('click', function () {
+            toggleClass(body, 'menu-visible', false);
+            toggleClass(headerWrapper, 'user-authenticated');
+            toggleClass(userMenu, 'anonymous-menu');
+        });
+    });
 
 
 });
