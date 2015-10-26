@@ -4568,54 +4568,58 @@ a.blueLink:hover {
     /** compete nav **/
 
     .menu-link-design:before {
-        background-image: url("/i/reskin/nav/design.svg");
+        background-image: url("/i/reskin/nav/track-design.svg");
     }
 
     .menu-link-dev:before {
-        background-image: url("/i/reskin/nav/development.svg");
+        background-image: url("/i/reskin/nav/track-develop.svg");
 
     }
 
     .menu-link-data:before {
-        background-image: url("/i/reskin/nav/data-science.svg");
+        background-image: url("/i/reskin/nav/track-data.svg");
 
     }
 
     .menu-link-arena:before {
-        background-image: url("/i/reskin/nav/srms.svg");
+        background-image: url("/i/reskin/nav/track-cp.svg");
 
     }
 
     /** learn nav **/
 
     .menu-link-learn-design:before {
-        background-image: url("/i/reskin/nav/scroll-design.svg");
+        background-image: url("/i/reskin/nav/book-design.svg");
     }
 
     .menu-link-learn-dev:before {
-        background-image: url("/i/reskin/nav/scroll-develop.svg");
+        background-image: url("/i/reskin/nav/book-develop.svg");
     }
 
     .menu-link-learn-data:before {
-        background-image: url("/i/reskin/nav/scroll-data.svg");
+        background-image: url("/i/reskin/nav/book-data.svg");
     }
 
     .menu-link-learn-competition:before {
-        background-image: url("/i/reskin/nav/srms.svg");
+        background-image: url("/i/reskin/nav/book-cp.svg");
     }
 
     /** community nav **/
 
+    .menu-link-community:before {
+        background-image: url("/i/reskin/nav/community.svg");
+    }
+
     .menu-link-community-members:before {
-        background-image: url("/i/reskin/nav/users.svg");
+        background-image: url("/i/reskin/nav/members.svg");
     }
 
     .menu-link-community-programs:before {
-        background-image: url("/i/reskin/nav/medal.svg");
+        background-image: url("/i/reskin/nav/programs.svg");
     }
 
     .menu-link-community-forums:before {
-        background-image: url("/i/reskin/nav/forum.svg");
+        background-image: url("/i/reskin/nav/forums.svg");
     }
 
     .menu-link-community-stats:before {
@@ -4623,7 +4627,7 @@ a.blueLink:hover {
     }
 
     .menu-link-community-events:before {
-        background-image: url("/i/reskin/nav/calendar.svg");
+        background-image: url("/i/reskin/nav/events.svg");
     }
 
     .menu-link-community-blog:before {
@@ -4635,19 +4639,19 @@ a.blueLink:hover {
     }
 
     .menu-link-profile:before {
-        background-image: url("/i/reskin/nav/badge.svg");
+        background-image: url("/i/reskin/nav/profile.svg");
     }
 
     .menu-link-payments:before {
-        background-image: url("/i/reskin/nav/money-bag.svg");
+        background-image: url("/i/reskin/nav/wallet.svg");
     }
 
     .menu-link-settings:before {
-        background-image: url("/i/reskin/nav/gear.svg");
+        background-image: url("/i/reskin/nav/settings.svg");
     }
 
     .menu-link-logout:before {
-        background-image: url("/i/reskin/nav/logout.svg");
+        background-image: url("/i/reskin/nav/exit.svg");
     }
 
 
@@ -4708,7 +4712,7 @@ a.blueLink:hover {
     .link-group {
         display: inline-block;
         color: #a3a3a3;
-        font-size: 16px;
+        font-size: 14px;
         font-family: "Sofia Pro";
         font-weight: 500;
     }
