@@ -4587,6 +4587,10 @@ a.blueLink:hover {
     }
 
     /** learn nav **/
+	
+	.menu-link-learn-started:before {
+        background-image: url("/i/reskin/nav/rocket.svg");
+    }
 
     .menu-link-learn-design:before {
         background-image: url("/i/reskin/nav/book-design.svg");
