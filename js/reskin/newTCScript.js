@@ -820,7 +820,7 @@ $(document).ready(function() {
     // Elements and variables
     var body = document.getElementsByTagName('body')[0],
         searchBox = document.getElementById('searchBox'),
-        searchNeedle = searchBox.value,
+        searchNeedle = searchBox ? searchBox.value : null,
         suggestionList = document.querySelectorAll('.suggestion-list')[0],
         headerWrapper = document.querySelectorAll('.header-wrapper')[0],
         userMenu = document.querySelectorAll('.user-menu')[0],
