@@ -4618,6 +4618,10 @@ a.blueLink:hover {
         background-image: url("/i/reskin/nav/members.svg");
     }
 
+    .menu-link-community-tco16:before {
+        background-image: url("/i/reskin/nav/tco16.svg");
+    }
+
     .menu-link-community-programs:before {
         background-image: url("/i/reskin/nav/programs.svg");
     }
