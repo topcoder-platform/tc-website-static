@@ -4622,6 +4622,10 @@ a.blueLink:hover {
         background-image: url("/i/reskin/nav/tco16.svg");
     }
 
+    .menu-link-community-tco17:before {
+        background-image: url("/i/reskin/nav/tco-generic.svg");
+    }
+
     .menu-link-community-programs:before {
         background-image: url("/i/reskin/nav/programs.svg");
     }
