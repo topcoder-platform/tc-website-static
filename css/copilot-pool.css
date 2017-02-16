@@ -138,6 +138,8 @@
 }
 .copilot-pool .grid-copilots .copilot img.person{
     float:left;
+    max-height: 140px;
+    max-width: 140px;
 }
 
 .copilot-pool .grid-copilots .copilot .info{
