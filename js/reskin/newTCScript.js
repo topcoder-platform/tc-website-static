@@ -496,9 +496,9 @@ function adjustFooterMargin() {
 }
 
 function doLogOutTC() {
-    var temp = window.location.hostname.split('.').reverse();
-    var root_domain = '.' + temp[1] + '.' + temp[0];
-    window.location.replace("https://accounts-auth0" + root_domain + "?retUrl=https://" + root_domain);
+	var temp = window.location.hostname.split('.').reverse();
+	var root_domain = '.' + temp[1] + '.' + temp[0];
+	window.location.replace("https://accounts-auth0" + root_domain + "?logout=true&retUrl=https://www" + root_domain);
 }
 
 $(document).ready(function() {
