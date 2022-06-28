@@ -1,0 +1,39 @@
+/* reskin-2 common */
+
+:root {
+  /*
+  --xs-max: 599px;    (max-width: /* --xs-max * / 599px)
+  --sm-max: 959px;    (max-width: /* --sm-max * / 959px)
+  --md-max: 1279px;   (max-width: /* --md-max * / 1279px)
+  --lg-max: 1375px;   (max-width: /* --lg-max * / 1375px)
+
+  --xs-min: 320px;    (min-width: /* --xs-min * / 320px)
+  --sm-min: 600px;    (min-width: /* --sm-min * / 600px)
+  --md-min: 960px;    (min-width: /* --md-min * / 960px)
+  --lg-min: 1280px;   (min-width: /* --lg-min * / 1280px)
+  --xl-min: 1376px;   (min-width: /* --xl-min * / 1376px)
+  */
+
+  --screen-max: 1376px;
+
+  --tc-black: #0c0c0c;
+  --tc-white: #fff;
+  --black-100: #2a2a2a;
+  --black-80: #555555;
+  --black-60: #7f7f7f;
+  --black-40: #aaaaaa;
+  --black-20: #d4d4d4;
+  --black-10: #e9e9e9;
+  --black-5: #f4f4f4;
+  --black-2: #fbfbfb;
+  --green: #137d60;
+  --blue-1: #eaf6fd;
+  --blue-2: #bae1f9;
+
+  --divider: #e9e9e9;
+
+  --header-height: 80px;
+  --footer-height: 51px;
+  --header-height-mobile: 60px;
+  --footer-height-mobile: 75px;
+}
