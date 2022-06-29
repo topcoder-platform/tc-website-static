@@ -11,6 +11,9 @@ body {
   padding: 32px;
   box-sizing: content-box;
 }
+  .page ~ .bottom-footer {
+    box-sizing: border-box;
+  }
   .page table.myHome tbody tr td.bodyColumn#payments {
     padding: 0;
   }
@@ -265,3 +268,849 @@ body {
       margin: 0 auto 0;
     }
   }
+
+/* **************** View-All, View Pending **************** */
+
+#payments > br { display: none; }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+  .form-container br {
+    display: none;
+  }
+  @media (min-width: /* --md-min */ 960px) {
+    .form-container .payment-list {
+      display: none;
+    }
+  }
+  @media (max-width: /* --sm-max */ 959px) {
+    .form-container .payment-table {
+      display: none;
+    }
+  }
+
+  /* Desktop table */
+  .form-container .payment-table {}
+    .form-container .payment-table table {
+      table-layout: fixed;
+    }
+    .form-container .payment-table .caption {
+      display: none;
+    }
+    .form-container .payment-table .checkbox {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+      .form-container .payment-table .checkbox input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+        .form-container .payment-table .checkbox input[type="checkbox"] ~ .checkbox-label {
+        }
+          .form-container .payment-table .checkbox input[type="checkbox"] ~ .checkbox-label::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border: 1.52px solid #7f7f7f;
+            border-radius: 3px;
+            box-sizing: border-box;
+          }
+          .form-container .payment-table .checkbox input[type="checkbox"] ~ .checkbox-label::after {
+            content: url('/i/reskin-2/checkbox.svg');
+            display: none;
+            box-sizing: border-box;
+          }
+          .form-container .payment-table input[type="checkbox"]:checked ~ .checkbox-label::before {
+            display: none;
+          }
+          .form-container .payment-table input[type="checkbox"]:checked ~ .checkbox-label::after {
+            display: block;
+          }
+          .form-container .payment-table .checkbox input[type="checkbox"]:disabled {
+            cursor: default;
+          }
+          .form-container .payment-table .checkbox input[type="checkbox"]:disabled ~ .checkbox-label::before {
+            border-color: #aaaaaa;
+            cursor: default;
+          }
+          .form-container .payment-table .checkbox input[type="checkbox"]:disabled ~ .checkbox-label::after {
+            opacity: 0.75;
+            cursor: default;
+          }
+          .form-container .payment-table .checkbox input[type="checkbox"].PAID-OR-ENTERED_INTO_PAYMENT_SYSTEM ~ .checkbox-label,
+          .form-container .payment-table .checkbox input[type="checkbox"].OTHER ~ .checkbox-label {
+            display: none;
+          }
+
+    .form-container .payment-table colgroup col.col-description   {}
+    .form-container .payment-table colgroup col.col-type          { width: 10.5%; }
+    .form-container .payment-table colgroup col.col-create-date   { width: 10.5%; }
+    .form-container .payment-table colgroup col.col-net-payment   { width: 10.5%; }
+    .form-container .payment-table colgroup col.col-status        { width: 10.5%; }
+    .form-container .payment-table colgroup col.col-release-date  { width: 10.5%; }
+    .form-container .payment-table colgroup col.col-paid-date     { width: 10.5%; }
+    .form-container .payment-table colgroup col.col-checkbox      { width: 3.5%; }
+
+    .form-container .payment-table tbody tr.headerRow {
+    }
+      .form-container .payment-table tbody tr.headerRow td {
+        padding: 0 !important;
+        text-align: left;
+        vertical-align: middle !important;
+        text-transform: uppercase;
+        background-color: transparent !important;
+      }
+        .form-container .payment-table tbody tr.headerRow td a {
+          font-family: Barlow;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 14px;
+          color: var(--grey-1);
+
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          padding: 0 16px 8px;
+        }
+          .form-container .payment-table tbody tr.headerRow td a::after {
+            content: url('/i/reskin-2/sortable.svg');
+            flex: none;
+            margin-left: 4px;
+          }
+          .form-container .payment-table tbody tr.headerRow td.active a {
+            font-weight: 700;
+            color: var(--black-100);
+          }
+          .form-container .payment-table tbody tr.headerRow.asc td.active a::after {
+            content: url('/i/reskin-2/sort-down.svg');
+            transform: scaleY(-1);
+          }
+          .form-container .payment-table tbody tr.headerRow.desc td.active a::after {
+            content: url('/i/reskin-2/sort-down.svg');
+          }
+
+    .form-container .payment-table tbody tr:not(.caption):not(.headerRow) {
+    }
+      .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td {
+        text-align: left;
+        vertical-align: top;
+        padding: 16px 0 16px 16px !important;
+        border: 0 !important;
+
+        font-family: Roboto;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 22px !important;
+        color: var(--black-80);
+      }
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td:first-child {
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td:last-child {
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          padding-left: 0 !important;
+        }
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.description a {
+          color: var(--green);
+        }
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.status > .status {
+          display: inline-block;
+        }
+          #payments .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.status > .status.Owed {
+            color: var(--payment-status-owed) !important;
+          }
+          #payments .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.status > .status.Paid {
+            color: var(--payment-status-paid) !important;
+          }
+          #payments .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.status > .status.Cancelled {
+            color: var(--payment-status-cancelled) !important;
+          }
+          .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.status > .status .status-label {
+            font-family: Roboto;
+            font-weight: 500 !important;
+            text-transform: uppercase;
+            font-size: 11px;
+            line-height: inherit;
+            color: var(--black-80);
+          }
+          .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.status > .status::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            line-height: inherit;
+            margin: 0 4px 0 0;
+            vertical-align: middle;
+            border: 2px solid currentColor;
+            border-radius: 50%;
+            box-sizing: border-box;
+          }
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.net-payment {
+          text-align: right;
+          padding-right: 40px !important;
+        }
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow).highlight td.description {
+          color: var(--black-100);
+        }
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow).highlight td.type,
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow).highlight td.create-date,
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow).highlight td.net-payment,
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow).highlight td.status > .status .status-label,
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow).highlight td.release-date,
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow).highlight td.paid-date {
+          font-weight: 700 !important;
+          color: var(--black-100);
+        }
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.release-date.null-value,
+        .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.paid-date.null-value {
+        }
+          .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.release-date.null-value::before,
+          .form-container .payment-table tbody tr:not(.caption):not(.headerRow) td.paid-date.null-value::before {
+            content: '\2014';
+          }
+
+    .form-container .payment-table tbody tr.light {
+      background-color: var(--black-5);
+    }
+      .form-container .payment-table tbody tr.light td {
+        background-color: transparent;
+      }
+    .form-container .payment-table tbody tr.dark {
+      background-color: var(--tc-white);
+    }
+      .form-container .payment-table tbody tr.dark td {
+        background-color: transparent;
+      }
+
+  /* Mobile list */
+  .form-container .payment-list {
+    box-sizing: border-box;
+  }
+    .form-container .payment-list * {
+      box-sizing: inherit;
+    }
+    .form-container .payment-list .payment-list-item {
+      padding: 16px;
+      margin: 0 auto 16px;
+      background-color: var(--black-5);
+      border-radius: 8px;
+    }
+      .form-container .payment-list .payment-list-item:last-child {
+        margin-bottom: 0;
+      }
+      .form-container .payment-list .payment-list-item .checkbox[role="checkbox"] {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border: 1.52px solid var(--black-60);
+        border-radius: 3px;
+        cursor: pointer;
+        box-sizing: border-box;
+      }
+        .form-container .payment-list .payment-list-item .checkbox[role="checkbox"].disabled {
+          border-color: var(--black-40);
+          cursor: default;
+        }
+        .form-container .payment-list .payment-list-item .checkbox[role="checkbox"].checked {
+          background: url('/i/reskin-2/checkbox.svg');
+          border: none;
+        }
+        .form-container .payment-list .payment-list-item .checkbox[role="checkbox"].PAID-OR-ENTERED_INTO_PAYMENT_SYSTEM,
+        .form-container .payment-list .payment-list-item .checkbox[role="checkbox"].OTHER {
+          display: none;
+        }
+      .form-container .payment-list .payment-list-item > .row {
+        display: flex;
+        align-items: center;
+        margin: 0 -16px 8px;
+      }
+      .form-container .payment-list .payment-list-item > .row > .col {
+        flex: 1 1 auto;
+        max-width: 100%;
+        padding: 0 16px;
+      }
+        .form-container .payment-list .payment-list-item > .row:last-child {
+          margin-bottom: 0;
+        }
+        .form-container .payment-list .payment-list-item > .row.description {
+          margin-bottom: 16px;
+        }
+        .form-container .payment-list .payment-list-item > .row.description,
+        .form-container .payment-list .payment-list-item > .row.description a {
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: var(--black-100);
+        }
+        .form-container .payment-list .payment-list-item > .row.description > .col-label {
+          display: none;
+        }
+        .form-container .payment-list .payment-list-item > .row:nth-child(1n+2) > .col-label {
+          font-family: Barlow;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 14px;
+          color: var(--grey-1);
+
+          text-transform: uppercase;
+          min-width: 84px;
+        }
+        .form-container .payment-list .payment-list-item > .row:nth-child(1n+2) > .col-value {
+          font-family: Roboto;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.5px;
+          color: var(--black-100);
+
+          text-align: right;
+          text-transform: capitalize;
+          min-width: 52px;
+        }
+        .form-container .payment-list .payment-list-item > .row.status {
+        }
+          .form-container .payment-list .payment-list-item > .row.status .status {
+          }
+            .form-container .payment-list .payment-list-item > .row.status .status .status-label {
+              font-family: Roboto;
+              font-weight: 500;
+              text-transform: uppercase;
+              font-size: 11px;
+              line-height: inherit;
+              color: var(--black-80);
+            }
+            .form-container .payment-list .payment-list-item > .row.status .status::before {
+              content: '';
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              line-height: inherit;
+              margin: 0 4px 0 0;
+              vertical-align: middle;
+              border: 2px solid currentColor;
+              border-radius: 50%;
+            }
+            .form-container .payment-list .payment-list-item > .row.status .status.Owed { color: var(--payment-status-owed); }
+            .form-container .payment-list .payment-list-item > .row.status .status.Paid { color: var(--payment-status-paid); }
+            .form-container .payment-list .payment-list-item > .row.status .status.Cancelled { color: var(--payment-status-cancelled); }
+        .form-container .payment-list .payment-list-item > .row.release-date,
+        .form-container .payment-list .payment-list-item > .row.paid-date {
+        }
+          .form-container .payment-list .payment-list-item > .row.release-date.null-value .col-value::before,
+          .form-container .payment-list .payment-list-item > .row.paid-date.null-value .col-value::before {
+            content: '\2014';
+          }
+
+  @media (max-width: /* --sm-max */ 959px) {
+    .form-container .payment-list {
+    }
+      .form-container .payment-list .payment-list-item {
+        max-width: 288px;
+      }
+  }
+  @media (max-width: /* --xs-max */ 599px) {
+    .form-container .payment-list {
+    }
+      .form-container .payment-list .payment-list-item {
+        max-width: 100%;
+      }
+  }
+
+  .form-container .table-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+    .form-container .table-footer input[name="sr"],
+    .form-container .table-footer button[name="nameSubmit"] {
+      display: none;
+    }
+    .form-container .table-footer .pay-me-btn {
+      order: -1;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      width: 100%;
+      padding: 24px 0;
+      gap: 18px;
+
+      border-bottom: 2px solid var(--black-10);
+    }
+      .form-container .table-footer .pay-me-btn input[type="button"] {
+        text-transform: uppercase;
+        padding: 8px 24px;
+        border: 0;
+        border-radius: 24px;
+        cursor: pointer;
+
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.008em;
+
+        color: var(--tc-white);
+        background-color: var(--green);
+      }
+        .form-container .table-footer .pay-me-btn input[type="button"]:disabled {
+          color: var(--grey-1);
+          background-color: var(--black-5);
+          cursor: default;
+        }
+      .form-container .table-footer .pay-me-btn .payMeValue {
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+      }
+      @media (max-width: /* --sm-max */ 959px) {
+        .form-container .table-footer .pay-me-btn {
+          padding: 16px 0;
+        }
+      }
+      @media (max-width: /* --xs-max */ 599px) {
+        .form-container .table-footer .pay-me-btn {
+        }
+          .form-container .table-footer .pay-me-btn .payMeValue {
+            margin-right: auto;
+          }
+      }
+
+    .form-container .table-footer .export-to-excel {
+      order: 99;
+      padding: 32px 0;
+    }
+      .form-container .table-footer .export-to-excel a {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        height: auto !important;
+        padding: 6px 22px 6px 18px !important;
+        background: none !important;
+        border: 2px solid var(--green);
+        border-radius: 24px;
+        text-transform: uppercase;
+        user-select: none;
+
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px !important;
+        letter-spacing: 00.008em;
+        color: var(--green);
+      }
+        .form-container .table-footer .export-to-excel a::before {
+          content: url('/i/reskin-2/download-excel.svg');
+          flex: none;
+        }
+
+    .form-container .table-pagination {
+      flex: auto;
+      display: flex;
+      width: auto;
+      margin: 0 !important;
+      font-size: 0;
+      padding: 32px 0;
+    }
+      .form-container .table-pagination:not(.croppedData) {
+      }
+        .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter) .items-per-page {
+          display: none;
+        }
+          .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter)::before,
+          .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter)::after {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 56px;
+            padding: 6px 14px;
+            border: 2px solid #f4f4f4;
+            border-radius: 24px;
+            box-sizing: border-box;
+          }
+          .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter)::before {
+            order: -2;
+            content: url('/i/reskin-2/chevron-left-large-grey.svg');
+            margin: 0 16px 0 0;
+          }
+          .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter)::after {
+            content: url('/i/reskin-2/chevron-right-grey.svg');
+            margin: 0 16px 0 auto;
+          }
+          .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter).more-than-10-items .items-per-page {
+            display: block;
+          }
+      @media (min-width: /* --md-min */ 960px) {
+      .form-container .table-pagination.hiddenOnSelected {
+          opacity: 0;
+          pointer-events: none;
+      }}
+      .form-container .table-pagination .pageIndexes-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding: 0 16px;
+      }
+      .form-container .table-pagination .page-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 32px;
+        padding: 8px 11px;
+        border: 1px solid var(--black-40);
+        border-radius: 16px;
+        box-sizing: border-box;
+        user-select: none;
+
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 14px;
+        letter-spacing: 00.008em;
+        color: var(--grey-1);
+      }
+        .form-container .table-pagination .page-btn.hidden {
+          display: none;
+        }
+        .form-container .table-pagination .page-btn.active,
+        .form-container .table-pagination .page-btn:hover,
+        .form-container .table-pagination .page-btn:focus {
+          color: var(--black-80);
+          border-color: var(--black-80);
+        }
+        .form-container .table-pagination .page-btn.active {
+          pointer-events: none;
+        }
+      .form-container .table-pagination .prev-btn {
+        margin-left: auto;
+      }
+      .form-container .table-pagination .next-btn {
+        margin-right: auto;
+      }
+      .form-container .table-pagination .prev-btn,
+      .form-container .table-pagination .next-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 56px;
+        padding: 6px 14px;
+        font-size: 0;
+        border: 2px solid var(--green);
+        border-radius: 24px;
+        box-sizing: border-box;
+      }
+        .form-container .table-pagination .prev-btn::before,
+        .form-container .table-pagination .next-btn::after {
+          display: block;
+        }
+        .form-container .table-pagination .prev-btn.disabled,
+        .form-container .table-pagination .next-btn.disabled {
+          border-color: var(--black-5);
+        }
+        .form-container .table-pagination .prev-btn::before {
+          content: url('/i/reskin-2/chevron-left-large-green.svg');
+        }
+          .form-container .table-pagination .prev-btn.disabled::before {
+            content: url('/i/reskin-2/chevron-left-large-grey.svg');
+          }
+        .form-container .table-pagination .next-btn::after {
+          content: url('/i/reskin-2/chevron-right-green.svg');
+        }
+          .form-container .table-pagination .next-btn.disabled::after {
+            content: url('/i/reskin-2/chevron-right-grey.svg');
+          }
+      .form-container .table-pagination .items-per-page {
+        order: -1;
+        position: relative;
+        display: inline-block;
+        min-width: 184px;
+        border: 1px solid var(--black-40);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+        .form-container .table-pagination .items-per-page > label {
+          position: absolute;
+          top: 4px;
+          left: 9px;
+          width: calc(100% - 9px);
+
+          white-space: nowrap;
+          text-align: left;
+          cursor: inherit;
+
+          font-family: Roboto;
+          font-weight: 500;
+          font-size: 11px;
+          line-height: 10px;
+          color: var(--green);
+        }
+        .form-container .table-pagination .items-per-page > input {
+          padding: 0;
+          margin: 0;
+          border: 0;
+
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: var(--grey-1);
+
+          margin-top: 16px;
+          width: 100%;
+          padding: 2px 24px 2px 9px;
+          background: url('/i/reskin-2/cheveron-down-small.svg') center right 9px / auto no-repeat;
+          cursor: inherit;
+        }
+          .form-container .table-pagination .items-per-page > input:focus {
+            background-image: url('/i/reskin-2/cheveron-up-small.svg');
+          }
+          .form-container .table-pagination .items-per-page > input:focus ~ .per-page-dropdown{
+            height: auto;
+            opacity: 1;
+            visibility: visible !important;
+          }
+        .form-container .table-pagination .items-per-page .per-page-dropdown {
+          position: absolute;
+          top: 100%;
+          left: -1px;
+          right: -1px;
+          text-align: left;
+          cursor: default;
+          background-color: var(--tc-white);
+          border: 1px solid var(--black-40);
+
+          list-style: none;
+          margin: 2px 0 0 !important;
+          padding: 0 !important;
+
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: var(--grey-1);
+
+          height: 0;
+          opacity: 0;
+          transition: visibility 225ms;
+        }
+          .form-container .table-pagination .items-per-page .per-page-dropdown li {
+            padding: 0 !important;
+          }
+            .form-container .table-pagination .items-per-page .per-page-dropdown li > a {
+              display: block;
+              padding: 3px 9px;
+              line-height: 22px;
+              color: inherit !important;
+            }
+            .form-container .table-pagination .items-per-page .per-page-dropdown li:hover {
+              color: var(--tc-white);
+              background-color: var(--green);
+            }
+            .form-container .table-pagination .items-per-page .per-page-dropdown li.selected {
+              font-weight: 700;
+            }
+    @media (max-width: /* --sm-max */ 959px) {
+      .form-container .table-footer {
+      }
+        .form-container .table-footer .export-to-excel {
+          width: 100%;
+          height: 0px;
+          padding: 0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+        }
+          .form-container .table-footer .export-to-excel > a {
+            margin: 0 88px 16px 0;
+          }
+        .form-container .table-pagination {
+          padding: 32px 0 16px;
+        }
+          .form-container .table-pagination .items-per-page {
+            display: none;
+          }
+          .form-container .table-pagination .pageIndexes-container {
+            flex: 1 1 auto;
+          }
+            .form-container .table-pagination .pageIndexes-container > * {
+              display: none;
+            }
+          .form-container .table-pagination .prev-btn {
+          }
+            .form-container .table-pagination .prev-btn::before {
+              content: url('/i/reskin-2/chevron-right-green.svg');
+              transform: rotate(180deg);
+            }
+              .form-container .table-pagination .prev-btn.disabled::before {
+                content: url('/i/reskin-2/chevron-right-grey.svg');
+                transform: rotate(180deg);
+              }
+          .form-container .table-pagination .next-btn {
+          }
+            .form-container .table-pagination .next-btn:not(.disabled) {
+              background-color: var(--green);
+            }
+            .form-container .table-pagination .next-btn::after {
+              content: url('/i/reskin-2/chevron-right-white.svg');
+            }
+    }
+    @media (max-width: /* --xs-max */ 599px) {
+      .form-container .table-footer {
+      }
+        .form-container .table-footer .export-to-excel {
+        }
+          .form-container .table-footer .export-to-excel > a {
+            font-size: 0;
+            gap: 0;
+            line-height: 0 !important;
+            padding: 9px 16px !important;
+          }
+            .form-container .table-footer .export-to-excel > a::before {
+              content: url('/i/reskin-2/download-excel-mobile.svg');
+              display: block;
+            }
+    }
+
+  @media (max-width: /* --sm-max */ 959px) {
+    .form-container {
+      padding-top: 16px;
+    }
+  }
+
+.payment-confirm-modal {
+  box-sizing: border-box;
+  background-color: rgba(12, 12, 12, .85);
+}
+  .payment-confirm-modal * {
+    box-sizing: inherit;
+  }
+  .payment-confirm-modal .close-btn {
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .payment-confirm-modal .close-btn::before {
+    content: url('/i/reskin-2/close.svg');
+    display: block;
+  }
+  .payment-confirm-modal .button-primary,
+  .payment-confirm-modal .button-secondary {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.008em;
+    text-transform: uppercase;
+    color: var(--green);
+
+    padding: 10px 22px;
+    background-color: #fff;
+    border: 2px solid var(--green);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .payment-confirm-modal .button-primary {
+    color: #fff;
+    background-color: var(--green);
+  }
+  .payment-confirm-modal .modal-dialog {
+    max-width: 676px;
+    margin-top: 18.7vh;
+    margin-bottom: 18.7vh;
+  }
+  .payment-confirm-modal .modal-body {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black-100);
+  }
+  @media (max-width: /* --xs-max */ 599px) {
+    .payment-confirm-modal .modal-dialog {
+      height: 100%;
+      margin: 0 auto 0;
+    }
+    .payment-confirm-modal .modal-content {
+      min-height: 100%;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .payment-confirm-modal .close-btn {
+    }
+      .payment-confirm-modal .close-btn::before {
+        content: url('/i/reskin-2/close-small.svg');
+      }
+    .payment-confirm-modal .button-primary,
+    .payment-confirm-modal .button-secondary {
+      font-size: 14px;
+    }
+    .payment-confirm-modal .modal-body {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+.mobile-payments-sort-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--black-5);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  .mobile-payments-sort-button::before {
+    content: url('/i/reskin-2/sortable-green.svg');
+  }
+  .mobile-payments-sort-button.active.desc::before {
+    content: url('/i/reskin-2/sort-down-green.svg');
+  }
+    .mobile-payments-sort-button.active.asc::before {
+      content: url('/i/reskin-2/sort-down-green.svg');
+      transform: scaleY(-1);
+    }
+  @media (min-width: /* --md-min */ 960px) {
+    .mobile-payments-sort-button {
+      display: none;
+    }
+  }
+
+.view-pending-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  margin-left: 4px;
+  vertical-align: middle;
+  background-color: var(--blue-3);
+  border-radius: 50px;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0;
+  letter-spacing: 0.5px;
+  color: var(--tc-white);
+}
