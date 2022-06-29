@@ -1,8 +1,10 @@
-/* src/main/com/topcoder/web/tc/view/pacts/client/PaymentHistory.jsp */
+/* src/main/com/topcoder/web/tc/view/pacts/client/PaymentStatusSummary.jsp */
 
 body {
   background-color: var(--tc-white);
 }
+
+#payments > br { display: none; }
 
 .page {
   min-height: calc(100vh - var(--header-height) - var(--footer-height) - 64px);
@@ -18,7 +20,7 @@ body {
     .page {
       min-height: calc(100vh - var(--header-height-mobile) - 75px - 32px);
       max-width: 100%;
-      padding: 16px 16px 0;
+      padding: 16px 16px 8px;
     }
   }
 
@@ -113,8 +115,6 @@ body {
     }
   }
 
-
-
 .paymentHistoryTabs {
   display: flex;
   height: 42px;
@@ -157,12 +157,6 @@ body {
       position: absolute;
       top: 100%;
     }
-
-.paymentHistoryDropdown-container {
-  display: flex;
-  width: 100%;
-  gap: 8px;
-}
 
 .paymentHistoryDropdown {
 }
@@ -225,6 +219,9 @@ body {
     padding: 10px 16px;
     box-sizing: border-box;
   }
+    .paymentHistoryDropdown .dropdown-menu .item .view-pending-badge {
+      line-height: 16px;
+    }
   .paymentHistoryDropdown .dropdown-menu .item.active {
     background-color: var(--blue-2);
     color: var(--tc-black);
@@ -234,34 +231,113 @@ body {
     background-color: var(--blue-2);
   }
 
+.view-pending-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  margin-left: 4px;
+  vertical-align: middle;
+  background-color: var(--blue-3);
+  border-radius: 50px;
 
-.no-payments-found {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 0;
   letter-spacing: 0.5px;
-  line-height: 20px;
-  color: var(--black-100);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin: 26px auto 0;
-  max-width: 476px;
+  color: var(--tc-white);
 }
-  .no-payments-found > * {
-    font: inherit;
-    color: inherit;
+
+/* **************** Payment status summary table **************** */
+
+.table-container {
+  padding: 32px 0;
+  margin: 9px 0 0;
+}
+  .table-container table colgroup col.col-payment-status {}
+  .table-container table colgroup col.col-net-amount     { width: 25%; }
+  .table-container table tbody tr.headerRow {
   }
-  .no-payments-found::before {
-    content: url('/i/reskin-2/info-icon.svg');
-    display: block;
-    width: 40px;
-    height: 40px;
-  }
-  @media (max-width: /* --sm-max */ 959px) {
-    .no-payments-found {
-      margin: 0 auto 0;
+    .table-container table tbody tr.headerRow td {
+      background-color: transparent !important;
     }
+    .table-container table tbody tr.light {
+      background-color: var(--black-5);
+    }
+      .table-container table tbody tr.light td {
+        background-color: transparent;
+      }
+    .table-container table tbody tr.dark {
+      background-color: transparent;
+    }
+      .table-container table tbody tr.dark td {
+        background-color: transparent;
+      }
+
+    .table-container table tbody tr.headerRow td {
+      padding: 0 16px 10px !important;
+      text-transform: uppercase;
+      border: none !important;
+
+      font-family: Barlow;
+      font-weight: 600 !important;
+      font-size: 11px;
+      line-height: 14px !important;
+      color: var(--grey-1);
+    }
+      .table-container table tbody tr.headerRow td.payment-status {
+        text-align: left;
+      }
+      .table-container table tbody tr.headerRow td.net-amount {
+        text-align: right;
+      }
+    .table-container table tbody tr:not(.headerRow) td {
+      padding: 16px !important;
+      text-transform: capitalize;
+      border: none !important;
+
+      font-family: Roboto;
+      font-weight: 500 !important;
+      font-size: 16px !important;
+      line-height: 20px !important;
+      letter-spacing: 0.5px;
+      color: var(--black-100);
+    }
+      .table-container table tbody tr:not(.headerRow) td:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+      .table-container table tbody tr:not(.headerRow) td:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+      .table-container table tbody tr:not(.headerRow) td.payment-status {
+        text-align: left;
+      }
+      .table-container table tbody tr:not(.headerRow) td.net-amount {
+        text-align: right;
+      }
+      .table-container table tbody tr:not(.headerRow).totalRow td.total-text {
+        text-align: left;
+
+        font-weight: 500 !important;
+        font-size: 20px !important;
+        line-height: 26px !important;
+      }
+      .table-container table tbody tr:not(.headerRow).totalRow td.total-value {
+        text-align: right;
+
+        font-weight: 700 !important;
+        font-size: 20px !important;
+        line-height: 26px !important;
+      }
+  @media (max-width: /* --sm-max */ 959px) {
+    .table-container {
+      padding: 16px 0;
+      margin: 0;
+    }
+      .table-container table tbody tr.headerRow td {
+        padding: 0 16px 8px !important;
+      }
   }
