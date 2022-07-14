@@ -365,9 +365,11 @@ function adjustAndShow(modal) {
 function updatePayMe() {
     var total = calcTotalPayment();
     if (total >= 0) {
-        $('#payMe').val('Pay Me: $' + total.toFixed(2));
+        // $('#payMe').val('Pay Me: $' + total.toFixed(2));
+        $('#payMeValue').text('$' + total.toFixed(2));
     } else {
-        $('#payMe').val('Pay Me: -$' + Math.abs(total.toFixed(2)));
+        // $('#payMe').val('Pay Me: -$' + Math.abs(total.toFixed(2)));
+        $('#payMeValue').text('-$' + Math.abs(total.toFixed(2)));
     }
     if (total < MINIMUM_PAYMENT_ACCRUAL_AMOUNT || !isUserPaymentMethodValid()) {
         $('#payMe').attr('disabled', 'disabled');
@@ -627,11 +629,51 @@ $(document).ready(function() {
             var total = calcTotalPayment();
             var confirmationMessage = PAY_ME_CONFIRMATION_TEMPLATE.replace('{0}', '$' + total.toFixed(2));
 
-            if (confirm(confirmationMessage)) {
-                var myForm = document.f;
-                myForm.method = 'POST';
-                myForm.module.value = 'PayMe';
-                myForm.submit();
+            var isNativeDialog = $('#payment-confirm-modal-id').length === 0;
+
+            if (isNativeDialog) {
+                if (confirm(confirmationMessage)) {
+                    var myForm = document.f;
+                    myForm.method = 'POST';
+                    myForm.module.value = 'PayMe';
+                    myForm.submit();
+                }
+            } else {
+                var resultPromise = new Promise(function (resolve) {
+                    $('#payment-confirm-modal-id .modal-body').text(confirmationMessage);
+                    document.body.style.overflow = 'hidden';
+
+                    function onCancel () {
+                        document.body.style.overflow = '';
+                        $('#payment-confirm-modal-id').removeClass('show');
+                        $('#payment-confirm-modal-id .close-btn').off('click');
+                        $('#payment-confirm-modal-id .button-secondary').off('click');
+                        $('#payment-confirm-modal-id .button-primary').off('click');
+                        resolve(false);
+                    }
+                    function onOk () {
+                        document.body.style.overflow = '';
+                        $('#payment-confirm-modal-id').removeClass('show');
+                        $('#payment-confirm-modal-id .close-btn').off('click');
+                        $('#payment-confirm-modal-id .button-secondary').off('click');
+                        $('#payment-confirm-modal-id .button-primary').off('click');
+                        resolve(true);
+                    }
+
+                    $('#payment-confirm-modal-id').addClass('show');
+                    $('#payment-confirm-modal-id .close-btn').one('click', onCancel);
+                    $('#payment-confirm-modal-id .button-secondary').one('click', onCancel);
+                    $('#payment-confirm-modal-id .button-primary').one('click', onOk);
+                });
+
+                resultPromise.then(function (ok) {
+                    if (ok) {
+                        var myForm = document.f;
+                        myForm.method = 'POST';
+                        myForm.module.value = 'PayMe';
+                        myForm.submit();
+                    }
+                })
             }
         }
     });

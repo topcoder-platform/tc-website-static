@@ -1,0 +1,19 @@
+.primaryNav {
+  background: var(--black-100);
+  color: var(--tc-white);
+  height: var(--header-height);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+}
+@media (max-width: /* --xs-max */ 599px) {
+  .primaryNav {
+    height: var(--header-height-mobile);
+  }
+}
+  .primaryNav .tcLogo {
+    margin: 0 50px 0 30px;
+    cursor: pointer;
+  }
