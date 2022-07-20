@@ -196,6 +196,9 @@ body {
     padding-left: 16px;
     padding-top: 10px;
   }
+  .paymentHistoryDropdown .dropdown-toggle .toggle-value .view-pending-badge {
+    line-height: 16px;
+  }
   .paymentHistoryDropdown .dropdown-toggle .icon {
     align-self: center;
     padding: 0 12px;
@@ -228,6 +231,9 @@ body {
     padding: 10px 16px;
     box-sizing: border-box;
   }
+    .paymentHistoryDropdown .dropdown-menu .item .view-pending-badge {
+      line-height: 16px;
+    }
   .paymentHistoryDropdown .dropdown-menu .item.active {
     background-color: var(--blue-2);
     color: var(--tc-black);
