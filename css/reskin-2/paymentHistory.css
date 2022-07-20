@@ -270,9 +270,9 @@ body {
     height: 40px;
   }
   @media (max-width: /* --sm-max */ 959px) {
-    .no-payments-found {
+    /* .no-payments-found {
       margin: 0 auto 0;
-    }
+    } */
   }
 
 /* **************** View-All, View Pending **************** */
