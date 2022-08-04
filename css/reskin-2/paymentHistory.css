@@ -742,7 +742,7 @@ body {
         }
           .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter)::before,
           .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter)::after {
-            display: inline-flex;
+            display: none;
             align-items: center;
             justify-content: center;
             min-width: 56px;
