@@ -1120,3 +1120,8 @@ body {
   letter-spacing: 0.5px;
   color: var(--tc-white);
 }
+  @media (max-width: /* --sm-max */ 959px) {
+    .view-pending-badge {
+      display: inline;
+    }
+  }
