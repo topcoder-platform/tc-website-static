@@ -4,6 +4,10 @@ body {
   background-color: var(--tc-white);
 }
 
+.bigRed { 
+  color: red;
+}
+
 .page {
   min-height: calc(100vh - var(--header-height) - var(--footer-height) - 64px);
   max-width: var(--screen-max);
@@ -196,6 +200,9 @@ body {
     padding-left: 16px;
     padding-top: 10px;
   }
+  .paymentHistoryDropdown .dropdown-toggle .toggle-value .view-pending-badge {
+    line-height: 16px;
+  }
   .paymentHistoryDropdown .dropdown-toggle .icon {
     align-self: center;
     padding: 0 12px;
@@ -228,6 +235,9 @@ body {
     padding: 10px 16px;
     box-sizing: border-box;
   }
+    .paymentHistoryDropdown .dropdown-menu .item .view-pending-badge {
+      line-height: 16px;
+    }
   .paymentHistoryDropdown .dropdown-menu .item.active {
     background-color: var(--blue-2);
     color: var(--tc-black);
@@ -264,9 +274,9 @@ body {
     height: 40px;
   }
   @media (max-width: /* --sm-max */ 959px) {
-    .no-payments-found {
+    /* .no-payments-found {
       margin: 0 auto 0;
-    }
+    } */
   }
 
 /* **************** View-All, View Pending **************** */
@@ -736,7 +746,7 @@ body {
         }
           .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter)::before,
           .form-container .table-pagination:not(.croppedDataBefore):not(.croppedDataAfter)::after {
-            display: inline-flex;
+            display: none;
             align-items: center;
             justify-content: center;
             min-width: 56px;
@@ -1114,3 +1124,8 @@ body {
   letter-spacing: 0.5px;
   color: var(--tc-white);
 }
+  @media (max-width: /* --sm-max */ 959px) {
+    .view-pending-badge {
+      display: inline;
+    }
+  }
