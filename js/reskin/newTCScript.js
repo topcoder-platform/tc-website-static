@@ -608,13 +608,22 @@ $(document).ready(function() {
 
 
     // payment page
-    $('.uncheckAll').click(function() {
-        $('.uncheckable').attr('checked', false);
-        updatePayMe();
-    });
+    // $('.uncheckAll').click(function() {
+    //     $('.uncheckable').attr('checked', false);
+    //     updatePayMe();
+    // });
 
     $('.checkAll').click(function () {
-        $('.checkable').attr('checked', true);
+        if (this.checked) {
+            $('.checkable').attr('checked', true);
+            var total = calcTotalPayment()
+            if (total > 25) {
+                $('.bigRed').prev().remove();
+                $('.bigRed').remove();
+            }
+        } else {
+            $('.uncheckable').attr('checked', false);
+        }
         updatePayMe();
     });
 

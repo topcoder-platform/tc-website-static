@@ -4,7 +4,7 @@ body {
   background-color: var(--tc-white);
 }
 
-.bigRed { 
+.bigRed {
   color: red;
 }
 
@@ -286,7 +286,8 @@ body {
 .form-container {
   display: flex;
   flex-direction: column;
-  padding-top: 24px;
+  /* padding-top: 24px; */
+  padding-top: 8px;
 }
   .form-container br {
     display: none;
@@ -391,7 +392,8 @@ body {
           text-decoration: none;
           display: inline-flex;
           align-items: center;
-          padding: 0 16px 8px;
+          /* padding: 0 16px 8px; */
+          padding: 16px;
         }
           .form-container .payment-table tbody tr.headerRow td a::after {
             content: url('/i/reskin-2/sortable.svg');
