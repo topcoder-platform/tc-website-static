@@ -281,6 +281,39 @@ body {
 
 /* **************** View-All, View Pending **************** */
 
+.above-tabs {
+  width: 100%;
+}
+  .above-tabs .pay-me-btn {
+    padding-bottom: 24px;
+  }
+    .above-tabs .pay-me-btn input[type="button"] {
+      text-transform: uppercase;
+      padding: 8px 24px;
+      border: 0;
+      border-radius: 24px;
+      cursor: pointer;
+
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.008em;
+
+      color: var(--tc-white);
+      background-color: var(--green);
+    }
+      .above-tabs .pay-me-btn input[type="button"]:disabled {
+        color: var(--grey-1);
+        background-color: var(--black-5);
+        cursor: default;
+      }
+    @media (max-width: /* --sm-max */ 959px) {
+      .above-tabs .pay-me-btn {
+        padding-bottom: 16px;
+      }
+    }
+    
 #payments > br { display: none; }
 
 .form-container {

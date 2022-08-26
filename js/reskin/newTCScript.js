@@ -379,6 +379,19 @@ function updatePayMe() {
 }
 
 /**
+ * Updates the text of Quick Pay Me button with total amount of owed payments.
+ */
+function updateQuickPayMe() {
+    var total = totalOwedPayments;
+    $('#quickPayMe').val('Pay Me: $' + total.toFixed(2));
+    if (total < MINIMUM_PAYMENT_ACCRUAL_AMOUNT) {
+        $('#quickPayMe').attr('disabled', 'disabled');
+    } else {
+        $('#quickPayMe').removeAttr('disabled');
+    }
+}
+
+/**
  * Calculates the total amount of payments selected by user.
  *
  * @return {Number} a total amount of selected payments.
@@ -687,6 +700,66 @@ $(document).ready(function() {
         }
     });
 
+    $('#quickPayMe').click(function() {
+        var total = totalOwedPayments;
+        var confirmationMessage = PAY_ME_CONFIRMATION_TEMPLATE.replace('{0}', '$' + total.toFixed(2));
+
+        var isNativeDialog = $('#payment-confirm-modal-id').length === 0;
+
+        if (isNativeDialog) {
+            if (confirm(confirmationMessage)) {
+                var myForm = document.f;
+                myForm.method = 'POST';
+                myForm.module.value = 'PayMe';
+                myForm.submit();
+            }
+        } else {
+            var resultPromise = new Promise(function (resolve) {
+                $('#payment-confirm-modal-id .modal-body').text(confirmationMessage);
+                document.body.style.overflow = 'hidden';
+
+                function onCancel () {
+                    document.body.style.overflow = '';
+                    $('#payment-confirm-modal-id').removeClass('show');
+                    $('#payment-confirm-modal-id .close-btn').off('click');
+                    $('#payment-confirm-modal-id .button-secondary').off('click');
+                    $('#payment-confirm-modal-id .button-primary').off('click');
+                    resolve(false);
+                }
+                function onOk () {
+                    document.body.style.overflow = '';
+                    $('#payment-confirm-modal-id').removeClass('show');
+                    $('#payment-confirm-modal-id .close-btn').off('click');
+                    $('#payment-confirm-modal-id .button-secondary').off('click');
+                    $('#payment-confirm-modal-id .button-primary').off('click');
+                    resolve(true);
+                }
+
+                $('#payment-confirm-modal-id').addClass('show');
+                $('#payment-confirm-modal-id .close-btn').one('click', onCancel);
+                $('#payment-confirm-modal-id .button-secondary').one('click', onCancel);
+                $('#payment-confirm-modal-id .button-primary').one('click', onOk);
+            });
+
+            resultPromise.then(function (ok) {
+                if (ok) {
+                    var myForm = document.f;
+                    myForm.method = 'POST';
+                    myForm.module.value = 'PayMe';
+                    for (var i = 0; i < owedPayments.length; i++) {
+                        var paymentId = owedPayments[i]
+                        var input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.value = paymentId;
+                        input.name = 'paymentId';
+                        myForm.appendChild(input);
+                    }
+                    myForm.submit();
+                }
+            })
+        }
+    });
+
     $('.getable').click(function () {
         var myForm = document.f;
         myForm.method = 'GET';
@@ -696,6 +769,8 @@ $(document).ready(function() {
     });
 
     updatePayMe();
+
+    updateQuickPayMe();
 
     $('.buttonArea .register').click(function(){
         // the 'isAnonymous' is defined in the projectDetails.jsp file
