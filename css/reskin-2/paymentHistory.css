@@ -4,7 +4,7 @@ body {
   background-color: var(--tc-white);
 }
 
-.bigRed { 
+.bigRed {
   color: red;
 }
 
@@ -281,12 +281,46 @@ body {
 
 /* **************** View-All, View Pending **************** */
 
+.above-tabs {
+  width: 100%;
+}
+  .above-tabs .pay-me-btn {
+    padding-bottom: 24px;
+  }
+    .above-tabs .pay-me-btn input[type="button"] {
+      text-transform: uppercase;
+      padding: 8px 24px;
+      border: 0;
+      border-radius: 24px;
+      cursor: pointer;
+
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.008em;
+
+      color: var(--tc-white);
+      background-color: var(--green);
+    }
+      .above-tabs .pay-me-btn input[type="button"]:disabled {
+        color: var(--grey-1);
+        background-color: var(--black-5);
+        cursor: default;
+      }
+    @media (max-width: /* --sm-max */ 959px) {
+      .above-tabs .pay-me-btn {
+        padding-bottom: 16px;
+      }
+    }
+    
 #payments > br { display: none; }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  padding-top: 24px;
+  /* padding-top: 24px; */
+  padding-top: 8px;
 }
   .form-container br {
     display: none;
@@ -391,7 +425,8 @@ body {
           text-decoration: none;
           display: inline-flex;
           align-items: center;
-          padding: 0 16px 8px;
+          /* padding: 0 16px 8px; */
+          padding: 16px;
         }
           .form-container .payment-table tbody tr.headerRow td a::after {
             content: url('/i/reskin-2/sortable.svg');
@@ -1078,6 +1113,59 @@ body {
     .payment-confirm-modal .modal-body {
       font-size: 14px;
       line-height: 20px;
+    }
+  }
+
+.mobile-select-all-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--black-5);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  .mobile-select-all-checkbox .checkbox {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+    .mobile-select-all-checkbox .checkbox input[type="checkbox"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+      .mobile-select-all-checkbox .checkbox input[type="checkbox"] ~ .checkbox-label {
+      }
+        .mobile-select-all-checkbox .checkbox input[type="checkbox"] ~ .checkbox-label::before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-color: #fff;
+          border: 1.52px solid #7f7f7f;
+          border-radius: 3px;
+          box-sizing: border-box;
+        }
+        .mobile-select-all-checkbox .checkbox input[type="checkbox"] ~ .checkbox-label::after {
+          content: url('/i/reskin-2/checkbox.svg');
+          display: none;
+          box-sizing: border-box;
+        }
+        .mobile-select-all-checkbox .checkbox input[type="checkbox"]:checked ~ .checkbox-label::before {
+          display: none;
+        }
+        .mobile-select-all-checkbox .checkbox input[type="checkbox"]:checked ~ .checkbox-label::after {
+          display: block;
+        }
+  @media (min-width: /* --md-min */ 960px) {
+    .mobile-select-all-checkbox {
+      display: none;
     }
   }
 
